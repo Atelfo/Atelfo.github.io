@@ -1,4 +1,7 @@
-# Pharmaceutical portfolio strategy implications of base rate probability of launch and revenue distributions
+---
+layout: post
+title: "Pharmaceutical portfolio strategy implications of base rate probability of launch and revenue distributions"
+---
 
 In this post I want to explore how the [base rates](https://en.wikipedia.org/wiki/Base_rate) of probability of launch (by phase of development) and the distribution of pharmaceutical product revenues can inform business development strategy and portfolio construction. While there are many sources of uncertainty in drug development (e.g. are the patents defensible? Can the drug be manufactured at scale?), I will focus on two types in particular:
 
@@ -135,5 +138,3 @@ To estimate the magnitude of this scale premium I simulated 50 sets of portfolio
 This means that (with our parameters) between 0-10 drugs the returns to scale on expected value are large, but the scale premium flattens after that. The implication is that companies benefit from larger portfolios and should in theory have a greater willingness to pay to develop new drugs if their portfolios are already large (in this example a company with 20 expected launches in their portfolio should be willing to pay ~2x as much to develop a new drug as a company with only 2 expected launches).
 
 You can find the code I used for the simulations on github [here](https://github.com/Atelfo/drug-portfolio-simulations)
-
-#Pharma/Biotech #Articles
