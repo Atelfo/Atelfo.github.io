@@ -1,4 +1,8 @@
-# Drug Vectors: identifying and plotting similar drugs through PubMed abstract text
+---
+layout: post
+title:  "Drug Vectors: identifying and plotting similar drugs through PubMed abstract text"
+---
+
 #### t-SNE plot of approved drugs clusted by similarity, coloured by 1st level ATC code
 
 [![](https://atmusingblog.files.wordpress.com/2020/08/image.png?w=1024)](https://chart-studio.plotly.com/~atelfo/8/#/)
@@ -248,5 +252,3 @@ for i in range(len(df_tsne_drugwords.index)):
 ```
 
 _DrugBank's data is available under a [Creative Common’s Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/legalcode). PubMed's data is provided courtesy of the U.S. National Library of Medicine, the terms of use are located [here](https://www.nlm.nih.gov/databases/download/terms_and_conditions.html)_
-
-#Pharma/Biotech #Articles
