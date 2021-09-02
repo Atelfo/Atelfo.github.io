@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What is a "good" binding affinity for a drug?"
+title:  "What is a good binding affinity for a drug?"
 ---
 # What is a "good" binding affinity for a drug?
 If you've spent any time looking at biotech company presentations you'll likely have come across a slide like the below, from cancer drug developers Mirati, which nicely summarizes the activity, potency and selectivity of their [KRAS](https://en.wikipedia.org/wiki/KRAS) inhibitor MRTX-849[^1].
