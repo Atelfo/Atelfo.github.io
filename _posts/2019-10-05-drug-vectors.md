@@ -2,7 +2,7 @@
 layout: post
 title:  "Drug Vectors: identifying and plotting similar drugs through PubMed abstract text"
 ---
-
+# Drug Vectors: identifying and plotting similar drugs through PubMed abstract text
 #### t-SNE plot of approved drugs clusted by similarity, coloured by 1st level ATC code
 
 [![](https://atmusingblog.files.wordpress.com/2020/08/image.png?w=1024)](https://chart-studio.plotly.com/~atelfo/8/#/)
