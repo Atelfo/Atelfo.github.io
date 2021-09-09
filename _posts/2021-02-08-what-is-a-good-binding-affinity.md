@@ -26,7 +26,7 @@ Generally, binding affinity is measured in terms of the [dissociation constant](
 
 An equation for a general reversible chemical reaction at equilibrium involving two molecules, $A$ and $B$, and a complex of the two, $AB$ can be expressed as:
 
-$A_xB_y \rightleftharpoons xA + yB$
+$$A_xB_y \rightleftharpoons xA + yB$$
 
 The dissociation constant is then calculated by measuring the concentrations of the various molecules at equilibrium and plugging the values into the below formula
 
