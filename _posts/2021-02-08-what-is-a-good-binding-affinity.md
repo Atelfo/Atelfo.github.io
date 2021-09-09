@@ -141,22 +141,22 @@ Going from initial hit to a final drug often involves making trade-offs in the v
 
 I've picked a few additional metrics to cover in this post; selectivity, ligand efficiency and covalent binding.
 
-###### Selectivity:
+##### Selectivity:
 [Selectivity](https://en.wikipedia.org/wiki/Binding_selectivity), the propensity of a drug to bind one target over another, is a critical attribute of a drug to manage. Drugs that are "highly selective" have a high binding affinity to the primary target, and low binding affinity with undesirable target, and this is what Mirati is illustrating on the right hand side of their slide at the beginning of the post. It may be desirable for compounds to bind multiple targets if there are multiple pathways that contribute to a disease. Many approved drugs bind multiple related proteins, such as the [JAK inhibitors](https://en.wikipedia.org/wiki/Janus_kinase_inhibitor) and other pan-kinase inhibitors.
 
 Cranking up the binding affinity for the primary target as high as possible may also increase its propensity to bind "off-target", resulting in toxicity. As such, there can be a sort of "Goldilocks zone" for binding affinity that is influenced by the biological context in which the drug is intended to be used. A key way in which drug developers will test their drug candidate is by counterscreening against a library of targets associated with toxicity e.g. [hERG](https://en.wikipedia.org/wiki/HERG) ("antitargets") to check that their drug does not bind too well to these "antitargets".
 
-###### Ligand efficiency:
+##### Ligand efficiency:
 Another metric drug developers are likely to look at is [ligand efficiency](https://en.wikipedia.org/wiki/Ligand_efficiency), a measure of the binding affinity achieved for the molecular weight of the compound. Lower molecular weights are generally preferable, as bigger drugs are less soluble and harder to get into the target cells. Lipinski's famous "[Rule of five](https://en.wikipedia.org/wiki/Lipinski%27s_rule_of_five)" heuristic calls for a molecular weight of less that 500 [daltons](https://en.wikipedia.org/wiki/Dalton_(unit)), although lately more and more big oral drugs have come to market - oral [semaglutide](https://en.wikipedia.org/wiki/Semaglutide) being a particularly good example.
 
-###### Covalent binding
+##### Covalent binding
 Most drugs bind reversibly to their target. MRTX-849 is actually a [targeted covalent inhibitor](https://en.wikipedia.org/wiki/Targeted_covalent_inhibitors), meaning that it forms (potentially irreversible) chemical bonds with its target. Drug developers were historically reluctant to pursue covalent drugs systematically due to concerns over toxicity and off-target reactivity, but there has been something of a resurgence lately spurred by the success of drugs like [ibrutinib](https://en.wikipedia.org/wiki/Ibrutinib). To quote J. Singh again:[^15]
 
 >*Inhibitors that rely on covalent bonding dramatically favour the bound form, which leads to potencies and ligand efficiencies that are either exceptionally high or, for irreversible covalent interactions, even essentially infinite. Covalent bonding thus allows high potency to be routinely achieved in compounds of low molecular mass, along with all the beneficial pharmaceutical properties that are associated with small size*
 
 Calculation of affinity for covalent inhibitors is approached differently that for non-covalent inhibitors, as the reactions are not reversible. The $$IC_{50}$$ is theoretically of limited value because of the influence of reaction time on the value - however, Mirati has still chosen to report it.
 
-###### Other considerations
+##### Other considerations:
 
 When designing a drug that will bind competitively it is also important to consider the relative affinity of the natural ligand for the target versus the drug's, as strongly binding natural ligands will be harder to displace and may require especially high binding affinities. 
 
