@@ -2,6 +2,7 @@
 layout: default
 title: "Pharmaceutical portfolio strategy implications of base rate probability of launch and revenue distributions"
 ---
+# Pharmaceutical portfolio strategy implications of base rate probability of launch and revenue distributions
 
 In this post I want to explore how the [base rates](https://en.wikipedia.org/wiki/Base_rate) of probability of launch (by phase of development) and the distribution of pharmaceutical product revenues can inform business development strategy and portfolio construction. While there are many sources of uncertainty in drug development (e.g. are the patents defensible? Can the drug be manufactured at scale?), I will focus on two types in particular:
 
@@ -51,7 +52,7 @@ Assuming that there are roughly 1,800 drugs on the market (which is in line with
 ![[Pasted image 20201031223625.png]]
 *Source: https://www.fiercepharma.com/special-report/top-20-drugs-by-global-sales-2019*
 
-Next, estimating the distribution of cumulative lifetime product revenue. If we assume that cumulative lifetime revenue is roughly 10x annual revenue (A few years less than the ~13 year average time from launch to loss of exclusivity[^9]), we can then use $log(12 * e^5) = ~7.3$ as our new μ value. This new μ value seems to produce values at the high end of the distribution in line with real values (see comparative example below).
+Next, estimating the distribution of cumulative lifetime product revenue. If we assume that cumulative lifetime revenue is roughly 10x annual revenue (A few years less than the ~13 year average time from launch to loss of exclusivity[^9]), we can then use $$log(12 * e^5) = ~7.3$$ as our new μ value. This new μ value seems to produce values at the high end of the distribution in line with real values (see comparative example below).
 
 [^9]:https://www.statnews.com/wp-content/uploads/2017/01/Lifetime_Trends_in_Biopharmaceutical_Innovation.pdf
 
@@ -61,7 +62,7 @@ Next, estimating the distribution of cumulative lifetime product revenue. If we 
 
 These parameters imply an expected value of cumulative lifetime sales for a drug of ~$4.6 billion, by the lognormal distribution expected value formula: 
 
-$e^{(μ + σ^2/2)}$ 
+$$e^{(μ + σ^2/2)}$$ 
 
 which is broadly in line with published values[^10][^11]. Obviously these are imperfect estimates, but I am reasonably comfortable using them in the context of this post.
 
@@ -72,7 +73,7 @@ which is broadly in line with published values[^10][^11]. Obviously these are im
 
 Returning to our original scenario, and assuming that returns from pharmaceuticals do follow a lognormal distribution, we can estimate the expected value of a drug with the following formula:
 
-$-c(1 - P(launch)) + P(launch) * (e^{(μ + σ^2/2)} - c)$ 
+$$-c(1 - P(launch)) + P(launch) * (e^{(μ + σ^2/2)} - c)$$ 
 
 Where P(launch) is the probability of reaching the market and c is the cost associated with each drug (to acquire, license, develop, etc.). This is essentially the expected value of the binomial probability function combined with the expected value of a lognormal distribution. Assuming 0 value for drugs that fail to launch.
 
@@ -91,7 +92,7 @@ Launched | 100% | $4,560m
 
 Which implies that if you’re constructing an arbitrarily large portfolio of pipeline drugs, this is roughly the amount that should be invested in each drug of each phase to break even on the eventual returns (i.e. what value c should be in the formula above). The caveats being this simple analysis doesn’t account for inflation, discount rate, etc. nor does it account for possibility of spreading the investment over multiple phases (i.e. the cost to develop a drug to launch is not all paid upfront).
 
-However, it is important to note that the median of a lognormal distribution is given by $e^μ$, which is ~$1,480m with our parameters, which indicates that we expect the majority of launches to make substantially less than the expected value, as most of the value lies in the fat tail of the distribution. 
+However, it is important to note that the median of a lognormal distribution is given by $$e^μ$$, which is ~$1,480m with our parameters, which indicates that we expect the majority of launches to make substantially less than the expected value, as most of the value lies in the fat tail of the distribution. 
 
 #### Part 3 – Simulating portfolios:
 
@@ -115,7 +116,7 @@ To simulate portfolios, I first calculated the number of successful launches in 
 - With 100 phase 3 drugs  ~60% of portfolios lose money
 - With 1,000 phase 3 drugs  ~55% of portfolios lose money
 
-Clearly, the expected return of a portfolio is sensitive to the number of drugs in that portfolio, as having more drugs leads to more chances that the portfolio will include one of those rare products with massive revenues. In fact, it doesn’t matter whether you try to maximize number of drugs or probability of launch, as portfolios with equivalent values of $number of drugs * P(launch)$ have equivalent outcomes (this is in line with the expected value of a [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution)). To illustrate this, I simulated the outcomes for the three portfolio constructions below, all with an number of drugs * P(launch) value of 3.1:
+Clearly, the expected return of a portfolio is sensitive to the number of drugs in that portfolio, as having more drugs leads to more chances that the portfolio will include one of those rare products with massive revenues. In fact, it doesn’t matter whether you try to maximize number of drugs or probability of launch, as portfolios with equivalent values of $$number of drugs * P(launch)$$ have equivalent outcomes (this is in line with the expected value of a [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution)). To illustrate this, I simulated the outcomes for the three portfolio constructions below, all with an number of drugs * P(launch) value of 3.1:
 
 - 44 phase 1 drugs, each paying the expected value of $319m per drug
 - 21 phase 2 drugs, each paying the expected value of $684m per drug
@@ -125,7 +126,7 @@ For each of these portfolio variants, approximately 30% of simulated portfolios 
 
 Finally, I wanted to estimate a cost per drug where >=50% of portfolios would make money. For a single drug this is relatively straightforward, you solve for c in the below formula and pay that amount (i.e. for a single drug with 100% P(launch) you should pay the median of the lognormal distribution).
 
-$-c(1 - P(launch)) + P(launch) * (e^{μ} - c) = 0$ 
+$$-c(1 - P(launch)) + P(launch) * (e^{μ} - c) = 0$$ 
 
 However, the lognormal distribution is not stable[^13], which means that the distributions of the sums of sets of n > 1 samples drawn from the distribution will be different than the distribution of single samples (which is clear from the simulation results above). In our case, this property confers a “scale premium” to larger portfolios vs. smaller ones.
 
