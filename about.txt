@@ -1,6 +1,0 @@
----
-layout: default
----
-Life sciences consultant.
-
-Interested in medicine, molecular biology, neuroscience, philosophy, games, sci-fi, probability. I write to learn.
