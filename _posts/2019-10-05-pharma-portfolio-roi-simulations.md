@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Pharmaceutical portfolio strategy implications of base rate probability of launch and revenue distributions"
 ---
 # Pharmaceutical portfolio strategy implications of base rate probability of launch and revenue distributions

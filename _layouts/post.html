@@ -17,8 +17,9 @@
   </head>
   <body>
     <div class="wrapper">
-
-      {{ content }}
+		<h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+      
+	  {{ content }}
 
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
