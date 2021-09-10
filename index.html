@@ -1,20 +1,20 @@
 ---
 layout: default
 ---
-<header class="site-header" role="banner">
-  <div class="wrapper">
-    <a class="site-title" href="/blog/"></a>
-    <nav class="site-nav">
-      <div class="trigger">  
-          <a class="page-link" href="/blog/about/">About</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
 <div class="header">
   <h2>Writings</h2>
 </div>
+
+<div class="side-panel">
+            <div class="side-panel__contact">
+              <div class="side-panel__image" style="background-image: url(/graphics/../headshot.jpg)">
+              </div>
+              <div class="side-panel__body">
+                <h4>Alex Telford</h4>
+                <p>Biotech consultant</p>
+              </div>
+            </div>
+          </div>
 
 <ul>
   {% for post in site.posts %}
@@ -27,3 +27,4 @@ layout: default
 <footer>
 	<a href="https://twitter.com/Atelfo?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Atelfo</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </footer>            
+
