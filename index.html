@@ -5,24 +5,23 @@ layout: default
   <h2>Writings</h2>
 </div>
 
-<div class="side-panel">
-            <div class="side-panel__contact">
-              <div class="side-panel__image" style="background-image: url(/graphics/../headshot.jpg)">
-              </div>
-              <div class="side-panel__body">
-                <h4>Alex Telford</h4>
-                <p>Biotech consultant</p>
-              </div>
-            </div>
-          </div>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="row">
+  <div class="column">
+	<ul>
+	  {% for post in site.posts %}
+		<li>
+		  <a href="{{ post.url }}">{{ post.title }}</a>
+		</li>
+	  {% endfor %}
+	</ul>
+  </div>
+  <div class="column" style="background-color:#eeeeee;">
+    <h2>Alex Telford</h2>
+    <p>Biotech consultant</p>
+  </div>
+</div>
+
 
 <footer>
 	<a href="https://twitter.com/Atelfo?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Atelfo</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
