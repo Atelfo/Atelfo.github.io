@@ -5,22 +5,31 @@ layout: default
   <h2>Writings</h2>
 </div>
 
-
-<div class="row">
-  <div class="column">
-	<ul>
-	  {% for post in site.posts %}
-		<li>
-		  <a href="{{ post.url }}">{{ post.title }}</a>
-		</li>
-	  {% endfor %}
-	</ul>
+<div class="sidebar sticky">
+ <div itemscope="" itemtype="http://schema.org/Person">
   </div>
-  <div class="column" style="background-color:#eeeeee;">
-    <h2>Alex Telford</h2>
-    <p>Biotech consultant</p>
+  <div class="author__content">
+    <h3 class="author__name">Alex Telford</h3>
+    <p class="author__bio">Biotech consultant</p>
+  </div>
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Zurich, CH</li>
+        <li><a href="https://www.linkedin.com/in/aakashjapi"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
+    </ul>
   </div>
 </div>
+</div>
+
+
+<ul>
+  {% for post in site.posts %}
+	<li>
+	  <a href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+  {% endfor %}
+</ul>
 
 
 <footer>
