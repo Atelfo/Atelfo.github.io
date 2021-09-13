@@ -33,11 +33,11 @@ The total estimated size of the pharmaceutical market for various European regio
 - Europe as a whole: 
 	- $241 billion (Efpia using IQVIA data, 2016)[^2]
 - The 27 member states of the European union: 
-	- $195 billion ([[#^1ef90d|estimation from World Bank health expenditure data]])
+	- $195 billion (estimation from World Bank health expenditure data)
 - The EU5 (Germany, France, UK, Spain, Italy): 
 	- $148 billion (Efpia using IQVIA data, 2016)[^2]
 	- $159 billion (Statista, 2018)[^11]
-	- $168 billion ([[#^1ef90d|estimation from World Bank health expenditure data]])
+	- $168 billion (estimation from World Bank health expenditure data)
 	- $171 billion (IQVIA, 2019)[^3]
 	- $178 billion (IQVIA, 2018)[^12]
 	- $218 billion (OECD, 2018)[^6]
@@ -56,14 +56,14 @@ This table from an Efpia report below (which uses IQVIA data) shows the breakdow
 #### Chinese pharmaceutical market
 The Chinese pharmaceutical market has been growing rapidly in recent years and is now the second largest market for pharmaceuticals, after the US.
 
-IQVIA estimated the total value of the Chinese market to be $137 billion in 2018[^12], estimates from other sources are generally in the same range plus or minus $20 billion. IQVIA's lower estimate of $94.9 billion in the table above includes the hospital market only[^3]. However, there are outlier estimates such as one from Statista[^11] with an estimate of $232 billion in 2018 and [[#^1ef90d|estimation from World Bank health expenditure data]] which gives an estimate of $86 billion.
+IQVIA estimated the total value of the Chinese market to be $137 billion in 2018[^12], estimates from other sources are generally in the same range plus or minus $20 billion. IQVIA's lower estimate of $94.9 billion in the table above includes the hospital market only[^3]. However, there are outlier estimates such as one from Statista[^11] with an estimate of $232 billion in 2018 and estimation from World Bank health expenditure data which gives an estimate of $86 billion.
 
 #### Japanese pharmaceutical market
 Japan has historically been the most important Asian market for pharmaceuticals and is considered a member of the 7 "major markets" along with the US and EU5, although this is changing as China recently eclipsed Japan as the 2nd largest market overall. IQVIA variously estimates a total market size of ~\$79 billion in 2019[^3] or $86 billion in 2018[^12], Statista[^11] $94.6 billion in 2018 and the OECD[^6] ~\$101 billion in 2017.
 
 #### Latin American pharmaceutical market
 The below graph from Statista[^9] shows 2019 market size estimates for major Latin American countries which together represent ~91% of the total population of [Latin America](https://en.wikipedia.org/wiki/Latin_America). The sum of the values in the below graph is \$45.12 billion, which if we assume accounts for 91% of the Latin American market (based on population) places the value of the total Latin American market at ~$50 billion in 2019 (approximately 4% of the worldwide pharmaceutical market, in concordance with Efpia estimates[^2] and [[#^1ef90d|estimation from World Bank health expenditure data]]).
-![[Pasted image 20210513161105.png]]
+![](/assets/Pasted image 20210513161105.png)
 OECD data puts the size of the Mexican pharmaceutical market in 2018 at ~\$32 billion and the Colombian market at ~\$9 billion in 2017, however these are likely overestimates considering the above data[^6]
 
 #### African pharmaceutical market
@@ -74,7 +74,7 @@ Government sources report the size of the Australian pharmaceutical market to be
 
 ### How correlated is market size with healthcare expenditure?
 
-The below plot uses healthcare expenditure data from the World Bank[^15] plotted against the available pharmaceutical market size data described above (US and China are extreme outliers and so are not shown). The correlation of the two variables is high ($r^2$ = 0.92), implying that 12.3% of healthcare expenditure is a reasonably good estimator of the size of the pharmaceutical market in a given country.
+The below plot uses healthcare expenditure data from the World Bank[^15] plotted against the available pharmaceutical market size data described above (US and China are extreme outliers and so are not shown). The correlation of the two variables is high ($$r^2$$ = 0.92), implying that 12.3% of healthcare expenditure is a reasonably good estimator of the size of the pharmaceutical market in a given country.
 
 ![](/assets/Pasted image 20210515140722.png)
 
