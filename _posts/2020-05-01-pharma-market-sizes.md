@@ -3,18 +3,18 @@ layout: post
 title:  "Pharmaceutical market sizes by countries and regions"
 ---
 # Pharmaceutical market sizes by countries and regions
-#### Worldwide
+### Worldwide
 EvaluatePharma estimates the size of the worldwide pharmaceutical market in 2019 to be $844 billion, of which 9.4% is generics[^1], which is broadly in agreement with a 2018 report from Efpia which estimated the worldwide market size to be $853 billion in 2017[^2]. By comparison, IQVIA estimates the total value of the worldwide pharmaceutical market in 2020 to be ~\$1.27 trillion[^8] and the value of the top 10 markets by total sales to be $893 billion in 2019 (see table below)[^3].
 
-![[Pasted image 20210510221039.png]]
+![](/assets/Pasted image 20210510221039.png)
 
 This graphic from Efpia shows their estimate of the contribution to pharmaceutical revenue by region[^2]. 
-![[Pasted image 20210513170124.png]]
+![](/assets/Pasted image 20210513170124.png)
 
 Where I was able to find publicly available and credible information detailing the size of the pharmaceutical market in a specific region I have included it in the below sections.
 
-#### North American pharmaceutical market
-###### US pharmaceutical market
+### North American pharmaceutical market
+#### US pharmaceutical market
 
 The US is by far the most important single pharmaceutical market in the world for drug developers, with a total size generally estimated to be in the range of $400-500 billion annually. Both EvaluatePharma[^5] and OECD[^6] data estimate ~\$400 billion in 2018/2019, with IQVIA[^3][^7] estimating ~\$500 billion in 2019. 
 
@@ -24,10 +24,10 @@ Overall, the US accounts for 40-50% of total pharmaceutical product revenue (spe
 
 Additionally, the US often represents a higher share of revenue (~60%) for new launches (i.e. launches in past 5 years)[^2], in part because time to reimbursement and revenue is slower in many other markets and global launches are generally sequential rather than simultaneous.
 
-###### Canadian pharmaceutical market
+#### Canadian pharmaceutical market
 Government sources report the size of the Canadian pharmaceutical market to be approximately $25 billion as of 2019 (30 billion Canadian dollars)[^13]. This is broad agreement with IQVIA's[^2] estimate of $22.6 billion in 2019 and the OECD[^6] estimate of $33 billion in 2019.
 
-#### European pharmaceutical market
+### European pharmaceutical market
 
 The total estimated size of the pharmaceutical market for various European regions is given below:
 - Europe as a whole: 
@@ -49,16 +49,16 @@ The total estimated size of the pharmaceutical market for various European regio
 	- $13.5 billion (OECD, 2018 - not including Luxembourg)[^6]
 
 This table from an Efpia report below (which uses IQVIA data) shows the breakdown of estimated pharmaceutical market sizes in European countries in 2016[^2]. From this data it can be derived that the EU5 have a market value of €121,505 billion in total, ~71% of the total revenue from EU member states plus the UK and ~61% of the total revenue of all the countries represented in the table.
-![[Pasted image 20210510220748.png]]
+![](/assets/Pasted image 20210510220748.png)
 
-#### Asian pharmaceutical market
+### Asian pharmaceutical market
 
-###### Chinese pharmaceutical market
+#### Chinese pharmaceutical market
 The Chinese pharmaceutical market has been growing rapidly in recent years and is now the second largest market for pharmaceuticals, after the US.
 
 IQVIA estimated the total value of the Chinese market to be $137 billion in 2018[^12], estimates from other sources are generally in the same range plus or minus $20 billion. IQVIA's lower estimate of $94.9 billion in the table above includes the hospital market only[^3]. However, there are outlier estimates such as one from Statista[^11] with an estimate of $232 billion in 2018 and [[#^1ef90d|estimation from World Bank health expenditure data]] which gives an estimate of $86 billion.
 
-###### Japanese pharmaceutical market
+#### Japanese pharmaceutical market
 Japan has historically been the most important Asian market for pharmaceuticals and is considered a member of the 7 "major markets" along with the US and EU5, although this is changing as China recently eclipsed Japan as the 2nd largest market overall. IQVIA variously estimates a total market size of ~\$79 billion in 2019[^3] or $86 billion in 2018[^12], Statista[^11] $94.6 billion in 2018 and the OECD[^6] ~\$101 billion in 2017.
 
 #### Latin American pharmaceutical market
@@ -72,13 +72,11 @@ Data on the African pharmaceutical market is limited, but a 2015 McKinsey report
 #### Australian market size
 Government sources report the size of the Australian pharmaceutical market to be $17.4 billion (22.3 Australian dollars) as of 2018[^16]. By comparison, the OECD[^6] estimates a total market size of $16.5 billion in 2017.
 
-#### How correlated is market size with healthcare expenditure?
-
-^1ef90d
+### How correlated is market size with healthcare expenditure?
 
 The below plot uses healthcare expenditure data from the World Bank[^15] plotted against the available pharmaceutical market size data described above (US and China are extreme outliers and so are not shown). The correlation of the two variables is high ($r^2$ = 0.92), implying that 12.3% of healthcare expenditure is a reasonably good estimator of the size of the pharmaceutical market in a given country.
 
-![[Pasted image 20210515140722.png]]
+![](/assets/Pasted image 20210515140722.png)
 
 #### Summary table: approximate percentage contribution of specific regions to overall total pharmaceutical market
 
@@ -100,10 +98,12 @@ Rest of Europe (incl. Russia, Turkey)* | ~5% | ~$60 billion
 Rest of Asia (incl. Korea, Singapore) | ~3% | ~$35 billion
 
 
-*[[#^1ef90d|No high quality data source identified, using rough estimate and/or values based on World Bank healthcare expenditure data]]
+*No high quality data source identified, using rough estimate and/or values based on World Bank healthcare expenditure data
 
 
 > Last updated: May 2021
+
+----
 
 [^1]: World Preview 2019, Outlook to 2024 https://info.evaluate.com/rs/607-YGS-364/images/EvaluatePharma_World_Preview_2019.pdf
 [^2]: The Pharmaceutical Industry in Figures https://www.efpia.eu/media/361960/efpia-pharmafigures2018_v07-hq.pdf

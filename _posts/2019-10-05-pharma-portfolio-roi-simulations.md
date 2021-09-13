@@ -6,7 +6,7 @@ title: "Pharmaceutical portfolio strategy implications of base rate probability 
 
 In this post I want to explore how the [base rates](https://en.wikipedia.org/wiki/Base_rate) of probability of launch (by phase of development) and the distribution of pharmaceutical product revenues can inform business development strategy and portfolio construction. While there are many sources of uncertainty in drug development (e.g. are the patents defensible? Can the drug be manufactured at scale?), I will focus on two types in particular:
 
-- Clinical uncertainty: Referring to the uncertainty that a drug will demonstrate sufficient efficacy and safety to be approved by the FDA/EMA/your regulator of choice. Only 7% of new molecular entities that enter phase 1 clinical trials reach the market[^1] most often due to unexpected toxicities or lack of efficacy. Many of these failures are difficult to foresee; a result of insufficient understanding of fundamental biology, poor translatability from animal models to humans, off-target effects, etc.
+- Clinical (and regulatory) uncertainty: Referring to the uncertainty that a drug will demonstrate sufficient efficacy and safety to be approved by the FDA/EMA/your regulator of choice. Only 7% of new molecular entities that enter phase 1 clinical trials reach the market[^1] most often due to unexpected toxicities or lack of efficacy. Many of these failures are difficult to foresee; a result of insufficient understanding of fundamental biology, poor translatability from animal models to humans, off-target effects, etc.
 
 [^1]: https://media.nature.com/original/magazine-assets/d41573-019-00074-z/d41573-019-00074-z.pdf
 
@@ -22,11 +22,11 @@ Choosing which drugs to invest in is a classic [multi-armed bandit problem](http
 
 An external party looking to license or acquire a promising drug can balance these risks by choosing to pay a relatively low amount to acquire an drug about which little is known or to wait and let others invest in information gathering, meaning they may have to pay more to acquire the drug later but with a reduced uncertainty and risk of outright failure. Big pharma likes to take the latter strategy and spend large sums of money to acquire proven late stage drugs (could be referred to as an “exploit” strategy using the multi-armed bandit terminology). While some companies like Celgene are well-known for taking a so-called “string-of-pearls” approach by doing a large number of small deals (an “explore” strategy).
 
-![[Pasted image 20201031223550.png]]
+![](/assets/Pasted image 20201031223550.png)
 
 As illustrated by the graph above, the cost of developing a drug is relatively bounded, but the potential return on investment in any one drug is extreme with the top selling drugs recouping many multiples of their initial development expenses. In this sense, developing a drug is conceptually like buying a “lottery ticket”. It’s obvious that to maximize the potential opportunity, as many drugs should be developed as possible. The strategy of maximizing exposure to upside potential with call-option-like bets (fixed price, unlimited potential return) is one that Nassim Nicholas Taleb talks about a lot in Antifragile. But is this a better strategy than focused bets on expensive late-stage drugs? I believe a look at base rates and some simple modelling can be informative here.
 
-#### Portfolio strategy takeaways
+### Portfolio strategy takeaways
 
 In the “Appendix” of this post I walk through the methodology and results of the simulations I ran to explore these questions, but if you don’t want to read all that my takeaways for portfolio strategy from that analysis are below:
 
@@ -37,7 +37,7 @@ In the “Appendix” of this post I walk through the methodology and results of
 
 Of course, there are many other qualitative factors that are important in the commercial success of a drug (e.g. sales force expenditure, efficacy/safety, unmet need, competitors, etc.) that were not discussed in this post. But I think there is value in considering the implications of an aggregated statistical view before layering on these additional considerations.
 
-## Appendix
+### Appendix
 
 #### Part 1 – Estimating parameters for portfolio simulation:
 
@@ -48,16 +48,16 @@ Assuming that there are roughly 1,800 drugs on the market (which is in line with
 [^7]:https://pubmed.ncbi.nlm.nih.gov/24680947/
 [^8]:https://info.evaluate.com/rs/607-YGS-364/images/EvaluatePharma_World_Preview_2019.pdf
 
-![[Pasted image 20201031223615.png]]
-![[Pasted image 20201031223625.png]]
+![](/assets/Pasted image 20201031223615.png)
+![](/assets/Pasted image 20201031223625.png)
 *Source: https://www.fiercepharma.com/special-report/top-20-drugs-by-global-sales-2019*
 
 Next, estimating the distribution of cumulative lifetime product revenue. If we assume that cumulative lifetime revenue is roughly 10x annual revenue (A few years less than the ~13 year average time from launch to loss of exclusivity[^9]), we can then use $$log(12 * e^5) = ~7.3$$ as our new μ value. This new μ value seems to produce values at the high end of the distribution in line with real values (see comparative example below).
 
 [^9]:https://www.statnews.com/wp-content/uploads/2017/01/Lifetime_Trends_in_Biopharmaceutical_Innovation.pdf
 
-![[Pasted image 20201031223641.png]]
-![[Pasted image 20201031223645.png]]
+![](/assets/Pasted image 20201031223641.png)
+![](/assets/Pasted image 20201031223645.png)
 *Source: https://www.statista.com/statistics/1089322/top-drugs-by-lifetime-sales-globally/*
 
 These parameters imply an expected value of cumulative lifetime sales for a drug of ~$4.6 billion, by the lognormal distribution expected value formula: 
@@ -134,7 +134,7 @@ However, the lognormal distribution is not stable[^13], which means that the dis
 
 To estimate the magnitude of this scale premium I simulated 50 sets of portfolios (2,000 simulated portfolios per set) ranging from 1 to 50 drugs each with 100% P(launch) and plotted the median portfolio value divided by the number of drugs in each portfolio (graph below, the line of best fit is a logistic function, x axis is the number of drugs per portfolio, y axis is the median portfolio value divided by number of drugs per portfolio).
 
-![[Pasted image 20201031224100.png]]
+![](/assets/Pasted image 20201031224100.png)
 
 This means that (with our parameters) between 0-10 drugs the returns to scale on expected value are large, but the scale premium flattens after that. The implication is that companies benefit from larger portfolios and should in theory have a greater willingness to pay to develop new drugs if their portfolios are already large (in this example a company with 20 expected launches in their portfolio should be willing to pay ~2x as much to develop a new drug as a company with only 2 expected launches).
 

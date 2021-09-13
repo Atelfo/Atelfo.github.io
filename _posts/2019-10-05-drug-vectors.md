@@ -3,9 +3,9 @@ layout: post
 title:  "Drug Vectors: identifying and plotting similar drugs through PubMed abstract text"
 ---
 # Drug Vectors: identifying and plotting similar drugs through PubMed abstract text
-#### t-SNE plot of approved drugs clusted by similarity, coloured by 1st level ATC code
+### t-SNE plot of approved drugs clusted by similarity, coloured by 1st level ATC code
 
-[![](https://atmusingblog.files.wordpress.com/2020/08/image.png?w=1024)](https://chart-studio.plotly.com/~atelfo/8/#/)
+[![](](https://chart-studio.plotly.com/~atelfo/8/#/)
 
 _On the t-SNE plot above, **each dot is an individual drug** coloured by its [1st level (i.e. anatomical main group) ATC code](https://www.whocc.no/atc/structure_and_principles/) (extracted from DrugBank, light grey means the ATC code was missing from the database) which provides an indication of the bodily system that the drug acts upon. The coordinates of each drug are a 2-dimensional representation of the words used in the PubMed corpus of titles and abstracts of papers that mention each drug (see bottom of the post for code and details on methodology), **similar drugs should be located close together on the plot**. Unfortunately, Obsidian does not support plot.ly embedding, but clicking on the image will open the interactive version of the visual. If you hover over each dot you should see the drug name and a brief description (the first sentence of the description extracted from DrugBank)_
 
