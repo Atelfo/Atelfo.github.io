@@ -50,6 +50,7 @@ Assuming that there are roughly 1,800 drugs on the market (which is in line with
 
 ![](/assets/Pasted image 20201031223615.png)
 ![](/assets/Pasted image 20201031223625.png)
+
 *Source: https://www.fiercepharma.com/special-report/top-20-drugs-by-global-sales-2019*
 
 Next, estimating the distribution of cumulative lifetime product revenue. If we assume that cumulative lifetime revenue is roughly 10x annual revenue (A few years less than the ~13 year average time from launch to loss of exclusivity[^9]), we can then use $$log(12 * e^5) = ~7.3$$ as our new μ value. This new μ value seems to produce values at the high end of the distribution in line with real values (see comparative example below).
@@ -58,6 +59,7 @@ Next, estimating the distribution of cumulative lifetime product revenue. If we 
 
 ![](/assets/Pasted image 20201031223641.png)
 ![](/assets/Pasted image 20201031223645.png)
+
 *Source: https://www.statista.com/statistics/1089322/top-drugs-by-lifetime-sales-globally/*
 
 These parameters imply an expected value of cumulative lifetime sales for a drug of ~$4.6 billion, by the lognormal distribution expected value formula: 
@@ -130,7 +132,7 @@ $$-c(1 - P(launch)) + P(launch) * (e^{μ} - c) = 0$$
 
 However, the lognormal distribution is not stable[^13], which means that the distributions of the sums of sets of n > 1 samples drawn from the distribution will be different than the distribution of single samples (which is clear from the simulation results above). In our case, this property confers a “scale premium” to larger portfolios vs. smaller ones.
 
-[^13]: https://en.wikipedia.org/wiki/Stable_distribution
+
 
 To estimate the magnitude of this scale premium I simulated 50 sets of portfolios (2,000 simulated portfolios per set) ranging from 1 to 50 drugs each with 100% P(launch) and plotted the median portfolio value divided by the number of drugs in each portfolio (graph below, the line of best fit is a logistic function, x axis is the number of drugs per portfolio, y axis is the median portfolio value divided by number of drugs per portfolio).
 
@@ -139,3 +141,7 @@ To estimate the magnitude of this scale premium I simulated 50 sets of portfolio
 This means that (with our parameters) between 0-10 drugs the returns to scale on expected value are large, but the scale premium flattens after that. The implication is that companies benefit from larger portfolios and should in theory have a greater willingness to pay to develop new drugs if their portfolios are already large (in this example a company with 20 expected launches in their portfolio should be willing to pay ~2x as much to develop a new drug as a company with only 2 expected launches).
 
 You can find the code I used for the simulations on github [here](https://github.com/Atelfo/drug-portfolio-simulations)
+
+---- 
+
+[^13]: https://en.wikipedia.org/wiki/Stable_distribution
