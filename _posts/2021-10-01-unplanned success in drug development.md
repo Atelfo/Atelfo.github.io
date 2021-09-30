@@ -22,7 +22,9 @@ However, as David Shaywitz says in the (highly recommended) article linked below
 >*"The success of pembro was anything but inevitable. It was discovered accidentally, by biotech scientists looking for drugs that would tamp down the immune response in patients with autoimmune disease, and would stimulate, not block, PD1. Even after a potent PD1 inhibitor was identified and recognized as a potential cancer drug, the research program had to fight for funding through two mergers and acquisitions. After the program finally wound up at Merck, in 2009, it was considered such a low priority that it was shut down and placed on the out-license list. A term sheet (valuing the program at next to nothing) was reportedly in place, but pulled at the last minute, as promising results from competitor Bristol-Myers Squibb (BMS) motivated a reconsideration of the mechanism."*
 
 Source: [The Startling History Behind Merck's New Cancer Blockbuster](https://www.forbes.com/sites/davidshaywitz/2017/07/26/the-startling-history-behind-mercks-new-cancer-blockbuster/?sh=68f5f38a948d)
+
 ---
+
 ### Revlimid (lenalidomide) for multiple myeloma (MM)
 #### Global product revenue: $12,153m (2020)
 #### Companies involved: Celgene
@@ -35,7 +37,9 @@ After seeing the results of Dr. Barlogie's trial, Celgene funded additional tria
 However, the story of these compounds doesn't end there. Despite decades of use, the unique mechanism of action of thalidomide analogs as a recruiter of E3 ubiquitin ligase and driver of proteosomal degradation was only recently elucidated[^20]. This discovery has inspired a new and promising class of [targeted protein degraders](https://en.wikipedia.org/wiki/Proteolysis_targeting_chimera) that may allow the drugging of previously "undruggable" targets in the near future.
 
 Source: [The revival of thalidomide: From tragedy to therapy](https://bcmj.org/special-feature/revival-thalidomide-tragedy-therapy), [](https://www.statnews.com/2019/01/22/celgene-legacy-chutzpah-science-drug-pricing/)
+
 ---
+
 ### Ibrance (palbociclib) for breast cancer
 #### Global product revenue: $5,392m (2020)
 #### Companies involved: Warner-Lambert/Parke-Davis, Pfizer
@@ -44,7 +48,9 @@ Palbociclib, known internally as PD-0332991, was synthesized internally at Parke
 After a series of mergers in which Pfizer acquired Warner-Lambert/Parke-Davis (primarily for Lipitor) and Pharmacia, palbociclib was lost in the post-acquisition strategic reprioritizations and site closures. In 2004, Pfizer ran a phase 1 trial of palbociclib but didn't conduct a follow-on phase 2, citing a lack of antitumour effect. Pfizer finally started clinical development proper with a phase 2 in 2009, after the UCLA oncologists Dennis Slamon and Richard Finn reported promising results with palbociclib in a small investigator initiated trial enrolling 12 patients with ER-positive metastatic breast cancer. Following compelling data from Pfizer's phase 2 trial, Ibrance received an accelerated FDA approval in early 2015[^16].
 
 Source: [The cancer drug that almost wasn't](https://meyercancer.weill.cornell.edu/news/2001-08-22/cancer-drug-almost-wasnt)
+
 ---
+
 ### Soliris (eculizumab) for paroxysmal nocturnal hemoglobinuria (PNH)
 ####  Global product revenue: $4,064m (2020)
 #### Companies involved: Alexion
@@ -53,7 +59,9 @@ Alexion was founded in 1992 to develop [C5 complement](https://en.wikipedia.org/
 2003 to 2004 was a pivotal period for the company, with 5G1.1-SC failing key trials in coronary artery bypass graft surgery[^3] and eculizumab disappointing in rheumatoid arthritis and membranous nephritis[^4]. Facing bankruptcy, Alexion pivoted to PNH after promising results from an 11 patient open label study[^12], which eventually led to the FDA approval of Soliris in 2007 and initiated Alexion's rare disease focused business model. Notably, it was the advocacy of the external hematologist Dr. Peter Hillmen and the Alexion scientist Russell Rother which persuaded the company to run trials of eculizumab in PNH, despite skepticism from the CEO that the PNH market would be big enough to secure a return on investment[^13].
 
 Sources: Alexion SEC filings, [How A $440,000 Drug Is Turning Alexion Into Biotech's New Innovation Powerhouse](https://www.forbes.com/sites/matthewherper/2012/09/05/how-a-440000-drug-is-turning-alexion-into-biotechs-new-innovation-powerhouse/?sh=3ac6486325e1)
+
 ---
+
 #### Velcade (bortezomib) for multiple myeloma (MM)
 #### Peak annual global product revenue: $3,103m (2014)
 ##### Companies involved: ProScript, LeukoSite, Millennium, Takeda
@@ -62,14 +70,18 @@ Velcade (PS-341) was initially developed for muscle wasting diseases by the smal
 When Millennium pharmaceuticals acquired LeukoSite in late 1999 for their lead program CamPath, it also incidentally gained control of PS-341. The former ProScript chemist Julian Adams and Dr. Kenneth Anderson of Dana-Farber were able to convince Millenium to invest in trials of PS-341 in multiple myeloma, which generated impressive early results and enabled the rapid FDA approval of Velcade in 2003. With Millennium's inhouse discovery platform failing to generate important marketed drugs of its own[^6], Velcade became the company's most important product and the primary reason for its eventual acquisition by Takeda for $8.8bn in 2008[^14].
 
 Source(s): [The Velcade story](http://archive.boston.com/business/healthcare/articles/2007/05/06/the_velcade_story/), [The Serendipity of Drug Development](https://www.novateur.ca/publications/the-serendipity-of-drug-development), [Translational Research in the Development of Bortezomib: A Core Model](https://www.discoverymedicine.com/Ibis-Sanchez-serrano/2009/07/26/translational-research-in-the-development-of-bortezomib-a-core-model/)
+
 ---
+
 ### Avonex (interferon beta-1a) for multiple sclerosis (MS)
 #### Peak annual global product revenue: $3,013m (2014)
 #### Companies involved: Biogen
 In the early 1990's Biogen had two lead programs in late stage development: its novel antithrombotic Hirulog for cardiovascular diseases, and interferon beta-1a for hepatitis B. Meanwhile, the [NIH](https://en.wikipedia.org/wiki/National_Institutes_of_Health) was sponsoring a small trial for Biogen's interferon beta-1a in MS that was *"considered a long shot by all concerned"*[^5]. After data from the lead indications disappointed, Biogen went all-in on trials of interferon beta-1a in MS, the results of which successfully demonstrated a slowing of MS progression, and positioned Biogen's drug favourably against the first-to-market Betaseron (US launch in 1993). Avonex launched in the US in 1996, founding Biogen's massively successful MS franchise and establishing a company-wide focus on neurological conditions that persists to this day.
 
 Source: [The Rocky Road from Startup to Big-Time Player: Biogen’s Triumph Against the Odds](https://www.strategy-business.com/article/18003)
+
 ---
+
 ### Viagra (sildenafil) for erectile dysfunction (ED)
 #### Peak annual global product revenue: $2,051m (2012)
 #### Companies involved: Pfizer
@@ -80,7 +92,9 @@ The story of Viagra is fairly well-known, but illustrative nonetheless. Original
 Although initially skeptical, Pfizer did invest in trials of sildenafil for male impotence in 1993. In 1998 Viagra became the first FDA approved drug to treat erectile dysfunction, and Pfizer had essentially created a new indication.
 
 Sources: [The Little Blue Pill: An Oral History of Viagra](https://www.bloomberg.com/news/features/2017-12-11/the-little-blue-pill-an-oral-history-of-viagra)
+
 ---
+
 ### Kalydeco (ivacaftor) for cystic fibrosis (CF)
 #### Peak annual global product revenue: $1,008m (2018)
 #### Companies involved: Aurora, Vertex
@@ -93,7 +107,6 @@ While the company was focused on Incivek, a few passionate holdouts from Aurora 
 Source: [The Antidote](https://www.amazon.com/Antidote-Inside-World-New-Pharma/dp/1451655665)
 
 ----
-
 
 [^1]: https://pubmed.ncbi.nlm.nih.gov/17117615/
 [^2]: https://www.sec.gov/Archives/edgar/data/899866/0000950110-97-000149.txt
