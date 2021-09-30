@@ -62,9 +62,9 @@ Sources: Alexion SEC filings, [How A $440,000 Drug Is Turning Alexion Into Biote
 
 ---
 
-#### Velcade (bortezomib) for multiple myeloma (MM)
+### Velcade (bortezomib) for multiple myeloma (MM)
 #### Peak annual global product revenue: $3,103m (2014)
-##### Companies involved: ProScript, LeukoSite, Millennium, Takeda
+#### Companies involved: ProScript, LeukoSite, Millennium, Takeda
 Velcade (PS-341) was initially developed for muscle wasting diseases by the small biotech ProScript. After the sudden death of the venture capitalist who was funding their trials in 1997, ProScript lost access to capital and struggled to raise additional funds, as most investors considered the drug to be too risky a prospect. Without the ability to fund further trials, ProScript was eventually sold off to LeukoSite for only $2.7m.
 
 When Millennium pharmaceuticals acquired LeukoSite in late 1999 for their lead program CamPath, it also incidentally gained control of PS-341. The former ProScript chemist Julian Adams and Dr. Kenneth Anderson of Dana-Farber were able to convince Millenium to invest in trials of PS-341 in multiple myeloma, which generated impressive early results and enabled the rapid FDA approval of Velcade in 2003. With Millennium's inhouse discovery platform failing to generate important marketed drugs of its own[^6], Velcade became the company's most important product and the primary reason for its eventual acquisition by Takeda for $8.8bn in 2008[^14].
