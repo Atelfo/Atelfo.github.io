@@ -8,7 +8,7 @@ title:  "Invisible cities: A curated collection of GauGAN2 generated citiscapes 
 
 AI generated art is something I find fascinating; there's real potential for it to bring us to a post-scarcity state of art commoditization. An impressive recent development in this space is NVIDIA's recently  released web-based tool "GauGAN2" that can generate landscapes from text, sketch or image input using a generative adversarial network (publically available [here](http://gaugan.org/gaugan2/)). 
 
-I decided to test GauGAN2 by feeding it text sequences from Italo Calvino's Invisible Cities, which has a nice mix of city descriptions that range from concrete and specific to highly abstract or conceptual. I ended up liking the results enough to compile them into a PDF, which I've linked below (an example of one of the 55 cities is at the top of this post).
+I decided to test GauGAN2 by feeding it text sequences from Italo Calvino's Invisible Cities, which has a nice mix of city descriptions that range from concrete and specific to highly abstract or conceptual. I ended up liking the results enough to compile them into a collection, which I've linked below (an example of one of the 55 cities is at the top of this post).
 
 [Click here to open a PDF of GauGAN2 images for all 55 cities](https://atelfo.github.io/assets/GauGAN2%20invisible%20cities.pdf)
 
