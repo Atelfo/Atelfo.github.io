@@ -10,7 +10,7 @@ AI generated art is something I find fascinating; there's real potential for it 
 
 I decided to test GauGAN2 by feeding it text sequences from Italo Calvino's Invisible Cities, which has a nice mix of city descriptions that range from concrete and specific to highly abstract or conceptual. I ended up liking the results enough to compile them into a PDF, which I've linked below (an example of one of the 55 cities is at the top of this post).
 
-https://atelfo.github.io/assets/GauGAN2%20invisible%20cities.pdf
+[Click here to open a PDF of GauGAN2 images for all 55 cities](https://atelfo.github.io/assets/GauGAN2%20invisible%20cities.pdf)
 
 I had to sift through a lot of unappealing outputs to make my selections (I considered roughly 10% of outputs to be "good"), and there were certain prompts which did not generate any results I was particularly happy with (e.g. Andria, Perinthia, Olinda, Baucis and Zobeide). However, I found some of the results to be genuinely appealing, evocative and artful (especially Maurilia, Sophronia, Aglaura, Octavia and Leonia). 
 
