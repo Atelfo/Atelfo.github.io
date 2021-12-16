@@ -4,13 +4,13 @@ title:  "Invisible cities: A curated collection of GauGAN2 generated citiscapes 
 ---
 # Invisible cities: A curated collection of GauGAN2 generated citiscapes generated with text inputs from Italo Calvino's novel
 
-![](/assets/Slide23.png)
+![](/assets/Slide23.PNG)
 
 AI generated art is something I find fascinating; there's real potential for it to bring us to a post-scarcity state of art commoditization. An impressive recent development in this space is NVIDIA's recently  released web-based tool "GauGAN2" that can generate landscapes from text, sketch or image input using a generative adversarial network (publically available [here](http://gaugan.org/gaugan2/)). 
 
 I decided to test GauGAN2 by feeding it text sequences from Italo Calvino's Invisible Cities, which has a nice mix of city descriptions that range from concrete and specific to highly abstract or conceptual. I ended up liking the results enough to compile them into a PDF, which I've linked below (an example of one of the 55 cities is at the top of this post).
 
-![](/assets/GauGAN2 invisible cities.pdf)
+https://atelfo.github.io/assets/GauGAN2%20invisible%20cities.pdf
 
 I had to sift through a lot of unappealing outputs to make my selections (I considered roughly 10% of outputs to be "good"), and there were certain prompts which did not generate any results I was particularly happy with (e.g. Andria, Perinthia, Olinda, Baucis and Zobeide). However, I found some of the results to be genuinely appealing, evocative and artful (especially Maurilia, Sophronia, Aglaura, Octavia and Leonia). 
 
