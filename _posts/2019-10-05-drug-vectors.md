@@ -5,7 +5,7 @@ title:  "Drug Vectors: identifying and plotting similar drugs through PubMed abs
 # Drug Vectors: identifying and plotting similar drugs through PubMed abstract text
 ### t-SNE plot of approved drugs clusted by similarity, coloured by 1st level ATC code
 
-{% include PubMed drug TSNE.html %}
+{% include PubMed%drug%TSNE.html %}
 
 _On the t-SNE plot above, **each dot is an individual drug** coloured by its [1st level (i.e. anatomical main group) ATC code](https://www.whocc.no/atc/structure_and_principles/) (extracted from DrugBank, light grey means the ATC code was missing from the database) which provides an indication of the bodily system that the drug acts upon. The coordinates of each drug are a 2-dimensional representation of the words used in the PubMed corpus of titles and abstracts of papers that mention each drug (see bottom of the post for code and details on methodology), **similar drugs should be located close together on the plot**. If you hover over each dot you should see the drug name and a brief description (the first sentence of the description extracted from DrugBank)_
 
@@ -35,10 +35,10 @@ Although there is much that could be improved, the analysis was fundamentally ef
 
 ### Detailed analysis methodology and code
 
-1.  **Download list of approved drugs from DrugBank ([available here](https://www.drugbank.ca/releases/latest#full))**
--   DrugBank is a rich database of pharmaceutical products that allows anyone to download its database for non-commercial use for free
--   There's a lot of potentially useful information associated with each drug in the database, but for this oarticular project I only made use of the names of approved drugs, ATC codes and the first line of the description
--   In the end, this resulted in a list with just over 2,500 drugs
+1. **Download list of approved drugs from DrugBank ([available here](https://www.drugbank.ca/releases/latest#full))**
+-  DrugBank is a rich database of pharmaceutical products that allows anyone to download its database for non-commercial use for free
+-  There's a lot of potentially useful information associated with each drug in the database, but for this oarticular project I only made use of the names of approved drugs, ATC codes and the first line of the description
+-  In the end, this resulted in a list with just over 2,500 drugs
 
 ```py
 import xml.etree.ElementTree as ET
@@ -68,9 +68,9 @@ alldrugs = pd.DataFrame(approved_drugs).T
 druglist = list(alldrugs.index)
 ```
 
-2.  **Download abstracts from PubMed ([available here](https://www.nlm.nih.gov/databases/download/pubmed_medline.html))**
--   PubMed allows information about all the papers on the site to be freely downloaded, including abstracts but excluding full text
--   After downloading the PubMed data, I looped through all the papers and tagged them with drug names if the name of that drug appeared in the title or abstract of the paper
+2. **Download abstracts from PubMed ([available here](https://www.nlm.nih.gov/databases/download/pubmed_medline.html))**
+-  PubMed allows information about all the papers on the site to be freely downloaded, including abstracts but excluding full text
+-  After downloading the PubMed data, I looped through all the papers and tagged them with drug names if the name of that drug appeared in the title or abstract of the paper
 
 ```py
 drugpapers = {}
@@ -107,8 +107,8 @@ for paper in tree:
 drugpapers = pd.DataFrame(drugpapers).T
 ```
 
-3.  **Build a count matrix of all the words that appear in all the abstracts**
--   Once I had a DataFrame of all the titles and abstracts for the papers that mentioned each drug, I then used [scikit learn's CountVectorizer function](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) to create word count matrices for each drug
+3. **Build a count matrix of all the words that appear in all the abstracts**
+-  Once I had a DataFrame of all the titles and abstracts for the papers that mentioned each drug, I then used [scikit learn's CountVectorizer function](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) to create word count matrices for each drug
 
 ```py
 from sklearn.feature_extraction.text import CountVectorizer
@@ -156,8 +156,8 @@ for drug in druglist[count:]:
         pass
 ```
 
-4.  **Calculate [pointwise mutual information (PMI)](https://en.wikipedia.org/wiki/Pointwise_mutual_information)**
--   To account for differences in number of abstracts per drug and to remove the effects of common words like "the", "and", "of" etc. that aren't predictive I calculated pointwise mutual information (PMI) for the word count matrix
+4.**Calculate [pointwise mutual information (PMI)](https://en.wikipedia.org/wiki/Pointwise_mutual_information)**
+-  To account for differences in number of abstracts per drug and to remove the effects of common words like "the", "and", "of" etc. that aren't predictive I calculated pointwise mutual information (PMI) for the word count matrix
 
 ```py
 '''
@@ -200,7 +200,7 @@ for drug in drugwords.columns:
         print(e)
 ```
 
-5.  **Finally, use [principal component analysis (PCA)](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) reduce dimensionality and [t-distributed stochastic neighbor embedding (t-SNE)](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) to visualise drug similiarity**
+5. **Finally, use [principal component analysis (PCA)](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) reduce dimensionality and [t-distributed stochastic neighbor embedding (t-SNE)](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) to visualise drug similiarity**
 
 ```py
 from sklearn.decomposition import PCA
