@@ -5,7 +5,7 @@ title:  "Drug Vectors: identifying and plotting similar drugs through PubMed abs
 # Drug Vectors: identifying and plotting similar drugs through PubMed abstract text
 ### t-SNE plot of approved drugs clusted by similarity, coloured by 1st level ATC code
 
-{% include PubMed%drug%TSNE.html %}
+{% include PubMedDrugTSNE.html %}
 
 _On the t-SNE plot above, **each dot is an individual drug** coloured by its [1st level (i.e. anatomical main group) ATC code](https://www.whocc.no/atc/structure_and_principles/) (extracted from DrugBank, light grey means the ATC code was missing from the database) which provides an indication of the bodily system that the drug acts upon. The coordinates of each drug are a 2-dimensional representation of the words used in the PubMed corpus of titles and abstracts of papers that mention each drug (see bottom of the post for code and details on methodology), **similar drugs should be located close together on the plot**. If you hover over each dot you should see the drug name and a brief description (the first sentence of the description extracted from DrugBank)_
 
