@@ -80,7 +80,7 @@ So we might expect most chronic conditions without a strong impact on life expec
 
 I suspected that high mortality conditions would tend to have low diagnostic delays (due to the urgency to treat), and vice versa. So I collected and plotted some published data on mortality rates (post-diagnosis) for a variety of conditions below (interesting examples annotated). I took a crude approach to selecting and synthesizing the mortality rate data (i.e. just including whatever I could easily find on PubMed and roughly approximating annual mortality rates from whatever they reported), but I think the data is suggestive of a relationship between the two variables.
 
-![](/assets/Pasted image 20211217175415.png)
+![](/assets/Pasted image 20211219003047.png)
 
 *Grey area shows the threshold at which $$p(Dx+)$$ is predicted to be 90% based on the formula $$p(Dx+) = (1 - M)^t * S$$, assuming that $$S$$ = 1. The faint gray dotted line is set at 1%, which is the approximate general mortality rate in the overall population*
 
