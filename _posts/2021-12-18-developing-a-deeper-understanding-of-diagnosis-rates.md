@@ -27,10 +27,10 @@ If you take a cross-sectional sample of a population with a given chronic diseas
 The question I then had was **"Which is a bigger contributor to low rates of diagnosis, a slow diagnostic pathway or non-care seeking behaviour?**
 
 I've sketched out a toy model to help outline the contributors to a particular value of $$p(Dx+)$$ below, assuming that patients can be in one of four distinct states: 
-	- Undiagnosed, seeking treatment ($$Seeking\ Dx$$)
-	- Undiagnosed, not seeking treatment ($$Not\ seeking\ Dx$$)
-	- Diagnosed ($$Dx+$$)
-	- Dead
+- Undiagnosed, seeking treatment ($$Seeking\ Dx$$)
+- Undiagnosed, not seeking treatment ($$Not\ seeking\ Dx$$)
+- Diagnosed ($$Dx+$$)
+- Dead
 
 ![](/assets/Pasted image 20211101175457.png)
 
@@ -82,7 +82,7 @@ I suspected that high mortality conditions would tend to have low diagnostic del
 
 ![](/assets/Pasted image 20211217175415.png)
 
-*Grey area shows the threshold at which $$p(Dx+)$$  is predicted to be 90% based on the formula $$p(Dx+) = (1 - M)^t \* S$$, assuming that $$S$$ = 1. The faint gray dotted line is set at 1%, which is the approximate general mortality rate in the overall population*
+*Grey area shows the threshold at which $$p(Dx+)$$ is predicted to be 90% based on the formula $$p(Dx+) = (1 - M)^t * S$$, assuming that $$S$$ = 1. The faint gray dotted line is set at 1%, which is the approximate general mortality rate in the overall population*
 
 If you plug the datapoints I've plotted above into the formula for $$p(Dx+)$$ above, assuming that all patients seek treatment (i.e. $$S$$ = 1), we'd estimate that the vast majority of conditions in the sample would have a $$p(Dx+)$$ value over 90% (shown by the grey area on the graph). Most conditions in my (admittedly small) sample seem to get diagnosed quite quickly if their mortality is high. Vice versa, if the diagnostic delay is long (e.g. migraine, narcolepsy) mortality is also likely low enough that it doesn't matter if it takes years for a diagnosis to be confirmed, almost everyone will survive long enough to get one. **A condition with a mortality rate of ~1% would need to have a diagnostic delay of over 10 years to dip below 90% $$p(Dx+)$$**, assuming everyone seeks care. 
 
@@ -103,7 +103,7 @@ ______
 
 ### Appendix: 
 
-The data from the literature I used to make my graphs above are summarized in [this Excel file](https://atelfo.github.io/assets/Dx%stats.xlsx)
+The data from the literature I used to make my graphs above are summarized in [this Excel file](https://atelfo.github.io/assets/Dx%20stats.xlsx)
 
 #### Adapting the model for acute conditions
 The formula $$p(Dx+) = (1 - M)^t * S$$ works more naturally for chronic conditions than acute, but a simple alternative for acute conditions could be something like the below:
@@ -123,6 +123,7 @@ $$p(Dx+) = 0.525$$
 
 Implying a rough estimate that ~53% of active symptomatic influenza cases have a confirmed diagnosis at any given time, which seems plausible. If we add another term to account for asymptomatic infections the total value of $$p(Dx+)$$ could be an additional 50-80% lower[^15]
 
+______
 
 [^1]: https://databank.worldbank.org/source/gender-statistics/Series/SP.DYN.CDRT.IN
 [^2]: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/gho-ghe-life-tables-by-country
