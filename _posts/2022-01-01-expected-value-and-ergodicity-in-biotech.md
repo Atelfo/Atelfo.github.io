@@ -27,8 +27,7 @@ At face value, it may seem hard to reconcile the positive expected value of drug
 
 Expected value calculations implicitly assume that you are operating in an ergodic system, where the expected value represents the average outcome over an infinite amount of trials or an infinite number of members of the system. While it's common to use an expected value based approach to evaluate the attractiveness of a single development program in isolation, it really only becomes meaningful when applied to many different programs over long periods of time. Furthermore, the real world is mostly non-ergodic; there are plenty of absorbing attractor states (e.g. death) and you are constrained by your resources and the results of your previous actions.  To quote Ole Peters:[^5]
 
->*"An expectation value of a non-ergodic observable physically  
-corresponds to pooling and sharing among many entities. That may reflect what happens in a specially designed large collective, but it doesn’t reflect the situation of an individual decision-maker... We all live through time and suffer the physical consequences of the actions of our younger selves."*
+>*"An expectation value of a non-ergodic observable physically corresponds to pooling and sharing among many entities. That may reflect what happens in a specially designed large collective, but it doesn’t reflect the situation of an individual decision-maker... We all live through time and suffer the physical consequences of the actions of our younger selves."*
 
 The world that biopharmaceutical companies operate in is a non-ergodic one, where a failed trial program for a cash-strapped biotech is likely to land it squarely within the terminal attractor states of bankruptcy and dissolution. The history of one particular company is unlikely to provide much information about the fates of all companies; failure is likely, and failed companies cease to exist without ever capturing the ostensibly positive expected value of investing in clinical development. 
 
@@ -42,7 +41,7 @@ In an ergodic world of infinite time, capital and opportunities for investment t
 #### Simulating expected value in a non-ergodic system
 To visualize the problems with expected value I built a simple simulation app included directly in this post below (if you're not seeing it it may take ~60 seconds to load). The app is pre-populated with probability of success and cost benchmarks from the literature, and uses these values to simulate the outcomes for 100 model biotechs as they attempt up to 50 successive clinical development programs, implementing the algorithm outlined by the flowchart in figure 1. 
 
-I set the simulated biotechs to each start with $500m by default. Each clinical trial a simulated biotech attempts costs a certain amount of money, such that with the default settings each biotech can initially afford just over one full development program (from phase 1 up to and including regulatory submission). If these biotechs are lucky enough to succeed in all the development phases and launch a drug they immediately receive a lump sum of cash pulled from a [lognormal distribution](https://en.wikipedia.org/wiki/Log-normal_distribution) (I explain the rationale for this distribution and the default parameters in [[Pharmaceutical portfolio strategy implications of base rate probability of launch and revenue distributions (blog post) | this other post]]). 
+I set the simulated biotechs to each start with $500m by default. Each clinical trial a simulated biotech attempts costs a certain amount of money, such that with the default settings each biotech can initially afford just over one full development program (from phase 1 up to and including regulatory submission). If these biotechs are lucky enough to succeed in all the development phases and launch a drug they immediately receive a lump sum of cash pulled from a [lognormal distribution](https://en.wikipedia.org/wiki/Log-normal_distribution) (I explain the rationale for this distribution and the default parameters in [this other post](https://atelfo.github.io/2019/10/05/pharma-portfolio-roi-simulations.html). 
 
 For as long as they have more than $0, each biotech will continually attempt a full development program paying the costs specified in the cost boxes. If a biotech's money drops below $0 they are considered bankrupt (indicated by a red trace on the large graph), and they can no longer pursue additional clinical development programs. The possibility of bankruptcy is the attractor state that introduces non-ergodic behaviour into the simulation. 
 
@@ -54,7 +53,9 @@ For as long as they have more than $0, each biotech will continually attempt a f
 - *There are no non-R&D costs*
 - *Simulated biotechs cannot raise additional money outside of what they start with or receive in revenues from launches*
 
-<iframe src="https://biotech-outcome-simulations.herokuapp.com/" height=60% width=90% frameBorder="0" style="text-align:center"></iframe>
+<div style="text-align:center">
+	<iframe src="https://biotech-outcome-simulations.herokuapp.com/" height=60% width=90% frameBorder="0" style="text-align:center"></iframe>
+</div>
 
 I've plotted three averages in blue lines on the main graph: the theoretical expected value (if no biotechs could go bankrupt), the actual average and the average of only the non-bankrupt biotechs. Survivorship bias is visualized in the difference between the expected value and the dark blue line above. If ruin was not a possible outcome, then we would see all three curves be equal as biotechs that were unlucky early on would be able to catch-up later (you can test this by inputting 1 for all the probabilities of success). 
 
@@ -108,7 +109,7 @@ For costs I will use the average values from the supplementary data of the paper
 
 I will assume that regulatory submission costs are $2.9 million, per 2021 FDA PDUFA fee guidance[^1].
 
-In [[Pharmaceutical portfolio strategy implications of base rate probability of launch and revenue distributions (blog post) | another post]] I estimated the expected value of a drug launch to be ~$4.6 billion (in terms of cumulative lifetime revenue), so I'll use that value here too.
+In [anther post](https://atelfo.github.io/2019/10/05/pharma-portfolio-roi-simulations.html) I estimated the expected value of a drug launch to be ~$4.6 billion (in terms of cumulative lifetime revenue), so I'll use that value here too.
 
 With reference to figure 1, there are five potential outcomes in our simple model of a clinical development program: 
 - Failing in phase 1
