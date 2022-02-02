@@ -8,7 +8,7 @@ title: "Expected value and ergodicity in biotech"
 >*"Don't cross a river if it is four feet deep on average"*
 >\- Nassim Nicholas Taleb
 
-#### Setting the scene: the expected value of clinical development
+### Setting the scene: the expected value of clinical development
 [Expected values](https://en.wikipedia.org/wiki/Expected_value) calculations are a typical way to evaluate whether or not investment in a particular clinical development program is likely to be financially worthwhile. To calculate expected, one lays out all the potential outcomes of a clinical development program, such as in the flow chart in figure 1 below, estimates the net profit/loss for each potential path, and sums up the values of each of the paths weighted by their probability. The timing of revenues and costs can then be used to discount the expected value by conversion to a [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp). [This article](https://www.toptal.com/finance/valuation/biotech-valuation) provides a nice overview of the commonplace "risk-adjusted NPV" valuation practice in biotech. 
 
 ![](/assets/clindev outcomes.drawio.svg)
@@ -20,7 +20,7 @@ Despite the positive expected value, it is well known that drug development prog
 
 At face value, it may seem hard to reconcile the positive expected value of drug development with the fact that the vast majority of clinical development programs lose tens if not hundreds of millions of dollars for no return. In order to maintain a positive return on investment, the rewards of successful innovation must be massive to offset the high cost and risk of clinical development. The dichotomy of outcomes - costly failure or riches - results in outliers driving the vast majority of the returns in biopharma[^4][^11]. The median clinical biopharmaceutical company is a perennial money-loser, but the success of the Genentech's, Amgen's and Gilead's of the world more than makes up for the losses of companies that never bring a product to market. Survivorship bias can give us an overly rosy picture of the chance of success, and a positive industry-wide expected value can mask the underlying risks for individual programs.
 
-#### Ergodicity and the problems with expected value
+### Ergodicity and the problems with expected value
 [Ergodicity](https://en.wikipedia.org/wiki/Ergodicity) is a concept that originated in thermodynamics, with relatively recent popularization in economics and finance circles through the work of Ole Peters[^5] and Nassim Nicholas Taleb[^10]. In essence, a system is ergodic if averaging the state of a single member of the system over a long period of time (the time average) gives you an equivalent result to taking the average of the states of all the members of a system at a specific time (the ensemble average). This definition implies that an ergodic system does not have inescapable [attractor states](https://en.wikipedia.org/wiki/Attractor) which trap members of the system and prevent them from visiting all the possible states of the system over a long enough time period, as shown in figure 2 below. 
 
 ![](/assets/Pasted image 20220122171650.png)
@@ -38,7 +38,7 @@ A biopharmaceutical company using expected value to make decisions about investm
 
 In an ergodic world of infinite time, capital and opportunities for investment these problems can be safely ignored, as the [law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers) smooths away any volatility. However, ignoring these problems in the real (non-ergodic) world may prove ruinous. 
 
-#### Simulating expected value in a non-ergodic system
+### Simulating expected value in a non-ergodic system
 To visualize the problems with expected value I built a simple simulation app included directly in this post below (if you're not seeing it it may take ~60 seconds to load). The app is pre-populated with probability of success and cost benchmarks from the literature, and uses these values to simulate the outcomes for 100 model biotechs as they attempt up to 50 successive clinical development programs, implementing the algorithm outlined by the flowchart in figure 1. 
 
 I set the simulated biotechs to each start with $500m by default. Each clinical trial a simulated biotech attempts costs a certain amount of money, such that with the default settings each biotech can initially afford just over one full development program (from phase 1 up to and including regulatory submission). If these biotechs are lucky enough to succeed in all the development phases and launch a drug they immediately receive a lump sum of cash pulled from a [lognormal distribution](https://en.wikipedia.org/wiki/Log-normal_distribution) (I explain the rationale for this distribution and the default parameters in [this other post](https://atelfo.github.io/2019/10/05/pharma-portfolio-roi-simulations.html). 
@@ -53,9 +53,7 @@ For as long as they have more than $0, each biotech will continually attempt a f
 - *There are no non-R&D costs*
 - *Simulated biotechs cannot raise additional money outside of what they start with or receive in revenues from launches*
 
-<div style="text-align:center">
-	<iframe src="https://biotech-outcome-simulations.herokuapp.com/" height=60% width=90% frameBorder="0" style="text-align:center"></iframe>
-</div>
+<iframe src="https://biotech-outcome-simulations.herokuapp.com/" height="700" width="1400" frameBorder="0"></iframe>
 
 I've plotted three averages in blue lines on the main graph: the theoretical expected value (if no biotechs could go bankrupt), the actual average and the average of only the non-bankrupt biotechs. Survivorship bias is visualized in the difference between the expected value and the dark blue line above. If ruin was not a possible outcome, then we would see all three curves be equal as biotechs that were unlucky early on would be able to catch-up later (you can test this by inputting 1 for all the probabilities of success). 
 
@@ -65,7 +63,7 @@ Clearly this is an overly simplistic simulation that doesn't account for non-R&D
 
 The results of the simulation imply the presence of absorbing attractor states to both the upside and downside, and a clear bifurcation in the natural histories of biotechs. The critical takeaway from the simulation is that the real average value captured by the simulated biotechs over successive programs is almost always lower than the theoretical expected value under the default conditions, because of the potential for ruin.
 
-#### How much cash is enough?
+### How much cash is enough?
 In the simulation, long-term survival is achieved once a biotech has enough of a capital buffer to survive "unlucky" drawdowns due to failure of clinical development programs. Because the expected value is positive with the default parameters, the simulated companies will make positive returns on investment and accrue capital over time as long as they can afford to repeatedly invest in clinical development programs. 
 
 In the real world, big pharma cash hoards and venture capital portfolios can be large enough to benefit from a positive expected value, but small biotechs cannot reliably capture the expected value in any meaningful sense. Large amounts of cash give you the luxury of being able to ignore the system's non-ergodicity. But how much cash is enough to provide a sufficiently sizeable buffer such that almost all biotechs are protected from bad luck and hence are able to survive long-term?
@@ -77,8 +75,8 @@ If you plot the influence of starting money in the simulation above on the propo
 
 This all being said, clinical development programs are long. A full development program takes ~10 years (~2 years for phase 1, ~3.5 years each for a phase 2 or 3 and ~1 year for regulatory approval)[^2][^12]. With typical burn rates on the range of $30-50m per annum per program a biotech on the road to ruin with a few hundred million in cash may lumber on as one of the "walking dead" for upwards of a decade before finally succumbing. 
 
-#### Tying it all together
-In summary, expected value (or NPV, if you prefer) is commonly used to make development decisions as they are presumed to quantify the real current value of investing in a clinical development program. However, expected value is a flawed measure in the real non-ergodic world with problems whether it is applied to evaluate single programs or many programs over time.
+### Tying it all together
+In summary, expected value (or NPV, if you prefer) is commonly used to make development decisions as it is presumed to quantify the real current value of investing in a clinical development program. However, expected value is a flawed measure in the real non-ergodic world with problems whether it is applied to evaluate single programs or many programs over time.
 
 When used to evaluate the value of a single program in isolation the expected value tells you little about what to expect from the outcome of the program as the variance and range of possible outcomes are abstracted away into a single value. As most outcomes in biotech are binary the number is only meaningful across an (infinitely) large number of trials. Unfortunately, applying expected value across many development programs in the hope that the variance in outcomes will eventually average out is not necessarily a safe approach either, as over time the risk of ruin means that real captured value is likely lower than the theoretical cumulative expected value.
 
@@ -92,7 +90,7 @@ Additionally, small biotechs can consider specific strategies to make them more 
 ___
 
 ### Appendix 1: Estimating the expected value of a typical clinical development program using industry benchmarks
-Expected value is defined as the following equation, where $x_i$ is the value of a particular outcome $i$, $p_i$ is the probability of that outcome occurring and $k$ is the number of potential different outcomes.
+Expected value is defined as the following equation, where $$x_i$$ is the value of a particular outcome $$i$$, $$p_i$$ is the probability of that outcome occurring and $$k$$ is the number of potential different outcomes.
 
 $$E(X) = \sum_{i=1}^{k} p_i * x_i$$
 
