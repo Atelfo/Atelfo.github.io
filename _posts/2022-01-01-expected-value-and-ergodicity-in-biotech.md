@@ -13,9 +13,7 @@ title: "Expected value and ergodicity in biotech"
 
 ![](/assets/clindev outcomes.drawio.svg)
 
-<p text-align="center">
 *Figure 1: A flowchart showing a simplified and high-level clinical development process. Starting on the left, there are five potential paths through the process to get to the two possible end states: launch or failure*
-</p>
 
 Historically, the industry-wide return on investment for biopharma research and development has been sufficiently positive to support a thriving sector; ~$800bn is spent on branded (innovator) medicines annually worldwide[^9]. Supporting this assertion, I (roughly) estimate that the lifetime expected value of a typical clinical development program is ~$209 million (without net present value discounting), implying that investing in drug development is on average a good bet (see calculations in appendix 1 at the end of the post).
 
@@ -26,7 +24,7 @@ At face value, it may seem hard to reconcile the positive expected value of drug
 ### Ergodicity and the problems with expected value
 [Ergodicity](https://en.wikipedia.org/wiki/Ergodicity) is a concept that originated in thermodynamics, with relatively recent popularization in economics and finance circles through the work of Ole Peters[^5] and Nassim Nicholas Taleb[^10]. In essence, a system is ergodic if averaging the state of a single member of the system over a long period of time (the time average) gives you an equivalent result to taking the average of the states of all the members of a system at a specific time (the ensemble average). This definition implies that an ergodic system does not have inescapable [attractor states](https://en.wikipedia.org/wiki/Attractor) which trap members of the system and prevent them from visiting all the possible states of the system over a long enough time period, as shown in figure 2 below. 
 
-![](/assets/Pasted image 20220122171650.png height="600" width="800")
+![](/assets/Pasted image 20220122171650.png)
 
 Expected value calculations implicitly assume that you are operating in an ergodic system, where the expected value represents the average outcome over an infinite amount of trials or an infinite number of members of the system. While it's common to use an expected value based approach to evaluate the attractiveness of a single development program in isolation, it really only becomes meaningful when applied to many different programs over long periods of time. Furthermore, the real world is mostly non-ergodic; there are plenty of absorbing attractor states (e.g. death) and you are constrained by your resources and the results of your previous actions.  To quote Ole Peters:[^5]
 
