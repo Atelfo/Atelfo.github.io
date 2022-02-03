@@ -11,7 +11,7 @@ title: "Expected value and ergodicity in biotech"
 ### Setting the scene: the expected value of clinical development
 [Expected values](https://en.wikipedia.org/wiki/Expected_value) calculations are a typical way to evaluate whether or not investment in a particular clinical development program is likely to be financially worthwhile. To calculate expected, one lays out all the potential outcomes of a clinical development program, such as in the flow chart in figure 1 below, estimates the net profit/loss for each potential path, and sums up the values of each of the paths weighted by their probability. The timing of revenues and costs can then be used to discount the expected value by conversion to a [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp). [This article](https://www.toptal.com/finance/valuation/biotech-valuation) provides a nice overview of the commonplace "risk-adjusted NPV" valuation practice in biotech. 
 
-![](/assets/clindev outcomes.drawio.svg height="80%" width="80%")
+![](/assets/clindev outcomes.drawio.svg)
 *Figure 1: A flowchart showing a simplified and high-level clinical development process. Starting on the left, there are five potential paths through the process to get to the two possible end states: launch or failure*
 
 Historically, the industry-wide return on investment for biopharma research and development has been sufficiently positive to support a thriving sector; ~$800bn is spent on branded (innovator) medicines annually worldwide[^9]. Supporting this assertion, I (roughly) estimate that the lifetime expected value of a typical clinical development program is ~$209 million (without net present value discounting), implying that investing in drug development is on average a good bet (see calculations in appendix 1 at the end of the post).
@@ -23,7 +23,7 @@ At face value, it may seem hard to reconcile the positive expected value of drug
 ### Ergodicity and the problems with expected value
 [Ergodicity](https://en.wikipedia.org/wiki/Ergodicity) is a concept that originated in thermodynamics, with relatively recent popularization in economics and finance circles through the work of Ole Peters[^5] and Nassim Nicholas Taleb[^10]. In essence, a system is ergodic if averaging the state of a single member of the system over a long period of time (the time average) gives you an equivalent result to taking the average of the states of all the members of a system at a specific time (the ensemble average). This definition implies that an ergodic system does not have inescapable [attractor states](https://en.wikipedia.org/wiki/Attractor) which trap members of the system and prevent them from visiting all the possible states of the system over a long enough time period, as shown in figure 2 below. 
 
-![](/assets/Pasted image 20220122171650.png height="80%" width="80%")
+![](/assets/Pasted image 20220122171650.png)
 
 Expected value calculations implicitly assume that you are operating in an ergodic system, where the expected value represents the average outcome over an infinite amount of trials or an infinite number of members of the system. While it's common to use an expected value based approach to evaluate the attractiveness of a single development program in isolation, it really only becomes meaningful when applied to many different programs over long periods of time. Furthermore, the real world is mostly non-ergodic; there are plenty of absorbing attractor states (e.g. death) and you are constrained by your resources and the results of your previous actions.  To quote Ole Peters:[^5]
 
@@ -70,7 +70,7 @@ In the real world, big pharma cash hoards and venture capital portfolios can be 
 
 If you plot the influence of starting money in the simulation above on the proportion of bankrupt biotechs you get a nice fit to an [exponential function](https://en.wikipedia.org/wiki/Exponential_function), as shown in figure 3 below. (The best fit function is approximately $$e^{-0.00021x}$$, where $$x$$ is the starting cash, in case you're curious). As starting capital increases companies are exponentially more likely to survive long-term, up to a point at which almost all companies survive (~$10bn or so with the default simulation parameters). The implication of this is that the amount of cash a company has to spend on R&D is a reasonably good predictor of how likely a biotech is to survive indefinitely.
 
-![](/assets/Pasted image 20220129160659.png height="80%" width="80%")
+![](/assets/Pasted image 20220129160659.png)
 
 *Figure 3: The influence of starting cash on the proportion of non-bankrupt biotechs at the end of the simulation with default parameters. As starting cash increases, more and more biotechs survive to the end of the simulation*
 
@@ -88,7 +88,9 @@ As biotechs plan their investments in development programs it may be prudent for
 One good way to incorporate a more nuanced approach into decision making is through [simulation of the potential discrete outcomes](https://en.wikipedia.org/wiki/Monte_Carlo_method). I'd argue that all decisions makers would benefit from an understanding of what each distinct possible future of a development program entails for their company's long-term survival. Instead of maximizing expected value, does it make sense to optimize for the probability of ruin-avoidance instead?
 
 Additionally, small biotechs can consider specific strategies to make them more robust over the longer term. Asset consolidation, as we've seen with companies like [BridgeBio](https://bridgebio.com/) and [Centessa](https://centessa.com/) could be a good mechanism of ruin avoidance as a single successful development programs can often repay the costs of many failures.
+
 ___
+
 
 ### Appendix 1: Estimating the expected value of a typical clinical development program using industry benchmarks
 Expected value is defined as the following equation, where $$x_i$$ is the value of a particular outcome $$i$$, $$p_i$$ is the probability of that outcome occurring and $$k$$ is the number of potential different outcomes.
@@ -99,12 +101,12 @@ In order to calculate the expected value for a typical clinical development prog
 
 For probability of success I'll use values from a 2021 BIO report[^2], shown in figure 4 below.
 
-![](/assets/Pasted image 20220109141126.png height="80%" width="80%")
+![](/assets/Pasted image 20220109141126.png)
 *Figure 4: Phase transition success rates from phase 1 for all diseases, all modalities as of 2020. Source: BIO, Biomedtracker, Pharmapremia*
 
 For costs I will use the average values from the supplementary data of the paper "Estimated Research and Development Investment Needed to Bring a New Medicine to Market, 2009-2018"[^6], shown in the table below:
 
-![](/assets/Pasted image 20220102135213.png height="80%" width="80%")
+![](/assets/Pasted image 20220102135213.png)
 
 I will assume that regulatory submission costs are $2.9 million, per 2021 FDA PDUFA fee guidance[^1].
 
