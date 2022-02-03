@@ -26,7 +26,7 @@ At face value, it may seem hard to reconcile the positive expected value of drug
 ### Ergodicity and the problems with expected value
 [Ergodicity](https://en.wikipedia.org/wiki/Ergodicity) is a concept that originated in thermodynamics, with relatively recent popularization in economics and finance circles through the work of Ole Peters[^5] and Nassim Nicholas Taleb[^10]. In essence, a system is ergodic if averaging the state of a single member of the system over a long period of time (the time average) gives you an equivalent result to taking the average of the states of all the members of a system at a specific time (the ensemble average). This definition implies that an ergodic system does not have inescapable [attractor states](https://en.wikipedia.org/wiki/Attractor) which trap members of the system and prevent them from visiting all the possible states of the system over a long enough time period, as shown in figure 2 below. 
 
-![](/assets/Pasted image 20220122171650.png)
+![](/assets/Pasted image 20220122171650.png height="600" width="800")
 
 Expected value calculations implicitly assume that you are operating in an ergodic system, where the expected value represents the average outcome over an infinite amount of trials or an infinite number of members of the system. While it's common to use an expected value based approach to evaluate the attractiveness of a single development program in isolation, it really only becomes meaningful when applied to many different programs over long periods of time. Furthermore, the real world is mostly non-ergodic; there are plenty of absorbing attractor states (e.g. death) and you are constrained by your resources and the results of your previous actions.  To quote Ole Peters:[^5]
 
@@ -56,7 +56,7 @@ For as long as they have more than $0, each biotech will continually attempt a f
 - *There are no non-R&D costs*
 - *Simulated biotechs cannot raise additional money outside of what they start with or receive in revenues from launches*
 
-<iframe src="https://biotech-outcome-simulations.herokuapp.com/" height="1000" width="1400" frameBorder="0" margin="auto" display="block"></iframe>
+<h3 style="text-align:center;"><iframe src="https://biotech-outcome-simulations.herokuapp.com/" height="1100" width="1500" frameBorder="0"></iframe></h3>
 
 I've plotted three averages in blue lines on the main graph: the theoretical expected value (if no biotechs could go bankrupt), the actual average and the average of only the non-bankrupt biotechs. Survivorship bias is visualized in the difference between the expected value and the dark blue line above. If ruin was not a possible outcome, then we would see all three curves be equal as biotechs that were unlucky early on would be able to catch-up later (you can test this by inputting 1 for all the probabilities of success). 
 
