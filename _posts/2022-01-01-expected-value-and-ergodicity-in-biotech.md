@@ -54,7 +54,7 @@ For as long as they have more than $0, each biotech will continually attempt a f
 - *There are no non-R&D costs*
 - *Simulated biotechs cannot raise additional money outside of what they start with or receive in revenues from launches*
 
-<iframe src="https://biotech-outcome-simulations.herokuapp.com/" frameBorder="0" height="1250" width="2000" display="block"></iframe>
+<iframe src="https://biotech-outcome-simulations.herokuapp.com/" frameBorder="0" height="1270" width="2000" style="display:block;"></iframe>
 
 I've plotted three averages in blue lines on the main graph: the theoretical expected value (if no biotechs could go bankrupt), the actual average and the average of only the non-bankrupt biotechs. Survivorship bias is visualized in the difference between the expected value and the dark blue line above. If ruin was not a possible outcome, then we would see all three curves be equal as biotechs that were unlucky early on would be able to catch-up later (you can test this by inputting 1 for all the probabilities of success). 
 
