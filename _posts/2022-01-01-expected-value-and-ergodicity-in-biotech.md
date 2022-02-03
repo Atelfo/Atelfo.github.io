@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Ergodicity in biotech, or why expected value is a mirage"
+title: "Ergodicity and biotech, or why expected value is a mirage"
 ---
 
-# Ergodicity in biotech, or why expected value is a mirage
+# Ergodicity and biotech, or why expected value is a mirage
 
 >*"Don't cross a river if it is four feet deep on average"*
 >\- Nassim Nicholas Taleb
@@ -54,7 +54,7 @@ For as long as they have more than $0, each biotech will continually attempt a f
 - *There are no non-R&D costs*
 - *Simulated biotechs cannot raise additional money outside of what they start with or receive in revenues from launches*
 
-<p text-align="center" width="100%">
+<p width="100%">
 	<iframe src="https://biotech-outcome-simulations.herokuapp.com/" frameBorder="0" height="1300" width="2000" margin="0 auto" display="table"></iframe>
 </p>
 
