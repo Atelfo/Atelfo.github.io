@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Ergodicity and biotech, or why expected value is a mirage"
-<link rel="stylesheet" type="text/css" href="/assets/iframestyles.css">
 ---
 
 # Ergodicity and biotech, or why expected value is a mirage
