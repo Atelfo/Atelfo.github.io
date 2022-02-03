@@ -13,7 +13,9 @@ title: "Expected value and ergodicity in biotech"
 
 ![](/assets/clindev outcomes.drawio.svg)
 
+<p text-align="center">
 *Figure 1: A flowchart showing a simplified and high-level clinical development process. Starting on the left, there are five potential paths through the process to get to the two possible end states: launch or failure*
+</p>
 
 Historically, the industry-wide return on investment for biopharma research and development has been sufficiently positive to support a thriving sector; ~$800bn is spent on branded (innovator) medicines annually worldwide[^9]. Supporting this assertion, I (roughly) estimate that the lifetime expected value of a typical clinical development program is ~$209 million (without net present value discounting), implying that investing in drug development is on average a good bet (see calculations in appendix 1 at the end of the post).
 
@@ -54,7 +56,7 @@ For as long as they have more than $0, each biotech will continually attempt a f
 - *There are no non-R&D costs*
 - *Simulated biotechs cannot raise additional money outside of what they start with or receive in revenues from launches*
 
-<iframe src="https://biotech-outcome-simulations.herokuapp.com/" height="600" width="1200" frameBorder="0" display="flex" align-items="center" justify-content="center"></iframe>
+<iframe src="https://biotech-outcome-simulations.herokuapp.com/" height="1000" width="1400" frameBorder="0" margin="auto" display="block"></iframe>
 
 I've plotted three averages in blue lines on the main graph: the theoretical expected value (if no biotechs could go bankrupt), the actual average and the average of only the non-bankrupt biotechs. Survivorship bias is visualized in the difference between the expected value and the dark blue line above. If ruin was not a possible outcome, then we would see all three curves be equal as biotechs that were unlucky early on would be able to catch-up later (you can test this by inputting 1 for all the probabilities of success). 
 
