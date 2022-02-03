@@ -12,6 +12,7 @@ title: "Expected value and ergodicity in biotech"
 [Expected values](https://en.wikipedia.org/wiki/Expected_value) calculations are a typical way to evaluate whether or not investment in a particular clinical development program is likely to be financially worthwhile. To calculate expected, one lays out all the potential outcomes of a clinical development program, such as in the flow chart in figure 1 below, estimates the net profit/loss for each potential path, and sums up the values of each of the paths weighted by their probability. The timing of revenues and costs can then be used to discount the expected value by conversion to a [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp). [This article](https://www.toptal.com/finance/valuation/biotech-valuation) provides a nice overview of the commonplace "risk-adjusted NPV" valuation practice in biotech. 
 
 ![](/assets/clindev outcomes.drawio.svg)
+
 *Figure 1: A flowchart showing a simplified and high-level clinical development process. Starting on the left, there are five potential paths through the process to get to the two possible end states: launch or failure*
 
 Historically, the industry-wide return on investment for biopharma research and development has been sufficiently positive to support a thriving sector; ~$800bn is spent on branded (innovator) medicines annually worldwide[^9]. Supporting this assertion, I (roughly) estimate that the lifetime expected value of a typical clinical development program is ~$209 million (without net present value discounting), implying that investing in drug development is on average a good bet (see calculations in appendix 1 at the end of the post).
@@ -53,7 +54,7 @@ For as long as they have more than $0, each biotech will continually attempt a f
 - *There are no non-R&D costs*
 - *Simulated biotechs cannot raise additional money outside of what they start with or receive in revenues from launches*
 
-<iframe src="https://biotech-outcome-simulations.herokuapp.com/" height="120%" width="100%" align="center" frameBorder="0"></iframe>
+<iframe src="https://biotech-outcome-simulations.herokuapp.com/" height="120%" width="160%" align="center" frameBorder="0"></iframe>
 
 I've plotted three averages in blue lines on the main graph: the theoretical expected value (if no biotechs could go bankrupt), the actual average and the average of only the non-bankrupt biotechs. Survivorship bias is visualized in the difference between the expected value and the dark blue line above. If ruin was not a possible outcome, then we would see all three curves be equal as biotechs that were unlucky early on would be able to catch-up later (you can test this by inputting 1 for all the probabilities of success). 
 
@@ -102,6 +103,7 @@ In order to calculate the expected value for a typical clinical development prog
 For probability of success I'll use values from a 2021 BIO report[^2], shown in figure 4 below.
 
 ![](/assets/Pasted image 20220109141126.png)
+
 *Figure 4: Phase transition success rates from phase 1 for all diseases, all modalities as of 2020. Source: BIO, Biomedtracker, Pharmapremia*
 
 For costs I will use the average values from the supplementary data of the paper "Estimated Research and Development Investment Needed to Bring a New Medicine to Market, 2009-2018"[^6], shown in the table below:
@@ -122,6 +124,7 @@ With reference to figure 1, there are five potential outcomes in our simple mode
 Using the assumptions outlined above, I have calculated below the value of each of the scenarios:
 
 **Failing in phase 1**
+
 *Scenario likelihood = $$48\%$$*
 
 $$(P1\ cost * (1 - P1\ PoS))$$
@@ -129,27 +132,35 @@ $$(-\$52.9m * (1 - 52\%)) = -\$25.4m$$
 
 
 **Succeeding in phase 1 then failing in phase 2**
+
 *Scenario likelihood = $$37\%$$*
 
 $$((P1\ cost + P2\ cost) * (P1\ PoS*(1 - P2\ PoS)))$$
 $$((-\$52.9m + -\$100.8m) * (52\%*(1 - 28.9\%))) = -\$56.8m$$
 
 **Succeeding in phase 1 and 2, then failing in phase 3**
+
 *Scenario likelihood = $$6.3\%$$*
 
-$$((P1\ cost + P2\ cost + P3\ cost) * (P1\ PoS*P2\ PoS*(1- P3\ PoS))$ $((-\$52.9m + -\$100.8m + -\$291.6m) * (52\%*28.9\%*(1-57.8\%))) = -\$28.2m$$
+$$((P1\ cost + P2\ cost + P3\ cost) * (P1\ PoS*P2\ PoS*(1- P3\ PoS))$$ 
+$$((-\$52.9m + -\$100.8m + -\$291.6m) * (52\%*28.9\%*(1-57.8\%))) = -\$28.2m$$
 
 **Succeeding in phase 1, 2 and 3, then being rejected by regulators**
+
 *Scenario likelihood = $$0.8\%$$*
 
-$$((P1\ cost + P2\ cost + P3\ cost + Reg\ cost) * (P1\ PoS*P2\ PoS*P3\ PoS*(1- Reg\ PoS))$ $((-\$52.9m + -\$100.8m + -\$291.6m + -\$2.9m) * (52\%*28.9\%*57.8\%*(1 - 90.6\%)) = -\$3.7m$$
+$$((P1\ cost + P2\ cost + P3\ cost + Reg\ cost) * (P1\ PoS*P2\ PoS*P3\ PoS*(1- Reg\ PoS))$$ 
+$$((-\$52.9m + -\$100.8m + -\$291.6m + -\$2.9m) * (52\%*28.9\%*57.8\%*(1 - 90.6\%)) = -\$3.7m$$
 
 **Succeeding in all phases, being approved by regulators, then launching the drug**
+
 *Scenario likelihood = $$7.9\%$$*
 
-$$((P1\ cost + P2\ cost + P3\ cost + Reg\ cost + Expected\ Revenue) * (P1\ PoS*P2\ PoS*P3\ PoS*Reg\ PoS)$ $((-\$52.9m + -\$100.8m + -\$291.6m + -\$2.9m + \$4,600m) * (52\%*8.9\%*57.8\%*90.6\%) = \$323.6m$$
+$$((P1\ cost + P2\ cost + P3\ cost + Reg\ cost + Expected\ Revenue) * (P1\ PoS*P2\ PoS*P3\ PoS*Reg\ PoS)$$
+$$((-\$52.9m + -\$100.8m + -\$291.6m + -\$2.9m + \$4,600m) * (52\%*8.9\%*57.8\%*90.6\%) = \$323.6m$$
 
 **Overall expected value**
+
 $$-\$25.4m + -\$56.8m + -\$28.2m + -\$3.7m + \$323.6m = \$209.4m$$
 
 Implying that investing in a typical clinical development program is expected to be a good bet, netting ~$209m per program on average.
