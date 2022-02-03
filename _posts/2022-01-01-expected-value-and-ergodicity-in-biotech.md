@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Expected value and ergodicity in biotech"
+title: "Ergodicity in biotech, or why expected value is a mirage"
 ---
 
-# Expected value and ergodicity in biotech
+# Ergodicity in biotech, or why expected value is a mirage
 
 >*"Don't cross a river if it is four feet deep on average"*
 >\- Nassim Nicholas Taleb
 
 ### Setting the scene: the expected value of clinical development
-[Expected values](https://en.wikipedia.org/wiki/Expected_value) calculations are a typical way to evaluate whether or not investment in a particular clinical development program is likely to be financially worthwhile. To calculate expected, one lays out all the potential outcomes of a clinical development program, such as in the flow chart in figure 1 below, estimates the net profit/loss for each potential path, and sums up the values of each of the paths weighted by their probability. The timing of revenues and costs can then be used to discount the expected value by conversion to a [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp). [This article](https://www.toptal.com/finance/valuation/biotech-valuation) provides a nice overview of the commonplace "risk-adjusted NPV" valuation practice in biotech. 
+[Expected value](https://en.wikipedia.org/wiki/Expected_value) calculations are a typical way to evaluate whether or not investment in a particular clinical development program is likely to be financially worthwhile. To calculate expected value, one lays out all the potential outcomes of a clinical development program, such as in the flow chart in figure 1 below, estimates the net profit/loss for each potential path, and sums up the values of each of the paths weighted by their probability. The timing of revenues and costs can then be used to discount the expected value by conversion to a [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp). [This article](https://www.toptal.com/finance/valuation/biotech-valuation) provides a nice overview of the commonplace "risk-adjusted NPV" valuation practice in biotech. 
 
 ![](/assets/clindev outcomes.drawio.svg)
 
@@ -24,7 +24,9 @@ At face value, it may seem hard to reconcile the positive expected value of drug
 ### Ergodicity and the problems with expected value
 [Ergodicity](https://en.wikipedia.org/wiki/Ergodicity) is a concept that originated in thermodynamics, with relatively recent popularization in economics and finance circles through the work of Ole Peters[^5] and Nassim Nicholas Taleb[^10]. In essence, a system is ergodic if averaging the state of a single member of the system over a long period of time (the time average) gives you an equivalent result to taking the average of the states of all the members of a system at a specific time (the ensemble average). This definition implies that an ergodic system does not have inescapable [attractor states](https://en.wikipedia.org/wiki/Attractor) which trap members of the system and prevent them from visiting all the possible states of the system over a long enough time period, as shown in figure 2 below. 
 
-![](/assets/Pasted image 20220122171650.png)
+<p align="center" width="100%">
+	![](/assets/Pasted image 20220122171650.png)
+</p>
 
 Expected value calculations implicitly assume that you are operating in an ergodic system, where the expected value represents the average outcome over an infinite amount of trials or an infinite number of members of the system. While it's common to use an expected value based approach to evaluate the attractiveness of a single development program in isolation, it really only becomes meaningful when applied to many different programs over long periods of time. Furthermore, the real world is mostly non-ergodic; there are plenty of absorbing attractor states (e.g. death) and you are constrained by your resources and the results of your previous actions.  To quote Ole Peters:[^5]
 
@@ -54,7 +56,9 @@ For as long as they have more than $0, each biotech will continually attempt a f
 - *There are no non-R&D costs*
 - *Simulated biotechs cannot raise additional money outside of what they start with or receive in revenues from launches*
 
-<h3 style="text-align:center;"><iframe src="https://biotech-outcome-simulations.herokuapp.com/" height="1100" width="1500" frameBorder="0"></iframe></h3>
+<p align="center" width="100%">
+	<iframe src="https://biotech-outcome-simulations.herokuapp.com/" height="1100" width="1500" frameBorder="0"></iframe>
+</p>
 
 I've plotted three averages in blue lines on the main graph: the theoretical expected value (if no biotechs could go bankrupt), the actual average and the average of only the non-bankrupt biotechs. Survivorship bias is visualized in the difference between the expected value and the dark blue line above. If ruin was not a possible outcome, then we would see all three curves be equal as biotechs that were unlucky early on would be able to catch-up later (you can test this by inputting 1 for all the probabilities of success). 
 
@@ -86,7 +90,7 @@ Expected value should be interpreted differently depending on your current state
 
 As biotechs plan their investments in development programs it may be prudent for them to also think about their exposure to non-ergodicity and ruinous outcomes. If cash is limited, simply selecting the option with the highest expected value may expose them to unacceptable risk (see appendix 3 for a simple example). The more harmful the downside of a decision is, the less relevant expected value is and the more important it is to focus on the probabilities of specific outcomes instead. It's not particularly meaningful to work out the expected value of a game of Russian roulette, for example.
 
-One good way to incorporate a more nuanced approach into decision making is through [simulation of the potential discrete outcomes](https://en.wikipedia.org/wiki/Monte_Carlo_method). I'd argue that all decisions makers would benefit from an understanding of what each distinct possible future of a development program entails for their company's long-term survival. Instead of maximizing expected value, does it make sense to optimize for the probability of ruin-avoidance instead?
+One good way to incorporate a more nuanced approach into decision making is through [simulation of the potential discrete outcomes](https://en.wikipedia.org/wiki/Monte_Carlo_method). I'd argue that all decision makers would benefit from an understanding of what each distinct possible future of a development program entails for their company's long-term survival. Instead of maximizing expected value, does it make sense to optimize for the probability of ruin-avoidance instead?
 
 Additionally, small biotechs can consider specific strategies to make them more robust over the longer term. Asset consolidation, as we've seen with companies like [BridgeBio](https://bridgebio.com/) and [Centessa](https://centessa.com/) could be a good mechanism of ruin avoidance as a single successful development programs can often repay the costs of many failures.
 
@@ -128,6 +132,7 @@ Using the assumptions outlined above, I have calculated below the value of each 
 *Scenario likelihood = $$48\%$$*
 
 $$(P1\ cost * (1 - P1\ PoS))$$
+
 $$(-\$52.9m * (1 - 52\%)) = -\$25.4m$$
 
 
@@ -136,6 +141,7 @@ $$(-\$52.9m * (1 - 52\%)) = -\$25.4m$$
 *Scenario likelihood = $$37\%$$*
 
 $$((P1\ cost + P2\ cost) * (P1\ PoS*(1 - P2\ PoS)))$$
+
 $$((-\$52.9m + -\$100.8m) * (52\%*(1 - 28.9\%))) = -\$56.8m$$
 
 **Succeeding in phase 1 and 2, then failing in phase 3**
@@ -143,6 +149,7 @@ $$((-\$52.9m + -\$100.8m) * (52\%*(1 - 28.9\%))) = -\$56.8m$$
 *Scenario likelihood = $$6.3\%$$*
 
 $$((P1\ cost + P2\ cost + P3\ cost) * (P1\ PoS*P2\ PoS*(1- P3\ PoS))$$ 
+
 $$((-\$52.9m + -\$100.8m + -\$291.6m) * (52\%*28.9\%*(1-57.8\%))) = -\$28.2m$$
 
 **Succeeding in phase 1, 2 and 3, then being rejected by regulators**
@@ -150,6 +157,7 @@ $$((-\$52.9m + -\$100.8m + -\$291.6m) * (52\%*28.9\%*(1-57.8\%))) = -\$28.2m$$
 *Scenario likelihood = $$0.8\%$$*
 
 $$((P1\ cost + P2\ cost + P3\ cost + Reg\ cost) * (P1\ PoS*P2\ PoS*P3\ PoS*(1- Reg\ PoS))$$ 
+
 $$((-\$52.9m + -\$100.8m + -\$291.6m + -\$2.9m) * (52\%*28.9\%*57.8\%*(1 - 90.6\%)) = -\$3.7m$$
 
 **Succeeding in all phases, being approved by regulators, then launching the drug**
@@ -157,6 +165,7 @@ $$((-\$52.9m + -\$100.8m + -\$291.6m + -\$2.9m) * (52\%*28.9\%*57.8\%*(1 - 90.6\
 *Scenario likelihood = $$7.9\%$$*
 
 $$((P1\ cost + P2\ cost + P3\ cost + Reg\ cost + Expected\ Revenue) * (P1\ PoS*P2\ PoS*P3\ PoS*Reg\ PoS)$$
+
 $$((-\$52.9m + -\$100.8m + -\$291.6m + -\$2.9m + \$4,600m) * (52\%*8.9\%*57.8\%*90.6\%) = \$323.6m$$
 
 **Overall expected value**
@@ -166,7 +175,7 @@ $$-\$25.4m + -\$56.8m + -\$28.2m + -\$3.7m + \$323.6m = \$209.4m$$
 Implying that investing in a typical clinical development program is expected to be a good bet, netting ~$209m per program on average.
 
 ### Appendix 2: Expected value is insensitive to context
-Scenarios with the same expected value can nevertheless have a distinct character. Take the following example: almost everyone would be willing to risk \$1 for a 10% chance to win \$100, this is very favourable in expected value terms ($+\$9$). 
+Scenarios with the same expected value can nevertheless have a distinct character. Take the following example: almost everyone would be willing to risk \$1 for a 10% chance to win \$100, this is very favourable in expected value terms (+\$9). 
 
 $$(90\% * -\$1) + (10\% * (\$100 - \$1)) = \$9$$
 
