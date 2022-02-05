@@ -38,6 +38,18 @@ However, the story of these compounds doesn't end there. Despite decades of use,
 
 Source: [The revival of thalidomide: From tragedy to therapy](https://bcmj.org/special-feature/revival-thalidomide-tragedy-therapy), [](https://www.statnews.com/2019/01/22/celgene-legacy-chutzpah-science-drug-pricing/)
 
+### Herceptin (trastuzumab) for HER2+ breast cancer
+#### Peak annual global product revenue: $7,137m (2018)
+#### Companies involved: Genentech, Roche
+
+In the late 1980's Herceptin was controlled by Genentech but development had stalled - oncology research was ironically a low priority at the time. Little development progress was made until a Genentech senior VP's mother was diagnosed with breast cancer, upon which they became a champion for further investment in the product. After a successful phase 3 Roche finally opted to license the drug after passing on it twice before, despite modest revenue expectations at the time. Roche only changed their mind on the opt-in once it was clear that other companies were interested in acquiring it, as told by Rod Ferguson who led Herceptin's outlicensing auction in 1997:[^23]
+
+>*Roche, which at that time owned and controlled Genentech, passed on this product not just once but twice. We had letters from Roche insulting us, telling us that Genentech was so stupid, that we should have killed this product off years before and this was a mistake.*
+
+
+Source: [@AppleHelix on Twitter and a MotionHall interview with Rod Ferguson](https://twitter.com/AppleHelix/status/1488926282201063434), [Her-2: The Making of Herceptin, a Revolutionary Treatment for Breast Cancer](https://www.goodreads.com/book/show/1357727.Her_2)
+
+
 ---
 
 ### Ibrance (palbociclib) for breast cancer
@@ -128,3 +140,4 @@ Source: [The Antidote](https://www.amazon.com/Antidote-Inside-World-New-Pharma/d
 [^20]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4653765/
 [^21]: https://www.wsj.com/articles/BL-270B-455
 [^22]: https://www.genomeweb.com/archive/vertex-pharmaceuticals-acquire-aurora-biosciences-592-million-stock
+[^23]: https://www.linkedin.com/pulse/motionhall-executive-call-deal-dynamics-herceptin-rachael-craig/
