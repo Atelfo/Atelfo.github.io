@@ -8,7 +8,7 @@ The role of serendipity in drug discovery is well-recognized, the canonical exam
 
 After reading up on the history of some of the most (financially) successful drugs of all time, I was struck by how often chance events made the difference between success and failure, and how often the programs that went on to define a company were underappreciated for long periods of time. Often the only thing keeping these programs alive was the fierce advocacy of a few true believers.
 
-On this page I've collected some of the more interesting examples of "unplanned successes" and underappreciated blockbusters, which I will update as a I find more. I recommend reading the full stories linked in the sources.
+On this page I've collected some of the more interesting examples of "unplanned successes" and initially underappreciated blockbusters, which I will update as a I find more. I recommend reading the full stories linked in the sources.
 
 ## Case studies
 
