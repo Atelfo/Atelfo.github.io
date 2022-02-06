@@ -8,7 +8,7 @@ The role of serendipity in drug discovery is well-recognized, the canonical exam
 
 After reading up on the history of some of the most (financially) successful drugs of all time, I was struck by how often chance events made the difference between success and failure, and how often the programs that went on to define a company were underappreciated for long periods of time. Often the only thing keeping these programs alive was the fierce advocacy of a few true believers.
 
-On this page I've collected some of the more interesting examples of "unplanned successes", which I will update as a I find more. I recommend reading the full stories linked in the sources.
+On this page I've collected some of the more interesting examples of "unplanned successes" and underappreciated blockbusters, which I will update as a I find more. I recommend reading the full stories linked in the sources.
 
 ## Case studies
 
@@ -37,6 +37,8 @@ After seeing the results of Dr. Barlogie's trial, Celgene funded additional tria
 However, the story of these compounds doesn't end there. Despite decades of use, the unique mechanism of action of thalidomide analogs as a recruiter of E3 ubiquitin ligase and driver of proteosomal degradation was only recently elucidated[^20]. This discovery has inspired a new and promising class of [targeted protein degraders](https://en.wikipedia.org/wiki/Proteolysis_targeting_chimera) that may allow the drugging of previously "undruggable" targets in the near future.
 
 Source: [The revival of thalidomide: From tragedy to therapy](https://bcmj.org/special-feature/revival-thalidomide-tragedy-therapy), [](https://www.statnews.com/2019/01/22/celgene-legacy-chutzpah-science-drug-pricing/)
+
+---
 
 ### Herceptin (trastuzumab) for HER2+ breast cancer
 #### Peak annual global product revenue: $7,137m (2018)
