@@ -37,14 +37,14 @@ Twitter is without a doubt the best source for real-time news, debate and discus
 ### Books
 For such a systemically important industry, there's not as many books written about biotech and biopharma as you might think - especially when you exclude ones written for a lay audience. Here are some of the best:
 
-###### Reference
+#### Reference
 - [The Pharmagellan Guide to Analyzing Biotech Clinical Trials](https://www.goodreads.com/book/show/60251293-the-pharmagellan-guide-to-analyzing-biotech-clinical-trials): Just came out (as of 2022), highly recommended for people new to the industry looking to learn about clinical trials. I expect I'll be lending it out to some of the new analysts at my firm. There's not much that will be revelatory for industry veterans; when I read this I had ~5 years of experience in biotech and I was familiar with most of the content, but it was a nice refresher with plenty of useful examples, and I learned a few new things too
 - [Forecasting for the Pharmaceutical Industry: Models for New Product and In-Market Forecasting and How to Use Them](https://www.goodreads.com/book/show/3065691-forecasting-for-the-pharmaceutical-industry): Getting a bit dated now (released in 2006), but still a useful overview of the common forecasting methodologies in the pharmaceutical industry. A great starting point for someone looking to learn how to forecast product revenue in biotech, and anyone looking for a brisk overview of the different methodologies available for pre and post-launch product forecasting (e.g., prevalence or incidence models, system dynamics, trend-based, etc.)
 - [The Pharmagellan Guide to Biotech Forecasting and Valuation](https://www.goodreads.com/book/show/33802675-the-pharmagellan-guide-to-biotech-forecasting-and-valuation): This slim volume has been an invaluable reference that I revisit almost every time I build a forecast model. While the content is US-centric and the coverage of some topics is overly high-level, the page-for-page density of useful information and benchmarks is very high
 
 I'd like to include a reference on country healthcare systems and drug pricing, access and reimbursement but unfortunately I haven't come across any authoritative ones yet
 
-###### Corporate histories
+#### Corporate histories
 - [Genentech: The Beginnings of Biotech](https://www.goodreads.com/book/show/12703074-genentech): The story of how recombinant DNA technology was commercialized. 40 years or so later Genentech (now part of Roche) is still one of the giants in the industry, and everyone in the industry should be aware of their history
 - [The Antidote: A Small Competitor Challenges the Drug Giants: Conquests in New Pharma](https://www.goodreads.com/book/show/18144096-the-antidote "The Antidote: A Small Competitor Challenges the Drug Giants: Conquests in New Pharma"): Vertex is one of the great success stories of genomic medicine, phenotypic screening and collaboration with patient groups. This book is a fascinating insight into the ups and downs they experienced on the road to launching their hepatitis C and cystic fibrosis drugs, and the role luck plays in drug development
 - [Bad Blood: Secrets and Lies in a Silicon Valley Startup](https://www.goodreads.com/book/show/37976541-bad-blood "Bad Blood: Secrets and Lies in a Silicon Valley Startup"): The rise and fall of the fraudulent blood testing company Theranos. As gripping as any thriller, I finished this book in a day
@@ -52,7 +52,7 @@ I'd like to include a reference on country healthcare systems and drug pricing, 
 - [A Rare Breed: How people and perseverance built BioMarin into one of the world's most innovative companies](https://www.goodreads.com/book/show/36562324-a-rare-breed "A Rare Breed: How people and perseverance built BioMarin into one of the world's most innovative companies"): Overly hagiographic in parts, but a worthwhile read nonetheless. The moral of the story, if any, is that success comes when you pick a focus and stick to it, which for BioMarin was (and is) rare diseases, enzyme replacement therapies and manufacturing of complex biologics
 - [Science Lessons: What the Business of Biotech Taught Me About Management](https://www.goodreads.com/book/show/3117875-science-lessons "Science Lessons: What the Business of Biotech Taught Me About Management"): The early days of Amgen as told by its former CEO Gordon Binder. I wavered on including this one because while it's a fine book with solid insights on financing and people management, you won't miss too much if you skip it
 
-###### Clinical memoirs
+#### Clinical memoirs
 - [When Breath Becomes Air](https://www.goodreads.com/book/show/25899336-when-breath-becomes-air "When Breath Becomes Air"): A beautiful and haunting memoir of a dying neurosurgeon, just read it!
 - [Brain Fables: The Hidden History of Neurodegenerative Diseases and a Blueprint to Conquer Them](https://www.goodreads.com/book/show/53481816-brain-fables "Brain Fables: The Hidden History of Neurodegenerative Diseases and a Blueprint to Conquer Them"): A brief tour through the problems with the way we conceptualize and study neurodegenerative brain diseases. I really liked how the book interspersed sections written by a clinician and a Parkinson's disease patient advocate. It's a unique format and helped put the clinical information into a patient-relevant context
 - [When Blood Breaks Down: Life Lessons from Leukemia](https://www.goodreads.com/book/show/51777400-when-blood-breaks-down): A fantastic portrait of life as a physician in the heme/onc ward. Makes effective use of patient stories to put the science and treatment of blood cancers into context
@@ -60,7 +60,7 @@ I'd like to include a reference on country healthcare systems and drug pricing, 
 - [Caring for the Heart: Mayo Clinic and the Rise of Specialization](https://www.goodreads.com/book/show/22759193-caring-for-the-heart "Caring for the Heart: Mayo Clinic and the Rise of Specialization"): The history of cardiology (mainly diagnostics and surgery), and how it was intertwined with the founding and rising eminence of the Mayo clinic
 - [Chasing Men on Fire: The Story of the Search for a Pain Gene](https://www.goodreads.com/book/show/36722581-chasing-men-on-fire "Chasing Men on Fire: The Story of the Search for a Pain Gene"): Nav1.7 and the path from target identification to the clinic
 
-###### Other 
+#### Other 
 - [Science Fictions: The Epidemic of Fraud, Bias, Negligence and Hype in Science](https://www.goodreads.com/book/show/52199285-science-fictions "Science Fictions: The Epidemic of Fraud, Bias, Negligence and Hype in Science"): An exposé of the big problems with science today, and why much of what is published cannot be relied upon
 - [The Eighth Day of Creation](https://www.goodreads.com/book/show/228568.The_Eighth_Day_of_Creation "The Eighth Day of Creation"): The definitive history of molecular biology. While it can drag in parts, no other history of this period I've come across is as vivid or detailed
 - [The Art of Statistics](https://www.goodreads.com/book/show/43722897-the-art-of-statistics): An understanding of statistics is essential in biotech, an this is an excellent refresher
@@ -80,7 +80,7 @@ On the whole, there are no biotech focused podcasts (that I'm aware of) that I f
 - [Biotech Clubhouse](https://www.clubhouse.com/club/biotech-clubhouse) on the [Clubhouse app](https://www.clubhouse.com/): Essentially a live podcast that takes place (almost) every Sunday at 10PM CET / 4PM ET and runs for about 2 hours, hosted by [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian) and [Daphne Zohar](https://twitter.com/daphnezohar). The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
 
 ### Specialized databases and search engines
-###### Open-access
+#### Open-access
 - [Clinicaltrials.gov](https://clinicaltrials.gov/): A US-based clinical trials registry, but usually all relevant trials are listed here regardless of where they are taking place in the world. Other countries and regions typically have their own databases too (e.g., [clinicaltrialsregister.eu](https://www.clinicaltrialsregister.eu/) for the EU), but you rarely need to use them too
 - [DrugBank](https://go.drugbank.com/): Database of drugs including mechanisms of action, pharmacology, properties, etc.
 - [Malacards](https://www.malacards.org/): Database of diseases. Consolidates a lot of useful information on genetics, pathophysiology, related diseases, trials, papers, etc. from multiple sources
@@ -89,7 +89,7 @@ On the whole, there are no biotech focused podcasts (that I'm aware of) that I f
 - [Orphanet](https://www.orpha.net/consor/cgi-bin/index.php) and [National Organization for Rare Disorders (NORD)](https://rarediseases.org/for-patients-and-families/information-resources/rare-disease-information/): Rare disease databases and information
 - [SEC EDGAR](https://www.sec.gov/edgar/searchedgar/companysearch.html): Background information on US-listed public companies. Search by ticker symbol for 10-K (annual reports) and S-1 (IPO prospectus) 
 
-###### Paid resources:
+#### Paid resources:
 -  [UpToDate](https://www.wolterskluwer.com/en/solutions/uptodate): Immensely useful disease overviews and summaries of the latest clinical practice
 - [GlobalData](https://www.globaldata.com/industries-we-cover/pharmaceutical/), [AdisInsight](https://adisinsight.springer.com/) and [EvaluatePharma](https://www.evaluate.com/products-services/pharma) (among others) are extremely helpful - albeit very expensive - pipeline and sales revenue databases
 - There are many paid and/or specialized country specific drug pricing databases (e.g., [RED BOOK](https://www.ibm.com/products/micromedex-red-book) for US prices) that I won't go into in detail on, but it's useful to know they exist
