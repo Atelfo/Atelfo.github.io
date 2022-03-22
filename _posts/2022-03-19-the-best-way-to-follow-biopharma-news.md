@@ -17,6 +17,7 @@ While writing this I came across [this popular post](https://nbhorwitz.medium.co
 - [Endpoints news](https://endpts.com/): My favourite source for skimmable news and headlines (many articles required a paid subscription to view)
 - [Evaluate Vantage](https://www.evaluate.com/vantage): High quality analysis that puts industry and pipeline news into context
 - [STAT news](https://www.statnews.com/): Excellent longform content, breaks a lot of big stories (paywalled but the free stuff is good, too)
+- [BioPharma Dive](https://www.biopharmadive.com/): In-depth news and articles
 
 ### Twitter
 Twitter is without a doubt the best source for real-time news, debate and discussion on biopharma. While many accounts are worth following (you can see everyone I follow [here](https://twitter.com/Atelfo/following)), these are who I consider to be the "must-follow" accounts:
@@ -33,6 +34,17 @@ Twitter is without a doubt the best source for real-time news, debate and discus
 - [Drug truths](https://www.forbes.com/sites/johnlamattina/?sh=58525ff2b0d2): Blog of former Pfizer executive John LaMattina ([@John_LaMattina](https://twitter.com/John_LaMattina) on twitter), focusing on US drug pricing and costs
 - [Science-based medicine](https://sciencebasedmedicine.org/): Dedicated to debunking medical myths and misinformation
 - [Nintil](https://nintil.com/): Not a biopharma blog per se, but Jose Luis Ricón Fernández de la Puente does regularly post interesting links and takes on adjacent topics such longevity research and effective allocation of R&D funding
+
+### Podcasts
+On the whole, there are no biotech focused podcasts (that I'm aware of) that I find consistently informative and interesting enough to listen to regularly. Most are too high-level for my tastes. That being said, I do keep an eye on the podcasts below and listen when there's an interesting topic or guest on.
+
+- [The Long Run with Luke Timmerman](https://timmermanreport.com/the-long-run/): Hour long autobiographical interviews with high-profile biotech executives. High variance in guest quality; some are fascinating, others less so
+- [Mendelspod](https://mendelspod.com/): Developments in diagnostics, genetics and genomic medicine 
+- [OncoPharm](https://podcasts.apple.com/us/podcast/oncopharm/id1305345744): Quick and straight to the point updates on the latest developments in oncology
+- [Nature podcast](https://www.nature.com/nature/articles?type=nature-podcast): Summaries of the latest splashy scientific papers from the World's preeminent scientific journal - not always about biotechnology, but often
+
+### Other
+- [Biotech Clubhouse](https://www.clubhouse.com/club/biotech-clubhouse) on the [Clubhouse app](https://www.clubhouse.com/): Essentially a live podcast that takes place (almost) every Sunday at 10PM CET / 4PM ET and runs for about 2 hours, hosted by [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian) and [Daphne Zohar](https://twitter.com/daphnezohar). The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
 
 ### Books
 For such a systemically important industry, there's not as many books written about biotech and biopharma as you might think - especially when you exclude ones written for a lay audience. Here are some of the best:
@@ -67,17 +79,6 @@ I'd like to include a reference on country healthcare systems and drug pricing, 
 - [Bad Pharma: How Drug Companies Mislead Doctors and Harm Patients](https://www.goodreads.com/book/show/15795155-bad-pharma): While I find many of the critiques presented within this book weak or outdated, it's still worth reading for a critical perspective on the pharmaceutical industry
 
 For new biotech books, I like to check the [MIT press website](https://mitpress.mit.edu/topics/biomedical-sciences) from time to time; they seem to be the most consistent publisher of quality titles.
-
-### Podcasts
-On the whole, there are no biotech focused podcasts (that I'm aware of) that I find consistently informative and interesting enough to listen to regularly. Most are too high-level for my tastes. That being said, I do keep an eye on the podcasts below and listen when there's an interesting topic or guest on.
-
-- [The Long Run with Luke Timmerman](https://timmermanreport.com/the-long-run/): Hour long autobiographical interviews with high-profile biotech executives. High variance in guest quality; some are fascinating, others less so
-- [Mendelspod](https://mendelspod.com/): Developments in diagnostics, genetics and genomic medicine 
-- [OncoPharm](https://podcasts.apple.com/us/podcast/oncopharm/id1305345744): Quick and straight to the point updates on the latest developments in oncology
-- [Nature podcast](https://www.nature.com/nature/articles?type=nature-podcast): Summaries of the latest splashy scientific papers from the World's preeminent scientific journal - not always about biotechnology, but often
-
-### Other
-- [Biotech Clubhouse](https://www.clubhouse.com/club/biotech-clubhouse) on the [Clubhouse app](https://www.clubhouse.com/): Essentially a live podcast that takes place (almost) every Sunday at 10PM CET / 4PM ET and runs for about 2 hours, hosted by [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian) and [Daphne Zohar](https://twitter.com/daphnezohar). The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
 
 ### Specialized databases and search engines
 #### Open-access
