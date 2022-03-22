@@ -11,7 +11,7 @@ While writing this I came across [this popular post](https://nbhorwitz.medium.co
 ### Scientific literature
 - [PubMed](https://pubmed.ncbi.nlm.nih.gov/): The Google search of biotech (check out the trending papers [here](https://pubmed.ncbi.nlm.nih.gov/trending/))
 - [Nature Reviews Drug Discovery](https://www.nature.com/nrd/): Great combination of industry news, analysis and reviews of cutting-edge drug discovery science
-- [Nature Reviews Disease Primers](https://www.nature.com/nrdp/): In-depth summaries of the epidemiology, pathophysiology, management, unmet needs and outlook for many different diseases. When I'm brushing up on a new therapy area one of the first things I do is check if there's one of these primers available
+- [Nature Reviews Disease Primers](https://www.nature.com/nrdp/): Detailed summaries of the epidemiology, pathophysiology, management, unmet needs and outlook for many different diseases. When I'm brushing up on a new therapy area one of the first things I do is check if there's one of these primers available
 
 ### Industry news sites
 - [Endpoints news](https://endpts.com/): My favourite source for skimmable news and headlines (many articles required a paid subscription to view)
@@ -25,7 +25,7 @@ Twitter is without a doubt the best source for real-time news, debate and discus
 - [@bradloncar](https://twitter.com/bradloncar): Independent investor, mostly tweets about immuno-oncology and China. Posts nice daily/weekly summaries of the performance of key biotech stock indices
 - [@LifeSciVC](https://twitter.com/LifeSciVC): Account of VC Bruce Booth, follow for perspectives on early-stage biotech financing and the state of the industry
 - [@JacobPlieth](https://twitter.com/JacobPlieth): Journalist at Evaluate Vantage and snarky commentator on oncology news
-- [@Sports_Bios](https://twitter.com/Sports_bios): Smart (often contrarian) takes on market trends. Often tweets about neuroscience and China
+- [@Sports_Bios](https://twitter.com/Sports_bios): Smart (often contrarian) takes on market trends, follows neuroscience and China closely
 - [@AndyBiotech](https://twitter.com/AndyBiotech): Hasn't been active lately, but excellent signal-to-noise ratio when he does post
 
 ### Blogs
@@ -44,7 +44,7 @@ On the whole, there are no biotech focused podcasts (that I'm aware of) that I f
 - [Nature podcast](https://www.nature.com/nature/articles?type=nature-podcast): Summaries of the latest splashy scientific papers from the World's preeminent scientific journal - not always about biotechnology, but often
 
 ### Other
-- [Biotech Clubhouse](https://www.clubhouse.com/club/biotech-clubhouse) on the [Clubhouse app](https://www.clubhouse.com/): Essentially a live podcast that takes place (almost) every Sunday at 10PM CET / 4PM ET and runs for about 2 hours, hosted by [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian) and [Daphne Zohar](https://twitter.com/daphnezohar). The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
+- [Biotech Clubhouse](https://www.clubhouse.com/club/biotech-clubhouse) on the [Clubhouse app](https://www.clubhouse.com/): Essentially a live podcast that takes place (almost) every Sunday at 10PM CET / 4PM ET and runs for 1-2 hours, hosted by [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian) and [Daphne Zohar](https://twitter.com/daphnezohar). The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
 
 ### Books
 For such a systemically important industry, there's not as many books written about biotech and biopharma as you might think - especially when you exclude ones written for a lay audience. Here are some of the best:
@@ -91,7 +91,7 @@ For new biotech books, I like to check the [MIT press website](https://mitpress.
 - [SEC EDGAR](https://www.sec.gov/edgar/searchedgar/companysearch.html): Background information on US-listed public companies. Search by ticker symbol for 10-K (annual reports) and S-1 (IPO prospectus) 
 
 #### Paid resources:
--  [UpToDate](https://www.wolterskluwer.com/en/solutions/uptodate): Immensely useful disease overviews and summaries of the latest clinical practice
+- [UpToDate](https://www.wolterskluwer.com/en/solutions/uptodate): Immensely useful disease overviews and summaries of the latest clinical practice
 - [GlobalData](https://www.globaldata.com/industries-we-cover/pharmaceutical/), [AdisInsight](https://adisinsight.springer.com/) and [EvaluatePharma](https://www.evaluate.com/products-services/pharma) (among others) are extremely helpful - albeit very expensive - pipeline and sales revenue databases
 - There are many paid and/or specialized country specific drug pricing databases (e.g., [RED BOOK](https://www.ibm.com/products/micromedex-red-book) for US prices) that I won't go into in detail on, but it's useful to know they exist
 
