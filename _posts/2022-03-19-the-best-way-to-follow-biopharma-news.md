@@ -43,9 +43,6 @@ On the whole, there are no biotech focused podcasts (that I'm aware of) that I f
 - [OncoPharm](https://podcasts.apple.com/us/podcast/oncopharm/id1305345744): Quick and straight to the point updates on the latest developments in oncology
 - [Nature podcast](https://www.nature.com/nature/articles?type=nature-podcast): Summaries of the latest splashy scientific papers from the World's preeminent scientific journal - not always about biotechnology, but often
 
-### Other
-- [Biotech Clubhouse](https://www.clubhouse.com/club/biotech-clubhouse) on the [Clubhouse app](https://www.clubhouse.com/): Essentially a live podcast that takes place (almost) every Sunday at 10PM CET / 4PM ET and runs for 1-2 hours, hosted by [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian) and [Daphne Zohar](https://twitter.com/daphnezohar). The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
-
 ### Books
 For such a systemically important industry, there's not as many books written about biotech and biopharma as you might think - especially when you exclude ones written for a lay audience. Here are some of the best:
 
@@ -77,6 +74,9 @@ I'd like to include a reference on country healthcare systems and drug pricing, 
 - [The Eighth Day of Creation](https://www.goodreads.com/book/show/228568.The_Eighth_Day_of_Creation "The Eighth Day of Creation"): The definitive history of molecular biology. While it can drag in parts, no other history of this period I've come across is as vivid or detailed
 - [The Art of Statistics](https://www.goodreads.com/book/show/43722897-the-art-of-statistics): An understanding of statistics is essential in biotech, an this is an excellent refresher
 - [Bad Pharma: How Drug Companies Mislead Doctors and Harm Patients](https://www.goodreads.com/book/show/15795155-bad-pharma): While I find many of the critiques presented within this book weak or outdated, it's still worth reading for a critical perspective on the pharmaceutical industry
+
+### Miscellaneous
+- [Biotech Clubhouse](https://www.clubhouse.com/club/biotech-clubhouse) on the [Clubhouse app](https://www.clubhouse.com/): Essentially a live podcast that takes place (almost) every Sunday at 10PM CET / 4PM ET and runs for 1-2 hours, hosted by [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian) and [Daphne Zohar](https://twitter.com/daphnezohar). The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
 
 For new biotech books, I like to check the [MIT press website](https://mitpress.mit.edu/topics/biomedical-sciences) from time to time; they seem to be the most consistent publisher of quality titles.
 
