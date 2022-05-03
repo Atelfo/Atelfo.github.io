@@ -89,6 +89,7 @@ For new biotech books, I like to check the [MIT press website](https://mitpress.
 - [EMA website](https://www.ema.europa.eu/en): EU drug labelling information/approval histories. Their search doesn't always surface the most relevant pages so I usually just search Google for "[drug name] site: www.ema.europa.eu"
 - [Orphanet](https://www.orpha.net/consor/cgi-bin/index.php) and [National Organization for Rare Disorders (NORD)](https://rarediseases.org/for-patients-and-families/information-resources/rare-disease-information/): Rare disease databases and information
 - [SEC EDGAR](https://www.sec.gov/edgar/searchedgar/companysearch.html): Background information on US-listed public companies. Search by ticker symbol for 10-K (annual reports) and S-1 (IPO prospectus) 
+- [MedlinePlus](https://medlineplus.gov/medlineplus.html): Handy US government reference with disease summaries, references and links (especially the genetics pages)
 
 #### Paid resources:
 - [UpToDate](https://www.wolterskluwer.com/en/solutions/uptodate): Immensely useful disease overviews and summaries of the latest clinical practice
