@@ -10,9 +10,9 @@ The stories of [epacadostat](https://www.biopharmadive.com/news/incyte-cancer-st
 
 The PD-(L)1 class of immunotherapies have been extraordinarily successful at treating a wide range of cancers, and as the examples above illustrate, have proven challenging to improve upon when combined with other immunotherapy agents (chemotherapy or kinase inhibitor combinations aside). Just a few weeks ago there was yet another high-profile setback as tiragolumab in combination with the anti-PD-L1 atezolizumab [failed to improve outcomes in non-small cell lung cancer at an interim assessment](https://www.biopharmadive.com/news/roche-tiragolumab-tigit-lung-cancer-trial/623542/), although I should note that there is still hope that the final results will be positive for overall survival.
 
-It's not as though dual immunotherapy combinations don't work, there have been successes: nivolumab + ipilimumab is the archetypical example, and nivolumab + relatlimab is a recent successor, both approved in advanced melanoma. One of the common criticisms the failed combinations have attracted is that they were taken into pivotal trials with scant evidence of single-agent activity and hence the failures were unsurprising, although I should note that tiragolumab + atezolizumab had [positive randomized phase II data](https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(22)00226-1/fulltext) and the relatlimab combination seems to work despite LAG3 antibodies having little single-agent activity[^42].
+It's not as though dual immunotherapy combinations don't work, there have been successes: nivolumab + ipilimumab is the archetypical example, and nivolumab + relatlimab a recent successor, both approved in advanced melanoma. One of the common criticisms the failed combinations have attracted is that they were taken into pivotal trials with scant evidence of single-agent activity and hence the failures were unsurprising, although I should note that tiragolumab + atezolizumab had [positive randomized phase II data](https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(22)00226-1/fulltext) and the relatlimab combination seems to work despite LAG3 antibodies having little single-agent activity[^42].
 
-This all serves to highlight the challenges associated with evaluating from early stage trials whether a combination is really better than the monotherapy alone. But I do think the techniques of probability and causal inference can help to make informed judgments about response rate data in single-arm phase II oncology combination trials, which I want to explore in this post. 
+This all serves to highlight the challenges associated with evaluating whether a combination is really better than the monotherapy alone based on data from early trials. But I do think the techniques of probability and causal inference can help to make informed judgments about response rate data in single-arm phase II oncology combination trials, which is what I want to explore in this post. 
 
 #### The overall response rate (ORR)
 The overall (or objective) response rate (ORR) is usually the primary way in which the efficacy of a new oncology drug is judged in early stage clinical trials. The standard definition of ORR is the proportion of patients with a complete or partial response to therapy, which are defined [per the RECIST 1.1 guidelines for solid tumours](https://recist.eortc.org/recist-1-1-2/) as:
@@ -49,22 +49,22 @@ Nivolumab + epacadostat |  65% (26/40)| ECHO-204[^15] | II | 2014
 Pembrolizumab + lifileucel | 67% (6/9) | NCT03645928[^23] | II | 2019
 
 
-#### ORR as a binomially distributed variable
+### ORR as a binomially distributed variable
 Because ORR is a binary outcome - either a patient achieves a PR or CR, or they do not - we can use the [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution) to evaluate the distribution of ORR outcomes. Therefore, the probability of a given drug achieving a particular response rate in a trial is given by:
 
 $$P(ORR) = \binom{s}{r}p^{r}(1-p)^{s-r}$$
 
-Where $p$ is the probability of a PR or CR (i.e. the ORR), $s$ is the sample size and $r$ is the number of responses. An important assumption I make here is that all drugs have a "true" invariant response rate for a particular population (henceforth referred to as the $tORR$), and the distribution of results in a given trial are randomly determined by this underlying probability (so $p = tORR$ in the above formula). To calculate the chance of a drug achieving an ORR equivalent or better than a specific value we need to sum the results for every equal or greater value of $r$ up to and including the value at which $r = s$ (i.e., everyone in the trial responds).
+Where $$p$$ is the probability of a PR or CR (i.e. the ORR), $$s$$ is the sample size and $$r$$ is the number of responses. An important assumption I make here is that all drugs have a "true" invariant response rate for a particular population (henceforth referred to as the $$tORR$$), and the distribution of results in a given trial are randomly determined by this underlying probability (so $$p = tORR$$ in the above formula). To calculate the chance of a drug achieving an ORR equivalent or better than a specific value we need to sum the results for every equal or greater value of $$r$$ up to and including the value at which $$r = s$$ (i.e., everyone in the trial responds).
 
-Using the binomial distribution is a helpful starting point for analyzing single-arm trials because it allows us to quantify how likely a particular result is at specific assumptions of $tORR$. For example, I've plotted results from a number of example trials below (all melanoma except for magrolimab, which is in myelodysplastic syndrome) . Each line shows the probability of achieving the result in the legend if the $tORR$ was the value shown on the x-axis - naturally the most likely result is the one that was actually achieved.
+Using the binomial distribution is a helpful starting point for analyzing single-arm trials because it allows us to quantify how likely a particular result is at specific assumptions of $$tORR$$. For example, I've plotted results from a number of example trials below (all melanoma except for magrolimab, which is in myelodysplastic syndrome) . Each line shows the probability of achieving the result in the legend if the $$tORR$$ was the value shown on the x-axis - naturally the most likely result is the one that was actually achieved.
 
-{% include trial_distribs.html %}
+{% include trial_distribs.html width='120%' %}
 
-The most important thing to notice from the chart is how as the sample size increases, the spread of likely values also increases; a drug with a $tORR$ of 60% could quite plausibly achieve an ORR of 80% in a small trial of 9 patients, whereas the results of a large 300+ person trial are almost never going to deviate much from the $tORR$.
+The most important thing to notice from the chart is how as the sample size increases, the spread of likely values also increases; a drug with a $$tORR$$ of 60% could quite plausibly achieve an ORR of 80% in a small trial of 9 patients, whereas the results of a large 300+ person trial are almost never going to deviate much from the $$tORR$$.
 
 Returning to the epacadostat + pembrolizumab example, we can use the formula above to estimate how likely the result in ECHO-202 was, if we assume that the epacadostat combo is no better than pembrolizumab mono (as we now know to be the case from the results of ECHO-301). 
 
-To do this we need to select a $tORR$ benchmark that represents the activity of pembrolizumab alone. Cross-trial comparisons are always fraught, but you are forced to do it when evaluating single-arm studies. We can use the 46% ORR from KEYNOTE-006 as our reference point, although it's notable that pembrolizumab underperformed this benchmark in ECHO-301 (32% ORR), possibly due to selection bias in more recent trials.
+To do this we need to select a $$tORR$$ benchmark that represents the activity of pembrolizumab alone. Cross-trial comparisons are always fraught, but you are forced to do it when evaluating single-arm studies. We can use the 46% ORR from KEYNOTE-006 as our reference point, although it's notable that pembrolizumab underperformed this benchmark in ECHO-301 (32% ORR), possibly due to selection bias in more recent trials.
 
 Plugging the sample size and response rate data from ECHO-202 along with the 46% benchmark into the binomial formula gives us the probability that pembrolizumab plus an ineffective agent would achieve the exact result seen in ECHO-202.
 
@@ -72,12 +72,11 @@ $$P(ORR) = \binom{45}{25}0.46^{25}(1-0.46)^{45-42} = 5.22\%$$
 
 However that just tells us the probability for a specific outcome, what is more meaningful is the chance of the epacadostat combo achieving at least a certain ORR or better, assuming it did not improve at all on pembrolizumab monotherapy. I've plotted the results of this below:
 
-
 {% include ORR_chance_graph.html %}
 
 So there is a ~13% chance that the epacadostat would achieve an ORR of 56% or better if it was no better than pembrolizumab mono. Which may seem low, but to properly assess this result we need to incorporate the additional context of high failure rates in oncology, as this makes false positives a significant risk.
 
-#### Oncology and the false discovery rate ==|DONE|==
+### Oncology and the false discovery rate
 While we can use the binomial distribution to calculate how likely a drug is to meet or exceed an ORR threshold given that it is inactive, the inverse is probably the more interesting question: Given that a drug has succeeded in a trial, how likely is it to be inactive? Before addressing this question explicitly, I want to first discuss false positives in oncology in general terms. 
 
 Oncology is the therapy area with the most drug development activity, and yet it has one of the lowest probabilities of success. Only ~11% of phase II oncology drugs make it all the way to approval[^3], with a lack of efficacy being the most frequent reason for failure (accounting for ~64-82% of failures by some estimates[^9][^13]). The numbers are only slightly more encouraging for immuno-oncology drugs, which have a ~19% likelihood of approval from phase II[^3].
@@ -92,40 +91,40 @@ $$46\% + 20\%*(1-46\%) = 56.8\%$$
 
 How many false positives can you expect? And at which sample size is a positive trial more likely to be a true positive than a false positive?
 
-For each sample size in the range of 1 to 100 I simulated 1000 drug-trial pairs where each drug had a 19% chance of being effective (i.e., with a $tORR \ge$ the 57% efficacy threshold). If the combination was more effective than the monotherapy the $tORR$ was randomly generated by a uniform distribution to be between 57% and 100%. If the drug was ineffective, the combination took the pembrolizumab monotherapy $tORR$, assumed to be 46%. The actual results were randomly sampled from a binomial distribution. Below the results of the simulation are plotted.
+For each sample size in the range of 1 to 100 I simulated 1000 drug-trial pairs where each drug had a 19% chance of being effective (i.e., with a $$tORR \ge$$ the 57% efficacy threshold). If the combination was more effective than the monotherapy the $$tORR$$ was randomly generated by a uniform distribution to be between 57% and 100%. If the drug was ineffective, the combination took the pembrolizumab monotherapy $$tORR$$, assumed to be 46%. The actual results were randomly sampled from a binomial distribution. Below the results of the simulation are plotted.
 
-{% include FDRplot.html %}
+{% include FDRplot.html width='110%' %}
 
 Two conclusions are clear from the simulation for the parameters I chose:
 - A higher proportion of small trials meet the efficacy bar; larger trials will fail more often
 - Most positive trials with less than ~20 patients are false discoveries
 
-In our hypothetical scenario with a typical phase II trial size of 40-60 patients, we'd expect a 20-30% chance of our combination being a false positive and therefore failing in the pivotal trial (at significant expense). 
+In this hypothetical scenario with a typical phase II trial size of 40-60 patients, we'd expect a 20-30% chance of our combination being a false positive and therefore failing in the pivotal trial (at significant expense). 
 
-To generalize from this specific case high false discovery rates in phase II contribute directly to high phase III failure rates in oncology; historical data indicates that only ~44% of phase III oncology drugs get approval (48% for immuno-oncology)[^3]. In order to reduce the risk of false discoveries one could increase the efficacy threshold for advancement to phase III, increase the sample size[^10] or select an indication or drug class with a high baseline probability of success.
+To generalize from this specific case, high false discovery rates in phase II contribute directly to high phase III failure rates in oncology; historical data indicates that only ~44% of phase III oncology drugs get approval (48% for immuno-oncology)[^3]. In order to reduce the risk of false discoveries one could increase the efficacy threshold for advancement to phase III, increase the sample size[^10] or select an indication or drug class with a high baseline probability of success.
 
-#### Bayesian inference 
+### Bayesian inference 
 We now return to the question I asked at the beginning of the last section: Given that a drug has succeeded in a trial, how likely is it to be inactive?
 
 We can combine the pieces of information we've discussed - the probability of achieving a specific ORR, and the false discovery rates - by making use of [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem) (shown below), which incorporates prior information to give us insight into the likely meaningfulness of a given result.
 
 $$P(E|ORR) = \frac{P(ORR|E)*P(E)}{P(ORR)}$$
 
-Where $E$ is the probability that the drug is effective and $ORR$ is the probability of reaching the threshold ORR in the trial. We'll work through example calculations for the epacadostat + pembrolizumab combination:
+Where $$E$$ is the probability that the drug is effective and $$ORR$$ is the probability of reaching the threshold ORR in the trial. We'll work through example calculations for the epacadostat + pembrolizumab combination:
 
-For the baseline probability of efficacy $P(E)$ we can use the 19% chance of approval for a phase 2 IO drug[^3] (arguably this should be a bit higher because not all trials fail due to lack of efficacy, but 19% seems a reasonable guess). You could also input your subjective prior belief that the combination is efficacious (expressed in percentages).
+For the baseline probability of efficacy $$P(E)$$ we can use the 19% chance of approval for a phase 2 IO drug[^3] (arguably this should be a bit higher because not all trials fail due to lack of efficacy, but 19% seems a reasonable guess). You could also input your subjective prior belief that the combination is efficacious (expressed in percentages).
 
 $$P(E|ORR) = \frac{P(ORR|E)*0.19}{P(ORR)}$$
 
-$P(ORR|E)$ is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the $tORR$ is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial $P(ORR|E)$ also ends up at ~56%.
+$$P(ORR|E)$$ is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the $$tORR$$ is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial $$P(ORR|E)$$ also ends up at ~56%.
 
 $$P(E|ORR) = \frac{0.56*0.19}{P(ORR)}$$
 
 Lastly, we need to find the probability of a reference class of combinations posting an ORR greater than the threshold. When you have a lot of data you can use the empirical distribution, but there is not enough data in melanoma to do that confidently. So we can just try to logically estimate it by decomposing the problem in the following way:
 
-$$$P(ORR) = P(E)*P(ORR|E) + P(\neg{E})*P(ORR|\neg{E})$$
+$$P(ORR) = P(E)*P(ORR|E) + P(\neg{E})*P(ORR|\neg{E})$$
 
-We know $P(ORR|\neg{E}) = 13\%$ from our estimations in an earlier section. And we just estimated $P(ORR|E)$ above. Then we just need to weight the contributions:
+We know $$P(ORR|\neg{E}) = 13\%$$ from our estimations in an earlier section. And we just estimated $$P(ORR|E)$$ above. Then we just need to weight the contributions:
 
 $$P(ORR) = 0.19*0.56 + 0.81*0.13 = 0.2117$$
 
@@ -136,25 +135,25 @@ $$P(E|ORR) = 50.3\%$$
 
 Incorporating the prior likelihood of failure led to a rough estimate of a ~50% chance that epacadostat + pembrolizumab was better than pembrolizumab monotherapy based on the results of KEYNOTE-006 and ECHO-202. That's a fairly large discount to the 87% given by the binomial probability alone, and seems like a fair assessment of the chances with what was known at the time.
 
-#### Building on Bayes: maximum likelihood estimation (MLE)
-To finish I'd like to do one better and work out what is the most likely ORR for a drug given its performance in a trial, and for that we can make use of a technique called Bayesian [maximum likelihood estimation (MLE)](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation#Relation_to_Bayesian_inference) which is a fancy term for enumerating the probability of each individual hypothesis being true, given the observed data - all calculated using Bayes' formula. Our hypothesis in this case may be that a combination could take on any $tORR$ value from 0 to 100%, so by calculating the probability of $tORR$ separately, we can find the $tORR$ with the highest probability given the evidence. So in this case, we will run the below calculation multiple times until we find the one that gives us the highest probability:
+### Building on Bayes: maximum likelihood estimation (MLE)
+To finish I'd like to do one better and work out what is the most likely ORR for a drug given its performance in a trial, and for that we can make use of a technique called Bayesian [maximum likelihood estimation (MLE)](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation#Relation_to_Bayesian_inference) which is a fancy term for enumerating the probability of each individual hypothesis being true, given the observed data - all calculated using Bayes' formula. Our hypothesis in this case may be that a combination could take on any $$tORR$$ value from 0 to 100%, so by calculating the probability of $$tORR$$ separately, we can find the $$tORR$$ with the highest probability given the evidence. So in this case, we will run the below calculation multiple times until we find the one that gives us the highest probability:
 
 $$P(tORR|eORR) \propto P(eORR|tORR)*P(tORR)$$
 
-In this case $eORR$ refers to the experimental ORR, which is the evidence for a specific hypothesized value of $tORR$. So using the formula above we can determine what value of $tORR$ best fits the evidence from existing trials ($eORR$). The nice thing about this technique is that we [don't need the denominator of Bayes' formula to find the most likely value](https://en.wikipedia.org/wiki/Bayesian_inference#Bayesian_inference), because it's just a normalization term and so doesn't change where the peak probability is found.
+In this case $$eORR$$ refers to the experimental ORR, which is the evidence for a specific hypothesized value of $$tORR$$. So using the formula above we can determine what value of $$tORR$$ best fits the evidence from existing trials ($$eORR$$). The nice thing about this technique is that we [don't need the denominator of Bayes' formula to find the most likely value](https://en.wikipedia.org/wiki/Bayesian_inference#Bayesian_inference), because it's just a normalization term and so doesn't change where the peak probability is found.
 
-The main practical difference between MLE and the simple example of Bayes' formula in the last section is that we need a distribution of probabilities as input, not just singular values. For $P(eORR|tORR)$ this is relatively straightforward to calculate, as we can use the binomial distribution to tell us how likely the value of $eORR$ that was achieved in prior trials for each value of $tORR$. However, calculating $P(tORR)$ (the prior) can be challenging and is probably unknowable in any precise sense, but the distribution of outcomes of large phase III's should be close to the real value. 
+The main practical difference between MLE and the simple example of Bayes' formula in the last section is that we need a distribution of probabilities as input, not just singular values. For $$P(eORR|tORR)$$ this is relatively straightforward to calculate, as we can use the binomial distribution to tell us how likely the value of $$eORR$$ that was achieved in prior trials for each value of $$tORR$$. However, calculating $$P(tORR)$$ (the prior) can be challenging and is probably unknowable in any precise sense, but the distribution of outcomes of large phase III's should be close to the real value. 
 
-Let's return to the epacadostat + pembrolizumab example a final time and try to estimate the $tORR$ of the combination, given its performance in ECHO-202. For the distribution of $P(eORR|tORR)$ I can simply use the binomial probability of achieving 25 out of 45 responses at each value of $tORR$ (the same as the distribution in the first graph).
+Let's return to the epacadostat + pembrolizumab example a final time and try to estimate the $$tORR$$ of the combination, given its performance in ECHO-202. For the distribution of $$P(eORR|tORR)$$ I can simply use the binomial probability of achieving 25 out of 45 responses at each value of $$tORR$$ (the same as the distribution in the first graph).
 
-Next, the distribution of $P(tORR)$. Unfortunately the small number of relevant phase III's and the ever-shifting landscape of therapy means there's not really enough data to build a robust distribution of $tORR$ values to use as a prior, so I'll substitute it with a more theoretical distribution. Per BIO data, ~48% of phase III immuno-oncology drugs make it to approval[^3]. Additionally, given standard powering assumptions, drugs need to be ~20% better relatively to succeed vs comparators - which is 56.8% ORR against the pembrolizumab monotherapy benchmark of 46%, per calculation above. So I'll simply assume an exponential distribution where 48% of samples are above 10.8% ORR, which you can calculate from the cumulative distribution function as below:
+Next, the distribution of $$P(tORR)$$. Unfortunately the small number of relevant phase III's and the ever-shifting landscape of therapy means there's not really enough data to build a robust distribution of $$tORR$$ values to use as a prior, so I'll substitute it with a more theoretical distribution. Per BIO data, ~48% of phase III immuno-oncology drugs make it to approval[^3]. Additionally, given standard powering assumptions, drugs need to be ~20% better relatively to succeed vs comparators - which is 56.8% ORR against the pembrolizumab monotherapy benchmark of 46%, per calculation above. So I'll simply assume an exponential distribution where 48% of samples are above 10.8% ORR, which you can calculate from the cumulative distribution function as below:
 
 $$1 - e^{-\lambda x}$$
 $$1 - e^{-\lambda 0.108} = (1 - 0.48)$$
 $$\ln(1) - -0.108 \lambda  \ln(e) = \ln(0.52)$$
 $$\lambda = ~6.055$$
 
-Then I'll shift the distribution so that it starts with 46% $tORR$ as the most probable value (the pembrolizumab distribution), assuming that epacadostat can't make pembrolizumab less effective. If this was actually an analysis for serious decision making you'd want to use a more robust prior, but this rough prior seems reasonable enough to illustrate the point. 
+Then I'll shift the distribution so that it starts with 46% $$tORR$$ as the most probable value (the pembrolizumab distribution), assuming that epacadostat can't make pembrolizumab less effective. If this was actually an analysis for serious decision making you'd want to use a more robust prior, but this rough prior seems reasonable enough to illustrate the point. 
 
 If we run and plot the MLE calculation, we get the following result:
 
@@ -162,7 +161,7 @@ If we run and plot the MLE calculation, we get the following result:
 
 Because the uncertainty from epacadostat's phase II is relatively high and I used a prior with a sharp peak at 46% (i.e., ineffective), we see the posterior distribution pulled strongly towards the prior, such that the most likely estimated ORR for epacadostat is only marginally above pembrolizumab monotherapy at ~49%, which would not be enough for a clinically meaningful difference.
 
-And so we finish our brief tour of inferential techniques for the evaluation of early-stage combination ORRs in oncology. While false positives are likely to be common in small single-arm oncology clinical trials combining active drugs with novel agents with unclear or unknown efficacy, I hope I've shown how the techniques of Bayesian inference can help draw conclusions from these datasets regardless. 
+And so we finish our brief tour of inferential techniques for the evaluation of early-stage combination ORRs in oncology. While false positives are likely to be common in small single-arm oncology clinical trials combining active drugs with novel agents with unclear or unknown efficacy, I hope I've shown how the techniques of Bayesian inference can help make inferences about these datasets regardless. 
 
 [^1]: https://www.annualreviews.org/doi/abs/10.1146/annurev-cancerbio-030419-033635
 [^3]:https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf
