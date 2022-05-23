@@ -112,11 +112,11 @@ $$P(E|ORR) = \frac{P(ORR|E) * P(E)}{P(ORR)}$$
 
 Where $$E$$ is the probability that the drug is effective and $$ORR$$ is the probability of reaching the threshold ORR in the trial. We'll work through example calculations for the epacadostat + pembrolizumab combination:
 
-For the baseline probability of efficacy $$P(E)$$ we can use the 19% chance of approval for a phase 2 IO drug[^3] (arguably this should be a bit higher because not all trials fail due to lack of efficacy, but 19% seems a reasonable guess). You could also input your subjective prior belief that the combination is efficacious (expressed in percentages).
+For the baseline probability of efficacy $$P(E)$$ we can use the 19% chance of approval for a phase II IO drug[^3] (arguably this should be a bit higher because not all trials fail due to lack of efficacy, but 19% seems a reasonable guess). You could also input your subjective prior belief that the combination is efficacious (expressed in percentages).
 
 $$P(E|ORR) = \frac{P(ORR|E) * 0.19}{P(ORR)}$$
 
-$$P(ORR|E)$$ is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the tORR is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial $$P(ORR|E)$$ also ends up at ~56%.
+$$P(ORR \textpipe E)$$ is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the tORR is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial $$P(ORR|E)$$ also ends up at ~56%.
 
 $$P(E|ORR) = \frac{0.56 * 0.19}{P(ORR)}$$
 
