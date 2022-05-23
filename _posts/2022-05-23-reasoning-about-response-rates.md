@@ -116,7 +116,7 @@ For the baseline probability of efficacy $$P(E)$$ we can use the 19% chance of a
 
 $$P(E|ORR) = \frac{P(ORR|E) * 0.19}{P(ORR)}$$
 
-$$P(ORR \textpipe E)$$ is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the tORR is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial $$P(ORR|E)$$ also ends up at ~56%.
+$$P(ORR \vert E)$$ is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the tORR is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial $$P(ORR|E)$$ also ends up at ~56%.
 
 $$P(E|ORR) = \frac{0.56 * 0.19}{P(ORR)}$$
 
