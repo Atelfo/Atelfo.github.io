@@ -54,9 +54,9 @@ Because ORR is a binary outcome - either a patient achieves a PR or CR, or they 
 
 $$P(ORR) = \binom{s}{r}p^{r}(1-p)^{s-r}$$
 
-Where $$p$$ is the probability of a PR or CR (i.e. the ORR), $$s$$ is the sample size and $$r$$ is the number of responses. An important assumption I make here is that all drugs have a "true" invariant response rate for a particular population (henceforth referred to as the tORR), and the distribution of results in a given trial are randomly determined by this underlying probability (so $$p = tORR$$ in the above formula). To calculate the chance of a drug achieving an ORR equivalent or better than a specific value we need to sum the results for every equal or greater value of $$r$$ up to and including the value at which $$r = s$$ (i.e., everyone in the trial responds).
+Where p is the probability of a PR or CR (i.e. the ORR), s is the sample size and r is the number of responses. An important assumption I make here is that all drugs have a "true" invariant response rate for a particular population (henceforth referred to as the tORR), and the distribution of results in a given trial are randomly determined by this underlying probability (so p = tORR in the above formula). To calculate the chance of a drug achieving an ORR equivalent or better than a specific value we need to sum the results for every equal or greater value of r up to and including the value at which r = s (i.e., everyone in the trial responds).
 
-Using the binomial distribution is a helpful starting point for analyzing single-arm trials because it allows us to quantify how likely a particular result is at specific assumptions of tORR. For example, I've plotted results from a number of example trials below (all melanoma except for magrolimab, which is in myelodysplastic syndrome) . Each line shows the probability of achieving the result in the legend if the tORR was the value shown on the x-axis - naturally the most likely result is the one that was actually achieved.
+Using the binomial distribution is a helpful starting point for analyzing single-arm trials because it allows us to quantify how likely a particular result is at specific assumptions of tORR. For example, I've plotted results from a number of example trials below (all melanoma except for magrolimab, which is in myelodysplastic syndrome). Each line shows the probability of achieving the result in the legend if the tORR was the value shown on the x-axis - naturally the most likely result is the one that was actually achieved.
 
 {% include trial_distribs.html %}
 
@@ -85,7 +85,7 @@ This low prior probability of activity influences how we should interpret positi
 
 To illustrate the false discovery rate problem I've set up the following hypothetical scenario:
 
-Imagine that you're testing a promising new drug for first-line metastatic melanoma in combination with pembrolizumab in a single arm phase II. Let's say  you're looking for a minimum response rate of ~57% to justify advancing the program to a randomized controlled phase III trial (a 20% decrease in the rate of non-responses versus the monotherapy benchmark of 46%).
+Imagine that you're testing a promising new drug for first-line metastatic melanoma in combination with pembrolizumab in a single arm phase II. Let's say you're looking for a minimum response rate of ~57% to justify advancing the program to a randomized controlled phase III trial (a 20% decrease in the rate of non-responses versus the monotherapy benchmark of 46%).
 
 $$46\% + 20\% \cdot (1-46\%) = 56.8\%$$
 
@@ -110,13 +110,13 @@ We can combine the pieces of information we've discussed - the probability of ac
 
 $$P(E|ORR) = \frac{P(ORR \vert E) \cdot P(E)}{P(ORR)}$$
 
-Where $$E$$ is the probability that the drug is effective and $$ORR$$ is the probability of reaching the threshold ORR in the trial. We'll work through example calculations for the epacadostat + pembrolizumab combination:
+Where E is the probability that the drug is effective and ORR is the probability of reaching the threshold ORR in the trial. We'll work through example calculations for the epacadostat + pembrolizumab combination:
 
-For the baseline probability of efficacy $$P(E)$$ we can use the 19% chance of approval for a phase II IO drug[^3] (arguably this should be a bit higher because not all trials fail due to lack of efficacy, but 19% seems a reasonable guess). You could also input your subjective prior belief that the combination is efficacious (expressed in percentages).
+For the baseline probability of efficacy P(E) we can use the 19% chance of approval for a phase II IO drug[^3] (arguably this should be a bit higher because not all trials fail due to lack of efficacy, but 19% seems a reasonable guess). You could also input your subjective prior belief that the combination is efficacious (expressed in percentages).
 
 $$P(E \vert ORR) = \frac{P(ORR \vert E) \cdot 0.19}{P(ORR)}$$
 
-$$P(ORR \vert E)$$ is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the tORR is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial $$P(ORR|E)$$ also ends up at ~56%.
+P(ORR|E) is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the tORR is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial $$P(ORR|E)$$ also ends up at ~56%.
 
 $$P(E|ORR) = \frac{0.56 \cdot 0.19}{P(ORR)}$$
 
@@ -124,7 +124,7 @@ Lastly, we need to find the probability of a reference class of combinations pos
 
 $$P(ORR) = P(E) \cdot P(ORR \vert E) + P(\neg{E}) \cdot P(ORR|\neg{E})$$
 
-We know $$P(ORR \vert \neg{E}) = 13\%$$ from our estimations in an earlier section. And we just estimated $$P(ORR \vert E)$$ above. Then we just need to weight the contributions:
+We know $$P(ORR \vert \neg{E}) = 13\%$$ from our estimations in an earlier section. And we just estimated P(ORR|E) above. Then we just need to weight the contributions:
 
 $$P(ORR) = 0.19 \cdot 0.56 + 0.81 \cdot 0.13 = 0.2117$$
 
