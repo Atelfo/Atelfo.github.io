@@ -5,7 +5,7 @@ title: "Reasoning about response rates"
 
 # Reasoning about response rates
 
-#### Introduction 
+### Introduction 
 The stories of [epacadostat](https://www.biopharmadive.com/news/incyte-cancer-study-fails-setting-back-drug-combo-hopes/520781/) and [bempegaldesleukin](https://www.biopharmadive.com/news/bristol-myers-nektar-immunotherapy-trial-failure/620322/) are well-known, and nearly identical. Both were promising new immunomodulatory drugs for advanced melanoma with sensible mechanistic rationales, both were trialed in combination with an anti-PD-1, and both posted promising response rate numbers in small single-arm phase II's only to ultimately fail to beat anti-PD-1 monotherapy in larger randomized controlled phase III's. 
 
 The PD-(L)1 class of immunotherapies have been extraordinarily successful at treating a wide range of cancers, and as the examples above illustrate, have proven challenging to improve upon when combined with other immunotherapy agents (chemotherapy or kinase inhibitor combinations aside). Just a few weeks ago there was yet another high-profile setback as tiragolumab in combination with the anti-PD-L1 atezolizumab [failed to improve outcomes in non-small cell lung cancer at an interim assessment](https://www.biopharmadive.com/news/roche-tiragolumab-tigit-lung-cancer-trial/623542/), although I should note that there is still hope that the final results will be positive for overall survival.
@@ -14,7 +14,7 @@ It's not as though dual immunotherapy combinations don't work, there have been s
 
 This all serves to highlight the challenges associated with evaluating whether a combination is really better than the monotherapy alone based on data from early trials. But I do think the techniques of probability and causal inference can help to make informed judgments about response rate data in single-arm phase II oncology combination trials, which is what I want to explore in this post. 
 
-#### The overall response rate (ORR)
+### The overall response rate (ORR)
 The overall (or objective) response rate (ORR) is usually the primary way in which the efficacy of a new oncology drug is judged in early stage clinical trials. The standard definition of ORR is the proportion of patients with a complete or partial response to therapy, which are defined [per the RECIST 1.1 guidelines for solid tumours](https://recist.eortc.org/recist-1-1-2/) as:
 
 - Complete Response (CR): *"Disappearance of all target lesions. Any pathological lymph nodes (whether target or non-target) must have reduction in short axis to <10 mm"*
@@ -131,6 +131,7 @@ $$P(ORR) = 0.19*0.56 + 0.81*0.13 = 0.2117$$
 So putting it all together
 
 $$P(E|ORR) = \frac{0.91*0.19}{0.2117}$$
+
 $$P(E|ORR) = 50.3\%$$
 
 Incorporating the prior likelihood of failure led to a rough estimate of a ~50% chance that epacadostat + pembrolizumab was better than pembrolizumab monotherapy based on the results of KEYNOTE-006 and ECHO-202. That's a fairly large discount to the 87% given by the binomial probability alone, and seems like a fair assessment of the chances with what was known at the time.
@@ -149,8 +150,11 @@ Let's return to the epacadostat + pembrolizumab example a final time and try to 
 Next, the distribution of $$P(tORR)$$. Unfortunately the small number of relevant phase III's and the ever-shifting landscape of therapy means there's not really enough data to build a robust distribution of $$tORR$$ values to use as a prior, so I'll substitute it with a more theoretical distribution. Per BIO data, ~48% of phase III immuno-oncology drugs make it to approval[^3]. Additionally, given standard powering assumptions, drugs need to be ~20% better relatively to succeed vs comparators - which is 56.8% ORR against the pembrolizumab monotherapy benchmark of 46%, per calculation above. So I'll simply assume an exponential distribution where 48% of samples are above 10.8% ORR, which you can calculate from the cumulative distribution function as below:
 
 $$1 - e^{-\lambda x}$$
+
 $$1 - e^{-\lambda 0.108} = (1 - 0.48)$$
+
 $$\ln(1) - -0.108 \lambda  \ln(e) = \ln(0.52)$$
+
 $$\lambda = ~6.055$$
 
 Then I'll shift the distribution so that it starts with 46% $$tORR$$ as the most probable value (the pembrolizumab distribution), assuming that epacadostat can't make pembrolizumab less effective. If this was actually an analysis for serious decision making you'd want to use a more robust prior, but this rough prior seems reasonable enough to illustrate the point. 
