@@ -170,7 +170,7 @@ And so we finish our brief tour of inferential techniques for the evaluation of 
 [^1]: [https://www.annualreviews.org/doi/abs/10.1146/annurev-cancerbio-030419-033635](https://www.annualreviews.org/doi/abs/10.1146/annurev-cancerbio-030419-033635)
 [^3]: [https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf](https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf)
 [^4]: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7327371/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7327371/)
-[^5]: [https://pubmed.ncbi.nlm.nih.gov/35183043/](https://pubmed.ncbi.nlm.nih.gov/35183043/)](https://pubmed.ncbi.nlm.nih.gov/35183043/](https://pubmed.ncbi.nlm.nih.gov/35183043/))
+[^5]: [https://pubmed.ncbi.nlm.nih.gov/35183043/](https://pubmed.ncbi.nlm.nih.gov/35183043/)
 [^6]: [https://pubmed.ncbi.nlm.nih.gov/25667291/](https://pubmed.ncbi.nlm.nih.gov/25667291/)
 [^7]: [https://pubmed.ncbi.nlm.nih.gov/33338851/](https://pubmed.ncbi.nlm.nih.gov/33338851/)
 [^8]: Number accurate as of the 15th of May 2022, accessed [here](https://clinicaltrials.gov/ct2/results?cond=cancer&recrs=a&recrs=d&age_v=&gndr=&type=&rslt=&phase=1&Search=Apply)
