@@ -58,7 +58,7 @@ Where $p$ is the probability of a PR or CR (i.e. the ORR), $s$ is the sample siz
 
 Using the binomial distribution is a helpful starting point for analyzing single-arm trials because it allows us to quantify how likely a particular result is at specific assumptions of $tORR$. For example, I've plotted results from a number of example trials below (all melanoma except for magrolimab, which is in myelodysplastic syndrome) . Each line shows the probability of achieving the result in the legend if the $tORR$ was the value shown on the x-axis - naturally the most likely result is the one that was actually achieved.
 
-{% include trial distribs.html border='0' height='500' width='140%' frameborder='0' %}
+{% include trial distribs.html %}
 
 The most important thing to notice from the chart is how as the sample size increases, the spread of likely values also increases; a drug with a $tORR$ of 60% could quite plausibly achieve an ORR of 80% in a small trial of 9 patients, whereas the results of a large 300+ person trial are almost never going to deviate much from the $tORR$.
 
