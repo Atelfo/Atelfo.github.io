@@ -116,7 +116,7 @@ For the baseline probability of efficacy P(E) we can use the 19% chance of appro
 
 $$P(E \vert ORR) = \frac{P(ORR \vert E) \cdot 0.19}{P(ORR)}$$
 
-P(ORR|E) is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the tORR is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial $$P(ORR|E)$$ also ends up at ~56%.
+P(ORR\|E) is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the tORR is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial P(ORR\|E) also ends up at ~56%.
 
 $$P(E|ORR) = \frac{0.56 \cdot 0.19}{P(ORR)}$$
 
@@ -124,7 +124,7 @@ Lastly, we need to find the probability of a reference class of combinations pos
 
 $$P(ORR) = P(E) \cdot P(ORR \vert E) + P(\neg{E}) \cdot P(ORR|\neg{E})$$
 
-We know $$P(ORR \vert \neg{E}) = 13\%$$ from our estimations in an earlier section. And we just estimated P(ORR|E) above. Then we just need to weight the contributions:
+We know $$P(ORR \vert \neg{E}) = 13\%$$ from our estimations in an earlier section. And we just estimated P(ORR\|E) above. Then we just need to weight the contributions:
 
 $$P(ORR) = 0.19 \cdot 0.56 + 0.81 \cdot 0.13 = 0.2117$$
 
@@ -143,9 +143,9 @@ $$P(tORR \vert eORR) \propto P(eORR \vert tORR) \cdot P(tORR)$$
 
 In this case eORR refers to the experimental ORR, which is the evidence for a specific hypothesized value of tORR. So using the formula above we can determine what value of tORR best fits the evidence from existing trials (eORR). The nice thing about this technique is that we [don't need the denominator of Bayes' formula to find the most likely value](https://en.wikipedia.org/wiki/Bayesian_inference#Bayesian_inference), because it's just a normalization term and so doesn't change where the peak probability is found.
 
-The main practical difference between MLE and the simple example of Bayes' formula in the last section is that we need a distribution of probabilities as input, not just singular values. For P(eORR|tORR) this is relatively straightforward to calculate, as we can use the binomial distribution to tell us how likely the value of $$eORR$$ that was achieved in prior trials for each value of tORR. However, calculating P(tORR) (the prior) can be challenging and is probably unknowable in any precise sense, but the distribution of outcomes of large phase III's should be close to the real value. 
+The main practical difference between MLE and the simple example of Bayes' formula in the last section is that we need a distribution of probabilities as input, not just singular values. For P(eORR\|tORR) this is relatively straightforward to calculate, as we can use the binomial distribution to tell us how likely the value of $$eORR$$ that was achieved in prior trials for each value of tORR. However, calculating P(tORR) (the prior) can be challenging and is probably unknowable in any precise sense, but the distribution of outcomes of large phase III's should be close to the real value. 
 
-Let's return to the epacadostat + pembrolizumab example a final time and try to estimate the tORR of the combination, given its performance in ECHO-202. For the distribution of P(eORR|tORR) I can simply use the binomial probability of achieving 25 out of 45 responses at each value of tORR (the same as the distribution in the first graph).
+Let's return to the epacadostat + pembrolizumab example a final time and try to estimate the tORR of the combination, given its performance in ECHO-202. For the distribution of P(eORR\|tORR) I can simply use the binomial probability of achieving 25 out of 45 responses at each value of tORR (the same as the distribution in the first graph).
 
 Next, the distribution of P(tORR). Unfortunately the small number of relevant phase III's and the ever-shifting landscape of therapy means there's not really enough data to build a robust distribution of tORR values to use as a prior, so I'll substitute it with a more theoretical distribution. Per BIO data, ~48% of phase III immuno-oncology drugs make it to approval[^3]. Additionally, given standard powering assumptions, drugs need to be ~20% better relatively to succeed vs comparators - which is 56.8% ORR against the pembrolizumab monotherapy benchmark of 46%, per calculation above. So I'll simply assume an exponential distribution where 48% of samples are above 10.8% ORR, which you can calculate from the cumulative distribution function as below:
 
@@ -167,26 +167,26 @@ Because the uncertainty from epacadostat's phase II is relatively high and I use
 
 And so we finish our brief tour of inferential techniques for the evaluation of early-stage combination ORRs in oncology. While false positives are likely to be common in small single-arm oncology clinical trials combining active drugs with novel agents with unclear or unknown efficacy, I hope I've shown how the techniques of Bayesian inference can help make inferences about these datasets regardless. 
 
-[^1]: https://www.annualreviews.org/doi/abs/10.1146/annurev-cancerbio-030419-033635
-[^3]: [https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf]
-[^4]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7327371/
-[^5]: [https://pubmed.ncbi.nlm.nih.gov/35183043/](https://pubmed.ncbi.nlm.nih.gov/35183043/)
-[^6]: https://pubmed.ncbi.nlm.nih.gov/25667291/
-[^7]: https://pubmed.ncbi.nlm.nih.gov/33338851/
+[^1]: [https://www.annualreviews.org/doi/abs/10.1146/annurev-cancerbio-030419-033635](https://www.annualreviews.org/doi/abs/10.1146/annurev-cancerbio-030419-033635)
+[^3]: [https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf](https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf)
+[^4]: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7327371/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7327371/)
+[^5]: [https://pubmed.ncbi.nlm.nih.gov/35183043/](https://pubmed.ncbi.nlm.nih.gov/35183043/)](https://pubmed.ncbi.nlm.nih.gov/35183043/](https://pubmed.ncbi.nlm.nih.gov/35183043/))
+[^6]: [https://pubmed.ncbi.nlm.nih.gov/25667291/](https://pubmed.ncbi.nlm.nih.gov/25667291/)
+[^7]: [https://pubmed.ncbi.nlm.nih.gov/33338851/](https://pubmed.ncbi.nlm.nih.gov/33338851/)
 [^8]: Number accurate as of the 15th of May 2022, accessed [here](https://clinicaltrials.gov/ct2/results?cond=cancer&recrs=a&recrs=d&age_v=&gndr=&type=&rslt=&phase=1&Search=Apply)
-[^9]: https://pubmed.ncbi.nlm.nih.gov/27723879/
+[^9]: [https://pubmed.ncbi.nlm.nih.gov/27723879/](https://pubmed.ncbi.nlm.nih.gov/27723879/)
 [^10]: It seems like it could be an interesting exercise to apply principles of information theory to trial sample size selection. Thinking of a trial as an information channel where false positives or negatives are noise, and adding sample reduces noise but adds cost. Which sample size maximizes efficiency (signal per unit cost)?
-[^13]: https://pubmed.ncbi.nlm.nih.gov/27883925/
-[^14]: https://ascopubs.org/doi/full/10.1200/JCO.21.00675
-[^15]: https://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.9511
-[^16]: https://pubmed.ncbi.nlm.nih.gov/30894212/
-[^17]: https://www.annalsofoncology.org/article/S0923-7534(20)38477-5/fulltext
-[^18]: https://clinicaltrials.gov/ct2/show/results/NCT01844505
-[^19]: https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(19)30388-2/fulltext
-[^20]: https://ascopubs.org/doi/abs/10.1200/JCO.2022.40.36_suppl.360385?af=R
-[^21]: https://clinicaltrials.gov/ct2/show/results/NCT00324155
-[^22]: https://clinicaltrials.gov/ct2/show/results/NCT02752074
-[^23]: https://www.iovance.com/wp-content/uploads/Iovance_SITC-2021_Phase-2-Efficacy-and-Safety-of-Autologous-Tumor-Infiltrating-Lymphocyte-TIL-Cell-Therapy-in-Combination-with-Pembrolizumab-in-Immune-Checkpoint-Inhibitor-Na%C3%AFve-Patients-with-Advanced-Cancers.pdf
-[^40]: https://pubmed.ncbi.nlm.nih.gov/2702835/
-[^41]: https://pubmed.ncbi.nlm.nih.gov/9134002/
-[^42]: https://www.nature.com/articles/d41573-022-00036-y
+[^13]: [https://pubmed.ncbi.nlm.nih.gov/27883925/](https://pubmed.ncbi.nlm.nih.gov/27883925/)
+[^14]: [https://ascopubs.org/doi/full/10.1200/JCO.21.00675](https://ascopubs.org/doi/full/10.1200/JCO.21.00675)
+[^15]: [https://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.9511](https://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.9511)
+[^16]: [https://pubmed.ncbi.nlm.nih.gov/30894212/](https://pubmed.ncbi.nlm.nih.gov/30894212/)
+[^17]: [https://www.annalsofoncology.org/article/S0923-7534(20)38477-5/fulltext](https://www.annalsofoncology.org/article/S0923-7534(20)38477-5/fulltext)
+[^18]: [https://clinicaltrials.gov/ct2/show/results/NCT01844505](https://clinicaltrials.gov/ct2/show/results/NCT01844505)
+[^19]: [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(19)30388-2/fulltext](https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(19)30388-2/fulltext)
+[^20]: [https://ascopubs.org/doi/abs/10.1200/JCO.2022.40.36_suppl.360385?af=R](https://ascopubs.org/doi/abs/10.1200/JCO.2022.40.36_suppl.360385?af=R)
+[^21]: [https://clinicaltrials.gov/ct2/show/results/NCT00324155](https://clinicaltrials.gov/ct2/show/results/NCT00324155)
+[^22]: [https://clinicaltrials.gov/ct2/show/results/NCT02752074](https://clinicaltrials.gov/ct2/show/results/NCT02752074)
+[^23]: [https://www.iovance.com/wp-content/uploads/Iovance_SITC-2021_Phase-2-Efficacy-and-Safety-of-Autologous-Tumor-Infiltrating-Lymphocyte-TIL-Cell-Therapy-in-Combination-with-Pembrolizumab-in-Immune-Checkpoint-Inhibitor-Na%C3%AFve-Patients-with-Advanced-Cancers.pdf](https://www.iovance.com/wp-content/uploads/Iovance_SITC-2021_Phase-2-Efficacy-and-Safety-of-Autologous-Tumor-Infiltrating-Lymphocyte-TIL-Cell-Therapy-in-Combination-with-Pembrolizumab-in-Immune-Checkpoint-Inhibitor-Na%C3%AFve-Patients-with-Advanced-Cancers.pdf)
+[^40]: [https://pubmed.ncbi.nlm.nih.gov/2702835/](https://pubmed.ncbi.nlm.nih.gov/2702835/)
+[^41]: [https://pubmed.ncbi.nlm.nih.gov/9134002/](https://pubmed.ncbi.nlm.nih.gov/9134002/)
+[^42]: [https://www.nature.com/articles/d41573-022-00036-y](https://www.nature.com/articles/d41573-022-00036-y)
