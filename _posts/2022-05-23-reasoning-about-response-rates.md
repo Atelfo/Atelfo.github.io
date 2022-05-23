@@ -58,7 +58,7 @@ Where p is the probability of a PR or CR (i.e. the ORR), s is the sample size an
 
 Using the binomial distribution is a helpful starting point for analyzing single-arm trials because it allows us to quantify how likely a particular result is at specific assumptions of tORR. For example, I've plotted results from a number of example trials below (all melanoma except for magrolimab, which is in myelodysplastic syndrome). Each line shows the probability of achieving the result in the legend if the tORR was the value shown on the x-axis - naturally the most likely result is the one that was actually achieved.
 
-{% include trial_distribs.html %}
+{% include trial_distribs.html height='100%' width='800px' %}
 
 The most important thing to notice from the chart is how as the sample size increases, the spread of likely values also increases; a drug with a tORR of 60% could quite plausibly achieve an ORR of 80% in a small trial of 9 patients, whereas the results of a large 300+ person trial are almost never going to deviate much from the tORR.
 
@@ -143,7 +143,7 @@ $$P(tORR \vert eORR) \propto P(eORR \vert tORR) \cdot P(tORR)$$
 
 In this case eORR refers to the experimental ORR, which is the evidence for a specific hypothesized value of tORR. So using the formula above we can determine what value of tORR best fits the evidence from existing trials (eORR). The nice thing about this technique is that we [don't need the denominator of Bayes' formula to find the most likely value](https://en.wikipedia.org/wiki/Bayesian_inference#Bayesian_inference), because it's just a normalization term and so doesn't change where the peak probability is found.
 
-The main practical difference between MLE and the simple example of Bayes' formula in the last section is that we need a distribution of probabilities as input, not just singular values. For P(eORR\|tORR) this is relatively straightforward to calculate, as we can use the binomial distribution to tell us how likely the value of $$eORR$$ that was achieved in prior trials for each value of tORR. However, calculating P(tORR) (the prior) can be challenging and is probably unknowable in any precise sense, but the distribution of outcomes of large phase III's should be close to the real value. 
+The main practical difference between MLE and the simple example of Bayes' formula in the last section is that we need a distribution of probabilities as input, not just singular values. For P(eORR\|tORR) this is relatively straightforward to calculate, as we can use the binomial distribution to tell us how likely the value of eORR that was achieved in prior trials for each value of tORR. However, calculating P(tORR) (the prior) can be challenging and is probably unknowable in any precise sense, but the distribution of outcomes of large phase III's should be close to the real value. 
 
 Let's return to the epacadostat + pembrolizumab example a final time and try to estimate the tORR of the combination, given its performance in ECHO-202. For the distribution of P(eORR\|tORR) I can simply use the binomial probability of achieving 25 out of 45 responses at each value of tORR (the same as the distribution in the first graph).
 
