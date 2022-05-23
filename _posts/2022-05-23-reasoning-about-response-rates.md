@@ -58,7 +58,7 @@ Where $p$ is the probability of a PR or CR (i.e. the ORR), $s$ is the sample siz
 
 Using the binomial distribution is a helpful starting point for analyzing single-arm trials because it allows us to quantify how likely a particular result is at specific assumptions of $tORR$. For example, I've plotted results from a number of example trials below (all melanoma except for magrolimab, which is in myelodysplastic syndrome) . Each line shows the probability of achieving the result in the legend if the $tORR$ was the value shown on the x-axis - naturally the most likely result is the one that was actually achieved.
 
-{% include trial distribs.html %}
+{% include trial_distribs.html %}
 
 The most important thing to notice from the chart is how as the sample size increases, the spread of likely values also increases; a drug with a $tORR$ of 60% could quite plausibly achieve an ORR of 80% in a small trial of 9 patients, whereas the results of a large 300+ person trial are almost never going to deviate much from the $tORR$.
 
@@ -73,7 +73,7 @@ $$P(ORR) = \binom{45}{25}0.46^{25}(1-0.46)^{45-42} = 5.22\%$$
 However that just tells us the probability for a specific outcome, what is more meaningful is the chance of the epacadostat combo achieving at least a certain ORR or better, assuming it did not improve at all on pembrolizumab monotherapy. I've plotted the results of this below:
 
 
-{% include P+E ORR chance graph.html %}
+{% include ORR_chance_graph.html %}
 
 So there is a ~13% chance that the epacadostat would achieve an ORR of 56% or better if it was no better than pembrolizumab mono. Which may seem low, but to properly assess this result we need to incorporate the additional context of high failure rates in oncology, as this makes false positives a significant risk.
 
