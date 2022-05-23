@@ -5,10 +5,6 @@ title: "Reasoning about response rates"
 
 # Reasoning about response rates
 
-In light of another immuno-oncology combination failure, some reflections on interfering activity from early trials in oncology in a new post
-
-I'm far from an expert on this stuff, so I welcome any feedback or pointing out of any mistakes or nuances.
-
 #### Introduction 
 The stories of [epacadostat](https://www.biopharmadive.com/news/incyte-cancer-study-fails-setting-back-drug-combo-hopes/520781/) and [bempegaldesleukin](https://www.biopharmadive.com/news/bristol-myers-nektar-immunotherapy-trial-failure/620322/) are well-known, and nearly identical. Both were promising new immunomodulatory drugs for advanced melanoma with sensible mechanistic rationales, both were trialed in combination with an anti-PD-1, and both posted promising response rate numbers in small single-arm phase II's only to ultimately fail to beat anti-PD-1 monotherapy in larger randomized controlled phase III's. 
 
