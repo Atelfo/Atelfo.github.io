@@ -87,7 +87,7 @@ To illustrate the false discovery rate problem I've set up the following hypothe
 
 Imagine that you're testing a promising new drug for first-line metastatic melanoma in combination with pembrolizumab in a single arm phase II. Let's say  you're looking for a minimum response rate of ~57% to justify advancing the program to a randomized controlled phase III trial (a 20% decrease in the rate of non-responses versus the monotherapy benchmark of 46%).
 
-$$46\% + 20\% * (1-46\%) = 56.8\%$$
+$$46\% + 20\% \cdot (1-46\%) = 56.8\%$$
 
 How many false positives can you expect? And at which sample size is a positive trial more likely to be a true positive than a false positive?
 
@@ -108,46 +108,46 @@ We now return to the question I asked at the beginning of the last section: Give
 
 We can combine the pieces of information we've discussed - the probability of achieving a specific ORR, and the false discovery rates - by making use of [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem) (shown below), which incorporates prior information to give us insight into the likely meaningfulness of a given result.
 
-$$P(E|ORR) = \frac{P(ORR|E) * P(E)}{P(ORR)}$$
+$$P(E|ORR) = \frac{P(ORR \vert E) \cdot P(E)}{P(ORR)}$$
 
 Where $$E$$ is the probability that the drug is effective and $$ORR$$ is the probability of reaching the threshold ORR in the trial. We'll work through example calculations for the epacadostat + pembrolizumab combination:
 
 For the baseline probability of efficacy $$P(E)$$ we can use the 19% chance of approval for a phase II IO drug[^3] (arguably this should be a bit higher because not all trials fail due to lack of efficacy, but 19% seems a reasonable guess). You could also input your subjective prior belief that the combination is efficacious (expressed in percentages).
 
-$$P(E|ORR) = \frac{P(ORR|E) * 0.19}{P(ORR)}$$
+$$P(E \vert ORR) = \frac{P(ORR \vert E) \cdot 0.19}{P(ORR)}$$
 
 $$P(ORR \vert E)$$ is the probability that a drug meets the ORR threshold, given that it is effective. This is hard to work out exactly from first principles, but I'm going to use a conservative lower bound by assuming that the tORR is the same as what the combination achieved in the phase II (56%), if we assume that the combination needs at least this value to succeed in the trial $$P(ORR|E)$$ also ends up at ~56%.
 
-$$P(E|ORR) = \frac{0.56 * 0.19}{P(ORR)}$$
+$$P(E|ORR) = \frac{0.56 \cdot 0.19}{P(ORR)}$$
 
 Lastly, we need to find the probability of a reference class of combinations posting an ORR greater than the threshold. When you have a lot of data you can use the empirical distribution, but there is not enough data in melanoma to do that confidently. So we can just try to logically estimate it by decomposing the problem in the following way:
 
-$$P(ORR) = P(E) * P(ORR|E) + P(\neg{E}) * P(ORR|\neg{E})$$
+$$P(ORR) = P(E) \cdot P(ORR \vert E) + P(\neg{E}) \cdot P(ORR|\neg{E})$$
 
-We know $$P(ORR | \neg{E}) = 13\%$$ from our estimations in an earlier section. And we just estimated $$P(ORR|E)$$ above. Then we just need to weight the contributions:
+We know $$P(ORR \vert \neg{E}) = 13\%$$ from our estimations in an earlier section. And we just estimated $$P(ORR \vert E)$$ above. Then we just need to weight the contributions:
 
-$$P(ORR) = 0.19 * 0.56 + 0.81 * 0.13 = 0.2117$$
+$$P(ORR) = 0.19 \cdot 0.56 + 0.81 \cdot 0.13 = 0.2117$$
 
 So putting it all together:
 
-$$P(E|ORR) = \frac{0.91 * 0.19}{0.2117}$$
+$$P(E \vert ORR) = \frac{0.91 \cdot 0.19}{0.2117}$$
 
-$$P(E|ORR) = 50.3\%$$
+$$P(E \vert ORR) = 50.3\%$$
 
 Incorporating the prior likelihood of failure led to a rough estimate of a ~50% chance that epacadostat + pembrolizumab was better than pembrolizumab monotherapy based on the results of KEYNOTE-006 and ECHO-202. That's a fairly large discount to the 87% given by the binomial probability alone, and seems like a fair assessment of the chances with what was known at the time.
 
 ### Building on Bayes: maximum likelihood estimation (MLE)
 To finish I'd like to do one better and work out what is the most likely ORR for a drug given its performance in a trial, and for that we can make use of a technique called Bayesian [maximum likelihood estimation (MLE)](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation#Relation_to_Bayesian_inference) which is a fancy term for enumerating the probability of each individual hypothesis being true, given the observed data - all calculated using Bayes' formula. Our hypothesis in this case may be that a combination could take on any tORR value from 0 to 100%, so by calculating the probability of tORR separately, we can find the tORR with the highest probability given the evidence. So in this case, we will run the below calculation multiple times until we find the one that gives us the highest probability:
 
-$$P(tORR | eORR) \propto P(eORR | tORR) * P(tORR)$$
+$$P(tORR \vert eORR) \propto P(eORR \vert tORR) \cdot P(tORR)$$
 
-In this case $$eORR$$ refers to the experimental ORR, which is the evidence for a specific hypothesized value of tORR. So using the formula above we can determine what value of tORR best fits the evidence from existing trials ($$eORR$$). The nice thing about this technique is that we [don't need the denominator of Bayes' formula to find the most likely value](https://en.wikipedia.org/wiki/Bayesian_inference#Bayesian_inference), because it's just a normalization term and so doesn't change where the peak probability is found.
+In this case eORR refers to the experimental ORR, which is the evidence for a specific hypothesized value of tORR. So using the formula above we can determine what value of tORR best fits the evidence from existing trials (eORR). The nice thing about this technique is that we [don't need the denominator of Bayes' formula to find the most likely value](https://en.wikipedia.org/wiki/Bayesian_inference#Bayesian_inference), because it's just a normalization term and so doesn't change where the peak probability is found.
 
-The main practical difference between MLE and the simple example of Bayes' formula in the last section is that we need a distribution of probabilities as input, not just singular values. For $$P(eORR|tORR)$$ this is relatively straightforward to calculate, as we can use the binomial distribution to tell us how likely the value of $$eORR$$ that was achieved in prior trials for each value of tORR. However, calculating $$P(tORR)$$ (the prior) can be challenging and is probably unknowable in any precise sense, but the distribution of outcomes of large phase III's should be close to the real value. 
+The main practical difference between MLE and the simple example of Bayes' formula in the last section is that we need a distribution of probabilities as input, not just singular values. For P(eORR|tORR) this is relatively straightforward to calculate, as we can use the binomial distribution to tell us how likely the value of $$eORR$$ that was achieved in prior trials for each value of tORR. However, calculating P(tORR) (the prior) can be challenging and is probably unknowable in any precise sense, but the distribution of outcomes of large phase III's should be close to the real value. 
 
-Let's return to the epacadostat + pembrolizumab example a final time and try to estimate the tORR of the combination, given its performance in ECHO-202. For the distribution of $$P(eORR | tORR)$$ I can simply use the binomial probability of achieving 25 out of 45 responses at each value of tORR (the same as the distribution in the first graph).
+Let's return to the epacadostat + pembrolizumab example a final time and try to estimate the tORR of the combination, given its performance in ECHO-202. For the distribution of P(eORR|tORR) I can simply use the binomial probability of achieving 25 out of 45 responses at each value of tORR (the same as the distribution in the first graph).
 
-Next, the distribution of $$P(tORR)$$. Unfortunately the small number of relevant phase III's and the ever-shifting landscape of therapy means there's not really enough data to build a robust distribution of tORR values to use as a prior, so I'll substitute it with a more theoretical distribution. Per BIO data, ~48% of phase III immuno-oncology drugs make it to approval[^3]. Additionally, given standard powering assumptions, drugs need to be ~20% better relatively to succeed vs comparators - which is 56.8% ORR against the pembrolizumab monotherapy benchmark of 46%, per calculation above. So I'll simply assume an exponential distribution where 48% of samples are above 10.8% ORR, which you can calculate from the cumulative distribution function as below:
+Next, the distribution of P(tORR). Unfortunately the small number of relevant phase III's and the ever-shifting landscape of therapy means there's not really enough data to build a robust distribution of tORR values to use as a prior, so I'll substitute it with a more theoretical distribution. Per BIO data, ~48% of phase III immuno-oncology drugs make it to approval[^3]. Additionally, given standard powering assumptions, drugs need to be ~20% better relatively to succeed vs comparators - which is 56.8% ORR against the pembrolizumab monotherapy benchmark of 46%, per calculation above. So I'll simply assume an exponential distribution where 48% of samples are above 10.8% ORR, which you can calculate from the cumulative distribution function as below:
 
 $$1 - e^{-\lambda x}$$
 
@@ -170,10 +170,10 @@ And so we finish our brief tour of inferential techniques for the evaluation of 
 [^1]: https://www.annualreviews.org/doi/abs/10.1146/annurev-cancerbio-030419-033635
 [^3]: [https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf]
 [^4]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7327371/
-[^5]: [https://pubmed.ncbi.nlm.nih.gov/35183043/]
+[^5]: [https://pubmed.ncbi.nlm.nih.gov/35183043/](https://pubmed.ncbi.nlm.nih.gov/35183043/)
 [^6]: https://pubmed.ncbi.nlm.nih.gov/25667291/
 [^7]: https://pubmed.ncbi.nlm.nih.gov/33338851/
-[^8]: Number accurate as of the 15th of May 2022, accessed here: https://clinicaltrials.gov/ct2/results?cond=cancer&recrs=a&recrs=d&age_v=&gndr=&type=&rslt=&phase=1&Search=Apply 
+[^8]: Number accurate as of the 15th of May 2022, accessed [here](https://clinicaltrials.gov/ct2/results?cond=cancer&recrs=a&recrs=d&age_v=&gndr=&type=&rslt=&phase=1&Search=Apply)
 [^9]: https://pubmed.ncbi.nlm.nih.gov/27723879/
 [^10]: It seems like it could be an interesting exercise to apply principles of information theory to trial sample size selection. Thinking of a trial as an information channel where false positives or negatives are noise, and adding sample reduces noise but adds cost. Which sample size maximizes efficiency (signal per unit cost)?
 [^13]: https://pubmed.ncbi.nlm.nih.gov/27883925/
