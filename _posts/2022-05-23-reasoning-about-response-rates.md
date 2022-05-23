@@ -58,7 +58,7 @@ Where $p$ is the probability of a PR or CR (i.e. the ORR), $s$ is the sample siz
 
 Using the binomial distribution is a helpful starting point for analyzing single-arm trials because it allows us to quantify how likely a particular result is at specific assumptions of $tORR$. For example, I've plotted results from a number of example trials below (all melanoma except for magrolimab, which is in myelodysplastic syndrome) . Each line shows the probability of achieving the result in the legend if the $tORR$ was the value shown on the x-axis - naturally the most likely result is the one that was actually achieved.
 
-{% include trial distribs.html"border=0, height=500, width=140%, frameborder=0 %}
+{% include trial distribs.html border=0 height=500 width=140% frameborder=0 %}
 
 The most important thing to notice from the chart is how as the sample size increases, the spread of likely values also increases; a drug with a $tORR$ of 60% could quite plausibly achieve an ORR of 80% in a small trial of 9 patients, whereas the results of a large 300+ person trial are almost never going to deviate much from the $tORR$.
 
@@ -121,7 +121,7 @@ $P(ORR|E)$ is the probability that a drug meets the ORR threshold, given that it
 
 $$P(E|ORR) = \frac{0.56*0.19}{P(ORR)}$$
 
- Lastly, we need to find the probability of a reference class of combinations posting an ORR greater than the threshold. When you have a lot of data you can use the empirical distribution, but there is not enough data in melanoma to do that confidently. So we can just try to logically estimate it by decomposing the problem in the following way:
+Lastly, we need to find the probability of a reference class of combinations posting an ORR greater than the threshold. When you have a lot of data you can use the empirical distribution, but there is not enough data in melanoma to do that confidently. So we can just try to logically estimate it by decomposing the problem in the following way:
 
 $$$P(ORR) = P(E)*P(ORR|E) + P(\neg{E})*P(ORR|\neg{E})$$
 
