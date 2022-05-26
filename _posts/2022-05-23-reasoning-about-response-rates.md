@@ -60,7 +60,7 @@ Using the binomial distribution is a helpful starting point for analyzing single
 
 {% include trial_distribs.html %}
 
-The most important thing to notice from the chart is how as the sample size increases, the spread of likely values also increases; a drug with a $$tORR$$ of 60% could quite plausibly achieve an ORR of 80% in a small trial of 9 patients, whereas the results of a large 300+ person trial are almost never going to deviate much from the $$tORR$$.
+The most important thing to notice from the chart is how as the sample size decreases, the spread of likely values also increases; a drug with a $$tORR$$ of 60% could quite plausibly achieve an ORR of 80% in a small trial of 9 patients, whereas the results of a large 300+ person trial are almost never going to deviate much from the $$tORR$$.
 
 Returning to the epacadostat + pembrolizumab example, we can use the formula above to estimate how likely the result in ECHO-202 was, if we assume that the epacadostat combo is no better than pembrolizumab mono (as we now know to be the case from the results of ECHO-301). 
 
