@@ -117,7 +117,7 @@ Choroideremia | ~1:75,000 | ~12,900
 
 These conditions are rare to start with, and each of these conditions are in turn caused by mutations in many different genes. The RPE65 mutations that Luxturna addresses are only responsible for ~10% of LCA and ~2% of RP, for example. The below graphic from a Lancet review of RP[^33] makes it clear just how fragmented these indications are.
 
-![](/assets/Pasted image 20220418200851.png)
+![](/assets/Pasted image 20220418200851.png | width=400)
 
 With a specific gene therapy program only able to address one mutation (typically), this genetic fragmentation is a major limiting factor for the commercial opportunity of gene therapy programs; Gene therapies are trying to address sub-slices of slices of an already small pie. This dynamic is not unique to RP, many IRDs have similarly fragmented genetics.
 
@@ -129,11 +129,11 @@ With a specific gene therapy program only able to address one mutation (typicall
 #### Efficacy is hard to demonstrate
 Most IRDs progress slowly over decades, with significant visual loss only becoming apparent in adulthood. The most severe IRDs with childhood onset of blindness tend to be very rare, and the more common IRDs tend to be less severe and progress slowly. As an example, the natural history of visual acuity in patients with biallelic RPE65 mutations is shown in the graphs below[^37], with little change evident between the ages of 4 and 20. 
 
-![](/assets/Pasted image 20220601232013.png)
+![](/assets/Pasted image 20220601232013.png | width=300)
  
  As another example, the slow but steady progression of choroideremia over many years is represented in the graph below[^38].
 
-![](/assets/Pasted image 20220601232457.png)
+![](/assets/Pasted image 20220601232457.png | width=300)
 
 Slow disease progression naturally means that long (multi-year) trials will be required to demonstrate clear separation between intervention and placebo arms, even if the gene therapy is highly effective. 
 
