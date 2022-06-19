@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Brief notes on the book "A Rare Breed: How people and perseverance built BioMarin into one of the world's most innovative companies"
+title: "Brief notes on the book 'A Rare Breed: How people and perseverance built BioMarin into one of the world's most innovative companies'"
 ---
 
 # Brief notes on the book "A Rare Breed: How people and perseverance built BioMarin into one of the world's most innovative companies"
