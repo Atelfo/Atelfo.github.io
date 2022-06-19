@@ -5,7 +5,7 @@ title: "Brief notes on the book 'A Rare Breed: How people and perseverance built
 
 # Brief notes on the book "A Rare Breed: How people and perseverance built BioMarin into one of the world's most innovative companies"
 
-[Goodreads link](https://www.goodreads.com/en/book/show/36562324)
+[Link to the book on Goodreads](https://www.goodreads.com/en/book/show/36562324)
 
 > *"The old saw in real estate is location, location, location, and in biotech I've always felt it's focus, focus focus"* \- Fred Price
 
