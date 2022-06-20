@@ -16,4 +16,4 @@ title: "Brief notes on the book 'A Rare Breed: How people and perseverance built
 - BioMarin learned to "engage with the scientific community early" to identify promising new targets and treatments (pg. 178)
 - BioMarin's research and development process seeks to establish a "Big effect" before progressing treatments into human trials - qualitative rather than just quantitative differences in outcomes (pg. 185)
 - Most companies that have a drug approved by the FDA do not get a second one approved, often because of acquisitions (pg. 207)
-	-  Only 10% of companies with their first drug approved between 2001 and 2010 had another one approved later. Only 20% of companies in this group were still active a and independent 10 years later
+	-  Only 10% of companies with their first drug approved between 2001 and 2010 had another one approved later. Only 20% of companies in this group were still active and independent 10 years later
