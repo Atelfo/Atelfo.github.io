@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Steelmanning drug pricing arguments v1"
-
-<meta property="og:image" content="/assets/Steelman.png" />
 ---
 
 # Steelmanning drug pricing arguments v1
