@@ -41,7 +41,7 @@ This doesn't mean that all health interventions should be made affordable for wh
 
 In the US, where the affordability issue of drugs is most acute, it is often the case that the price a drug company charges for their products is disconnected from the affordability of that drug. When one looks closely, it is usually regulations, inflexible contracting, illiquid insurance markets, rent-seeking middlemen[^21], and misaligned incentives that prevent the market from operating efficiently. In one of the starkest examples of market failure in recent years, the price that Sanofi receives for their insulin in the US declined by 41% between 2012 and 2019, while list prices and average out-of-pocket costs for patients actually rose[^20] over the same period (shown in the graph below). 
 
-![[Pasted image 20220808235114.png]]
+![](/assets/Pasted image 20220808235114.png)
 
 High prices are not incompatible with wide access, and rather than asking why drug companies charge such high prices, we should ask what can be done to lower the cost and risk of development and the barriers to market in order to spur competition and innovation, and what market dysfunctions and perverse incentives are getting in the way of ensuring drugs are affordable and accessible for patients. 
 
