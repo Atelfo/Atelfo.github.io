@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ergodicity and biotech, or why expected value is a mirage"
+title: "Steelmanning drug pricing arguments (v1)"
 ---
 
 # Steelmanning drug pricing arguments (v1)
