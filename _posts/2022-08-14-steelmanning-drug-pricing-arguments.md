@@ -12,7 +12,7 @@ Attacking a [strawman](https://en.wikipedia.org/wiki/Straw_man) is a form of fal
 The opposite of strawmanning is known as [steelmanning](https://themindcollection.com/steelmanning-how-to-discover-the-truth-by-helping-your-opponent/?utm_source=pocket_mylist): attacking the strongest form of your opponent's argument. By wilfully crafting the best argument you can for your opponent you gain a better understanding of their position, and by extension, your position too. Forcing yourself into a good-faith dialectic helps you come closer to uncovering the truth.
 
 Drug pricing is a contentious and emotionally charged topic often subject to motivated reasoning. In the spirit of truth-seeking, I thought it would be an interesting exercise to steelman three opposing propositions which can be accessed through the links below:
-1. [Why pharmaceutical companies should be able to price their drugs freely](/assets/Why-pharmaceutical-companies-should-be-able-to-price-their-drugs-freely.md)
+1. 
 2. Why governments should set pharmaceutical prices
 3. Why the pharmaceutical industry should be a state-owned, not for profit industry which uses taxes to develop and provide drugs at no additional charge to taxpayers
 
