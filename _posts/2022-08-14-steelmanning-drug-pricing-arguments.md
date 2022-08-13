@@ -16,7 +16,7 @@ Drug pricing is a contentious and emotionally charged topic often subject to mot
 2. Why governments should set pharmaceutical prices
 3. Why the pharmaceutical industry should be a state-owned, not for profit industry which uses taxes to develop and provide drugs at no additional charge to taxpayers
 
-==AUTHOR NOTE: ARGUMENTS 2 AND 3 ARE IN PROGRESS AND COMING SOON!==
+AUTHOR NOTE: ARGUMENTS 2 AND 3 ARE IN PROGRESS AND COMING SOON!
 
 Personally, I tend to find the most convincing arguments to be those for a form of free pricing with regulatory oversight to prevent the worst excesses of rent-seeking behaviour[^1] - but then again, I do work in the industry so I am biased. 
 
