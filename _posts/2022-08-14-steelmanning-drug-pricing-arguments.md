@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Steelmanning drug pricing arguments (v1)"
-title: "Ergofefefefeted value is a mirage"
 ---
 
 # Steelmanning drug pricing arguments (v1)
