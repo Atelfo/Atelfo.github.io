@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Steelmanning drug pricing arguments"
+title: "Steelmanning drug pricing arguments (v1)"
+fefes
 ---
 
-# Steelmanning drug pricing arguments v1
+# Steelmanning drug pricing arguments (v1)
 
 ![](/assets/Steelman.png)
+*Artwork by DALL-E 2*
 
 Attacking a [strawman](https://en.wikipedia.org/wiki/Straw_man) is a form of fallacious argument in which opponents of a particular proposition attack a weaker, but superficially similar, version of that proposition in order to make it easier for them to "win" the argument. Strawmanning is particularly pernicious when used as a bad-faith rhetorical technique to lead non-expert audiences to false conclusions.
 
