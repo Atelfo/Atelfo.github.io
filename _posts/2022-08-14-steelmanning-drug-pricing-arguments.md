@@ -2,8 +2,8 @@
 layout: post
 title: "Steelmanning drug pricing arguments (v1)"
 ---
-<meta property="og:image" content="/assets/Steelman.png" />
-<meta name="twitter:image" content="/assets/Steelman.png">
+<meta property="og:image" content="https://atelfo.github.io/assets/Steelman.png" />
+<meta name="twitter:image" content="https://atelfo.github.io/assets/Steelman.png">
 <meta name="twitter:description" content="Crafting strong arguments for drug pricing paradigms">
 
 # Steelmanning drug pricing arguments (v1)
