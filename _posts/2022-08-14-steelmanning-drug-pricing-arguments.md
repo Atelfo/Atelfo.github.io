@@ -5,7 +5,7 @@ title: "Steelmanning drug pricing arguments (v1)"
 
 # Steelmanning drug pricing arguments (v1)
 
-<img src="/assets/Steelman.png" alt="Prompt: 'A man made of steel sits atop a pile of money, gold and pharmaceutical products. Surrealist Art Nouveau, illustration.' Artwork produced by DALL-E 2" width="200"></img>
+<center><img src="/assets/Steelman.png" alt="Prompt: 'A man made of steel sits atop a pile of money, gold and pharmaceutical products. Surrealist Art Nouveau, illustration.' Artwork produced by DALL-E 2" width="500"/></center>
 
 Attacking a [strawman](https://en.wikipedia.org/wiki/Straw_man) is a form of fallacious argument in which opponents of a particular proposition attack a weaker, but superficially similar, version of that proposition in order to make it easier for them to "win" the argument. Strawmanning is particularly pernicious when used as a bad-faith rhetorical technique to lead non-expert audiences to false conclusions.
 
