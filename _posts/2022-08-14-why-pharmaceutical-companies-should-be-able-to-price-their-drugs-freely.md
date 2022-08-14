@@ -61,6 +61,7 @@ ___
 7. [How Biopharma Companies Use NIH and Vice Versa](https://www.raps.org/news-and-articles/news-articles/2019/4/how-biopharma-companies-use-nih-and-vice-versa)
 8. [How do prescription drug costs in the United States compare to other countries?](https://www.healthsystemtracker.org/chart-collection/how-do-prescription-drug-costs-in-the-united-states-compare-to-other-countries/#Generic%20drug%20share%20of%20prescription%20drug%20market,%202019)
 9. [The debate over America’s drug-pricing system is built on myths. It’s time to face reality](https://www.statnews.com/2019/12/23/debate-over-us-drug-pricing-system-time-to-face-reality/)
+
 ___
 
 [^2]: [Profitability of Large Pharmaceutical Companies Compared With Other Large Public Companies](https://jamanetwork.com/journals/jama/fullarticle/2762308)
