@@ -5,16 +5,18 @@ title: "Steelmanning drug pricing arguments (v1)"
 
 # Steelmanning drug pricing arguments (v1)
 
-<center><img src="/assets/Steelman.png" alt="Prompt: 'A man made of steel sits atop a pile of money, gold and pharmaceutical products. Surrealist Art Nouveau, illustration.' Artwork produced by DALL-E 2" width="500"/></center>
+<center><img src="/assets/Steelman.png" alt="Prompt: 'A man made of steel sits atop a pile of money, gold and pharmaceutical products. Surrealist Art Nouveau, illustration.' Artwork produced by DALL-E 2" width="400"/></center>
 
 Attacking a [strawman](https://en.wikipedia.org/wiki/Straw_man) is a form of fallacious argument in which opponents of a particular proposition attack a weaker, but superficially similar, version of that proposition in order to make it easier for them to "win" the argument. Strawmanning is particularly pernicious when used as a bad-faith rhetorical technique to lead non-expert audiences to false conclusions.
 
 The opposite of strawmanning is known as [steelmanning](https://themindcollection.com/steelmanning-how-to-discover-the-truth-by-helping-your-opponent/?utm_source=pocket_mylist): attacking the strongest form of your opponent's argument. By wilfully crafting the best argument you can for your opponent you gain a better understanding of their position, and by extension, your position too. Forcing yourself into a good-faith dialectic helps you come closer to uncovering the truth.
 
 Drug pricing is a contentious and emotionally charged topic often subject to motivated reasoning. In the spirit of truth-seeking, I thought it would be an interesting exercise to steelman three opposing propositions, which can be accessed through the links below:
-1. [Why pharmaceutical companies should be able to price their drugs freely](/hidden_posts/Why-pharmaceutical-companies-should-be-able-to-price-their-drugs-freely.md)
+1. [Why pharmaceutical companies should be able to price their drugs freely](https://atelfo.github.io/2022/08/14/why-pharmaceutical-companies-should-be-able-to-price-their-drugs-freely.html)
 2. Why governments should set pharmaceutical prices
 3. Why the pharmaceutical industry should be a state-owned, not for profit industry which uses taxes to develop and provide drugs at no additional charge to taxpayers
+
+I've bolded what I think are the key points of each argument if you prefer to skim those rather than read the whole thing. 
 
 (Author note: I started with argument #1, arguments #2 and #3 are in progress and are coming soon!)
 
