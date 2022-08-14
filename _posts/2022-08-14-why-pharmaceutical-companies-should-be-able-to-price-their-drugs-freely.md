@@ -8,7 +8,7 @@ hidden: true
 
 **Pharmaceuticals are an extraordinarily valuable class of goods.** In the 100 or so years in which the pharmaceutical industry has existed, we have seen millions of deaths from communicable diseases averted due to vaccinations[^5] and antibiotics, large declines in the age-standardized cancer[^6] and cardiovascular'[^7] death rates, and increasingly, new treatments which have transformed the lives of patients with devastating rare and genetic diseases such as cystic fibrosis and spinal muscular atrophy. These developments have contributed in part to the dramatic rise in life expectancy since the late 1800's, shown in the graph below.
 
-<iframe src="https://ourworldindata.org/grapher/life-expectancy?tab=chart&time=1770..2019&country=Africa~Asia~Europe~OWID_WRL~Americas~Oceania" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+<iframe src="https://ourworldindata.org/grapher/life-expectancy?tab=chart&time=1770..2019&country=Africa~Asia~Europe~OWID_WRL~Americas~Oceania" loading="lazy" style="width: 80%; height: 500px; border: 0px none;"></iframe>
 
 **The evident value of pharmaceuticals makes them highly desirable, and therefore able to command high prices.** Opponents of free drug pricing accuse the industry of a form of extortion, that by exploiting their monopoly position drug companies are able to charge effectively whatever they want for life-saving medications and the healthcare system will be obliged to pay. Hence, they argue that prices should be regulated by government in order to reign in the power imbalance between patients and the pharmaceutical industry. To address this concern it is important to draw a distinction between the concepts of price, value and affordability. 
 
@@ -45,43 +45,43 @@ Healthcare systems have two key obligations when it comes to collecting and dist
 This doesn't mean that all health interventions should be made affordable for whoever wants them using funds from the common pool, as that would mean advocating for unsustainable allocations of maximal funding and resources to any ailment, regardless of diminishing returns. **We cannot have it all, but we can aim to allocate the scarce resources we do have as best we can, and the free market is the best means that we know of to effectively make those allocations.** Even at high prices, drugs are among the most cost-effective healthcare interventions available. If it so happens that a particular drug does not represent good value for money for a particular patient relative to other options, then we should resist the market failure that would see that drug reimbursed and made affordable.
 
 In the US, where the affordability issue of drugs is most acute, it is often the case that the price a drug company charges for their products is disconnected from the affordability of that drug. When one looks closely, it is usually regulations, inflexible contracting, illiquid insurance markets, rent-seeking middlemen[^21], and misaligned incentives that prevent the market from operating efficiently. In one of the starkest examples of market failure in recent years, the price that Sanofi receives for their insulin in the US declined by 41% between 2012 and 2019, while list prices and average out-of-pocket costs for patients actually rose[^20] over the same period (shown in the graph below). 
-
-<center><img src="/assets/Pasted image 20220808235114.png/></center>
-
+<br>
+<center><img src="/assets/Pasted image 20220808235114.png"/></center>
+<br>
 High prices are not incompatible with wide access, and rather than asking why drug companies charge such high prices, we should ask what can be done to lower the cost and risk of development and the barriers to market in order to spur competition and innovation, and what market dysfunctions and perverse incentives are getting in the way of ensuring drugs are affordable and accessible for patients. 
 
 ___
 
 **Other relevant links:**
-1. [https://bfi.uchicago.edu/wp-content/uploads/2021/09/BFI_WP_2021-108.pdf]
-2. [https://rapport.bio/all-stories/how-to-kill-the-conversation]
-3. [https://www.valueinhealthjournal.com/article/S1098-3015(16)34126-2/pdf]
-4. [https://www.amazon.com/Great-American-Drug-Deal-Prescription/dp/1733058915]
-5. [https://www.thewellnews.com/opinions/misguided-rating-cancels-rare-disease-patients/]
-7. [https://www.raps.org/news-and-articles/news-articles/2019/4/how-biopharma-companies-use-nih-and-vice-versa]
-8. [https://www.healthsystemtracker.org/chart-collection/how-do-prescription-drug-costs-in-the-united-states-compare-to-other-countries/#Generic%20drug%20share%20of%20prescription%20drug%20market,%202019]
-9. [https://www.statnews.com/2019/12/23/debate-over-us-drug-pricing-system-time-to-face-reality/]
+1. (https://bfi.uchicago.edu/wp-content/uploads/2021/09/BFI_WP_2021-108.pdf)
+2. (https://rapport.bio/all-stories/how-to-kill-the-conversation)
+3. (https://www.valueinhealthjournal.com/article/S1098-3015(16)34126-2/pdf)
+4. (https://www.amazon.com/Great-American-Drug-Deal-Prescription/dp/1733058915)
+5. (https://www.thewellnews.com/opinions/misguided-rating-cancels-rare-disease-patients/)
+7. (https://www.raps.org/news-and-articles/news-articles/2019/4/how-biopharma-companies-use-nih-and-vice-versa)
+8. (https://www.healthsystemtracker.org/chart-collection/how-do-prescription-drug-costs-in-the-united-states-compare-to-other-countries/#Generic%20drug%20share%20of%20prescription%20drug%20market,%202019)
+9. (https://www.statnews.com/2019/12/23/debate-over-us-drug-pricing-system-time-to-face-reality/)
 ___
 
-[^2]: [https://jamanetwork.com/journals/jama/fullarticle/2762308]
-[^3]: [https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf]
-[^4]: [https://pubmed.ncbi.nlm.nih.gov/32125404/]
-[^5]: [https://ourworldindata.org/vaccination]
-[^6]: [https://ourworldindata.org/cancer#is-the-world-making-progress-against-cancer]
-[^7]: [https://ourworldindata.org/grapher/cardiovascular-disease-death-rates-by-age?country=~OWID_WRL]
-[^8]: This is true in a general sense, but there are exceptions. Companies may intentionally choose prices lower than the profit-maximizing price as part of a strategy to avoid "offending" various stakeholders, to drive market share, or to generate goodwill. They may also negotiate discounts as part of a bundled deal for a portfolio of products or agree to various forms of managed entry agreement to facilitate market access or speed up time to market
-[^9]: [https://www.rand.org/pubs/research_reports/RR2956.html]
-[^10]: [https://atelfo.github.io/2020/05/01/pharma-market-sizes]
-[^11]: The government of most countries recognizes the difficulty of drug development, and so allows companies a lengthy period of market exclusivity (monopoly) in order to incentivize investment. The length of this monopoly period depends on the status of the patents at approval; it typically lasts around 13 years but can be as high as 20 years. Separate overlapping regulatory exclusivities are also often granted by medicines regulators, these are typically 5-7 years in duration however they are generally of lesser importance than patent exclusivity due to their shorter duration
-[^12]: [https://www.cbo.gov/publication/57126]
-[^13]:  When I say information I mean the applications and dossiers submitted to regulatory agencies like the FDA and EMA, the clinical trial data and the publications of supporting evidence for the benefits and risks of a given drug
-[^14]: [https://officeofbudget.od.nih.gov/]
-[^15]: [https://en.wikipedia.org/wiki/European_Research_Council]
-[^16]: Not all industry revenues are invested into research and development, and some have maligned the pharmaceutical industry's spend on marketing and share buybacks in particular. While both are these are not unalloyed benefits for patients, they do have some indirect benefits. Marketing helps raise awareness of new pharmaceutical drugs, data and guidelines among healthcare practitioners who may otherwise have limited time to follow the latest developments closely. Buybacks and dividends function as a means to return capital to investors when the executive team sees little opportunity to achieve attractive return on investment by investing in the further business, this capital then gets recycled to fund other promising opportunities. Aside from these expenditures, companies are also have high compliance requirements to ensure that side effects with marketed drugs are appropriately recorded and reported. They also hire analysts to forecast the demand for new products, and decide how to effectively allocate their capital to drug development programs
-[^18]: [https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/generic-competition-and-drug-prices]
-[^19]: [https://www.nature.com/articles/nrd3251]
-[^20]: [https://www.fiercepharma.com/pharma/net-prices-for-insulins-keep-dropping-but-are-patients-paying-more-sanofi-says]
-[^21]: A detailed discussion of pharmacy benefit managers (PBMs) is out of scope for this post, but it is worth understanding their role in managing access to medicines and negotiating prices in the US as many people in the pharmaceutical industry have accused their practices of causing high list prices and out of pocket costs for patients. This post provides a summary of the common criticisms of PBMs [https://www.healthaffairs.org/do/10.1377/forefront.20180823.383881/full/]
-[^22]: [https://ncd.gov/sites/default/files/NCD_Quality_Adjusted_Life_Report_508.pdf]
-[^23]: [https://www.healthaffairs.org/do/10.1377/forefront.20211115.976166/]
+(^2): (https://jamanetwork.com/journals/jama/fullarticle/2762308)
+(^3): (https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf)
+(^4): (https://pubmed.ncbi.nlm.nih.gov/32125404/)
+(^5): (https://ourworldindata.org/vaccination)
+(^6): (https://ourworldindata.org/cancer#is-the-world-making-progress-against-cancer)
+(^7): (https://ourworldindata.org/grapher/cardiovascular-disease-death-rates-by-age?country=~OWID_WRL)
+(^8): This is true in a general sense, but there are exceptions. Companies may intentionally choose prices lower than the profit-maximizing price as part of a strategy to avoid "offending" various stakeholders, to drive market share, or to generate goodwill. They may also negotiate discounts as part of a bundled deal for a portfolio of products or agree to various forms of managed entry agreement to facilitate market access or speed up time to market
+(^9): (https://www.rand.org/pubs/research_reports/RR2956.html)
+(^10): (https://atelfo.github.io/2020/05/01/pharma-market-sizes)
+(^11): The government of most countries recognizes the difficulty of drug development, and so allows companies a lengthy period of market exclusivity (monopoly) in order to incentivize investment. The length of this monopoly period depends on the status of the patents at approval; it typically lasts around 13 years but can be as high as 20 years. Separate overlapping regulatory exclusivities are also often granted by medicines regulators, these are typically 5-7 years in duration however they are generally of lesser importance than patent exclusivity due to their shorter duration
+(^12): (https://www.cbo.gov/publication/57126)
+(^13):  When I say information I mean the applications and dossiers submitted to regulatory agencies like the FDA and EMA, the clinical trial data and the publications of supporting evidence for the benefits and risks of a given drug
+(^14): (https://officeofbudget.od.nih.gov/)
+(^15): (https://en.wikipedia.org/wiki/European_Research_Council)
+(^16): Not all industry revenues are invested into research and development, and some have maligned the pharmaceutical industry's spend on marketing and share buybacks in particular. While both are these are not unalloyed benefits for patients, they do have some indirect benefits. Marketing helps raise awareness of new pharmaceutical drugs, data and guidelines among healthcare practitioners who may otherwise have limited time to follow the latest developments closely. Buybacks and dividends function as a means to return capital to investors when the executive team sees little opportunity to achieve attractive return on investment by investing in the further business, this capital then gets recycled to fund other promising opportunities. Aside from these expenditures, companies are also have high compliance requirements to ensure that side effects with marketed drugs are appropriately recorded and reported. They also hire analysts to forecast the demand for new products, and decide how to effectively allocate their capital to drug development programs
+(^18): (https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/generic-competition-and-drug-prices)
+(^19): (https://www.nature.com/articles/nrd3251)
+(^20): (https://www.fiercepharma.com/pharma/net-prices-for-insulins-keep-dropping-but-are-patients-paying-more-sanofi-says)
+(^21): A detailed discussion of pharmacy benefit managers (PBMs) is out of scope for this post, but it is worth understanding their role in managing access to medicines and negotiating prices in the US as many people in the pharmaceutical industry have accused their practices of causing high list prices and out of pocket costs for patients. This post provides a summary of the common criticisms of PBMs (https://www.healthaffairs.org/do/10.1377/forefront.20180823.383881/full/)
+(^22): (https://ncd.gov/sites/default/files/NCD_Quality_Adjusted_Life_Report_508.pdf)
+(^23): (https://www.healthaffairs.org/do/10.1377/forefront.20211115.976166/)
 
