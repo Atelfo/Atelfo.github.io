@@ -27,6 +27,7 @@ Twitter is without a doubt the best source for real-time news, debate and discus
 - [@JacobPlieth](https://twitter.com/JacobPlieth): Journalist at Evaluate Vantage and snarky commentator on oncology news
 - [@Sports_Bios](https://twitter.com/Sports_bios): Smart (often contrarian) takes on market trends, follows neuroscience and China closely
 - [@AndyBiotech](https://twitter.com/AndyBiotech): Hasn't been active lately, but excellent signal-to-noise ratio when he does post
+- [@bio_clouseau](https://twitter.com/bio_clouseau): Frequently picks up biotech news that others miss
 
 ### Blogs
 - [In the Pipeline](https://www.science.org/blogs/pipeline): The essential industry blog, written by Derek Lowe ([@Dereklowe](https://twitter.com/Dereklowe) on twitter). His day job is a Novartis medicinal chemist, but he's much more well known in the industry for his regular commentary on drug discovery and the pharma industry
@@ -50,8 +51,7 @@ For such a systemically important industry, there's not as many books written ab
 - [The Pharmagellan Guide to Analyzing Biotech Clinical Trials](https://www.goodreads.com/book/show/60251293-the-pharmagellan-guide-to-analyzing-biotech-clinical-trials): Just came out (as of 2022), highly recommended for people new to the industry looking to learn about clinical trials. I expect I'll be lending it out to some of the new analysts at my firm. There's not much that will be revelatory for industry veterans; when I read this I had ~5 years of experience in biotech and I was familiar with most of the content, but it was a nice refresher with plenty of useful examples, and I learned a few new things too
 - [Forecasting for the Pharmaceutical Industry: Models for New Product and In-Market Forecasting and How to Use Them](https://www.goodreads.com/book/show/3065691-forecasting-for-the-pharmaceutical-industry): Getting a bit dated now (released in 2006), but still a useful overview of the common forecasting methodologies in the pharmaceutical industry. A great starting point for someone looking to learn how to forecast product revenue in biotech, and anyone looking for a brisk overview of the different methodologies available for pre and post-launch product forecasting (e.g., prevalence or incidence models, system dynamics, trend-based, etc.)
 - [The Pharmagellan Guide to Biotech Forecasting and Valuation](https://www.goodreads.com/book/show/33802675-the-pharmagellan-guide-to-biotech-forecasting-and-valuation): This slim volume has been an invaluable reference that I revisit almost every time I build a forecast model. While the content is US-centric and the coverage of some topics is overly high-level, the page-for-page density of useful information and benchmarks is very high
-
-I'd like to include a reference on country healthcare systems and drug pricing, access and reimbursement but unfortunately I haven't come across any authoritative ones yet
+- [Which Country Has the World's Best Health Care?](https://www.goodreads.com/en/book/show/50262535): A comparative primer on 10 healthcare systems (US, Australia, Canada, China, France, Germany, Netherlands, Norway, Switzerland, Taiwan, and the UK) including organisation, funding, and performance. Dry and repetitive at times, but dense with useful information
 
 #### Corporate histories
 - [Genentech: The Beginnings of Biotech](https://www.goodreads.com/book/show/12703074-genentech): The story of how recombinant DNA technology was commercialized. 40 years or so later Genentech (now part of Roche) is still one of the giants in the industry, and everyone in the industry should be aware of their history
@@ -90,6 +90,7 @@ For new biotech books, I like to check the [MIT press website](https://mitpress.
 - [Orphanet](https://www.orpha.net/consor/cgi-bin/index.php) and [National Organization for Rare Disorders (NORD)](https://rarediseases.org/for-patients-and-families/information-resources/rare-disease-information/): Rare disease databases and information
 - [SEC EDGAR](https://www.sec.gov/edgar/searchedgar/companysearch.html): Background information on US-listed public companies. Search by ticker symbol for 10-K (annual reports) and S-1 (IPO prospectus) 
 - [MedlinePlus](https://medlineplus.gov/medlineplus.html): Handy US government reference with disease summaries, references and links (especially the genetics pages)
+- [OpenTargets](https://www.opentargets.org/): Aggregator with clean, well-organised summaries of drug targets and associated genetic evidence (among other bioinformatics data)
 
 #### Paid resources:
 - [UpToDate](https://www.wolterskluwer.com/en/solutions/uptodate): Immensely useful disease overviews and summaries of the latest clinical practice
