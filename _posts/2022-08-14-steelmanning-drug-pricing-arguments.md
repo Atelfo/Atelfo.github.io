@@ -17,7 +17,7 @@ The opposite of strawmanning is known as [steelmanning](https://themindcollectio
 Drug pricing is a contentious and emotionally charged topic often subject to motivated reasoning. In the spirit of truth-seeking, I thought it would be an interesting exercise to steelman three opposing propositions, which can be accessed through the links below:
 1. [Why pharmaceutical companies should be able to price their drugs freely](https://atelfo.github.io/2022/08/14/why-pharmaceutical-companies-should-be-able-to-price-their-drugs-freely.html)
 2. Why governments should set pharmaceutical prices
-3. Why the pharmaceutical industry should be a state-owned, not for profit industry which uses taxes to develop and provide drugs at no additional charge to taxpayers
+3. Why the pharmaceutical industry should be nationalised
 
 I've bolded what I think are the key points of each argument if you prefer to skim those rather than read the whole thing. 
 
