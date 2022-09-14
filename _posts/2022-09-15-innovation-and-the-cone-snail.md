@@ -31,7 +31,7 @@ Man-made inventions can be thought of in a similar way - as points in an theoret
 
 The core insight in NaEH is that the natural conditions and processes of discovery that shape the shell space are fundamentally similar to the human-originated ones that shape the invention space. Using a broad definition of innovation - *any* new discoveries or inventions - you can think of both spaces as portions of a larger *innovation space*. In this innovation space, everything that has been discovered is encapsulated by an *innovation frontier* demarcating the furthest extent of our knowledge. New discoveries incrementally extend the innovation frontier, and everything yet to be discovered lays beyond in a winding maze of dead ends, unproductive cul-de-sacs, and the occasional treasure.
 
-<center><img src="/assets/Pasted image 20220827161807.png" width="600"/></center>
+<center><img src="/assets/Pasted image 20220827161807.png" width="800"/></center>
 
 Extending the innovation frontier is path dependent in an unpredictable fashion; each new innovation builds on a chain of prior innovations that are elaborated or combined in unexpected ways. Trial-and-error based tinkering at edge of knowledge is a reliable way to innovate, although you can't be sure what exactly you will discover, whether it will be useful, and how it will be useful. The further from the frontier you aim to travel, the more uncertain the chain of discoveries that chart the shortest path to the eventual goal. This fundamental unpredictability is at the heart of why basic research is so valuable. As an illustrative example, when two University of Utah undergraduates - Craig Clark and J. Michael McIntosh - went out to collect and study cone snail venom in the late 1970's they weren't doing it with the explicit goal of eventually developing a novel non-opioid pain drug. Yet, this turned out to be a productive avenue of research that eventually resulted in the discovery and approval of the potent painkiller Ziconotide decades later[^2][^7].
 
@@ -51,7 +51,7 @@ Entities improve their performance by developing, adopting, and refining new inn
 
 Like any other action, making new discoveries and expanding the innovation frontier also requires the input of energy and material resources. Energy is required for innovation, better innovations drive improvements in the ability to compete and capture additional energy which provides the fuel for further innovation... and so on in a virtuous cycle until all available energy in the environment is captured and put to use. Kicking off this feedback loop is how increases in resource availability fuel innovation.
 
-<center><img src="/assets/Pasted image 20220829074356.png" width="600"/></center>
+<center><img src="/assets/Pasted image 20220829074356.png" width="400"/></center>
 
 However, a shift in resource availability is for nothing if agents in the economy are not receptive and ready to capitalize on the opportunity. *Generative capacity* is a type of intrinsic resource that improves the ability of an entity to generate new innovations. For individual humans, these include things like high intelligence, motivational drive, or education. Human institutions may have high generative capacity if they employ uniquely talented people, are cognitively diverse, or have exceptional technology or processes. For organisms, an expansive genome or a high mutation rate leads to a high generative capacity. Faster generation times of biological organisms also means faster adaptation, analogous to how rapid iteration and prototyping speeds up the invention process. Generative capacity also scales with the number of prior innovations, as each pre-existing innovation can serve as inspiration or fodder for future inventions. The greater the circumference of the innovation frontier, the greater the number of undiscovered innovations abutting it.
   
@@ -69,7 +69,7 @@ A natural environment that was infinitely permissive - a so-called "gentle Earth
 
 Resource availability, generative capacity, and performance pressure all interact to determine how difficult it is to innovate within a given system. To get a sense of how these factors interact, imagine the innovation frontier as a balloon. Resource availability is like the air pressure inside the balloon, blow in more air and the balloon expands. Performance pressure is an external force pushing on the surface of the balloon, trying to stop the frontier from growing, like hands compressing the balloon and the air inside. Generative capacity is then a sort of unevenness in either resource availability or performance pressure leading to places where it's easier to push the frontier outwards, like when you squeeze a balloon and bulbous pockets of air expand into the gaps between your fingers. 
 
-<center><img src="/assets/Pasted image 20220914003503.png" width="600"/></center>
+<center><img src="/assets/Pasted image 20220914003503.png" width="800"/></center>
 
 These factors all combine to determine an *innovation surface area*: the region of the innovation frontier along which progress is being made. Generative capacity defines where you are pushing on the frontier, resource availability how hard you are pushing, and performance pressure how hard the environment and other competitors are pushing against you. 
 
