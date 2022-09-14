@@ -21,7 +21,7 @@ Professor Vermeij is one of the world's foremost experts on marine molluscs and 
 
 Imagine a vast flat plain full of shells of all forms, with closely (evolutionarily) related shells located physically close together. At the centre of this *"shell space"* you find the first shell to ever evolve, perhaps little more than a stubby scale of calcium carbonate. As you pick your way outwards, you pass steadily more elaborate shells until you eventually reach intricate, beautiful, and highly adapted forms like those of the *Murex* genus. Sometimes you find regressions in form too: simple shells with complex ancestors. Exploring further, you come across gaps in the landscape for "undiscovered" shell types, forms that could have existed but never managed to evolve for one reason or another. The shells that surround these voids are nature's failed experiments; strange or inferior forms that weren't good enough to propagate.
 
-<center><img src="/assets/DALL·E 2022-09-06 18.15.58 - An infinite space full of shells of various forms. Big shells and small shells. Vibrant shells and dull shells. Spiky shells and smooth shells. Staine.png" width="800"/></center>
+<center><img src="/assets/DALL·E 2022-09-06 18.15.58 - An infinite space full of shells of various forms. Big shells and small shells. Vibrant shells and dull shells. Spiky shells and smooth shells. Staine.png" width="600"/></center>
 
 Man-made inventions can be thought of in a similar way - as points in an theoretical *invention space*. A quote from "[Why Greatness Cannot Be Planned](https://www.goodreads.com/en/book/show/25670869)"[^3] helps visualize the concept:
 
@@ -31,7 +31,7 @@ Man-made inventions can be thought of in a similar way - as points in an theoret
 
 The core insight in NaEH is that the natural conditions and processes of discovery that shape the shell space are fundamentally similar to the human-originated ones that shape the invention space. Using a broad definition of innovation - *any* new discoveries or inventions - you can think of both spaces as portions of a larger *innovation space*. In this innovation space, everything that has been discovered is encapsulated by an *innovation frontier* demarcating the furthest extent of our knowledge. New discoveries incrementally extend the innovation frontier, and everything yet to be discovered lays beyond in a winding maze of dead ends, unproductive cul-de-sacs, and the occasional treasure.
 
-<center><img src="/assets/Pasted image 20220827161807.png"/></center>
+<center><img src="/assets/Pasted image 20220827161807.png" width="600"/></center>
 
 Extending the innovation frontier is path dependent in an unpredictable fashion; each new innovation builds on a chain of prior innovations that are elaborated or combined in unexpected ways. Trial-and-error based tinkering at edge of knowledge is a reliable way to innovate, although you can't be sure what exactly you will discover, whether it will be useful, and how it will be useful. The further from the frontier you aim to travel, the more uncertain the chain of discoveries that chart the shortest path to the eventual goal. This fundamental unpredictability is at the heart of why basic research is so valuable. As an illustrative example, when two University of Utah undergraduates - Craig Clark and J. Michael McIntosh - went out to collect and study cone snail venom in the late 1970's they weren't doing it with the explicit goal of eventually developing a novel non-opioid pain drug. Yet, this turned out to be a productive avenue of research that eventually resulted in the discovery and approval of the potent painkiller Ziconotide decades later[^2][^7].
 
@@ -41,7 +41,7 @@ Even though the discovery of novel innovations is a stochastic and serendipitous
 
 So what determines the innovativeness of a particular economy, regardless of whether it is man-made or natural? Drawing from NaEH and other members of the innovation literature, I propose three main factors: *resource availability*, *generative capability*, and *performance pressure*.
 
-<center><img src="/assets/DALL·E 2022-09-08 23.24.40 - A sea shell cornucopia. Stained glass window by Alphonse Mucha.png" width="800"/></center>
+<center><img src="/assets/DALL·E 2022-09-08 23.24.40 - A sea shell cornucopia. Stained glass window by Alphonse Mucha.png" width="600"/></center>
 
 Any action that opposes entropy requires the input of energy. High performing (i.e. powerful) entities are those that can capture and apply energy in order to resist entropy and shape their environment in their favour. It follows that high performance typically goes hand in hand with high energy expenditure. Since life and living systems require energy to grow, survive, and reproduce, energy is the fundamental resource that all entities are competing for:
 
@@ -51,7 +51,7 @@ Entities improve their performance by developing, adopting, and refining new inn
 
 Like any other action, making new discoveries and expanding the innovation frontier also requires the input of energy and material resources. Energy is required for innovation, better innovations drive improvements in the ability to compete and capture additional energy which provides the fuel for further innovation... and so on in a virtuous cycle until all available energy in the environment is captured and put to use. Kicking off this feedback loop is how increases in resource availability fuel innovation.
 
-<center><img src="/assets/Pasted image 20220829074356.png"/></center>
+<center><img src="/assets/Pasted image 20220829074356.png" width="600"/></center>
 
 However, a shift in resource availability is for nothing if agents in the economy are not receptive and ready to capitalize on the opportunity. *Generative capacity* is a type of intrinsic resource that improves the ability of an entity to generate new innovations. For individual humans, these include things like high intelligence, motivational drive, or education. Human institutions may have high generative capacity if they employ uniquely talented people, are cognitively diverse, or have exceptional technology or processes. For organisms, an expansive genome or a high mutation rate leads to a high generative capacity. Faster generation times of biological organisms also means faster adaptation, analogous to how rapid iteration and prototyping speeds up the invention process. Generative capacity also scales with the number of prior innovations, as each pre-existing innovation can serve as inspiration or fodder for future inventions. The greater the circumference of the innovation frontier, the greater the number of undiscovered innovations abutting it.
   
@@ -69,7 +69,7 @@ A natural environment that was infinitely permissive - a so-called "gentle Earth
 
 Resource availability, generative capacity, and performance pressure all interact to determine how difficult it is to innovate within a given system. To get a sense of how these factors interact, imagine the innovation frontier as a balloon. Resource availability is like the air pressure inside the balloon, blow in more air and the balloon expands. Performance pressure is an external force pushing on the surface of the balloon, trying to stop the frontier from growing, like hands compressing the balloon and the air inside. Generative capacity is then a sort of unevenness in either resource availability or performance pressure leading to places where it's easier to push the frontier outwards, like when you squeeze a balloon and bulbous pockets of air expand into the gaps between your fingers. 
 
-<center><img src="/assets/Pasted image 20220914003503.png"/></center>
+<center><img src="/assets/Pasted image 20220914003503.png" width="600"/></center>
 
 These factors all combine to determine an *innovation surface area*: the region of the innovation frontier along which progress is being made. Generative capacity defines where you are pushing on the frontier, resource availability how hard you are pushing, and performance pressure how hard the environment and other competitors are pushing against you. 
 
@@ -79,19 +79,19 @@ We can be confident that a system with a large innovation surface area will prod
 
 The labral tooth's prevalence in the fossil record made it a convenient object of study for Professor Vermeij to measure the diffusion of innovations, but the patterns he observed are hardly unique. Across the natural and human worlds there's a trend towards greater complexity and performance over time with new innovations continually supplanting old ones. The tendency of productive economies to be net exporters of high-performing innovations brings about global uniformity; less productive economies adopt what works and thereby come to mimic more productive ones, albeit without the same capacity to generate new innovations of their own. The fewer barriers to the spread of innovations, the quicker the best innovations come to dominate. This is one of the reasons why the internet has facilitated winner-take-all competition when it comes to platforms and content producers. 
 
-<center><img src="/assets/DALL·E 2022-09-08 23.32.41 - The cycle of growth, life and death shown in a spiral pattern similar to a nautilus shell. Stained glass window by Alphonse Mucha.png" width="800"/></center>
+<center><img src="/assets/DALL·E 2022-09-08 23.32.41 - The cycle of growth, life and death shown in a spiral pattern similar to a nautilus shell. Stained glass window by Alphonse Mucha.png" width="600"/></center>
 
 The ebb and flow of the innovation frontier as particular systems sequentially adopt or reject particular innovations tends to follow a common pattern, or an *innovation macrocycle*, that recalls Thomas S. Kuhn's concept of the paradigm shift and the theory of [punctuated equilibria](https://en.wikipedia.org/wiki/Punctuated_equilibrium). 
 
 First, an innovator finds a weak point in the innovation frontier and pushes through, discovering some new innovation. Like most other technologies, this new innovation's performance as function of time and resource investment follows an S-shaped sigmoid curve. 
 
-<center><img src="/assets/Pasted image 20220914163238.png"/></center>
+<center><img src="/assets/Pasted image 20220914163238.png" width="600"/></center>
              
 Although not as performant as other old but optimized innovations at first, this new innovation has a higher potential performance ceiling. The rate of improvement in performance is rapid early on, and soon enough the new innovation has matured enough to allow its wielder to outperform its contemporaries and capture large amounts of energy and become a locally dominant competitor. Slowly, the innovation becomes harder and harder to further improve. The performance ceiling is reached and ever increasing resource investments are required to improve or even maintain performance. Performance gains stall. The innovator's current position is contingent upon a chain of prior innovations and refinements that made them successful in the first place, and maintaining those contingent structures exacts a high burden. "Deep" traits get locked in. This contingency narrows their capacity to explore a new region of the innovation frontier, they've over-optimized into a local minima and redirecting resources away would decrease their overall performance - they're trapped. Somewhere else, another innovator has found a promising weak point in the innovation frontier...
 
 Over time this macrocycle leads performance to ratchet upwards as new and better innovations are sequentially adopted, shown in the below diagram adapted from a 1992 paper by Clayton Christensen[^10]. In a real environment where resources are limited, a macrocycle analogous to heating and annealing is the best for fostering long-term innovation because it biases the system towards building off of productive innovations. Periods of high resource availability allow new innovations to sprout and periods of high performance pressure cull off inefficient energy-sapping innovations ahead of the next cycle.
 
-<center><img src="/assets/Pasted image 20220914164441.png"/></center>
+<center><img src="/assets/Pasted image 20220914164441.png" width="600"/></center>
 
 For the innovation macrocycle to be kicked off and sustained the environment must tolerate or even encourage new but unoptimized innovations. Professor Vermeij suggests two circumstances when this can be the case:
 
@@ -123,10 +123,10 @@ Because of this virtuous cycle, it's fundamentally unclear where the limits to g
 - "Good Enough: The Tolerance for Mediocrity in Nature and Society" by Daniel Milo
 - "Contingency and Convergence: Toward a Cosmic Biology of Body and Mind" by Russell Powell
 
-[^1]: Nature: an economic history by Geerat J. Vermeij
+[^1]: "Nature: an economic history" by Geerat J. Vermeij
 [^2]: https://pubmed.ncbi.nlm.nih.gov/29777871/
 [^3]: This concept is adapted from a discussion in the book "Why Greatness Cannot be Planned" by Kenneth O. Stanley and Joel Lehman
-[^4]: Good Enough
+[^4]: "Good Enough: The Tolerance for Mediocrity in Nature and Society" by Daniel Milo
 [^5]: The history of pharmaceuticals provides ample examples of basic research and tinkering leading eventually to medicines, often in situations when drug discovery was not an explicit goal of the research. When the chain of discoveries leading to the FDA approval of "transformative" medicines is traced back it takes about ~30 years on average from the first basic discovery to the eventual FDA approval (see https://www.science.org/doi/10.1126/scitranslmed.aaq1787). Similarly, it is entirely unintuitive that the study of extremophile Archea would eventually lead to the discovery of efficient gene editing via CRISPR (see https://www.labiotech.eu/interview/francis-mojica-crispr-interview/ for an interview with the scientist who named CRISPR)
 [^7]: https://archive.sltrib.com/story.php?ref=/healthscience/ci_2521679
 [^8]: The labral tooth is a spine on the shells of some predatory snails that's used to wedge apart the protective coverings of barnacles, mussels and other bivalves and speed up the time it takes to subdue them. See https://academic.oup.com/biolinnean/article/72/4/461/2638722 for further details, a paper which contains a nice discussion of innovation in its own right
