@@ -17,7 +17,7 @@ title: "Innovation and the cone snail"
 
 How can a sea snail's shell be a disruptive technology? In what way can a region of ocean be described as an innovative economy? These are some of the questions that Geerat J. Vermeij tackles in his book "[Nature: an economic history](https://www.goodreads.com/book/show/2147472.Nature)" (NaEH). 
 
-Professor Vermeij is one of the world's foremost experts on marine molluscs and an interesting character in his own right; blind since childhood, he studies the diverse shapes and structures of gastropod shells by touch. Throughout his career, Professor Vermeij has had an interest in applying economic concepts to the biological sciences, and NaEH is the synthesis of what he's learned by doing so. In seeking to understand what is true of both productive ecosystems and economies, he has sketched the outlines of a general theory of innovation, a theory which I will lay out in this post, starting with a way of thinking about innovation as a physical space.
+Professor Vermeij is one of the world's foremost experts on marine molluscs and an interesting character in his own right; blind since childhood, he studies the diverse shapes and structures of gastropod shells by touch. Throughout his career, Professor Vermeij has had an interest in applying economic concepts to the biological sciences, and NaEH is the synthesis of what he's learned in the process. In seeking to understand what is true of both productive ecosystems and economies, he has sketched the outlines of a general theory of innovation which I'll spend most of this post elaborating on, starting with a way of thinking about innovation as a physical space.
 
 Imagine a vast flat plain full of shells of all forms, with closely (evolutionarily) related shells located physically close together. At the centre of this *"shell space"* you find the first shell to ever evolve, perhaps little more than a stubby scale of calcium carbonate. As you pick your way outwards, you pass steadily more elaborate shells until you eventually reach intricate, beautiful, and highly adapted forms like those of the *Murex* genus. Sometimes you find regressions in form too: simple shells with complex ancestors. Exploring further, you come across gaps in the landscape for "undiscovered" shell types, forms that could have existed but never managed to evolve for one reason or another. The shells that surround these voids are nature's failed experiments; strange or inferior forms that weren't good enough to propagate.
 
@@ -93,7 +93,7 @@ The labral tooth's prevalence in the fossil record made it a convenient object o
 <center><img src="/assets/DALL·E 2022-09-08 23.32.41 - The cycle of growth, life and death shown in a spiral pattern similar to a nautilus shell. Stained glass window by Alphonse Mucha.png" width="800"/></center>
 <br>
 
-The ebb and flow of the innovation frontier as particular systems sequentially adopt or reject particular innovations tends to follow a common pattern, or an *innovation macrocycle*, that recalls Thomas S. Kuhn's concept of the paradigm shift and the theory of [punctuated equilibria](https://en.wikipedia.org/wiki/Punctuated_equilibrium). 
+The ebb and flow of the innovation frontier as particular systems sequentially adopt or reject particular innovations tends to follow a common pattern, an *innovation macrocycle*, that recalls Thomas S. Kuhn's concept of the paradigm shift and the theory of [punctuated equilibria](https://en.wikipedia.org/wiki/Punctuated_equilibrium). 
 
 First, an innovator finds a weak point in the innovation frontier and pushes through, discovering some new innovation. Like most other technologies, this new innovation's performance as function of time and resource investment follows an S-shaped sigmoid curve. 
 
@@ -117,11 +117,11 @@ I would add a third, that new innovations can allow entities to succeed by adopt
 
 >*"Occasionally, disruptive technologies emerge: innovations that result in worse product performance, at least in the near-term... Disruptive technologies bring to the market a very different value proposition than had been available previously. Generally, disruptive technologies underperform established products in mainstream markets. But they have other feature that a few fringe (and generally new) customers value."*
 
-The other class of orthogonal strategies are those that make use of new or underutilized resources. For example, molluscs and other early animals put abundant calcium in the seas to use as a novel resource to grow shells and skeletons:
+The other class of orthogonal strategies are those that make use of new or underutilized resources like how molluscs and other early animals put abundant calcium in the seas to use as a novel resource to grow shells and skeletons:
 
 > *"The evolution of organisms capable of secreting mineralized skeletons beginning about 565 Ma during the latest Proterozoic eon ushered in a fundamental increase in the control of silicon and calcium by life. Minerals of these elements formed with little of no intervention by organisms through crystal growth on the seafloor before organisms put them to defensive use in skeletons."*
 
-By making use of new resources, these organisms gained a defensive advantage over their competitors and therefore outcompeted them. Many years down the line, their shells became a resource for other organisms to use in turn:
+By making use of new resources, these early organisms gained a defensive advantage over their competitors and therefore outcompeted them. Many years down the line, their shells became a new resource for other organisms to use in turn:
 
 > *"A variation on this theme is the use of empty shells. When snails die, they leave behind empty shells, which turn out to be highly effective fortresses for many crustaceans (hermit crabs, amphipods, and tanaids), some worms (sipunculans), some octopuses, and even a few fish."*
 
