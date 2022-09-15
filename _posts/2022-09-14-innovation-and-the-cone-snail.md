@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Innovation and the cone snail"
+title: "Innovation, sea snails, and the blind professor"
 ---
 <meta property="og:image" content="https://atelfo.github.io/assets/DALL·E 2022-08-28 23.38.50 - A blind professor holds a vibrant cone snail shell. Artifacts of innovation are in the background. Stained glass window by Alphonse Mucha.png" />
 <meta name="twitter:image" content="https://atelfo.github.io/assets/DALL·E 2022-08-28 23.38.50 - A blind professor holds a vibrant cone snail shell. Artifacts of innovation are in the background. Stained glass window by Alphonse Mucha.png">
