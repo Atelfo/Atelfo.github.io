@@ -1,10 +1,21 @@
 ---
 layout: post
-title: "Why pharmaceutical companies should be able to price their drugs freely"
-hidden: true
+title: "Steelmanning the argument for free drug pricing"
 ---
 
-# Why pharmaceutical companies should be able to price their drugs freely
+# Steelmanning the argument for free drug pricing
+
+Attacking a [strawman](https://en.wikipedia.org/wiki/Straw_man) is a form of fallacious argument in which opponents of a particular proposition attack a weaker, but superficially similar, version of that proposition in order to make it easier for them to "win" the argument. Strawmanning is particularly pernicious when used as a bad-faith rhetorical technique to lead non-expert audiences to false conclusions.
+
+The opposite of strawmanning is known as [steelmanning](https://themindcollection.com/steelmanning-how-to-discover-the-truth-by-helping-your-opponent/?utm_source=pocket_mylist): attacking the strongest form of your opponent's argument. By wilfully crafting the best argument you can for your opponent you gain a better understanding of their position, and by extension, your position too. Forcing yourself into a good-faith dialectic helps you come closer to uncovering the truth.
+
+Drug pricing is a contentious and emotionally charged topic often subject to motivated reasoning. High drug prices are routinely criticised in the popular media, often for good reason but typically with arguments that lack nuance. So in the spirit of truth-seeking, I thought it would be an interesting exercise to try and steelman the argument for free drug pricing - in effect, arguing for high drug prices. Personally, I tend to find the most convincing arguments to be those for a form of free pricing with regulatory oversight to prevent the worst excesses of rent-seeking behaviour[^1] - but then again, I do work in the industry so I am biased.
+
+I've bolded what I think are the key points of the argument if you prefer to skim those rather than read the whole thing. Do you find it convincing, or not? Let me know on twitter!
+
+___
+
+## Why pharmaceutical companies should be able to price their drugs freely
 
 **Pharmaceuticals are an extraordinarily valuable class of goods.** In the 100 or so years in which the pharmaceutical industry has existed, we have seen millions of deaths from communicable diseases averted due to vaccinations[^5] and antibiotics, large declines in the age-standardized cancer[^6] and cardiovascular'[^7] death rates, and increasingly, new treatments which have transformed the lives of patients with devastating rare and genetic diseases such as cystic fibrosis and spinal muscular atrophy. These developments have contributed in part to the dramatic rise in life expectancy since the late 1800's, shown in the graph below.
 
@@ -64,6 +75,7 @@ ___
 
 ___
 
+[^1]: Some examples include endless patent evergreening, pay for delay lawsuits, and aggressive price hikes above inflation without additional clinical data to support them
 [^2]: [Profitability of Large Pharmaceutical Companies Compared With Other Large Public Companies](https://jamanetwork.com/journals/jama/fullarticle/2762308)
 [^3]: [Clinical Development Success Rates and Contributing Factors 2011–2020](https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf)
 [^4]: [Estimated Research and Development Investment Needed to Bring a New Medicine to Market, 2009-2018](https://pubmed.ncbi.nlm.nih.gov/32125404/)
@@ -85,4 +97,5 @@ ___
 [^21]: A detailed discussion of pharmacy benefit managers (PBMs) is out of scope for this post, but it is worth understanding their role in managing access to medicines and negotiating prices in the US as many people in the pharmaceutical industry have accused their practices of causing high list prices and out of pocket costs for patients. This article provides a summary of the common criticisms of PBMs: [https://www.healthaffairs.org/do/10.1377/forefront.20180823.383881/full](https://www.healthaffairs.org/do/10.1377/forefront.20180823.383881/full/)
 [^22]: [Quality-Adjusted Life Years and the Devaluation of Life with Disability](https://ncd.gov/sites/default/files/NCD_Quality_Adjusted_Life_Report_508.pdf)
 [^23]: [How Current Cost-Effectiveness Analyses Distort Drug Development Priorities](https://www.healthaffairs.org/do/10.1377/forefront.20211115.976166/)
+
 

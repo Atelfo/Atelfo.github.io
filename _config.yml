@@ -1,5 +1,33 @@
 theme: minima
 title: Alex's blog
 future: true
-description: Life sciences consultant.<br><br>Interested in the biotech industry, medicine, molecular biology, neuroscience, biorisk, science, consciousness, AI, innovation, decision making, philosophy, games, sci-fi, probability and forecasting (among other things).<br><br>I write to learn, mostly about biotech.
-paginate: 5000
+paginate: 10
+
+title: Alex's blog
+author: Alex Telford
+  name: Alex Telford
+description: > # this means to ignore newlines until "show_excerpts:"
+  Life sciences consultant. Interested in the biotech industry, medicine, molecular biology, neuroscience, biorisk, science, consciousness, AI, innovation, decision making, philosophy, games, sci-fi, probability, and forecasting (among other things). I write to learn, mostly about biotech.
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+minima:
+  date_format: "%Y-%m-%d"
+
+  # generate social links in footer
+  social_links:
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/alex-telford-468348b0/" }
+    - { platform: twitter,        user_url: "https://twitter.com/atelfo" }
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Build settings
+theme: minima
+
+plugins:
+ - jekyll-seo-tag
+
