@@ -3,9 +3,9 @@ layout: post
 title: "My book recommendations (updated anually)"
 ---
 
-This is a list of my personal "best" books i.e., the favourites and ones that stuck with me, shaped my thinking or were particularly memorable. Not necessarily the most well-written.
+This is a list of my personal favourite books and ones that stuck with me, shaped my thinking, or were particularly memorable. Not necessarily the most well-written.
 
-I update this list each December with the 5 or so best books that I read for the first time in that year, regardless of when they were released.
+I update this list each December with the 5 or so best books that I read for the first time in that year, regardless of when they were originally released.
 
 ### 2022 book recommendations
 *Coming soon!*
@@ -71,6 +71,7 @@ I update this list each December with the 5 or so best books that I read for the
 - [Look to Windward](https://www.goodreads.com/book/show/12016.Look_to_Windward)
 - [Perdido Street Station](https://www.goodreads.com/book/show/68494.Perdido_Street_Station)
 - [The Bone Clocks](https://www.goodreads.com/book/show/20819685-the-bone-clocks)
+- [The Eighth Day of Creation](https://www.goodreads.com/en/book/show/228568)
 - [The Extended Phenotype: The Long Reach of the Gene](https://www.goodreads.com/book/show/61538.The_Extended_Phenotype)
 - [The Player of Games](https://www.goodreads.com/book/show/18630.The_Player_of_Games)
 - [The True Believer: Thoughts on the Nature of Mass Movements](https://www.goodreads.com/book/show/15916.The_True_Believer)
