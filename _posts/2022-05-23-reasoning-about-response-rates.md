@@ -3,7 +3,6 @@ layout: post
 title: "Reasoning about response rates"
 ---
 
-### Introduction 
 The stories of [epacadostat](https://www.biopharmadive.com/news/incyte-cancer-study-fails-setting-back-drug-combo-hopes/520781/) and [bempegaldesleukin](https://www.biopharmadive.com/news/bristol-myers-nektar-immunotherapy-trial-failure/620322/) are well-known, and nearly identical. Both were promising new immunomodulatory drugs for advanced melanoma with sensible mechanistic rationales, both were trialed in combination with an anti-PD-1, and both posted promising response rate numbers in small single-arm phase II's only to ultimately fail to beat anti-PD-1 monotherapy in larger randomized controlled phase III's. 
 
 The PD-(L)1 class of immunotherapies have been extraordinarily successful at treating a wide range of cancers, and as the examples above illustrate, have proven challenging to improve upon when combined with other immunotherapy agents (chemotherapy or kinase inhibitor combinations aside). Just a few weeks ago there was yet another high-profile setback as tiragolumab in combination with the anti-PD-L1 atezolizumab [failed to improve outcomes in non-small cell lung cancer at an interim assessment](https://www.biopharmadive.com/news/roche-tiragolumab-tigit-lung-cancer-trial/623542/), although I should note that there is still hope that the final results will be positive for overall survival.
