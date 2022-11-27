@@ -10,8 +10,8 @@ $color-scheme-dark: false !default;
 // Light mode
 // ----------
 
-$lm-brand-color:           #828282 !default;
-$lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
+$lm-brand-color:           #827979 !default;
+$lm-brand-color-light:     lighten($lm-brand-color, 30%) !default;
 $lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
 
 $lm-site-title-color:      $lm-brand-color-dark !default;
@@ -30,7 +30,7 @@ $lm-border-color-03:       $lm-brand-color-dark !default;
 
 $lm-table-text-color:      lighten($lm-text-color, 18%) !default;
 $lm-table-zebra-color:     lighten($lm-brand-color, 50%) !default;
-$lm-table-header-bg-color: lighten($lm-brand-color, 43%) !default;
+$lm-table-header-bg-color: #bababa !default;
 $lm-table-header-border:   lighten($lm-brand-color, 37%) !default;
 $lm-table-border-color:    $lm-border-color-01 !default;
 

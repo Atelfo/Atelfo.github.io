@@ -6,9 +6,6 @@ title: "Innovation, sea snails, and the blind professor"
 <meta name="twitter:image" content="https://atelfo.github.io/assets/DALL·E 2022-08-28 23.38.50 - A blind professor holds a vibrant cone snail shell. Artifacts of innovation are in the background. Stained glass window by Alphonse Mucha.png">
 <meta name="twitter:description" content="What can sea snails teach us about innovation?">
 
-
-# Innovation, sea snails, and the blind professor
-<br>
 <center><img src="/assets/DALL·E 2022-08-28 23.38.50 - A blind professor holds a vibrant cone snail shell. Artifacts of innovation are in the background. Stained glass window by Alphonse Mucha.png" width="600"/></center>
 <br>
 >*"Evolution and economics - different expressions of the same principles that govern life and the emergence of life's organization show us what works and what does not, which adaptive hypotheses preserve adaptability and opportunity and which lead to rigidity and constraint."* - Geerat J. Vermeij 

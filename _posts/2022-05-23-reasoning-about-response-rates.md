@@ -3,8 +3,6 @@ layout: post
 title: "Reasoning about response rates"
 ---
 
-# Reasoning about response rates
-
 ### Introduction 
 The stories of [epacadostat](https://www.biopharmadive.com/news/incyte-cancer-study-fails-setting-back-drug-combo-hopes/520781/) and [bempegaldesleukin](https://www.biopharmadive.com/news/bristol-myers-nektar-immunotherapy-trial-failure/620322/) are well-known, and nearly identical. Both were promising new immunomodulatory drugs for advanced melanoma with sensible mechanistic rationales, both were trialed in combination with an anti-PD-1, and both posted promising response rate numbers in small single-arm phase II's only to ultimately fail to beat anti-PD-1 monotherapy in larger randomized controlled phase III's. 
 

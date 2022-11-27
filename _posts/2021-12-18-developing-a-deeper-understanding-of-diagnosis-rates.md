@@ -3,7 +3,6 @@ layout: post
 title: "Developing a deeper understanding of diagnosis rates"
 ---
 
-# Developing a deeper understanding of diagnosis rates
 If you've ever seen (or built) a [patient-based prevalence model](https://books.google.ch/books?id=xDf_CAAAQBAJ&lpg=PP1&hl=de&pg=PA44#v=onepage&q&f=false) to forecast revenue for a pharmaceutical product it's likely that "proportion of patients diagnosed" was one of the inputs used in that model to estimate the number of potential patients likely to take that particular drug. However, it's been my experience that good information on the true prevalent diagnosed proportion of a particular condition is rarely available, and in lieu of better data some token assumption in the range of 80-95% is used. Sometimes you can make use of published cross-sectional prospective screening studies to find a solid estimate of the true proportion of diagnosed patients, but more often than not you're forced to make an educated guess.
 
 I don't want to use unjustified and arbitrary assumptions in forecasts if I can avoid it, so I tried to explore the topic and learn a bit more about it, guided by three main questions:

@@ -3,7 +3,6 @@ layout: post
 title:  "The best ways to follow biopharma news and learn about the industry (in my opinion)"
 ---
 
-# The best ways to follow biopharma news and learn about the industry (in my opinion)
 I was asked at work what sources I use to follow biopharma/medical news and learn about the industry, so I wrote up this post - hopefully it's useful for others as well! I don't intend this to be an exhaustive list, but rather a summary of the sources I find the most consistently valuable, having tried many through the years. In addition, at the bottom of this post I made some specific recommendations on where to start if you're new to the industry.
 
 While writing this I came across [this popular post](https://nbhorwitz.medium.com/how-to-learn-biotech-c59c6ed7a812) by Nathaniel Brooks Horwitz with the same objective, which I recommend too. However, I still wanted to add my thoughts because while we mostly agree my focus differs from his (I'm a life sciences consultant focused on commercialization strategy and he's a VC), and so the sources we choose to emphasize differ too.
@@ -21,13 +20,15 @@ While writing this I came across [this popular post](https://nbhorwitz.medium.co
 
 ### Twitter
 Twitter is without a doubt the best source for real-time news, debate and discussion on biopharma. While many accounts are worth following (you can see everyone I follow [here](https://twitter.com/Atelfo/following)), these are who I consider to be the "must-follow" accounts:
-- [@MSollender](https://twitter.com/MSollender): Posts super fast summaries of biotech press releases and news. You could probably only follow her and still find twitter worthwhile
 - [@bradloncar](https://twitter.com/bradloncar): Independent investor, mostly tweets about immuno-oncology and China. Posts nice daily/weekly summaries of the performance of key biotech stock indices
 - [@LifeSciVC](https://twitter.com/LifeSciVC): Account of VC Bruce Booth, follow for perspectives on early-stage biotech financing and the state of the industry
 - [@JacobPlieth](https://twitter.com/JacobPlieth): Journalist at Evaluate Vantage and snarky commentator on oncology news
 - [@Sports_Bios](https://twitter.com/Sports_bios): Smart (often contrarian) takes on market trends, follows neuroscience and China closely
-- [@AndyBiotech](https://twitter.com/AndyBiotech): Hasn't been active lately, but excellent signal-to-noise ratio when he does post
 - [@bio_clouseau](https://twitter.com/bio_clouseau): Frequently picks up biotech news that others miss
+- [@BioStocks](https://twitter.com/BioStocks): Posts short summaries of company press releases and news updates
+- [@Prof_Oak_](https://twitter.com/Prof_Oak_): Intelligent commentary on genetic medicine and synthetic biology
+- [@paras_biotech](https://twitter.com/paras_biotech): Regularly shares interesting snippets from biopharma analyst reports
+- [@AndyBiotech](https://twitter.com/AndyBiotech): Hasn't been active lately, but excellent signal-to-noise ratio when he does post
 
 ### Blogs
 - [In the Pipeline](https://www.science.org/blogs/pipeline): The essential industry blog, written by Derek Lowe ([@Dereklowe](https://twitter.com/Dereklowe) on twitter). His day job is a Novartis medicinal chemist, but he's much more well known in the industry for his regular commentary on drug discovery and the pharma industry
@@ -43,6 +44,7 @@ On the whole, there are no biotech focused podcasts (that I'm aware of) that I f
 - [Mendelspod](https://mendelspod.com/): Developments in diagnostics, genetics and genomic medicine 
 - [OncoPharm](https://podcasts.apple.com/us/podcast/oncopharm/id1305345744): Quick and straight to the point updates on the latest developments in oncology
 - [Nature podcast](https://www.nature.com/nature/articles?type=nature-podcast): Summaries of the latest splashy scientific papers from the World's preeminent scientific journal - not always about biotechnology, but often
+- [This Week in Virology](https://www.microbe.tv/twiv/): The definitive podcast on virology, running since 2008. The hosts and guests are world leading experts and really know their stuff
 
 ### Books
 For such a systemically important industry, there's not as many books written about biotech and biopharma as you might think - especially when you exclude ones written for a lay audience. Here are some of the best:
@@ -76,9 +78,9 @@ For such a systemically important industry, there's not as many books written ab
 - [Bad Pharma: How Drug Companies Mislead Doctors and Harm Patients](https://www.goodreads.com/book/show/15795155-bad-pharma): While I find many of the critiques presented within this book weak or outdated, it's still worth reading for a critical perspective on the pharmaceutical industry
 
 ### Miscellaneous
-- [Biotech Clubhouse](https://www.clubhouse.com/club/biotech-clubhouse) on the [Clubhouse app](https://www.clubhouse.com/): Essentially a live podcast that takes place (almost) every Sunday at 10PM CET / 4PM ET and runs for 1-2 hours, hosted by [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian) and [Daphne Zohar](https://twitter.com/daphnezohar). The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
+- Biotech Hangout on [Twitter spaces](https://twitter.com/BiotechCH): Essentially a live podcast that takes place (almost) every Friday at 9PM CET / 3PM ET and runs for about an hour, hosted by [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian), and [Daphne Zohar](https://twitter.com/daphnezohar) with other prominent regular guests. The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
 
-For new biotech books, I like to check the [MIT press website](https://mitpress.mit.edu/topics/biomedical-sciences) from time to time; they seem to be the most consistent publisher of quality titles.
+For new biotech books, I like to check the [MIT press website](https://mitpress.mit.edu/search-result-list/?category=MED) from time to time; they seem to be the most consistent publisher of quality titles.
 
 ### Specialized databases and search engines
 #### Open-access

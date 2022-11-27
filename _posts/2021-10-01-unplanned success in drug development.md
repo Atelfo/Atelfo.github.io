@@ -3,7 +3,6 @@ layout: post
 title:  "Unplanned success in drug development"
 ---
 
-# Unplanned success in drug development
 The role of serendipity in drug discovery is well-recognized, the canonical example of which is Alexander Fleming's 1928 discovery of penicillin in the bacteria-free circles surrounding mould on an agar dish. However, luck also plays a significant role in drug development.
 
 After reading up on the history of some of the most (financially) successful drugs of all time, I was struck by how often chance events made the difference between success and failure, and how often the programs that went on to define a company were underappreciated for long periods of time. Often the only thing keeping these programs alive was the fierce advocacy of a few true believers.

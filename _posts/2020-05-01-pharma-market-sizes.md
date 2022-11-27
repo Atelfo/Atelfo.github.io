@@ -2,7 +2,7 @@
 layout: post
 title:  "Pharmaceutical market sizes by countries and regions"
 ---
-# Pharmaceutical market sizes by countries and regions
+
 ### Worldwide
 EvaluatePharma estimates the size of the worldwide pharmaceutical market in 2019 to be $844 billion, of which 9.4% is generics[^1], which is broadly in agreement with a 2018 report from Efpia which estimated the worldwide market size to be $853 billion in 2017[^2]. By comparison, IQVIA estimates the total value of the worldwide pharmaceutical market in 2020 to be ~\$1.27 trillion[^8] and the value of the top 10 markets by total sales to be $893 billion in 2019 (see table below)[^3].
 

@@ -3,8 +3,6 @@ layout: post
 title: "Where are the other Luxturna's? Challenges with gene therapy for inherited retinal diseases"
 ---
 
-# Where are the other Luxturna's? Challenges with gene therapy for inherited retinal disease
-
 ### Luxturna and the promise of gene therapy for inherited retinal disease 
 Luxturna, approved in December 2017 in the US[^1] and November 2018 in the EU[^2], is a landmark in the history of gene therapy and a transformative[^3] treatment for patients with inherited retinal disease (IRD) caused by biallelic RPE65 mutations. 
 

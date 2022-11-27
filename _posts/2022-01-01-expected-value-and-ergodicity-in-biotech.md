@@ -3,8 +3,6 @@ layout: post
 title: "Ergodicity and biotech, or why expected value is a mirage"
 ---
 
-# Ergodicity and biotech, or why expected value is a mirage
-
 >*"Don't cross a river if it is four feet deep on average"*
 >\- Nassim Nicholas Taleb
 

@@ -2,7 +2,6 @@
 layout: post
 title: "Pharmaceutical portfolio strategy implications of base rate probability of launch and revenue distributions"
 ---
-# Pharmaceutical portfolio strategy implications of base rate probability of launch and revenue distributions
 
 In this post I want to explore how the [base rates](https://en.wikipedia.org/wiki/Base_rate) of probability of launch (by phase of development) and the distribution of pharmaceutical product revenues can inform business development strategy and portfolio construction. While there are many sources of uncertainty in drug development (e.g. are the patents defensible? Can the drug be manufactured at scale?), I will focus on two types in particular:
 
