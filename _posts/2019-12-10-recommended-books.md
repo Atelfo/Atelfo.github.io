@@ -5,10 +5,13 @@ title: "My book recommendations (updated anually)"
 
 This is a list of my personal favourite books and ones that stuck with me, shaped my thinking, or were particularly memorable. Not necessarily the most well-written.
 
-I update this list each December with the 5 or so best books that I read for the first time in that year, regardless of when they were originally released.
+I update this list each December with the best books that I read for the first time in that year, regardless of when they were originally released.
 
 ### 2022 book recommendations
-*Coming soon!*
+- [The Dispossessed](https://www.goodreads.com/book/show/13651.The_Dispossessed)
+- [Turn the Ship Around!: A True Story of Turning Followers into Leaders](https://www.goodreads.com/book/show/16158601-turn-the-ship-around)
+- [Helgoland: Making Sense of the Quantum Revolution](https://www.goodreads.com/book/show/55801224-helgoland)
+- [Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](https://www.goodreads.com/book/show/20186.Seeing_Like_a_State)
 
 ### 2021 book recommendations
 - [Bottle of Lies: The Inside Story of the Generic Drug Boom](https://www.goodreads.com/book/show/42448266-bottle-of-lies)
