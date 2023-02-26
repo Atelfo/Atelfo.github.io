@@ -114,7 +114,7 @@ The industry's shift towards orphan diseases is just one reflection of a more ge
 
 *Note: The graphs in this section show the revenues across all years for any drug with $1 billion in annual sales at any point between 2000 and 2022. This is why overall revenues are a bit higher than the revenue graph at the beginning which only counted revenue for a given year if it was above $1 billion in that year. The graph immediately below is interactive (you can click the legend to show or hide specific traces), although it might not display nicely on small devices (sorry!)*
 <br>
-{% include blockbuster_indications_html.html height="800" %}
+{% include blockbuster_indications_html.html height="1200" %}
 <br>
 The above graph is a lot to take in, so to help visualize the trends I've isolated the revenue trace lines below and marked when each of the categories peaked.
 <br>
