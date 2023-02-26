@@ -52,7 +52,7 @@ Loss of exclusivity usually happens after ~13 years on the market, but it can ta
 If we look at the average age of blockbusters by year we don't see much of a change in the average or median age of blockbusters since the year 2000. The median has remained at ~10 years on the market over the whole time period, and the average (shown by the dotted line in boxplot below) has been steady at ~13 years. It's not surprising that blockbusters are typically older drugs, as revenue tends to grow steadily the longer drugs are on the market and the highest revenues are often achieved right before patent expiry.
 
 <center><img src="https://atelfo.github.io/assets/bbgraph6.png"></center>
-<br>
+
 Still, there are quite a few old-age outliers. If we focus on 2022 blockbusters and look at the year these drugs were first approved (in any country) we see that most are clustered around the 4 to 11 year old mark, but some are very old indeed: 39 (22%) were first approved 20 or more years ago, and 7 (4%) were approved more than 40 years ago!
 
 <center><img src="https://atelfo.github.io/assets/bbgraph7.png"></center>
@@ -84,7 +84,7 @@ Before the 1980's few companies commercialized drugs for rare diseases, reasonin
 Policy is one oft cited reason for the increase. The US [Orphan Drug Act](https://en.wikipedia.org/wiki/Orphan_Drug_Act_of_1983) was passed in 1983 to incentivize the development of drugs for small patient populations without adequate therapies. Japan enacted a similar law in 1993[^6], and Europe followed in 2000[^5]. Orphan designations confer a number of benefits such as tax credits, extra support from regulators, regulatory fee exemptions, and most importantly, protection from generic entry (i.e. market exclusivity) after approval for 7 years in the US[^2] and 10-12 years in the EU[^3]. Obtaining these designations is straightforward; drug developers need only show that their drug is plausibly able to treat a rare condition which affects fewer than 200,000 patients in the US, or fewer than 5 in 10,000 patients in the EU (each region has slightly different thresholds). Since the introduction of the status, orphan designations and approvals have increased markedly[^8].
 <br>
 <br>
-<center><img src="https://atelfo.github.io/assets/bbgraph10.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph10.png" width="90%"></center>
 <center><i>Graph reproduced from <a href="https://ojrd.biomedcentral.com/articles/10.1186/s13023-021-01901-6">Miller 2021</a></i></center>
 <br>
 
@@ -103,7 +103,7 @@ Rare diseases are often thought of as inherited genetic disorders, although onco
 Even though we're seeing more and more orphan blockbusters, there is reason to think that the orphan disease model may become a victim of its own success. As more drugs get developed for rare diseases, their aggregate budget impact and share of healthcare system drug expenditure is likely to continue to balloon. There are after all apparently more than 10,000 rare diseases[^15], most without an approved treatment (yet). The below graph from IQVIA[^13] shows the trend of increasing orphan spending clearly.
 <br>
 <br>
-<center><img src="https://atelfo.github.io/assets/bbgraph13.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph13.png" width="90%"></center>
 <center><i>Graph reproduced from <a href="https://www.iqvia.com/insights/the-iqvia-institute/reports/global-trends-in-r-and-d-2023">Global Trends in R&D 2023 - IQVIA</a></i></center>
 <br>
 
