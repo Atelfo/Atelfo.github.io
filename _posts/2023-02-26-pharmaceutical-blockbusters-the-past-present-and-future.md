@@ -146,9 +146,9 @@ The pharmaceutical industry has seen plenty of change over the past two decades:
 
 #### Prediction #2: It gets harder than ever to defend blockbuster revenues
 - Fast followers get faster than ever; median lead times for first-in-class drugs decreases to less than 6 months
-- The durability of blockbuster revenues declines. Validated targets become crowded with follow-on drugs and competition for patients is fierce
+- The durability of blockbuster revenues decline. Validated targets become crowded with follow-on drugs and competition for patients is fierce
 - Durability and defensibility of revenues becomes a key industry buzzword; instead of putting emphasis on being first-to-market, companies will focus on being best-to-market and hard to copy
-- Biologic revenues begin to decline much faster following biosimilar entry, acting more like small molecules. The kinks in the biosimilar market get worked out; incentives and loopholes that favour incumbent brands are mostly closed. Patient and physician acceptance of biosimilars improves to near parity with small molecule generics. Biosimilar manufacturing costs come down, leading to greater price discounting
+- Biologic revenues fall off much faster following biosimilar entry than they do today, and act more like small molecules. The kinks in the biosimilar market get worked out; incentives and loopholes that favour incumbent brands are mostly closed. Patient and physician acceptance of biosimilars improves to near parity with small molecule generics. Biosimilar manufacturing costs come down, leading to greater price discounting
 
 #### Prediction #3: Out of favour indications make a comeback
 - Biopharma is increasingly criticised by those outside the industry for shifting focus to small-prevalence, high-price speciality opportunities and neglecting larger public health concerns like cardiovascular disease, antimicrobial resistance, mental health, and neurological disease
@@ -165,15 +165,15 @@ The pharmaceutical industry has seen plenty of change over the past two decades:
 - Single-target orphan gene therapies never become an important class of blockbusters in revenue terms, even though many patients benefit along the way. The well of rare diseases with sufficient prevalence, high unmet need, and tractable biology turns out to be shallow
 - Pricing pressures and the push into ever smaller indications leads to a renewed focus on cost-efficient development programs, especially in rare orphan diseases
 - Regulators (led by the FDA) become much more accommodating for orphan programs in ultra-rare diseases with solid mechanistic rationale and increasingly allow approvals based on surrogates and single arm trials. We see the first application of the ["animal rule"](https://www.fda.gov/drugs/nda-and-bla-approvals/animal-rule-approvals) (or something like it) for an ultra-orphan disease
-- Underserved rare disease communities self-organise and get more involved in developing their own drugs. We see a vibrant ecosystem of n-of-1 trials and repurposing attempts
+- Underserved rare disease communities self-organise and get more involved in developing their own drugs. We see a vibrant ecosystem of n-of-1 trials and repurposing attempts emerge
 - Screening and preimplantation genetic testing becomes commonplace for at-risk families, decreasing the prevalence of many rare diseases
 
 #### Prediction #5: Blockbuster drugs get more diverse and personalized, platforms become blockbuster products
-- Blockbusters become increasingly diverse in terms of modality. It becomes strategically important for pharmaceutical companies to have access to a wide variety of platforms in order to ensure they have a good chance of developing the best-in-class drug for a given target
+- Blockbusters become increasingly diverse in terms of modality. It becomes strategically vital for pharmaceutical companies to have access to a wide variety of platforms in order to ensure they have a good chance of developing the best-in-class drug for a given target
 - Small molecules as a share of blockbusters continue to decline, although we do see innovation and some representation from new classes like degraders
 - Artificial intelligence has its most concrete impact in the generative design of new complex biologics and small molecules against validated targets, as well as in the design of "shotgun" combinations that modulate multiple pathways and targets simultaneously
 - The need to differentiate and stave off copycats means blockbusters become increasingly complex mixtures of molecules, devices, and processes. We see a surge in investment in beyond-the-bill approaches with meaningful clinical value such as novel delivery mechanisms or tuneable drugs with software-enabled dynamic dosing regimens. In some hard-to-manufacture cases like autologous cell therapies, the process becomes the product
-- Personalized medicine scales up as platforms become products. Cell therapy and cancer vaccines come of age and are applied in earlier lines of therapy. We see the emergence of broad platform approvals for gene therapy/editing in rare diseases with similar pathophysiology but different underlying mutations
+- Personalized medicine scales up as platforms become products. Cell therapy and cancer vaccines come of age and are applied in earlier lines of therapy. We see the emergence of broad platform approvals for gene therapy/editing in rare diseases with similar pathophysiology but different underlying causal mutations (e.g. retinis pigmentosa)
 
 Looking forward to revisiting these predictions in 20 years!
 
