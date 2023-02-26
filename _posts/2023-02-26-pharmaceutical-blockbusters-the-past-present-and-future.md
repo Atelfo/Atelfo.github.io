@@ -4,24 +4,22 @@ title: "Pharmaceutical blockbusters: the past, present, and future(?)"
 ---
 
 <meta property="og:image" content="https://atelfo.github.io/assets/blockbuster_bar_art.png" />
-<meta name="twitter:image" content="https://atelfo.github.io/assets/blockbuster_bar_art.png">
+<meta name="twitter:image" content="https://atelfo.github.io/assets/blockbuster_bar_art.png" />
 <meta name="twitter:description" content="Analysing two decades of blockbuster drug trends and what they might mean for industry's future">
-
-![[blockbuster_bar_art.png | 200]]
 
 One of the uncomfortable truths about the pharmaceutical industry is that most approved drugs (~55%) don't make enough money to recoup their development costs[^1]. The distribution of drug profits is ["fat-tailed"](https://en.wikipedia.org/wiki/Fat-tailed_distribution), and the profits from a small fraction of drugs subsidize the rest of the industry (with money to spare). Consider perennial top-seller Humira, which had revenues of $21 billion dollars in 2022 - roughly 14 times more than the [median drug sells over its entire market lifespan](https://atelfo.github.io/2019/10/05/pharma-portfolio-roi-simulations.html).
 
-<center><img src="D:\Interests\Blog\Blockbusters\Blockbuster post\bbgraph1.png" width="600"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph1.png"></center>
 
 This extreme unevenness of potential returns means that pharmaceuticals is fundamentally a hits-driven business. Because drug development is so costly and most launches are duds, the industry as a whole relies on blockbusters - drugs with annual global revenues of $1 billion or more - to cover the flops and keep the entire enterprise afloat[^2001]. Making things harder still, the periodic genericization of drugs means the industry is in constant competition with itself and needs to produce a steady stream of blockbusters to replace lost revenues.
 
 Despite the challenges, there are more blockbusters now than ever before[^103]. From 2000 to 2022, the number of blockbuster drugs increased fivefold, going from 35 to over 170[^99]. After 8 years of steady growth from 2000 onwards, the number plateaued at ~110 in the decade after the financial crisis, before resuming a slow growth again in 2018. That slow resumption of growth was subsequently accelerated dramatically by massive demand for COVID vaccines and therapeutics during the pandemic. Since 2000, an average of ~14 drugs have become blockbusters for the first time each year[^2000], and ~8 have lost their status, falling back below $1 billion in annual revenues as they go generic, get leapfrogged by a competitor, or lose pricing power.
 
-<center><img src="https://atelfo.github.io/assets/bbgraph2.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph2.png"></center>
 
 If we look at the summed annual revenue of blockbusters we see a similar overall shape: growth up to 2008, followed by a 10-year plateau, and growth again from 2018. The burst of revenue following COVID is particularly dramatic, coming in at $100-200 billion in additional annual revenue for blockbusters when compared to 2020. 
 
-<center><img src="https://atelfo.github.io/assets/bbgraph3.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph3.png""></center>
 
 According to IQVIA[^66], the global medicines market grew from ~$1 trillion annually in 2013 to ~$1.5 trillion in 2022. As a group, blockbusters account for 30-40% of that total medicines spend despite only representing a small fraction of approved medicines. Blockbusters are even more dominant as a portion of big pharma portfolios: although only 21% of drugs launched between 2011 and 2020 by the 20 largest pharmaceutical firms achieved blockbuster status, blockbusters accounted for ~70% of the revenues of these companies[^1].
 
@@ -30,11 +28,12 @@ Those were just the surface level numbers; looking deeper into the underlying tr
 ### Most blockbusters are copycats, not pioneers
 The FDA defines first-in-class drugs as "drugs with a new and unique mechanism for treating a medical condition". Because they act differently to existing treatments, first-in-class drugs have the potential to offer step change improvements in efficacy, safety, convenience, or other factors that make a meaningful difference to patients' lives. Pharmaceutical companies compete to bring differentiated products to market, and pursuing first-in-class drugs is a favoured means to achieve true differentiation. Using the FDA's definitions[^700][^701], we see that the proportion of blockbusters that are first-in-class has been consistent at around 30% over the years.
 
-<center><img src="https://atelfo.github.io/assets/bbgraph4.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph4.png"></center>
 
 This percentage is consistent with the historical proportion of first-in-class approvals: 32% of drugs approved between 1987 and 2011 were considered first-in-class by the FDA[^701]. While first-in-class approvals have been steady for long time, there has been an acceleration in the past few years. Since 2019, 40-50% of newly approved drugs have been considered first-in-class by the FDA[^701], in 2021 and 2022 just over 50% of drugs were considered first-in-class. 
 
-<center><img src="D:\Interests\Blog\Blockbusters\Blockbuster post\bbgraph5.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph5.png"></center>
+
 <center><i>Graph reproduced from [Lanthier (2013)](https://pubmed.ncbi.nlm.nih.gov/23918488/)</i></center>
 
 Being first-in-class doesn't seem to have much effect on the likelihood of a drug becoming a blockbuster, and within the cohort of blockbusters first-in-class drugs have similar revenues to follow-ons. There's a nice article by VC Bruce Booth from 2006[^702] that covers this topic, I'll quote one of their conclusions here because I think it still stands true today:
@@ -52,11 +51,11 @@ Loss of exclusivity usually happens after ~13 years on the market, but it can ta
 
 If we look at the average age of blockbusters by year we don't see much of a change in the average or median age of blockbusters since the year 2000. The median has remained at ~10 years on the market over the whole time period, and the average (shown by the dotted line in boxplot below) has been steady at ~13 years. It's not surprising that blockbusters are typically older drugs, as revenue tends to grow steadily the longer drugs are on the market and the highest revenues are often achieved right before patent expiry.
 
-<center><img src=https://atelfo.github.io/assets/bbgraph6.png" width="700"></center>
+<center><img src=https://atelfo.github.io/assets/bbgraph6.png"></center>
 
 Still, there are quite a few old-age outliers. If we focus on 2022 blockbusters and look at the year these drugs were first approved (in any country) we see that most are clustered around the 4 to 11 year old mark, but some are very old indeed: 39 (22%) were first approved 20 or more years ago, and 7 (4%) were approved more than 40 years ago!
 
-<center><img src="https://atelfo.github.io/assets/bbgraph7.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph7.png"></center>
 
 The list of blockbusters that have been on the market for over 20 years (greater than the length of a patent term) is an eclectic mix of old insulin formulations (e.g. Humulin, Humalog, Lantus), biologics that are hard to copy or have unusual manufacturing processes (e.g. Creon, Lovenox, Botox), aging monoclonal antibodies (e.g. Remicade, Humira, Herceptin, Rituxan), and strong brands with surprising sticking power. Lipitor is still generating around $1.6 billion dollars a year for Pfizer, almost all of that outside the US! 
 
@@ -65,7 +64,7 @@ Biosimilars have been slow to get rolling (especially in the US), and we've only
 ### The retreat of small molecules and the ascent of monoclonal antibodies
 When the average person thinks of a drug, they probably imagine an oral small molecule pill like Lipitor, Prilosec, or Celebrex - the big mass market blockbusters of the early 2000s. Yet, a modern blockbuster is just as likely to be a complex biologic as a small molecule. At the turn of the millennium small molecules made up 80% of blockbusters. Twenty-two years on, there are now (just about) more biologic blockbusters than small molecules for the first time ever.
 
-<center><img src="https://atelfo.github.io/assets/bbgraph8.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph8.png"></center>
 
 The expanding biotech toolbox has provided more opportunities to go after previously intractable targets with monoclonal antibodies, enzyme replacement therapies, oligonucleotides, or cell and gene therapies. On the other hand, small molecules have started to run out of attractive druggable targets. As Michael Gilman put it on twitter:
 
@@ -75,7 +74,7 @@ The shift to biologic blockbusters follows relative declines in the number of sm
 
 As a consequence of these trends, essentially all the growth in the number of blockbusters since 2008 has been driven by biologics, specifically monoclonal antibodies. You can see that clearly if you highlight and isolate them from the graph above.
 
-<center><img src="https://atelfo.github.io/assets/bbgraph9.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph9.png"></center>
 
 For now it seems likely that biologics will continue to take an ever greater share of blockbusters in future. Cell and gene therapies are starting to generate blockbusters (e.g. Zolgensma, Yescarta), monoclonal antibodies show no sign of slowing down, and COVID has led to a surge of interest and investment in vaccine and oligonucleotide technology. Policy isn't offering much help to small molecules either: the Inflation Reduction Act (IRA) notably [favours biologics over small molecules](https://www.forbes.com/sites/joshuacohen/2023/01/15/inflation-reduction-act-favors-biologics-over-small-molecules-in-the-long-term-this-could-partly-undermine-bills-effort-to-contain-costs/?sh=7cf0214f500d) by giving biologics four extra years before price negotiation kicks in for reasons that are unclear, and possibly unintentional. 
 
@@ -84,7 +83,7 @@ Before the 1980's few companies commercialized drugs for rare diseases, reasonin
 
 Policy is one oft cited reason for the increase. The US [Orphan Drug Act](https://en.wikipedia.org/wiki/Orphan_Drug_Act_of_1983) was passed in 1983 to incentivize the development of drugs for small patient populations without adequate therapies. Japan enacted a similar law in 1993[^6], and Europe followed in 2000[^5]. Orphan designations confer a number of benefits such as tax credits, extra support from regulators, regulatory fee exemptions, and most importantly, protection from generic entry (i.e. market exclusivity) after approval for 7 years in the US[^2] and 10-12 years in the EU[^3]. Obtaining these designations is straightforward; drug developers need only show that their drug is plausibly able to treat a rare condition which affects fewer than 200,000 patients in the US, or fewer than 5 in 10,000 patients in the EU (each region has slightly different thresholds). Since the introduction of the status, orphan designations and approvals have increased markedly[^8].
 
-<center><img src="https://atelfo.github.io/assets/bbgraph10.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph10.png"></center>
 
 <center><i>Graph reproduced from [Miller 2021](https://ojrd.biomedcentral.com/articles/10.1186/s13023-021-01901-6)</i></center>
 
@@ -94,7 +93,7 @@ Under Termeer in 1994, Genzyme launched the enzyme replacement therapy Cerezyme 
 
 The validation of the high-price business model by Genzyme and other pioneering firms spurred other companies to spin up orphan drug development programs. Orphan drug prices, too, have been pushed to higher and higher heights: ~$400,000 per year for Alexion's Soliris in 2007[^10], ~$750,000 for the first year of Biogen's Spinraza in 2017[^11], and this year CSL Behring announced a price of ~$3.5 million for a one-time dose of their gene therapy Hemgenix[^12] (US list prices at launch). Orphan drugs now represent a larger than ever fraction of blockbusters, with every indication that this trend is set to continue as our capabilities with new modalities like gene and cell therapies and gene editing improve.
 
-<center><img src="https://atelfo.github.io/assets/bbgraph11.png" width="700"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph11.png"></center>
 
 Rare diseases are often thought of as inherited genetic disorders, although oncology indications have made up a third to a half of orphan blockbusters since 2000. This doesn't necessarily mean that an oncology orphan drug is more likely to become a blockbuster than a non-oncology drug on a 1:1 basis. It's more likely a consequence of the dominance of oncology of the overall pharmaceutical development pipeline. 37% of FDA orphan designations between 1983 and 2019 were for oncology drugs, consistent with their share of blockbusters - although oncology's share of overall designations has grown over time[^8]. Since orphan designation can be given for a subpopulation of an overarching disease, the increase in oncology designations also reflects the common strategy of products entering first into later lines of therapy prior to expansion into larger earlier lines, as well as the general shift away from chemotherapy towards targeted therapies (e.g. inhibitors of EGFR, ALK, RET, etc.).
 
@@ -102,7 +101,7 @@ Rare diseases are often thought of as inherited genetic disorders, although onco
 
 Even though we're seeing more and more orphan blockbusters, there is reason to think that the orphan disease model may become a victim of its own success. As more drugs get developed for rare diseases, their aggregate budget impact and share of healthcare system drug expenditure is likely to continue to balloon. There are after all apparently more than 10,000 rare diseases[^15], most without an approved treatment (yet). The below graph from IQVIA[^13] shows the trend of increasing orphan spending clearly.
 
-<center><img src="D:\Interests\Blog\Blockbusters\Blockbuster post\bbgraph13.png" width="600"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph13.png"></center>
 
 <center><i>Graph reproduced from [Global Trends in R&D 2023 - IQVIA](https://www.iqvia.com/insights/the-iqvia-institute/reports/global-trends-in-r-and-d-2023)</i></center>
 
@@ -113,7 +112,7 @@ The industry's shift towards orphan diseases is just one reflection of a more ge
 
 *Note: The graphs in this section show the revenues across all years for any drug with $1 billion in annual sales at any point between 2000 and 2022. This is why overall revenues are a bit higher than the revenue graph at the beginning which only counted revenue for a given year if it was above $1 billion in that year. The graph immediately below is interactive (you can click the legend to show or hide specific traces), although it might not display nicely on small devices (sorry!)*
 
-{% include blockbuster_indications_html.html %}
+{% include blockbuster_indications_html.html height="110%" %}
 
 The above graph is a lot to take in, so to help visualize the trends I've isolated the revenue trace lines below and marked when each of the categories peaked.
 
