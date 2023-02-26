@@ -10,7 +10,7 @@ title: "Pharmaceutical blockbusters: the past, present, and future(?)"
 One of the uncomfortable truths about the pharmaceutical industry is that most approved drugs (~55%) don't make enough money to recoup their development costs[^1]. The distribution of drug profits is ["fat-tailed"](https://en.wikipedia.org/wiki/Fat-tailed_distribution), and the profits from a small fraction of drugs subsidize the rest of the industry (with money to spare). Consider perennial top-seller Humira, which had revenues of $21 billion dollars in 2022 - roughly 14 times more than the [median drug sells over its entire market lifespan](https://atelfo.github.io/2019/10/05/pharma-portfolio-roi-simulations.html).
 <br>
 <center><img src="https://atelfo.github.io/assets/bbgraph1.png" width="700"></center>
-</br>
+<br>
 This extreme unevenness of potential returns means that pharmaceuticals is fundamentally a hits-driven business. Because drug development is so costly and most launches are duds, the industry as a whole relies on blockbusters - drugs with annual global revenues of $1 billion or more - to cover the flops and keep the entire enterprise afloat[^2001]. Making things harder still, the periodic genericization of drugs means the industry is in constant competition with itself and needs to produce a steady stream of blockbusters to replace lost revenues.
 
 Despite the challenges, there are more blockbusters now than ever before[^103]. From 2000 to 2022, the number of blockbuster drugs increased fivefold, going from 35 to over 170[^99]. After 8 years of steady growth from 2000 onwards, the number plateaued at ~110 in the decade after the financial crisis, before resuming a slow growth again in 2018. That slow resumption of growth was subsequently accelerated dramatically by massive demand for COVID vaccines and therapeutics during the pandemic. Since 2000, an average of ~14 drugs have become blockbusters for the first time each year[^2000], and ~8 have lost their status, falling back below $1 billion in annual revenues as they go generic, get leapfrogged by a competitor, or lose pricing power.
@@ -84,7 +84,7 @@ Policy is one oft cited reason for the increase. The US [Orphan Drug Act](https:
 <br>
 <center><img src="https://atelfo.github.io/assets/bbgraph10.png"></center>
 <center><i>Graph reproduced from <a href="https://ojrd.biomedcentral.com/articles/10.1186/s13023-021-01901-6">Miller 2021</a></i></center>
-</br>
+<br>
 Although orphan designations certainly helped, it's hard to say whether their creation really caused the increase in rare disease drugs and blockbusters. Many rare disorders are genetic, and the rise of orphan drugs coincided with the advent of recombinant technology and biotech generally. Another plausible catalyst is the invention of the high-price rare disease business model, often attributed to Henri Termeer, the long serving CEO of Genzyme[^9].
 
 Under Termeer in 1994, Genzyme launched the enzyme replacement therapy Cerezyme for Gaucher's disease at a US price of ~$200,000 per year for an average patient[^4]. This price was far in excess of the cost to manufacture the enzyme in recombinant cells, allowing Genzyme to reap substantial profit from a small number of patients (~4,500 in 2005[^9]). The clear unmet need in Gaucher's coupled with the small prevalent population meant payors were willing to absorb the high price, since the relative impact on their overall budgets was low. Cerezyme's revenue peaked at $1.2 billion dollars a year in 2006; a successful product by any metric - rare disease or not.
@@ -101,20 +101,20 @@ Even though we're seeing more and more orphan blockbusters, there is reason to t
 <br>
 <center><img src="https://atelfo.github.io/assets/bbgraph13.png"></center>
 <center><i>Graph reproduced from <a href="https://www.iqvia.com/insights/the-iqvia-institute/reports/global-trends-in-r-and-d-2023">Global Trends in R&D 2023 - IQVIA</a></i></center>
-</br>
+<br>
 Another "good problem to have" is that many of the newer rare disease drugs - like Vertex's cystic fibrosis franchise[^14] - are so effective that they are prolonging the lifespan of patients with previously deadly conditions, meaning payors need to cover high prices for far longer than they may have initially expected for a population that's growing in prevalence. As a consequence of these increased budget pressures, it seems likely that we'll soon see more overt payor pressure to reign in the high prices that the rare disease business model relies on. 
 
 ### The transition from primary to speciality care
 The industry's shift towards orphan diseases is just one reflection of a more general transition towards high-priced speciality drugs that been ongoing since the early 2000's. If we break down the revenues of blockbusters into key therapeutic area categories we can see the substantial changes in the overall composition of revenues that have taken place over that period.
 
 *Note: The graphs in this section show the revenues across all years for any drug with $1 billion in annual sales at any point between 2000 and 2022. This is why overall revenues are a bit higher than the revenue graph at the beginning which only counted revenue for a given year if it was above $1 billion in that year. The graph immediately below is interactive (you can click the legend to show or hide specific traces), although it might not display nicely on small devices (sorry!)*
-
+<br>
 {% include blockbuster_indications_html.html height="130%" %}
-
+<br>
 The above graph is a lot to take in, so to help visualize the trends I've isolated the revenue trace lines below and marked when each of the categories peaked.
-
-<center><img src="https://atelfo.github.io/assets/bbgraph14.png"></center>
-
+<br>
+<center><img src="https://atelfo.github.io/assets/bbgraph14.png" width="600"></center>
+<br>
 The pharmaceutical industry is cyclical, and if you look carefully at the latter graph you can see the two major cycles that have taken place since 2000. Cycle #1 was the primary care blockbuster era peaking around 2006-2011. That cycle was exemplified by relatively low-price medicines for high-prevalence disorders like Lipitor, Prilosec, and Effexor. Cycle #2 is the speciality disease blockbuster era we're in now led by drugs like Keytruda, Humira, Avastin, and Revlimid. While the indications targeted by Cycle #2 blockbusters typically have smaller patient populations and more specialist prescriber bases than the ones from Cycle #1, the loss in volume has been mitigated by higher prices. Another notable feature of Cycle #2 blockbusters, especially those in oncology and autoimmune disease, is that they are likely to be approved in multiple indications[^800].
 
 To make the cycles more concrete I'll show a few illustrative examples. For Cycle #1 we can isolate a selection of 5 indications that could reasonably be treated in a primary care setting by a general practitioner or family doctor, this could be used to paint a story of an industry in decline.
