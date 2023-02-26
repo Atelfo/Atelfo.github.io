@@ -32,6 +32,7 @@ The FDA defines first-in-class drugs as "drugs with a new and unique mechanism f
 
 This percentage is consistent with the historical proportion of first-in-class approvals: 32% of drugs approved between 1987 and 2011 were considered first-in-class by the FDA[^701]. While first-in-class approvals have been steady for long time, there has been an acceleration in the past few years. Since 2019, 40-50% of newly approved drugs have been considered first-in-class by the FDA[^701], in 2021 and 2022 just over 50% of drugs were considered first-in-class. 
 <br>
+<br>
 <center><img src="https://atelfo.github.io/assets/bbgraph5.png"></center>
 <center><i>Graph reproduced from <a href="https://pubmed.ncbi.nlm.nih.gov/23918488/">Lanthier (2013)</a></i></center>
 <br>
@@ -83,7 +84,7 @@ Before the 1980's few companies commercialized drugs for rare diseases, reasonin
 Policy is one oft cited reason for the increase. The US [Orphan Drug Act](https://en.wikipedia.org/wiki/Orphan_Drug_Act_of_1983) was passed in 1983 to incentivize the development of drugs for small patient populations without adequate therapies. Japan enacted a similar law in 1993[^6], and Europe followed in 2000[^5]. Orphan designations confer a number of benefits such as tax credits, extra support from regulators, regulatory fee exemptions, and most importantly, protection from generic entry (i.e. market exclusivity) after approval for 7 years in the US[^2] and 10-12 years in the EU[^3]. Obtaining these designations is straightforward; drug developers need only show that their drug is plausibly able to treat a rare condition which affects fewer than 200,000 patients in the US, or fewer than 5 in 10,000 patients in the EU (each region has slightly different thresholds). Since the introduction of the status, orphan designations and approvals have increased markedly[^8].
 <br>
 <br>
-<center><img src="https://atelfo.github.io/assets/bbgraph10.png"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph10.png" width="700"></center>
 <center><i>Graph reproduced from <a href="https://ojrd.biomedcentral.com/articles/10.1186/s13023-021-01901-6">Miller 2021</a></i></center>
 <br>
 
@@ -101,7 +102,8 @@ Rare diseases are often thought of as inherited genetic disorders, although onco
 
 Even though we're seeing more and more orphan blockbusters, there is reason to think that the orphan disease model may become a victim of its own success. As more drugs get developed for rare diseases, their aggregate budget impact and share of healthcare system drug expenditure is likely to continue to balloon. There are after all apparently more than 10,000 rare diseases[^15], most without an approved treatment (yet). The below graph from IQVIA[^13] shows the trend of increasing orphan spending clearly.
 <br>
-<center><img src="https://atelfo.github.io/assets/bbgraph13.png"></center>
+<br>
+<center><img src="https://atelfo.github.io/assets/bbgraph13.png" width="700"></center>
 <center><i>Graph reproduced from <a href="https://www.iqvia.com/insights/the-iqvia-institute/reports/global-trends-in-r-and-d-2023">Global Trends in R&D 2023 - IQVIA</a></i></center>
 <br>
 
@@ -112,13 +114,13 @@ The industry's shift towards orphan diseases is just one reflection of a more ge
 
 *Note: The graphs in this section show the revenues across all years for any drug with $1 billion in annual sales at any point between 2000 and 2022. This is why overall revenues are a bit higher than the revenue graph at the beginning which only counted revenue for a given year if it was above $1 billion in that year. The graph immediately below is interactive (you can click the legend to show or hide specific traces), although it might not display nicely on small devices (sorry!)*
 <br>
-{% include blockbuster_indications_html.html height="500" %}
+{% include blockbuster_indications_html.html height="800" %}
 <br>
 The above graph is a lot to take in, so to help visualize the trends I've isolated the revenue trace lines below and marked when each of the categories peaked.
 <br>
-<center><img src="https://atelfo.github.io/assets/bbgraph14.png" width="800"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph14.png" width="600"></center>
 <br>
-<br>
+
 The pharmaceutical industry is cyclical, and if you look carefully at the latter graph you can see the two major cycles that have taken place since 2000. Cycle #1 was the primary care blockbuster era peaking around 2006-2011. That cycle was exemplified by relatively low-price medicines for high-prevalence disorders like Lipitor, Prilosec, and Effexor. Cycle #2 is the speciality disease blockbuster era we're in now led by drugs like Keytruda, Humira, Avastin, and Revlimid. While the indications targeted by Cycle #2 blockbusters typically have smaller patient populations and more specialist prescriber bases than the ones from Cycle #1, the loss in volume has been mitigated by higher prices. Another notable feature of Cycle #2 blockbusters, especially those in oncology and autoimmune disease, is that they are likely to be approved in multiple indications[^800].
 
 To make the cycles more concrete I'll show a few illustrative examples. For Cycle #1 we can isolate a selection of 5 indications that could reasonably be treated in a primary care setting by a general practitioner or family doctor, this could be used to tell a story of an industry in decline.
