@@ -137,7 +137,7 @@ COVID, it is true, was also a substantial financial windfall for the pharmaceuti
 COVID revenues are set to fall of dramatically in 2023 as we exit the pandemic and demand for vaccines and therapeutics wanes. [Reuters has a good article](https://www.reuters.com/business/healthcare-pharmaceuticals/drug-companies-face-covid-cliff-2023-sales-set-plummet-2023-02-06/) on the coming "COVID cliff" that will see companies lose the majority of their COVID revenue streams over the next few years. As a result, it's likely that 2022 blockbuster revenues will remain a record, at least for a few more years.
 
 ### Blockbusters: the next cycle?
-The pharmaceutical industry has seen plenty of change over the past two decades. What changes might we expect over the next 20 years? I think the past and current trends can give us some insight here, and if you'll permit me to speculate, here are some of my predictions for what the next cycle (playing out over ten to twenty years or so) may hold:
+The pharmaceutical industry has seen plenty of change over the past two decades: the rise and fall of the primary care blockbuster, and the transition to specialty diseases key among them. What changes might we expect over the next 20 years? I think past and emergent trends can give us some insight here, and if you'll permit me to speculate, here are some of my predictions for what the next cycle (playing out over ten to twenty years or so) may hold:
 
 #### Prediction #1: The fundamental economics of the industry stay much the same
 - Drug revenues continue to be unevenly distributed such that a small minority of drugs continue to drive a majority of overall industry returns. Companies still rely on blockbusters to maintain an attractive potential return on investment
