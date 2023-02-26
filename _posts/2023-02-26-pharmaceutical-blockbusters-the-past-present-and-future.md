@@ -114,11 +114,11 @@ The industry's shift towards orphan diseases is just one reflection of a more ge
 
 *Note: The graphs in this section show the revenues across all years for any drug with $1 billion in annual sales at any point between 2000 and 2022. This is why overall revenues are a bit higher than the revenue graph at the beginning which only counted revenue for a given year if it was above $1 billion in that year. The graph immediately below is interactive (you can click the legend to show or hide specific traces), although it might not display nicely on small devices (sorry!)*
 <br>
-{% include blockbuster_indications_html.html height="1200" %}
+{% include blockbuster_indications_html.html height="12" %}
 <br>
 The above graph is a lot to take in, so to help visualize the trends I've isolated the revenue trace lines below and marked when each of the categories peaked.
 <br>
-<center><img src="https://atelfo.github.io/assets/bbgraph14.png" width="600"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph14.png" width="500"></center>
 <br>
 
 The pharmaceutical industry is cyclical, and if you look carefully at the latter graph you can see the two major cycles that have taken place since 2000. Cycle #1 was the primary care blockbuster era peaking around 2006-2011. That cycle was exemplified by relatively low-price medicines for high-prevalence disorders like Lipitor, Prilosec, and Effexor. Cycle #2 is the speciality disease blockbuster era we're in now led by drugs like Keytruda, Humira, Avastin, and Revlimid. While the indications targeted by Cycle #2 blockbusters typically have smaller patient populations and more specialist prescriber bases than the ones from Cycle #1, the loss in volume has been mitigated by higher prices. Another notable feature of Cycle #2 blockbusters, especially those in oncology and autoimmune disease, is that they are likely to be approved in multiple indications[^800].
