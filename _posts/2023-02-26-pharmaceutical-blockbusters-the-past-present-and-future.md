@@ -51,11 +51,11 @@ Loss of exclusivity usually happens after ~13 years on the market, but it can ta
 If we look at the average age of blockbusters by year we don't see much of a change in the average or median age of blockbusters since the year 2000. The median has remained at ~10 years on the market over the whole time period, and the average (shown by the dotted line in boxplot below) has been steady at ~13 years. It's not surprising that blockbusters are typically older drugs, as revenue tends to grow steadily the longer drugs are on the market and the highest revenues are often achieved right before patent expiry.
 
 <center><img src="https://atelfo.github.io/assets/bbgraph6.png"></center>
-
+<br>
 Still, there are quite a few old-age outliers. If we focus on 2022 blockbusters and look at the year these drugs were first approved (in any country) we see that most are clustered around the 4 to 11 year old mark, but some are very old indeed: 39 (22%) were first approved 20 or more years ago, and 7 (4%) were approved more than 40 years ago!
 
 <center><img src="https://atelfo.github.io/assets/bbgraph7.png"></center>
-
+<br>
 The list of blockbusters that have been on the market for over 20 years (greater than the length of a patent term) is an eclectic mix of old insulin formulations (e.g. Humulin, Humalog, Lantus), biologics that are hard to copy or have unusual manufacturing processes (e.g. Creon, Lovenox, Botox), aging monoclonal antibodies (e.g. Remicade, Humira, Herceptin, Rituxan), and strong brands with surprising sticking power. Lipitor is still generating around $1.6 billion dollars a year for Pfizer, almost all of that outside the US! 
 
 Biosimilars have been slow to get rolling (especially in the US), and we've only recently started to see genericization hitting the prices and revenues of big biologic brands like Humira, Avastin, Herceptin in a meaningful way. Over the next few years the patents on further big biologic blockbusters are set to expire, and the industry is expected to face a [massive patent cliff with over $200 billion in revenue at risk through 2030](https://www.biopharmadive.com/news/pharma-patent-cliff-biologic-drugs-humira-keytruda/642660/). The need to replace these expiring revenues with fresh blockbusters will be a dominant theme of the next 5-10 years or so.
@@ -82,9 +82,11 @@ Before the 1980's few companies commercialized drugs for rare diseases, reasonin
 
 Policy is one oft cited reason for the increase. The US [Orphan Drug Act](https://en.wikipedia.org/wiki/Orphan_Drug_Act_of_1983) was passed in 1983 to incentivize the development of drugs for small patient populations without adequate therapies. Japan enacted a similar law in 1993[^6], and Europe followed in 2000[^5]. Orphan designations confer a number of benefits such as tax credits, extra support from regulators, regulatory fee exemptions, and most importantly, protection from generic entry (i.e. market exclusivity) after approval for 7 years in the US[^2] and 10-12 years in the EU[^3]. Obtaining these designations is straightforward; drug developers need only show that their drug is plausibly able to treat a rare condition which affects fewer than 200,000 patients in the US, or fewer than 5 in 10,000 patients in the EU (each region has slightly different thresholds). Since the introduction of the status, orphan designations and approvals have increased markedly[^8].
 <br>
+<br>
 <center><img src="https://atelfo.github.io/assets/bbgraph10.png"></center>
 <center><i>Graph reproduced from <a href="https://ojrd.biomedcentral.com/articles/10.1186/s13023-021-01901-6">Miller 2021</a></i></center>
 <br>
+
 Although orphan designations certainly helped, it's hard to say whether their creation really caused the increase in rare disease drugs and blockbusters. Many rare disorders are genetic, and the rise of orphan drugs coincided with the advent of recombinant technology and biotech generally. Another plausible catalyst is the invention of the high-price rare disease business model, often attributed to Henri Termeer, the long serving CEO of Genzyme[^9].
 
 Under Termeer in 1994, Genzyme launched the enzyme replacement therapy Cerezyme for Gaucher's disease at a US price of ~$200,000 per year for an average patient[^4]. This price was far in excess of the cost to manufacture the enzyme in recombinant cells, allowing Genzyme to reap substantial profit from a small number of patients (~4,500 in 2005[^9]). The clear unmet need in Gaucher's coupled with the small prevalent population meant payors were willing to absorb the high price, since the relative impact on their overall budgets was low. Cerezyme's revenue peaked at $1.2 billion dollars a year in 2006; a successful product by any metric - rare disease or not.
@@ -102,6 +104,7 @@ Even though we're seeing more and more orphan blockbusters, there is reason to t
 <center><img src="https://atelfo.github.io/assets/bbgraph13.png"></center>
 <center><i>Graph reproduced from <a href="https://www.iqvia.com/insights/the-iqvia-institute/reports/global-trends-in-r-and-d-2023">Global Trends in R&D 2023 - IQVIA</a></i></center>
 <br>
+
 Another "good problem to have" is that many of the newer rare disease drugs - like Vertex's cystic fibrosis franchise[^14] - are so effective that they are prolonging the lifespan of patients with previously deadly conditions, meaning payors need to cover high prices for far longer than they may have initially expected for a population that's growing in prevalence. As a consequence of these increased budget pressures, it seems likely that we'll soon see more overt payor pressure to reign in the high prices that the rare disease business model relies on. 
 
 ### The transition from primary to speciality care
@@ -109,23 +112,25 @@ The industry's shift towards orphan diseases is just one reflection of a more ge
 
 *Note: The graphs in this section show the revenues across all years for any drug with $1 billion in annual sales at any point between 2000 and 2022. This is why overall revenues are a bit higher than the revenue graph at the beginning which only counted revenue for a given year if it was above $1 billion in that year. The graph immediately below is interactive (you can click the legend to show or hide specific traces), although it might not display nicely on small devices (sorry!)*
 <br>
-{% include blockbuster_indications_html.html height="130%" %}
+{% include blockbuster_indications_html.html height="500" %}
 <br>
 The above graph is a lot to take in, so to help visualize the trends I've isolated the revenue trace lines below and marked when each of the categories peaked.
 <br>
-<center><img src="https://atelfo.github.io/assets/bbgraph14.png" width="600"></center>
+<center><img src="https://atelfo.github.io/assets/bbgraph14.png" width="800"></center>
+<br>
 <br>
 The pharmaceutical industry is cyclical, and if you look carefully at the latter graph you can see the two major cycles that have taken place since 2000. Cycle #1 was the primary care blockbuster era peaking around 2006-2011. That cycle was exemplified by relatively low-price medicines for high-prevalence disorders like Lipitor, Prilosec, and Effexor. Cycle #2 is the speciality disease blockbuster era we're in now led by drugs like Keytruda, Humira, Avastin, and Revlimid. While the indications targeted by Cycle #2 blockbusters typically have smaller patient populations and more specialist prescriber bases than the ones from Cycle #1, the loss in volume has been mitigated by higher prices. Another notable feature of Cycle #2 blockbusters, especially those in oncology and autoimmune disease, is that they are likely to be approved in multiple indications[^800].
 
 To make the cycles more concrete I'll show a few illustrative examples. For Cycle #1 we can isolate a selection of 5 indications that could reasonably be treated in a primary care setting by a general practitioner or family doctor, this could be used to tell a story of an industry in decline.
 
 <center><img src="https://atelfo.github.io/assets/bbgraph15.png"></center>
-
-Now if we turn to Cycle #2 and isolate 5 more indications that are treated by specialists, we instead see a robustly growing industry at record highs.
+<br>
+Now if we turn to Cycle #2 and isolate 5 more indications that are primarily treated by specialists, we instead see a robustly growing industry at record highs.
 
 <center><img src="https://atelfo.github.io/assets/bbgraph16.png"></center>
+<br>
 
-A common "indication macrocycle" seems to have played out many times across therapy areas where blockbuster revenues grow steadily, reach a peak after around 20 years, and then decline as key blockbusters go generic. This process of boom and bust can tale place much faster when a curative drug comes along, Gilead's hepatitis drugs being a good example. We may be seeing the pattern of peak, stagnation, and decline playing out in the speciality indications now. The blockbusters of Cycle #2 are getting old: revenues of HIV and multiple sclerosis blockbusters look to have peaked already, and the peak of oncology and autoimmune blockbusters may not be far off.
+An archetypical "indication macrocycle" seems to have played out many times across therapy areas where blockbuster revenues grow steadily, reach a peak after around 20 years, and then decline as key blockbusters go generic. This process of boom and bust can tale place much faster when a curative drug comes along, Gilead's hepatitis drugs being a good example. We may be seeing the pattern of peak, stagnation, and decline playing out in the speciality indications now. The blockbusters of Cycle #2 are getting old: revenues of HIV and multiple sclerosis blockbusters look to have peaked already, and the peak of oncology and autoimmune blockbusters may not be far off.
 
 ### The coming COVID cliff
 Before closing I have to touch on COVID which was, clearly, the dominant macro event of the early 2020's. The biopharma industry responded admirably, rapidly ushering [hundreds of vaccine candidates](https://absolutelymaybe.plos.org/2022/08/31/just-how-many-covid-vaccines-are-there-and-other-interesting-numbers/) into development, and many therapeutics besides. The development, manufacturing scale up, and approval of multiple COVID vaccines within a year is arguably the industry's biggest accomplishment to date. 
