@@ -112,7 +112,7 @@ Another "good problem to have" is that many of the newer rare disease drugs - li
 ### The transition from primary to speciality care
 The industry's shift towards orphan diseases is just one reflection of a more general transition towards high-priced speciality drugs that been ongoing since the early 2000's. If we break down the revenues of blockbusters into key therapeutic area categories we can see the substantial changes in the overall composition of revenues that have taken place over that period.
 
-*Note: The graphs in this section show the revenues across all years for any drug with $1 billion in annual sales at any point between 2000 and 2022. This is why overall revenues are a bit higher than the revenue graph at the beginning which only counted revenue for a given year if it was above $1 billion in that year. The graph immediately below is interactive (you can click the legend to show or hide specific traces), although it might not display nicely on small devices (sorry!)*
+*Note: The graphs in this section show the revenues across all years for any drug with $1 billion in annual sales at any point between 2000 and 2022. This is why overall revenues are a bit higher than the revenue graph at the beginning which only counted revenue for a given year if it was above $1 billion in that year. The graph immediately below is interactive (you can click the legend to show or hide specific traces) - it might not display properly on small devices, or you may have to rotate your screen to see it (sorry!)*
 <br>
 {% include blockbuster_indications_html.html height="12" %}
 <br>
