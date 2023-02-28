@@ -153,7 +153,7 @@ The pharmaceutical industry has seen plenty of change over the past two decades:
 
 #### Prediction #2: It gets harder than ever to defend blockbuster revenues
 - Fast followers get faster than ever; median lead times for first-in-class drugs decreases to less than 6 months
-- The durability of blockbuster revenues decline. Validated targets become crowded with follow-on drugs and competition for patients is fierce
+- The durability of blockbuster revenues decline. Validated targets become crowded with follow-on drugs and competition for patients is fierce. New price-control policies (most notably the Inflation Reduction Act) constrain the prices and revenues of top-selling drugs
 - Durability and defensibility of revenues becomes a key industry buzzword; instead of putting emphasis on being first-to-market, companies will focus on being best-to-market and hard to copy
 - Biologic revenues fall off much faster following biosimilar entry than they do today, and act more like small molecules. The kinks in the biosimilar market get worked out; incentives and loopholes that favour incumbent brands are mostly closed. Patient and physician acceptance of biosimilars improves to near parity with small molecule generics. Biosimilar manufacturing costs come down, leading to greater price discounting
 
@@ -183,6 +183,8 @@ The pharmaceutical industry has seen plenty of change over the past two decades:
 - Personalized medicine scales up as platforms become products. Cell therapy and cancer vaccines come of age and are applied in earlier lines of therapy. We see the emergence of broad platform approvals for gene therapy/editing in rare diseases with similar pathophysiology but different underlying causal mutations (e.g. retinitis pigmentosa)
 
 Looking forward to revisiting these predictions in 20 years!
+
+_Addendum: I got some good feedback after publishing that I didn't sufficiently address the potential for the Inflation Reduction Act (IRA) to disincentivise investment in diseases of aging or with a high Medicare/Medicaid population. I shared the criticism and some more information about the IRA on Twitter [here](https://twitter.com/Atelfo/status/1630539840784613377). I also added the following note on the IRA to the second bullet of prediction #2 "New price-control policies (most notably the Inflation Reduction Act) constrain the prices and revenues of top-selling drugs". I didn't talk much about the IRA because I think the impact it will have on early-stage indication prioritization is overblown, but it should absolutely have a big impact on long-term blockbuster revenue potential (something it's fair to say I glossed over). However, the potential magnitude of the changes in the IRA are big enough that I could easily be wrong here._
 
 ---
 
