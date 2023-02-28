@@ -36,6 +36,6 @@ theme: minima
 plugins:
  - jekyll-seo-tag
  - jekyll-feed
- 
- feed:
-  excerpt_only: true
+
+feed:
+ excerpt_only: true
