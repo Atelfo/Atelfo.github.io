@@ -37,6 +37,5 @@ plugins:
  - jekyll-seo-tag
  - jekyll-feed
  
- 
  feed:
   excerpt_only: true
