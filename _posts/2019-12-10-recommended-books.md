@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My book recommendations (updated anually)"
+title: "My book recommendations (updated annually)"
 ---
 
 This is a list of my personal favourite books and ones that stuck with me, shaped my thinking, or were particularly memorable. Not necessarily the most well-written.
