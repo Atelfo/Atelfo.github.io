@@ -80,10 +80,10 @@ For such a systemically important industry, there's not as many books written ab
 - [The Art of Statistics](https://www.goodreads.com/book/show/43722897-the-art-of-statistics): An understanding of statistics is essential in biotech, an this is an excellent refresher
 - [Bad Pharma: How Drug Companies Mislead Doctors and Harm Patients](https://www.goodreads.com/book/show/15795155-bad-pharma): While I find many of the critiques presented within this book weak or outdated, it's still worth reading for a critical perspective on the pharmaceutical industry
 
+For new biotech books, I like to check the [MIT press website](https://mitpress.mit.edu/search-result-list/?category=MED) from time to time; they seem to be the most consistent publisher of quality titles.
+
 ### Miscellaneous
 - Biotech Hangout on [Twitter spaces](https://twitter.com/BiotechCH): Essentially a live podcast that takes place (almost) every Friday at 9PM CET / 3PM ET and runs for about an hour, hosted by [Daphne Zohar](https://twitter.com/daphnezohar), [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian), and other prominent regular guests. The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
-
-For new biotech books, I like to check the [MIT press website](https://mitpress.mit.edu/search-result-list/?category=MED) from time to time; they seem to be the most consistent publisher of quality titles.
 
 ### Specialized databases and search engines
 #### Open-access
@@ -112,5 +112,4 @@ It's hard to put myself in that situation again so my advice may not be optimal,
 4. Read [The Entrepreneur’s Guide to a Biotech Startup](https://www.goodreads.com/book/show/58777063-the-entrepreneur-s-guide-to-a-biotech-startup?from_search=true&from_srp=true&qid=voEFlQkxiA&rank=1) (PDF available [here](https://www.ctsi.ucla.edu/researcher-resources/files/view/docs/EGBS4_Kolchinsky.pdf)) for an overview of the kinds of questions that are important for developing and commercializing a drug. While the book is somewhat old (2004) much of the content is still relevant
 5. Read [The Pharmagellan Guide to Analyzing Biotech Clinical Trials](https://www.goodreads.com/book/show/60251293-the-pharmagellan-guide-to-analyzing-biotech-clinical-trials).  Understanding clinical trials is foundational knowledge for people in this industry and you can't be credible without it
 6. Read [Forecasting for the Pharmaceutical Industry: Models for New Product and In-Market Forecasting and How to Use Them](https://www.goodreads.com/book/show/3065691-forecasting-for-the-pharmaceutical-industry) to understand how product forecasts are built and used to make investment decisions
-7. Listen to Lex Fridman's discussion with John Abramson ([on YouTube here](https://www.youtube.com/watch?v=arrokG3wCdE)) and try to identify the counterarguments. Then listen to his discussion with Albert Bourla, the CEO of Pfizer ([on YouTube here](https://www.youtube.com/watch?v=Z_LhPMhkEdw))
-8. Subscribe to the [The Readout Loud](https://www.statnews.com/category/readout-loud/) podcast for a weekly newbie-friendly recap of high-profile industry news
+7. Subscribe to the [The Readout Loud](https://www.statnews.com/category/readout-loud/) podcast for a weekly newbie-friendly recap of high-profile industry news
