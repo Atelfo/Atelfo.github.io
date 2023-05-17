@@ -146,7 +146,7 @@ What do I mean by efficiency? Of course we can't just simply measure how fast an
 $$\text{Useful information} = \text{Observed information} - \text{Known information}$$
 
 <br>
-A potential way to express this mathematically using concepts from information theory could be:
+A potential way to express this mathematically using concepts from information theory could be the following:
 - $$\text{Observed information}$$ is simply the [**information entropy**](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of sensory observations. However, because this is meant to represent the real observations rather than the distribution of all possible observations, I've added a little $$\tau$$ symbol to indicate that these are the probability distribution of observations conditioned on the true hidden environmental states: $$P(\text{Observations}_\tau) = P(\text{Observations} \vert \text{True hidden environmental states})$$
 - $$\text{Known information}$$ can be derived from the entropy of the predicted observations given the current internal states. If the observations are predicted perfectly (i.e. the predicted distribution equals the true distribution), they are essentially already known and so the information content would be the same as the unconditioned observations
 
@@ -165,7 +165,7 @@ $$\text{Useful information} = H(\text{Observations}_\tau) - H(\text{Observations
 <br>
 Which is actually the definition of [**mutual information**](https://en.wikipedia.org/wiki/Mutual_information): $$I(\text{Observations}_\tau\text{, Internal states})$$. If the observed and known information is equal (i.e. the mutual information is 0) it means that a new observation tells the organism nothing new about the states of its environment. This implies that if the organism's model of its environment is perfect, there's no need to make any observations anymore. From the perspective of the organism, this is a nice place to be because you don't have to spend energy collecting myriad sensory observations and can just run off your internal simulation of the world.
 
-If the amount of information that could possibly be learnt from a sample is the non-redundant information, we might suppose that a particular organism could capture anywhere from 0 to 100% of that information to train its internal model. So I could hypothesize that the amount that is learned at a given level of model accuracy is given by the below equation, where $g$ is a measure of intelligence:
+If the amount of information that could possibly be learnt from a sample is the non-redundant information, we might suppose that a particular organism could capture anywhere from 0 to 100% of that information to train its internal model. So I could hypothesize that the amount that is learned at a given level of model accuracy is given by the below equation, where $$g$$ is a measure of intelligence:
 <br>
 
 $$\text{Learning rate} = g \cdot (H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states}))$$
@@ -198,7 +198,7 @@ Which says, the amount of information learned about an environment depends on ho
 
 <iframe src="https://www.desmos.com/calculator/cxjv8chywd" style="min-height:300px" width="100%"></iframe>`
 
-Human learning curves have shapes much like these, with rapid initial learning before gradual slowing and plateauing. Machine learning loss curves also often (but not always) fit well to similar functions of the following form where $n$ is some measure of compute/samples seen:[^51]
+Human learning curves have shapes much like these, with rapid initial learning before gradual slowing and plateauing. Machine learning loss curves also often (but not always) fit well to similar functions of the following form where $$n$$ is some measure of compute/samples seen:[^51]
 <br>
 <br>
 
@@ -213,14 +213,14 @@ Which you can see in this example from OpenAI's GPT-4 paper.
 <br>
 This formalism is a way of thinking about intelligence as a measure of how effectively systems make use of useful information. More intelligent systems can extract more signal per observation, and take less time to learn the same models. More intelligent systems should also be able to learn effectively in noisy environments, while less intelligent agents may require high-signal environments to functionally extract signal (or many repetitions)[^64].
 
-Knowledge, in contrast to intelligence, seems more aptly to be a measure of how good one system's model is of another. There's a nice way to measure this using the [**Kullback-Leibler (KL) divergence**](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), a common way to evaluate the *closeness* of two distributions. It's a measure of distance[^65] where the units are information; it tells you how many bits of information are required to distort one distribution into another[^66]. Another way of interpreting it is the expected excess surprise from using one distribution ($$P(x)$$) as a model of another ($$Q(x)$$), or the information that you lose by using one distribution to approximate another.
+Knowledge, in contrast to intelligence, seems more aptly to be a measure of how good one system's model is of another. There's a nice way to measure this using the [**Kullback-Leibler (KL) divergence**](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), a common way to evaluate the *closeness* of two distributions. It's a measure of distance[^65] where the units are information; it tells you how many bits of information are required to distort one distribution into another[^66]. Another way of interpreting it is the expected excess surprise from using one distribution $$P(x)$$ as a model of another $$Q(x)$$, or the information that you lose by using one distribution to approximate another.
 <br>
 <br>
 
 $$D_{KL}\left(P(x)\ ||\ Q(x)\right) = \sum_{x\ \in\ X} P(x) \cdot \text{log}\left(\frac{P(x)}{Q(x)}\right)$$
 
 <br>
-Yet another way of interpreting the KL divergence is as the number of extra bits per message required to encode information about events drawn from the true distribution using the model distribution[^67]. If you substitute $$Q(x)$$ for the real hidden environmental states and $$P(x)$$ for the organism's internal states (model), then by improving its model of the world the organism is indirectly minimizing the KL divergence[^73]. This ties into a bioenergetic reason for why brains would like to minimize the KL divergence; better models reduce the amount of information required to model the true state of the world because organisms are not wasting energy to encode and transmit redundant or useless non-predictive information. 
+Yet another way of interpreting the KL divergence is as the number of extra bits per message required to encode information about events drawn from the true distribution using the model distribution[^67]. If you substitute $$Q(x)$$ for the real hidden environmental states, and $$P(x)$$ for the organism's internal states (model), then by improving its model of the world the organism is indirectly minimizing the KL divergence[^73]. This ties into a bioenergetic reason for why brains would like to minimize the KL divergence; better models reduce the amount of information required to model the true state of the world because organisms are not wasting energy to encode and transmit redundant or useless non-predictive information. 
 
 Organisms naturally compress reality by modelling it, which seems to be a defining behaviour of all living systems. If an organism is fed a constant stream of sensory data and it tries to build a model that efficiently predicts future data, it is necessarily performing a compression. Just like there is a fundamental link between intelligence and prediction, there is a fundamental link between those concepts and compression too. Since compression entails representing the causes of sensory data in terms of more fundamental hidden states it is analogous to understanding the causes of those states, because fundamental patterns have to be recognized in order to be able to compress them. 
 
@@ -331,7 +331,7 @@ Eight examples of emergence in the few-shot prompting setting are shown in the b
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230415221347.png" width="600"></center>
 <center><i>Image reproduced from <a href="https://openreview.net/pdf?id=yzkSU5zdwD">Wei (2022)</a></i></center>
 <br>
-Emergence has been criticised as an illusion that results from the choice of binary true/false evaluation metrics that don't award partial credit, when in reality the model smoothly improves with scale under more granular metrics[^59]. Jason Wei addresses this and some of the other common criticisms of emergence [here](https://www.jasonwei.net/blog/common-arguments-regarding-emergent-abilities)if you're interested. Even though the sharpness of transitions is a matter of debate, what is trivially true is that larger deep learning models are more capable than smaller ones , which is related to the concept of phase transitions.  
+Emergence has been criticised as an illusion that results from the choice of binary true/false evaluation metrics that don't award partial credit, when in reality the model smoothly improves with scale under more granular metrics[^59]. Jason Wei addresses this and some of the other common criticisms of emergence [here](https://www.jasonwei.net/blog/common-arguments-regarding-emergent-abilities) if you're interested. Even though the sharpness of transitions is a matter of debate, what is trivially true is that larger deep learning models are more capable than smaller ones , which is related to the concept of phase transitions.  
 
 Phase transitions are when the properties of a system change without the actual composition changing, such as when water freezes[^70]. When you change the organisation of a system, new and different behaviours can emerge. Large systems are more likely to exhibit emergent properties because there are combinatorically many more ways of arranging systems with more components[^62]. In intelligent systems this might manifest in the fracture of big general models into more refined submodels that better fit sections of the data[^22]. This fracturing plus some connection length penalty seems likely to be related to why brains have ended up being organised into distinct functional regions[^69].
 <br>
