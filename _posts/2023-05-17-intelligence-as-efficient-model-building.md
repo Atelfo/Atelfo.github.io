@@ -72,7 +72,9 @@ This is just a simple diagram, but I want to think in more general terms, and th
 <br>
 In building its world model, the organism's goal is to update its internal states to better approximate the true distribution of hidden environment states. That is to say, its aim is to determine the probability that its internal states are correct given the sensory information it has collected. There's an elegant way to do this mathematically with [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem), which can be thought of as a *"formal mechanism for learning from experience"*:[^9]
 <br>
+
 $$P(\text{Internal states}|\text{Observations}) = \frac{P(\text{Observations}|\text{Internal states}) \cdot P(\text{Internal states})}{P(\text{Observations})}$$
+
 <br>
 Breaking down the equation into its constituent parts, we have:
 - The **posterior**, $$P(\text{Internal states}|\text{Observations})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states, given the data from sensory observations. How good is the organism's model of its environment?
@@ -90,7 +92,9 @@ In practice, however, there is a major problem with applying Bayes theorem to ca
 
 Fortunately, since the goal is to select the most probable internal states given specific sensory observations it's possible to ignore the denominator since it’s just a normalization term and so doesn’t change where the peak posterior probability is found. This technique is known as [maximum likelihood estimation (MLE)](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation), which essentially means picking the internal states that maximize the value of the numerator of Bayes theorem. Because the numerator is equivalent to a [joint probability distribution](https://en.wikipedia.org/wiki/Joint_probability_distribution), performing MLE corresponds to picking the internal states that maximize the joint probability of sensory observations and the model of their causes:
 <br>
+
 $$P(\text{Observations}, \text{Internal states}) = P(\text{Observations}|\text{Internal states}) \cdot P(\text{Internal states})$$
+
 <br>
 Statistical models of joint probability distributions are also known as [**generative models**](https://en.wikipedia.org/wiki/Generative_model) - this is what the *"generative"* in *"generative pre-trained transformer (GPT)"* and other generative AI models refers to. Generative models have the useful property that they can produce, or *generate*, samples of the data they model; just as ChatGPT generates the most likely words to complete a snippet of text, an organism's model of its environment is trained to generate the next most likely sensations. This ties into theories of [predictive coding](https://en.wikipedia.org/wiki/Predictive_coding) in the brain, which posit that the brain compares predicted stimuli to real observations to evaluate the accuracy of its models. LLMs are evaluated in a similar way by comparing predicted continuation words to the true continuation and adjusting model weights as needed to improve accuracy.
 
@@ -129,39 +133,53 @@ I suspect that this iterative model updating has a fundamental link to intellige
 
 What do I mean by efficiency? Of course we can't just simply measure how fast an organism learns in some random context and call that efficiency because some things are easier to learn that others. So we need to try and account for the amount of information that is actually useful in an environment. In an intuitive sense it's not informative to be told things you already know, so perhaps we can construct an formula like this: 
 <br>
+
 $$\text{Useful information} = \text{Observed information} - \text{Known information}$$
+
 <br>
 A potential way to express this mathematically using concepts from information theory could be:
 - $$\text{Observed information}$$ is simply the [**information entropy**](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of sensory observations. However, because this is meant to represent the real observations rather than the distribution of all possible observations, I've added a little $$\tau$$ symbol to indicate that these are the probability distribution of observations conditioned on the true hidden environmental states: $$P(\text{Observations}_\tau) = P(\text{Observations}|\text{True hidden environmental states})$$
 - $$\text{Known information}$$ can be derived from the entropy of the predicted observations given the current internal states. If the observations are predicted perfectly (i.e. the predicted distribution equals the true distribution), they are essentially already known and so the information content would be the same as the unconditioned observations
 
-In terms of information entropy ($$H$$), which has the formula
+In terms of information entropy ($$H$$), which has the formula:
 <br>
+
 $$H(x) = \sum_{x \in X}P(x) \cdot \frac{1}{P(x)}$$
+
 <br>
 We get the following construct:
 <br>
+
 $$\text{Useful information} = H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states})$$
+
 <br>
 Which is actually the definition of [**mutual information**](https://en.wikipedia.org/wiki/Mutual_information): $$I(\text{Observations}_\tau\text{, Internal states})$$. If the observed and known information is equal (i.e. the mutual information is 0) it means that a new observation tells the organism nothing new about the states of its environment. This implies that if the organism's model of its environment is perfect, there's no need to make any observations anymore. From the perspective of the organism, this is a nice place to be because you don't have to spend energy collecting myriad sensory observations and can just run off your internal simulation of the world.
 
 If the amount of information that could possibly be learnt from a sample is the non-redundant information, we might suppose that a particular organism could capture anywhere from 0 to 100% of that information to train its internal model. So I could hypothesize that the amount that is learned at a given level of model accuracy is given by the below equation, where $g$ is a measure of intelligence:
 <br>
+
 $$\text{Learning rate} = g \cdot (H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states}))$$
+
 <br>
 This formula is similar to [Newton's law of cooling](https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling), which states that *"The rate of heat loss of a body is directly proportional to the difference in the temperatures between the body and its environment"*. This learning rate equation suggests a statement like *"The rate of learning is directly proportional to the accuracy of an organism's model of its environment"*. I don't know if this comparison is actually valid, but it seems like an interesting analogy and there's a long history of links between information theory and thermodynamics[^63]. This would imply that intelligence is analogues to the [heat transfer coefficient](https://en.wikipedia.org/wiki/Heat_transfer_coefficient), in other words, it's a variable which determines how quickly information is conducted away from a system during the learning process (or a knowledge acquisition rate). 
 
 Similarly to Newton's cooling law, this equation can be reformulated as an exponential function that shows the amount of information learned over time:
 <br>
+
 $$\text{Information learned at time t} = H(\text{Observations}_\tau) -  H(\text{Observations}_\tau) \cdot e^{-gt}$$
+
 <br>
 And expressed in terms of the amount left to learn:
 <br>
+
 $$\text{Information left to learn at time t} = H(\text{Observations}_\tau) \cdot e^{-gt}$$
+
 <br>
 Lastly, we should consider that the environment may generate information that is unobservable because the organism's sensors aren't equipped to detect it. This sets an upper bound on the amount of information that can be learned about any given environment. Adding in the unobservable information we get the following equation:
 <br>
+
 $$\text{Information left to learn at time t} = H(\text{Observations}_\tau) \cdot e^{-gt} + H(\text{Unobserved information})$$
+
 <br>
 Which says, the amount of information learned about an environment depends on how much information is contained in observations and the learning rate $$g$$ (intelligence), with an upper bound determined by information that is produced by an environment but can't be learned because it's inaccessible. Equations of this form look like this:
 
@@ -169,7 +187,9 @@ Which says, the amount of information learned about an environment depends on ho
 
 Human learning curves have shapes much like these, with rapid initial learning before gradual slowing and plateauing. Machine learning loss curves also often (but not always) fit well to similar functions of the following form where $n$ is some measure of compute/samples seen:[^51]
 <br>
+
 $$y=ae^{-bn}+c$$
+
 <br>
 Which you can see in this example from OpenAI's GPT-4 paper.
 <br>
@@ -180,7 +200,9 @@ This formalism is a way of thinking about intelligence as a measure of how effec
 
 Knowledge, in contrast to intelligence, seems more aptly to be a measure of how good one system's model is of another. There's a nice way to measure this using the [**Kullback-Leibler (KL) divergence**](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), a common way to evaluate the *closeness* of two distributions. It's a measure of distance[^65] where the units are information; it tells you how many bits of information are required to distort one distribution into another[^66]. Another way of interpreting it is the expected excess surprise from using one distribution ($$P(x)$$) as a model of another ($$Q(x)$$), or the information that you lose by using one distribution to approximate another.
 <br>
+
 $$D_{KL}\left(P(x)\ ||\ Q(x)\right) = \sum_{x\ \in\ X} P(x) \cdot \text{log}\left(\frac{P(x)}{Q(x)}\right)$$
+
 <br>
 Yet another way of interpreting the KL divergence is as the number of extra bits per message required to encode information about events drawn from the true distribution using the model distribution[^67]. If you substitute $$Q(x)$$ for the real hidden environmental states and $$P(x)$$ for the organism's internal states (model), then by improving its model of the world the organism is indirectly minimizing the KL divergence[^73]. This ties into a bioenergetic reason for why brains would like to minimize the KL divergence; better models reduce the amount of information required to model the true state of the world because organisms are not wasting energy to encode and transmit redundant or useless non-predictive information. 
 
