@@ -78,29 +78,29 @@ In building its world model, the organism's goal is to update its internal state
 <br>
 <br>
 
-$$P(\text{Internal states}|\text{Observations}) = \frac{P(\text{Observations}|\text{Internal states}) \cdot P(\text{Internal states})}{P(\text{Observations})}$$
+$$\small P(\text{Internal states}|\text{Observations}) = \frac{P(\text{Observations}|\text{Internal states}) \cdot P(\text{Internal states})}{P(\text{Observations})}$$
 
 <br>
 Breaking down the equation into its constituent parts, we have:
-- The **posterior**, $$P(\text{Internal states} \vert \text{Observations})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states, given the data from sensory observations. How good is the organism's model of its environment?
-- The **prior**, $$P(\text{Internal states})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states in isolation. This is the prior plausibility of the model before making any new observations
-- The **likelihood**, $$P(\text{Observations} \vert \text{Internal states})$$: The probability of observing the sensory data, under the assumption that a particular configuration of internal states correctly represent the true hidden environmental states
-- The **evidence**, $$P(\text{Observations})$$: The probability of observing the sensory data marginalized over every possible configuration of internal states. Essentially the weighted average of the predictions of every possible configuration of internal states. By dividing this out, the probability of the internal states independently of the probability of the sensory data can be calculated
+- The **posterior**, $$\small P(\text{Internal states} \vert \text{Observations})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states, given the data from sensory observations. How good is the organism's model of its environment?
+- The **prior**, $$\small P(\text{Internal states})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states in isolation. This is the prior plausibility of the model before making any new observations
+- The **likelihood**, $$\small P(\text{Observations} \vert \text{Internal states})$$: The probability of observing the sensory data, under the assumption that a particular configuration of internal states correctly represent the true hidden environmental states
+- The **evidence**, $$\small P(\text{Observations})$$: The probability of observing the sensory data marginalized over every possible configuration of internal states. Essentially the weighted average of the predictions of every possible configuration of internal states. By dividing this out, the probability of the internal states independently of the probability of the sensory data can be calculated
 
 Each of these constituents should be thought of as probability *distributions*, rather than single probabilities (although they can be both and the math still works out).
 
-In principle, the organism could try out a few different configurations of its internal states, calculate the probability that each configuration is correct based on its sensory observations, and pick the most probable configuration to take forward. In other words, it should evaluate the most probable internal states over a distribution of possible internal states. If the organism keeps iteratively updating its model of the environment in this way it should eventually come to a good approximation of $$P(\text{Internal states}) \approx P(\text{Hidden environmental states})$$ without ever needing to observe the hidden environmental states directly. 
+In principle, the organism could try out a few different configurations of its internal states, calculate the probability that each configuration is correct based on its sensory observations, and pick the most probable configuration to take forward. In other words, it should evaluate the most probable internal states over a distribution of possible internal states. If the organism keeps iteratively updating its model of the environment in this way it should eventually come to a good approximation of $$\small P(\text{Internal states}) \approx P(\text{Hidden environmental states})$$ without ever needing to observe the hidden environmental states directly. 
 <br>
 <br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230513223942.png" width="650"></center>
 <br>
-In practice, however, there is a major problem with applying Bayes theorem to calculate the posterior: It's almost definitely computationally infeasible to directly calculate $$P(\text{Observations})$$ because this would mean the organism has to generate every possible configuration of internal states (every possible model of the environment) and their associated probability distributions, then work out the predicted probability distributions of sensory observations given each configuration, and finally calculate the weighted probability distribution of the whole ensemble.
+In practice, however, there is a major problem with applying Bayes theorem to calculate the posterior: It's almost definitely computationally infeasible to directly calculate $$\small P(\text{Observations})$$ because this would mean the organism has to generate every possible configuration of internal states (every possible model of the environment) and their associated probability distributions, then work out the predicted probability distributions of sensory observations given each configuration, and finally calculate the weighted probability distribution of the whole ensemble.
 
 Fortunately, since the goal is to select the most probable internal states given specific sensory observations it's possible to ignore the denominator since it’s just a normalization term and so doesn’t change where the peak posterior probability is found. This technique is known as [maximum likelihood estimation (MLE)](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation), which essentially means picking the internal states that maximize the value of the numerator of Bayes theorem. Because the numerator is equivalent to a [joint probability distribution](https://en.wikipedia.org/wiki/Joint_probability_distribution), performing MLE corresponds to picking the internal states that maximize the joint probability of sensory observations and the model of their causes:
 <br>
 <br>
 
-$$P(\text{Observations}, \text{Internal states}) = P(\text{Observations}|\text{Internal states}) \cdot P(\text{Internal states})$$
+$$\small P(\text{Observations}, \text{Internal states}) = P(\text{Observations}|\text{Internal states}) \cdot P(\text{Internal states})$$
 
 <br>
 Statistical models of joint probability distributions are also known as [**generative models**](https://en.wikipedia.org/wiki/Generative_model) - this is what the *"generative"* in *"generative pre-trained transformer (GPT)"* and other generative AI models refers to. Generative models have the useful property that they can produce, or *generate*, samples of the data they model; just as ChatGPT generates the most likely words to complete a snippet of text, an organism's model of its environment is trained to generate the next most likely sensations. This ties into theories of [predictive coding](https://en.wikipedia.org/wiki/Predictive_coding) in the brain, which posit that the brain compares predicted stimuli to real observations to evaluate the accuracy of its models. LLMs are evaluated in a similar way by comparing predicted continuation words to the true continuation and adjusting model weights as needed to improve accuracy.
@@ -109,9 +109,9 @@ Computing the joint probability requires organism to answer two questions:[^61]
 1. How likely are these sensory observations given my internal states?
 2. How likely (i.e. plausible) are my internal states in general?
 
-The first question is straightforward. If we think of internal states as a mathematical function that computes the probability distribution of sensory observations, plugging in the values of the internal states directly outputs the distribution $$P(\text{Observations} \vert \text{Internal states})$$. By comparing the predictions of the model to the observed sensory data the organism can evaluate its performance, and the degree of error indicates the magnitude of updating that's required. If the current model assigns a low probability to the true sensory observations it probably isn't a very good model. 
+The first question is straightforward. If we think of internal states as a mathematical function that computes the probability distribution of sensory observations, plugging in the values of the internal states directly outputs the distribution $$\small P(\text{Observations} \vert \text{Internal states})$$. By comparing the predictions of the model to the observed sensory data the organism can evaluate its performance, and the degree of error indicates the magnitude of updating that's required. If the current model assigns a low probability to the true sensory observations it probably isn't a very good model. 
 
-The second question requires a more nuanced treatment. The surface level answer is that the most probable value of $$P(\text{Internal States})$$ is the one that best explains historical observations (i.e. the results of prior training), but this doesn't help determine how organisms should select the early values of the prior before much (or any) data has been observed.
+The second question requires a more nuanced treatment. The surface level answer is that the most probable value of $$\small P(\text{Internal States})$$ is the one that best explains historical observations (i.e. the results of prior training), but this doesn't help determine how organisms should select the early values of the prior before much (or any) data has been observed.
 
 The trick is to realize that the most probable model is the simplest one that explains the data, and that organisms should therefore have a bias towards simple configurations of internal states. This is a principle commonly known as [Occam's razor](https://en.wikipedia.org/wiki/Occam%27s_razor) and formalized in [Solomonoff's theory of inductive inference](https://www.sciencedirect.com/science/article/pii/S0019995864902232?ref=cra_js_challenge&fr=RR-1). 
 
@@ -122,13 +122,13 @@ To build intuition for this principle, imagine you were tasked with randomly gen
 3. Check if a [Turing machine](https://en.wikipedia.org/wiki/Turing_machine) (i.e. a computer) running the models encoded by every subsequence of the binary string is able to reproduce the observed data, and add all the successful strings to a list (including duplicates)
 5. Go back to step 1 and repeat the process, appending the next coin flip result to the binary string
 
-If you looped through this process for an infinite amount of time you'd have a long list of every model capable of reproducing the observed data. What you would then find is that the models described by shorter binary strings occurred much more frequently in your dataset than longer (more complex) models, because shorter strings require fewer steps to generate and so are more probable; in mathematical terms, the probability of generating a specific binary string of a particular length is given by $$\frac{1}{2^{\text{length}}}$$. 
+If you looped through this process for an infinite amount of time you'd have a long list of every model capable of reproducing the observed data. What you would then find is that the models described by shorter binary strings occurred much more frequently in your dataset than longer (more complex) models, because shorter strings require fewer steps to generate and so are more probable; in mathematical terms, the probability of generating a specific binary string of a particular length is given by $$\small \frac{1}{2^{\text{length}}}$$. 
 
 Of course, no organism is literally calculating the probability of every possible model to inform their prior - this is clearly infeasible. What they are plausibly doing however is randomly sampling from the distribution of models, keeping those that work, and pruning the ones that don't. Because shorter models are more likely to be generated, this random sampling biases towards shorter and simpler models. Another nice property of simpler models from the perspective of an organism is that they require fewer resources to encode, so biological systems like neurons that actively try to maximize their energetic efficiency have an inbuilt bias towards simpler representations.
 
 A further idea drawn from Karl Friston's theory of active inference is that organisms have a preferred set of internal states determined by evolution. Rather than just updating their models to better fit their environments, active inference suggests that organisms also shape their environments to better fit the internal states. In this sense, the most probable internal states are those which the organism wants to happen and will take action to make happen. 
 
-So when it comes to selecting the prior $$P(\text{Internal States})$$, the probability is likely to be a mélange of evolutionarily ingrained preferences, model complexity, and the results of prior inference steps.
+So when it comes to selecting the prior $$\small P(\text{Internal States})$$, the probability is likely to be a mélange of evolutionarily ingrained preferences, model complexity, and the results of prior inference steps.
 
 After the most likely model has been determined, it can be adopted as a new prior and fed into future calculations. By iteratively updating their internal states to better match sensory observations organisms gradually improve their generative model of the states of their environment and resultant sensations.
 <br>
@@ -143,32 +143,32 @@ What do I mean by efficiency? Of course we can't just simply measure how fast an
 <br>
 <br>
 
-$$\text{Useful information} = \text{Observed information} - \text{Known information}$$
+$$\small \text{Useful information} = \text{Observed information} - \text{Known information}$$
 
 <br>
 A potential way to express this mathematically using concepts from information theory could be the following:
-- $$\text{Observed information}$$ is simply the [**information entropy**](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of sensory observations. However, because this is meant to represent the real observations rather than the distribution of all possible observations, I've added a little $$\tau$$ symbol to indicate that these are the probability distribution of observations conditioned on the true hidden environmental states: $$P(\text{Observations}_\tau) = P(\text{Observations} \vert \text{True hidden environmental states})$$
-- $$\text{Known information}$$ can be derived from the entropy of the predicted observations given the current internal states. If the observations are predicted perfectly (i.e. the predicted distribution equals the true distribution), they are essentially already known and so the information content would be the same as the unconditioned observations
+- $$\small \text{Observed information}$$ is simply the [**information entropy**](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of sensory observations. However, because this is meant to represent the real observations rather than the distribution of all possible observations, I've added a little $$\small \tau$$ symbol to indicate that these are the probability distribution of observations conditioned on the true hidden environmental states: $$\small P(\text{Observations}_\tau) = P(\text{Observations} \vert \text{True hidden environmental states})$$
+- $$\small \text{Known information}$$ can be derived from the entropy of the predicted observations given the current internal states. If the observations are predicted perfectly (i.e. the predicted distribution equals the true distribution), they are essentially already known and so the information content would be the same as the unconditioned observations
 
-In terms of information entropy ($$H$$), which has the formula:
+In terms of information entropy ($$\small H$$), which has the formula:
 <br>
 <br>
 
-$$H(x) = \sum_{x \in X}P(x) \cdot \frac{1}{P(x)}$$
+$$\small H(x) = \sum_{x \in X}P(x) \cdot \frac{1}{P(x)}$$
 
 <br>
 We get the following construct:
 <br>
 
-$$\text{Useful information} = H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states})$$
+$$\small \text{Useful information} = H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states})$$
 
 <br>
-Which is actually the definition of [**mutual information**](https://en.wikipedia.org/wiki/Mutual_information): $$I(\text{Observations}_\tau\text{, Internal states})$$. If the observed and known information is equal (i.e. the mutual information is 0) it means that a new observation tells the organism nothing new about the states of its environment. This implies that if the organism's model of its environment is perfect, there's no need to make any observations anymore. From the perspective of the organism, this is a nice place to be because you don't have to spend energy collecting myriad sensory observations and can just run off your internal simulation of the world.
+Which is actually the definition of [**mutual information**](https://en.wikipedia.org/wiki/Mutual_information): $$\small I(\text{Observations}_\tau\text{, Internal states})$$. If the observed and known information is equal (i.e. the mutual information is 0) it means that a new observation tells the organism nothing new about the states of its environment. This implies that if the organism's model of its environment is perfect, there's no need to make any observations anymore. From the perspective of the organism, this is a nice place to be because you don't have to spend energy collecting myriad sensory observations and can just run off your internal simulation of the world.
 
-If the amount of information that could possibly be learnt from a sample is the non-redundant information, we might suppose that a particular organism could capture anywhere from 0 to 100% of that information to train its internal model. So I could hypothesize that the amount that is learned at a given level of model accuracy is given by the below equation, where $$g$$ is a measure of intelligence:
+If the amount of information that could possibly be learnt from a sample is the non-redundant information, we might suppose that a particular organism could capture anywhere from 0 to 100% of that information to train its internal model. So I could hypothesize that the amount that is learned at a given level of model accuracy is given by the below equation, where $$\small g$$ is a measure of intelligence:
 <br>
 
-$$\text{Learning rate} = g \cdot (H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states}))$$
+$$\small \text{Learning rate} = g \cdot (H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states}))$$
 
 <br>
 This formula is similar to [Newton's law of cooling](https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling), which states that *"The rate of heat loss of a body is directly proportional to the difference in the temperatures between the body and its environment"*. This learning rate equation suggests a statement like *"The rate of learning is directly proportional to the accuracy of an organism's model of its environment"*. I don't know if this comparison is actually valid, but it seems like an interesting analogy and there's a long history of links between information theory and thermodynamics[^63]. This would imply that intelligence is analogues to the [heat transfer coefficient](https://en.wikipedia.org/wiki/Heat_transfer_coefficient), in other words, it's a variable which determines how quickly information is conducted away from a system during the learning process (or a knowledge acquisition rate). 
@@ -177,32 +177,32 @@ Similarly to Newton's cooling law, this equation can be reformulated as an expon
 <br>
 <br>
 
-$$\text{Information learned at time t} = H(\text{Observations}_\tau) -  H(\text{Observations}_\tau) \cdot e^{-gt}$$
+$$\small \text{Information learned at time t} = H(\text{Observations}_\tau) -  H(\text{Observations}_\tau) \cdot e^{-gt}$$
 
 <br>
 And expressed in terms of the amount left to learn:
 <br>
 <br>
 
-$$\text{Information left to learn at time t} = H(\text{Observations}_\tau) \cdot e^{-gt}$$
+$$\small \text{Information left to learn at time t} = H(\text{Observations}_\tau) \cdot e^{-gt}$$
 
 <br>
 Lastly, we should consider that the environment may generate information that is unobservable because the organism's sensors aren't equipped to detect it. This sets an upper bound on the amount of information that can be learned about any given environment. Adding in the unobservable information we get the following equation:
 <br>
 <br>
 
-$$\text{Information left to learn at time t} = H(\text{Observations}_\tau) \cdot e^{-gt} + H(\text{Unobserved information})$$
+$$\small \text{Information left to learn at time t} = H(\text{Observations}_\tau) \cdot e^{-gt} + H(\text{Unobserved information})$$
 
 <br>
-Which says, the amount of information learned about an environment depends on how much information is contained in observations and the learning rate $$g$$ (intelligence), with an upper bound determined by information that is produced by an environment but can't be learned because it's inaccessible. Equations of this form look like this:
+Which says, the amount of information learned about an environment depends on how much information is contained in observations and the learning rate $$\small g$$ (intelligence), with an upper bound determined by information that is produced by an environment but can't be learned because it's inaccessible. Equations of this form look like this:
 
 <iframe src="https://www.desmos.com/calculator/cxjv8chywd" style="min-height:300px" width="100%"></iframe>`
 
-Human learning curves have shapes much like these, with rapid initial learning before gradual slowing and plateauing. Machine learning loss curves also often (but not always) fit well to similar functions of the following form where $$n$$ is some measure of compute/samples seen:[^51]
+Human learning curves have shapes much like these, with rapid initial learning before gradual slowing and plateauing. Machine learning loss curves also often (but not always) fit well to similar functions of the following form where $$\small n$$ is some measure of compute/samples seen:[^51]
 <br>
 <br>
 
-$$y=ae^{-bn}+c$$
+$$\small y=ae^{-bn}+c$$
 
 <br>
 Which you can see in this example from OpenAI's GPT-4 paper.
@@ -213,14 +213,14 @@ Which you can see in this example from OpenAI's GPT-4 paper.
 <br>
 This formalism is a way of thinking about intelligence as a measure of how effectively systems make use of useful information. More intelligent systems can extract more signal per observation, and take less time to learn the same models. More intelligent systems should also be able to learn effectively in noisy environments, while less intelligent agents may require high-signal environments to functionally extract signal (or many repetitions)[^64].
 
-Knowledge, in contrast to intelligence, seems more aptly to be a measure of how good one system's model is of another. There's a nice way to measure this using the [**Kullback-Leibler (KL) divergence**](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), a common way to evaluate the *closeness* of two distributions. It's a measure of distance[^65] where the units are information; it tells you how many bits of information are required to distort one distribution into another[^66]. Another way of interpreting it is the expected excess surprise from using one distribution $$P(x)$$ as a model of another $$Q(x)$$, or the information that you lose by using one distribution to approximate another.
+Knowledge, in contrast to intelligence, seems more aptly to be a measure of how good one system's model is of another. There's a nice way to measure this using the [**Kullback-Leibler (KL) divergence**](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), a common way to evaluate the *closeness* of two distributions. It's a measure of distance[^65] where the units are information; it tells you how many bits of information are required to distort one distribution into another[^66]. Another way of interpreting it is the expected excess surprise from using one distribution $$\small P(x)$$ as a model of another $$\small Q(x)$$, or the information that you lose by using one distribution to approximate another.
 <br>
 <br>
 
-$$D_{KL}\left(P(x)\ ||\ Q(x)\right) = \sum_{x\ \in\ X} P(x) \cdot \text{log}\left(\frac{P(x)}{Q(x)}\right)$$
+$$\small D_{KL}\left(P(x)\ ||\ Q(x)\right) = \sum_{x\ \in\ X} P(x) \cdot \text{log}\left(\frac{P(x)}{Q(x)}\right)$$
 
 <br>
-Yet another way of interpreting the KL divergence is as the number of extra bits per message required to encode information about events drawn from the true distribution using the model distribution[^67]. If you substitute $$Q(x)$$ for the real hidden environmental states, and $$P(x)$$ for the organism's internal states (model), then by improving its model of the world the organism is indirectly minimizing the KL divergence[^73]. This ties into a bioenergetic reason for why brains would like to minimize the KL divergence; better models reduce the amount of information required to model the true state of the world because organisms are not wasting energy to encode and transmit redundant or useless non-predictive information. 
+Yet another way of interpreting the KL divergence is as the number of extra bits per message required to encode information about events drawn from the true distribution using the model distribution[^67]. If you substitute $$\small Q(x)$$ for the real hidden environmental states, and $$\small P(x)$$ for the organism's internal states (model), then by improving its model of the world the organism is indirectly minimizing the KL divergence[^73]. This ties into a bioenergetic reason for why brains would like to minimize the KL divergence; better models reduce the amount of information required to model the true state of the world because organisms are not wasting energy to encode and transmit redundant or useless non-predictive information. 
 
 Organisms naturally compress reality by modelling it, which seems to be a defining behaviour of all living systems. If an organism is fed a constant stream of sensory data and it tries to build a model that efficiently predicts future data, it is necessarily performing a compression. Just like there is a fundamental link between intelligence and prediction, there is a fundamental link between those concepts and compression too. Since compression entails representing the causes of sensory data in terms of more fundamental hidden states it is analogous to understanding the causes of those states, because fundamental patterns have to be recognized in order to be able to compress them. 
 
