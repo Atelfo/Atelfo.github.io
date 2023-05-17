@@ -7,9 +7,9 @@ title: "Intelligence as efficient model building"
 <meta name="twitter:image" content="https://atelfo.github.io/assets/neurons.png" />
 <meta name="twitter:description" content="Exploring the links between intelligence, Bayesian inference, the free energy principle, and algorithmic information theory">
 
->*"There is a fundamental link between prediction and intelligence"* - Demis Hassabis
+>"There is a fundamental link between prediction and intelligence" - *Demis Hassabis*
 
-> "*You insist that there is something a machine cannot do. If you will tell me precisely what it is that a machine cannot do, then I can always make a machine which will do just that!*" - John Von Neumann
+>"You insist that there is something a machine cannot do. If you will tell me precisely what it is that a machine cannot do, then I can always make a machine which will do just that!" - *John Von Neumann*
 
 <center><p style="color:grey"><i>Note to the reader: This post should viewed as a draft; if I wanted to wait until it was perfect I'd never get it out. I don't claim a deep understanding of everything I'll discuss in this post, few of the ideas are original, and there are likely to be mistakes. I wrote this because I wanted to learn more about intelligence, and so I welcome feedback and criticism. At the very least, I'm hopeful that I can say something interesting.</i></p></center>
 
