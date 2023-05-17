@@ -159,6 +159,7 @@ $$\small H(x) = \sum_{x \in X}P(x) \cdot \frac{1}{P(x)}$$
 <br>
 We get the following construct:
 <br>
+<br>
 
 $$\small \text{Useful information} = H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states})$$
 
@@ -166,6 +167,7 @@ $$\small \text{Useful information} = H(\text{Observations}_\tau) - H(\text{Obser
 Which is actually the definition of [**mutual information**](https://en.wikipedia.org/wiki/Mutual_information): $$\small I(\text{Observations}_\tau\text{, Internal states})$$. If the observed and known information is equal (i.e. the mutual information is 0) it means that a new observation tells the organism nothing new about the states of its environment. This implies that if the organism's model of its environment is perfect, there's no need to make any observations anymore. From the perspective of the organism, this is a nice place to be because you don't have to spend energy collecting myriad sensory observations and can just run off your internal simulation of the world.
 
 If the amount of information that could possibly be learnt from a sample is the non-redundant information, we might suppose that a particular organism could capture anywhere from 0 to 100% of that information to train its internal model. So I could hypothesize that the amount that is learned at a given level of model accuracy is given by the below equation, where $$\small g$$ is a measure of intelligence:
+<br>
 <br>
 
 $$\small \text{Learning rate} = g \cdot (H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states}))$$
