@@ -12,9 +12,7 @@ title: "Intelligence as efficient model building"
 >"You insist that there is something a machine cannot do. If you will tell me precisely what it is that a machine cannot do, then I can always make a machine which will do just that!" - *John Von Neumann*
 
 <center><p style="color:lightgrey"><i>Note to the reader: This post should viewed as a draft; if I wanted to wait until it was perfect I'd never get it out. I don't claim a deep understanding of everything I'll discuss in this post, few of the ideas are original, and there are likely to be mistakes. I wrote this because I wanted to learn more about intelligence, and so I welcome feedback and criticism. At the very least, I'm hopeful that I can say something interesting.</i></p></center>
-
----
-
+<br>
 Gradually, then suddenly. After years of grinding progress in artificial intelligence (AI), we now find ourselves, seemingly overnight, in a world in which AI agents can [perform broad general tasks at a level approaching or exceeding that of a human](https://arxiv.org/pdf/2303.12712.pdf).
 
 <center><img src="https://atelfo.github.io/assets/AI-performance_Dynabench-paper-2048x921.png" width="800"></center>
@@ -73,12 +71,12 @@ This is just a simple diagram, but I want to think in more general terms, and th
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230513223820.png" width="650"></center>
 <br>
 In building its world model, the organism's goal is to update its internal states to better approximate the true distribution of hidden environment states. That is to say, its aim is to determine the probability that its internal states are correct given the sensory information it has collected. There's an elegant way to do this mathematically with [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem), which can be thought of as a *"formal mechanism for learning from experience"*:[^9]
-
+<br>
 $$P(\text{Internal states}|\text{Observations}) = \frac{P(\text{Observations}|\text{Internal states}) \cdot P(\text{Internal states})}{P(\text{Observations})}$$
-
+<br>
 Breaking down the equation into its constituent parts, we have:
 - The **posterior**, $$P(\text{Internal states}|\text{Observations})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states, given the data from sensory observations. How good is the organism's model of its environment?
-- The **prior**, $$P(\text{Internal states})$$ : The probability that a particular configuration of internal states are correct representations of the true hidden environmental states in isolation. This is the prior plausibility of the model before making any new observations
+- The **prior**, $$P(\text{Internal states})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states in isolation. This is the prior plausibility of the model before making any new observations
 - The **likelihood**, $$P(\text{Observations}|\text{Internal states})$$: The probability of observing the sensory data, under the assumption that a particular configuration of internal states correctly represent the true hidden environmental states
 - The **evidence**, $$P(\text{Observations})$$: The probability of observing the sensory data marginalized over every possible configuration of internal states. Essentially the weighted average of the predictions of every possible configuration of internal states. By dividing this out, the probability of the internal states independently of the probability of the sensory data can be calculated
 
@@ -131,13 +129,13 @@ I suspect that this iterative model updating has a fundamental link to intellige
 
 What do I mean by efficiency? Of course we can't just simply measure how fast an organism learns in some random context and call that efficiency because some things are easier to learn that others. So we need to try and account for the amount of information that is actually useful in an environment. In an intuitive sense it's not informative to be told things you already know, so perhaps we can construct an formula like this: 
 <br>
-$$\text{Useful information} =\text{Observed information} - \text{Known information}$$
+$$\text{Useful information} = \text{Observed information} - \text{Known information}$$
 <br>
 A potential way to express this mathematically using concepts from information theory could be:
-- $$\text{Observed information}$$ is the simply the [**information entropy**](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of sensory observations. However, because this is meant to represent the real observations rather than the distribution of all possible observations, I've added a little $$\tau$$ symbol to indicate that these are the probability distribution of observations conditioned on the true hidden environmental states: $$P(\text{Observations}_\tau) = P(\text{Observations}|\text{True hidden environmental states})$$
+- $$\text{Observed information}$$ is simply the [**information entropy**](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of sensory observations. However, because this is meant to represent the real observations rather than the distribution of all possible observations, I've added a little $$\tau$$ symbol to indicate that these are the probability distribution of observations conditioned on the true hidden environmental states: $$P(\text{Observations}_\tau) = P(\text{Observations}|\text{True hidden environmental states})$$
 - $$\text{Known information}$$ can be derived from the entropy of the predicted observations given the current internal states. If the observations are predicted perfectly (i.e. the predicted distribution equals the true distribution), they are essentially already known and so the information content would be the same as the unconditioned observations
 
-In terms of information entropy ($H$), which has the formula:
+In terms of information entropy ($$H$$), which has the formula
 <br>
 $$H(x) = \sum_{x \in X}P(x) \cdot \frac{1}{P(x)}$$
 <br>
@@ -153,7 +151,7 @@ $$\text{Learning rate} = g \cdot (H(\text{Observations}_\tau) - H(\text{Observat
 <br>
 This formula is similar to [Newton's law of cooling](https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling), which states that *"The rate of heat loss of a body is directly proportional to the difference in the temperatures between the body and its environment"*. This learning rate equation suggests a statement like *"The rate of learning is directly proportional to the accuracy of an organism's model of its environment"*. I don't know if this comparison is actually valid, but it seems like an interesting analogy and there's a long history of links between information theory and thermodynamics[^63]. This would imply that intelligence is analogues to the [heat transfer coefficient](https://en.wikipedia.org/wiki/Heat_transfer_coefficient), in other words, it's a variable which determines how quickly information is conducted away from a system during the learning process (or a knowledge acquisition rate). 
 
-Similarly to Newton's cooling law, this equation can be reformulated in terms of an exponential function that shows the amount of information learned over time:
+Similarly to Newton's cooling law, this equation can be reformulated as an exponential function that shows the amount of information learned over time:
 <br>
 $$\text{Information learned at time t} = H(\text{Observations}_\tau) -  H(\text{Observations}_\tau) \cdot e^{-gt}$$
 <br>
@@ -170,8 +168,9 @@ Which says, the amount of information learned about an environment depends on ho
 <iframe src="https://www.desmos.com/calculator/cxjv8chywd" style="min-height:300px" width="100%"></iframe>`
 
 Human learning curves have shapes much like these, with rapid initial learning before gradual slowing and plateauing. Machine learning loss curves also often (but not always) fit well to similar functions of the following form where $n$ is some measure of compute/samples seen:[^51]
+<br>
 $$y=ae^{-bn}+c$$
-
+<br>
 Which you can see in this example from OpenAI's GPT-4 paper.
 <br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230509233639.png" width="700"></center>
@@ -312,6 +311,7 @@ When it comes to making AI safer, it's plausibly dangerous to let these systems 
 [^6]: [Dicke et al. (2016) Neuronal factors determining high intelligence](https://pubmed.ncbi.nlm.nih.gov/26598734/)
 [^7]: [Gottfredson (1994) Mainstream Science on Intelligence: An Editorial With 52 Signatories, History, and Bibliography](https://www1.udel.edu/educ/gottfredson/reprints/1997mainstream.pdf)
 [^8]: In the Know by Russell T. Warne
+[^9]: The Art of Statistics by David Spiegelhalter
 [^10]: [Legg et al. (2007) Universal Intelligence: A Definition of Machine Intelligence](https://arxiv.org/abs/0712.3329)
 [^12]: This actor/sensor boundary is an example of what Karl Friston refers to as a [*Markov blanket*](https://en.wikipedia.org/wiki/Markov_blanket), a term inherited from Judea Pearl's causal statistics. Markov blankets have a mathematical definition as statistical partitions in Bayesian network graphs, but Friston uses the term more loosely to refer to the outer layers of organisms (or nervous systems) that interface directly with the environment. A Markov blanket in the Fristonian sense is a sort of information chokepoint, filter, or portcullis; all information that comes in or out of an organism must pass through its Markov blanket, and any information that doesn't make it through is lost behind a veil of ignorance. In the diagram, the sensors and actors form the Markov blanket of the internal states
 [^15]: [Deary et al. (2021) Genetic variation, brain, and intelligence differences](https://pubmed.ncbi.nlm.nih.gov/33531661/)
