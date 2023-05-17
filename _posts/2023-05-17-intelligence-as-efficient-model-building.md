@@ -72,7 +72,7 @@ This is just a simple diagram, but I want to think in more general terms, and th
 <br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230513223820.png" width="650"></center>
 <br>
-In building its world model, the organism's goal is to update its internal states to better approximate the true distribution of hidden environment states. That is to say, its aim is to determine the probability that its internal states are correct given the sensory information it has collected. There's an elegant way to do this mathematically with [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem), which can be thought of as a *"formal mechanism for learning from experience[^9]"*:
+In building its world model, the organism's goal is to update its internal states to better approximate the true distribution of hidden environment states. That is to say, its aim is to determine the probability that its internal states are correct given the sensory information it has collected. There's an elegant way to do this mathematically with [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem), which can be thought of as a *"formal mechanism for learning from experience"*:[^9]
 
 $$P(\text{Internal states}|\text{Observations}) = \frac{P(\text{Observations}|\text{Internal states}) \cdot P(\text{Internal states})}{P(\text{Observations})}$$
 
