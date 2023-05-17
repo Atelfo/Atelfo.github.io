@@ -11,13 +11,13 @@ title: "Intelligence as efficient model building"
 
 > "*You insist that there is something a machine cannot do. If you will tell me precisely what it is that a machine cannot do, then I can always make a machine which will do just that!*" - John Von Neumann
 
-<p style="color:grey"><i>Note to the reader: This post should viewed as a draft; if I wanted to wait until it was perfect I'd never get it out. I don't claim a deep understanding of everything I'll discuss in this post, few of the ideas are original, and there are likely to be mistakes. I wrote this because I wanted to learn more about intelligence, and so I welcome feedback and criticism. At the very least, I'm hopeful that I can say something interesting.</i></p>
+<center><p style="color:grey"><i>Note to the reader: This post should viewed as a draft; if I wanted to wait until it was perfect I'd never get it out. I don't claim a deep understanding of everything I'll discuss in this post, few of the ideas are original, and there are likely to be mistakes. I wrote this because I wanted to learn more about intelligence, and so I welcome feedback and criticism. At the very least, I'm hopeful that I can say something interesting.</i></p></center>
 
 Gradually, then suddenly. After years of grinding progress in artificial intelligence (AI), we now find ourselves, seemingly overnight, in a world in which AI agents can [perform broad general tasks at a level approaching or exceeding that of a human](https://arxiv.org/pdf/2303.12712.pdf).
 
-<center><img src="https://atelfo.github.io/assets/AI-performance_Dynabench-paper-2048x921.png" width="500"></center>
+<center><img src="https://atelfo.github.io/assets/AI-performance_Dynabench-paper-2048x921.png" width="800"></center>
 <center><i>Graph reproduced from <a href="https://ourworldindata.org/brief-history-of-AI">Our World in Data</a></i></center>
-
+<br>
 The most dramatic recent gains in AI capabilities have come from large language models (LLMs) like ChatGPT that apply the ["transformer" architecture](https://arxiv.org/abs/1706.03762) to digest and regurgitate reams of text data. The hardware and design of LLMs seems to have little in common with the human brain, yet they can emulate human-produced text and reasoning closely enough to make the Turing test seem like a historical irrelevancy. Did we ever *really* think that would be a good way to determine AI-human equivalency?
 
 Modern AI is clearly intelligent in some sense of the word, but how? Are there many paths to intelligence? What even *is* intelligence?
@@ -34,73 +34,73 @@ I've picked out two prominent examples, but there is by no means a fully satisfa
 
 I have an intuition that concepts from [Bayesian inference](https://en.wikipedia.org/wiki/Bayesian_inference), the [free energy principle](https://en.wikipedia.org/wiki/Free_energy_principle), and [algorithmic information theory](https://en.wikipedia.org/wiki/Algorithmic_information_theory) could provide a path towards this general understanding of intelligence, and my goal with this post is to explore that path, and with it, a conception of intelligence that goes beyond high-level qualitative definitions. To start us off on the journey, I want to introduce a way of thinking about intelligence as a player in the process through which one system models another.
 
-#### Bridges between model building, intelligence, and knowledge
+### Bridges between model building, intelligence, and knowledge
 Consider a discrete system - a cell perhaps, or a jellyfish - embedded within another larger system: an **organism** in its **environment**. Because these two systems are in contact they exert a mutual influence on one another. The environment acts on the organism, causing it to react and change (imagine a jellyfish twisted and turned about by strong ocean currents). Simultaneously, the organism acts on the environment, reshaping it in turn. It is through this reciprocal action and reaction that information comes to be shared between the two systems[^39].
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230218223012.png" width="350"></center>
-
+<br>
 Our organism is a discrete entity, and so it must have some boundary separating it from the environment. In other words, it must have an inside and an outside. We can think of the units that form the environmental boundary as belonging to two broad types:
 
 - **Sensors** that take in sensory information from the environment, passing that information inwards (e.g. a photoreceptor)
 - **Actors** that do something to the environment, passing information outwards (e.g. a flagellum)
 
 Sensors and actors envelop the **internal states** of the organism, shielding them from the direct influence of the external environment[^12]. I'll be using the term internal states to refer to the information that organisms encode about their environment[^42] which helps them determine what actions to take when presented with particular sensory observations. Internal states are abstract, but they may be reified in the enclosed information processing parts of the organism: transcription factors, signalling pathways, neurons, brains, and so on. 
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230218224032.png" width="500"></center>
-
+<br>
 The information that the environment shares with the organism is captured by sensors and recorded in internal states. This is learning through observation, in the abstract. An organism that does a good job of updating its internal states in accordance with its information endowment will select better actions, be fitter, and will be more likely to propagate. 
 
 Much like with the organism, we can think of the environment as having its own enclosed set of **hidden environmental states** that determine its evolution (whether deterministic or probabilistic). These hidden environmental states are akin to the rules or physical laws of the environment; given prior states and accounting for any perturbations from outside forces, they determine how the environment evolves over time, the sensory data it generates, and how it responds to actions taken by the organism. I refer to these states as hidden because for the most part they aren't directly observable, they are the [latent variables](https://en.wikipedia.org/wiki/Latent_and_observable_variables) behind sensory observations. We might imagine that underneath the *"blooming, buzzing confusion"*[^43] of a particular environment, there is some simpler (but probably still extremely complex!) underlying mathematical function that describes the probability distribution of environmental states and resulting sensory data[^45].
 
 An organism with perfect information on the hidden states of its environment would have a strong fitness advantage as it could use that information to optimally predict future environmental states and thereby reliably select fitness-maximizing actions. In practice, however, organisms only have access to the information picked up by their sensors - they cannot observe hidden states directly. Although sensory observations are noisy and limited in scope, they do leak some information about the true (obfuscated) nature of the organism's environment. If there are statistical regularities in sensory data it means there is an underlying structure to the environment, and it is in principle possible to figure out this underlying structure. With enough observations, organisms can build up a model of the hidden environmental states that serves as a good-enough approximation of the ground truth to enable effective action selection. This is what the organism's internal states really are: a model of their environment[^49]. Learning is the process of peering through noise and complexity to figure out the underlying rules of an environment and approximating them, thereby enabling predictions to be made about the future. Learning is model building[^48]. 
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230513222855.png" width="550"></center>
-
+<br>
 Building models provides a means for organisms to understand and navigate their environments by learning the underlying structure and patterns, rather than just memorizing specific sensory inputs and matched output actions. Although the true hidden states of their environments may be fundamentally abstract unknowable concepts, or they may be so complex that they are incomputable, organisms can get around these limitations by building internal world models that fit sensory data to computable approximations of the real environmental states.
 
 I'll return to the jellyfish example for a moment to provide a more concrete illustration of how internal states could model true environmental states. *Aurelia sp.* jellyfish swim down to hide from turbulent water and up towards the surface to avoid predatory jellyfish if lightly touched by a tentacle[^46]. How might these jellyfish use their limited sensory capabilities, mechanoreception and pressure sensing among them, to decide between two opposite potential courses of action? One conceptual way could be to have an arrangement of sensors, actors, and internal states similar to the diagram below that visualizes the flow of sensory data through to action:
-
-<center><img src="https://atelfo.github.io/assets/Pasted image 20230517140502.png" width="700"></center>
-
+<br>
+<center><img src="https://atelfo.github.io/assets/Pasted image 20230517140502.png" width="800"></center>
+<br>
 This toy example illustrates two key principles: 
 - Organisms segment and bundle continuous environmental data (like water pressure) to encode higher-order concepts that don't really physically exist in the world but are still useful for decision-making ([when does a pile of sand become a pile?](https://en.wikipedia.org/wiki/Sorites_paradox) When it's big enough for the distinction to be useful)
 - Organisms won't necessarily care to model all the states of their environment, just the ones that are useful for fitness-affecting decisions
 
 This is just a simple diagram, but I want to think in more general terms, and that means we need to think about the models that organisms build as mathematical objects. Imagine two probability distributions: One representing the ground truth probability distribution of values for a particular hidden environmental state - for instance, the degree of turbulence of the surrounding water - and the other representing the organism's internal model of that same environmental state. This could be extended in principle along multiple dimensions for any arbitrary number of states that are being modelled. These two distributions are unlikely to be well-matched from the outset; true environmental states are hidden and the organism cannot simply adopt the true distribution, it can only start with a best-guess model.
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230513223820.png" width="650"></center>
-
+<br>
 In building its world model, the organism's goal is to update its internal states to better approximate the true distribution of hidden environment states. That is to say, its aim is to determine the probability that its internal states are correct given the sensory information it has collected. There's an elegant way to do this mathematically with [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem), which can be thought of as a *"formal mechanism for learning from experience[^9]"*:
 
 $$P(\text{Internal states}|\text{Observations}) = \frac{P(\text{Observations}|\text{Internal states}) \cdot P(\text{Internal states})}{P(\text{Observations})}$$
 
 Breaking down the equation into its constituent parts, we have:
-- The **posterior**, $P(\text{Internal states}|\text{Observations})$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states, given the data from sensory observations. How good is the organism's model of its environment?
-- The **prior**, $P(\text{Internal states})$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states in isolation. This is the prior plausibility of the model before making any new observations
-- The **likelihood**, $P(\text{Observations}|\text{Internal states})$: The probability of observing the sensory data, under the assumption that a particular configuration of internal states correctly represent the true hidden environmental states
-- The **evidence**, $P(\text{Observations})$: The probability of observing the sensory data marginalized over every possible configuration of internal states. Essentially the weighted average of the predictions of every possible configuration of internal states. By dividing this out, the probability of the internal states independently of the probability of the sensory data can be calculated
+- The **posterior**, $$P(\text{Internal states}|\text{Observations})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states, given the data from sensory observations. How good is the organism's model of its environment?
+- The **prior**, $$P(\text{Internal states})$$ : The probability that a particular configuration of internal states are correct representations of the true hidden environmental states in isolation. This is the prior plausibility of the model before making any new observations
+- The **likelihood**, $$P(\text{Observations}|\text{Internal states})$$: The probability of observing the sensory data, under the assumption that a particular configuration of internal states correctly represent the true hidden environmental states
+- The **evidence**, $$P(\text{Observations})$$: The probability of observing the sensory data marginalized over every possible configuration of internal states. Essentially the weighted average of the predictions of every possible configuration of internal states. By dividing this out, the probability of the internal states independently of the probability of the sensory data can be calculated
 
 Each of these constituents should be thought of as probability *distributions*, rather than single probabilities (although they can be both and the math still works out).
 
-In principle, the organism could try out a few different configurations of its internal states, calculate the probability that each configuration is correct based on its sensory observations, and pick the most probable configuration to take forward. In other words, it should evaluate the most probable internal states over a distribution of possible internal states. If the organism keeps iteratively updating its model of the environment in this way it should eventually come to a good approximation of $P(\text{Internal states}) \approx P(\text{Hidden environmental states})$ without ever needing to observe the hidden environmental states directly. 
-
+In principle, the organism could try out a few different configurations of its internal states, calculate the probability that each configuration is correct based on its sensory observations, and pick the most probable configuration to take forward. In other words, it should evaluate the most probable internal states over a distribution of possible internal states. If the organism keeps iteratively updating its model of the environment in this way it should eventually come to a good approximation of $$P(\text{Internal states}) \approx P(\text{Hidden environmental states})$$ without ever needing to observe the hidden environmental states directly. 
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230513223942.png" width="650"></center>
-
-In practice, however, there is a major problem with applying Bayes theorem to calculate the posterior: It's almost definitely computationally infeasible to directly calculate $P(\text{Observations})$ because this would mean the organism has to generate every possible configuration of internal states (every possible model of the environment) and their associated probability distributions, then work out the predicted probability distributions of sensory observations given each configuration, and finally calculate the weighted probability distribution of the whole ensemble.
+<br>
+In practice, however, there is a major problem with applying Bayes theorem to calculate the posterior: It's almost definitely computationally infeasible to directly calculate $$P(\text{Observations})$$ because this would mean the organism has to generate every possible configuration of internal states (every possible model of the environment) and their associated probability distributions, then work out the predicted probability distributions of sensory observations given each configuration, and finally calculate the weighted probability distribution of the whole ensemble.
 
 Fortunately, since the goal is to select the most probable internal states given specific sensory observations it's possible to ignore the denominator since it’s just a normalization term and so doesn’t change where the peak posterior probability is found. This technique is known as [maximum likelihood estimation (MLE)](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation), which essentially means picking the internal states that maximize the value of the numerator of Bayes theorem. Because the numerator is equivalent to a [joint probability distribution](https://en.wikipedia.org/wiki/Joint_probability_distribution), performing MLE corresponds to picking the internal states that maximize the joint probability of sensory observations and the model of their causes:
-
+<br>
 $$P(\text{Observations}, \text{Internal states}) = P(\text{Observations}|\text{Internal states}) \cdot P(\text{Internal states})$$
-
+<br>
 Statistical models of joint probability distributions are also known as [**generative models**](https://en.wikipedia.org/wiki/Generative_model) - this is what the *"generative"* in *"generative pre-trained transformer (GPT)"* and other generative AI models refers to. Generative models have the useful property that they can produce, or *generate*, samples of the data they model; just as ChatGPT generates the most likely words to complete a snippet of text, an organism's model of its environment is trained to generate the next most likely sensations. This ties into theories of [predictive coding](https://en.wikipedia.org/wiki/Predictive_coding) in the brain, which posit that the brain compares predicted stimuli to real observations to evaluate the accuracy of its models. LLMs are evaluated in a similar way by comparing predicted continuation words to the true continuation and adjusting model weights as needed to improve accuracy.
 
 Computing the joint probability requires organism to answer two questions:[^61]
 1. How likely are these sensory observations given my internal states?
 2. How likely (i.e. plausible) are my internal states in general?
 
-The first question is straightforward. If we think of internal states as a mathematical function that computes the probability distribution of sensory observations, plugging in the values of the internal states directly outputs the distribution $P(\text{Observations}|\text{Internal states})$. By comparing the predictions of the model to the observed sensory data the organism can evaluate its performance, and the degree of error indicates the magnitude of updating that's required. If the current model assigns a low probability to the true sensory observations it probably isn't a very good model. 
+The first question is straightforward. If we think of internal states as a mathematical function that computes the probability distribution of sensory observations, plugging in the values of the internal states directly outputs the distribution $$P(\text{Observations}|\text{Internal states})$$. By comparing the predictions of the model to the observed sensory data the organism can evaluate its performance, and the degree of error indicates the magnitude of updating that's required. If the current model assigns a low probability to the true sensory observations it probably isn't a very good model. 
 
-The second question requires a more nuanced treatment. The surface level answer is that the most probable value of $P(\text{Internal States})$ is the one that best explains historical observations (i.e. the results of prior training), but this doesn't help determine how organisms should select the early values of the prior before much (or any) data has been observed.
+The second question requires a more nuanced treatment. The surface level answer is that the most probable value of $$P(\text{Internal States})$$ is the one that best explains historical observations (i.e. the results of prior training), but this doesn't help determine how organisms should select the early values of the prior before much (or any) data has been observed.
 
 The trick is to realize that the most probable model is the simplest one that explains the data, and that organisms should therefore have a bias towards simple configurations of internal states. This is a principle commonly known as [Occam's razor](https://en.wikipedia.org/wiki/Occam%27s_razor) and formalized in [Solomonoff's theory of inductive inference](https://www.sciencedirect.com/science/article/pii/S0019995864902232?ref=cra_js_challenge&fr=RR-1). 
 
@@ -111,58 +111,59 @@ To build intuition for this principle, imagine you were tasked with randomly gen
 3. Check if a [Turing machine](https://en.wikipedia.org/wiki/Turing_machine) (i.e. a computer) running the models encoded by every subsequence of the binary string is able to reproduce the observed data, and add all the successful strings to a list (including duplicates)
 5. Go back to step 1 and repeat the process, appending the next coin flip result to the binary string
 
-If you looped through this process for an infinite amount of time you'd have a long list of every model capable of reproducing the observed data. What you would then find is that the models described by shorter binary strings occurred much more frequently in your dataset than longer (more complex) models, because shorter strings require fewer steps to generate and so are more probable; in mathematical terms, the probability of generating a specific binary string of a particular length is given by $\frac{1}{2^{\text{length}}}$. 
+If you looped through this process for an infinite amount of time you'd have a long list of every model capable of reproducing the observed data. What you would then find is that the models described by shorter binary strings occurred much more frequently in your dataset than longer (more complex) models, because shorter strings require fewer steps to generate and so are more probable; in mathematical terms, the probability of generating a specific binary string of a particular length is given by $$\frac{1}{2^{\text{length}}}$$. 
 
 Of course, no organism is literally calculating the probability of every possible model to inform their prior - this is clearly infeasible. What they are plausibly doing however is randomly sampling from the distribution of models, keeping those that work, and pruning the ones that don't. Because shorter models are more likely to be generated, this random sampling biases towards shorter and simpler models. Another nice property of simpler models from the perspective of an organism is that they require fewer resources to encode, so biological systems like neurons that actively try to maximize their energetic efficiency have an inbuilt bias towards simpler representations.
 
 A further idea drawn from Karl Friston's theory of active inference is that organisms have a preferred set of internal states determined by evolution. Rather than just updating their models to better fit their environments, active inference suggests that organisms also shape their environments to better fit the internal states. In this sense, the most probable internal states are those which the organism wants to happen and will take action to make happen. 
 
-So when it comes to selecting the prior $P(\text{Internal States})$, the probability is likely to be a mélange of evolutionarily ingrained preferences, model complexity, and the results of prior inference steps.
+So when it comes to selecting the prior $$P(\text{Internal States})$$, the probability is likely to be a mélange of evolutionarily ingrained preferences, model complexity, and the results of prior inference steps.
 
 After the most likely model has been determined, it can be adopted as a new prior and fed into future calculations. By iteratively updating their internal states to better match sensory observations organisms gradually improve their generative model of the states of their environment and resultant sensations.
-
-<center><img src="https://atelfo.github.io/assets/Pasted image 20230516213747.png" width="600"></center>
-
+<br>
+<center><img src="https://atelfo.github.io/assets/Pasted image 20230516213747.png" width="700"></center>
+<br>
 I suspect that this iterative model updating has a fundamental link to intelligence, and so now we're finally ready to attempt a definition:
 
 > *Intelligence is a measure of how efficiently a system uses information from observations to build generalizable predictive models of its environment*
 
 What do I mean by efficiency? Of course we can't just simply measure how fast an organism learns in some random context and call that efficiency because some things are easier to learn that others. So we need to try and account for the amount of information that is actually useful in an environment. In an intuitive sense it's not informative to be told things you already know, so perhaps we can construct an formula like this: 
-
+<br>
 $$\text{Useful information} =\text{Observed information} - \text{Known information}$$
-
+<br>
 A potential way to express this mathematically using concepts from information theory could be:
-- $\text{Observed information}$ is the simply the [**information entropy**](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of sensory observations. However, because this is meant to represent the real observations rather than the distribution of all possible observations, I've added a little $\tau$ symbol to indicate that these are the probability distribution of observations conditioned on the true hidden environmental states: $P(\text{Observations}_\tau) = P(\text{Observations}|\text{True hidden environmental states})$
-- $\text{Known information}$ can be derived from the entropy of the predicted observations given the current internal states. If the observations are predicted perfectly (i.e. the predicted distribution equals the true distribution), they are essentially already known and so the information content would be the same as the unconditioned observations
+- $$\text{Observed information}$$ is the simply the [**information entropy**](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of sensory observations. However, because this is meant to represent the real observations rather than the distribution of all possible observations, I've added a little $$\tau$$ symbol to indicate that these are the probability distribution of observations conditioned on the true hidden environmental states: $$P(\text{Observations}_\tau) = P(\text{Observations}|\text{True hidden environmental states})$$
+- $$\text{Known information}$$ can be derived from the entropy of the predicted observations given the current internal states. If the observations are predicted perfectly (i.e. the predicted distribution equals the true distribution), they are essentially already known and so the information content would be the same as the unconditioned observations
 
 In terms of information entropy ($H$), which has the formula:
-
+<br>
 $$H(x) = \sum_{x \in X}P(x) \cdot \frac{1}{P(x)}$$
+<br>
 We get the following construct:
-
-$$\text{Useful information} =H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states})$$
-
-Which is actually the definition of [**mutual information**](https://en.wikipedia.org/wiki/Mutual_information): $I(\text{Observations}_\tau\text{, Internal states})$. If the observed and known information is equal (i.e. the mutual information is 0) it means that a new observation tells the organism nothing new about the states of its environment. This implies that if the organism's model of its environment is perfect, there's no need to make any observations anymore. From the perspective of the organism, this is a nice place to be because you don't have to spend energy collecting myriad sensory observations and can just run off your internal simulation of the world.
+<br>
+$$\text{Useful information} = H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states})$$
+<br>
+Which is actually the definition of [**mutual information**](https://en.wikipedia.org/wiki/Mutual_information): $$I(\text{Observations}_\tau\text{, Internal states})$$. If the observed and known information is equal (i.e. the mutual information is 0) it means that a new observation tells the organism nothing new about the states of its environment. This implies that if the organism's model of its environment is perfect, there's no need to make any observations anymore. From the perspective of the organism, this is a nice place to be because you don't have to spend energy collecting myriad sensory observations and can just run off your internal simulation of the world.
 
 If the amount of information that could possibly be learnt from a sample is the non-redundant information, we might suppose that a particular organism could capture anywhere from 0 to 100% of that information to train its internal model. So I could hypothesize that the amount that is learned at a given level of model accuracy is given by the below equation, where $g$ is a measure of intelligence:
-
+<br>
 $$\text{Learning rate} = g \cdot (H(\text{Observations}_\tau) - H(\text{Observations}_\tau|\text{Internal states}))$$
-
+<br>
 This formula is similar to [Newton's law of cooling](https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling), which states that *"The rate of heat loss of a body is directly proportional to the difference in the temperatures between the body and its environment"*. This learning rate equation suggests a statement like *"The rate of learning is directly proportional to the accuracy of an organism's model of its environment"*. I don't know if this comparison is actually valid, but it seems like an interesting analogy and there's a long history of links between information theory and thermodynamics[^63]. This would imply that intelligence is analogues to the [heat transfer coefficient](https://en.wikipedia.org/wiki/Heat_transfer_coefficient), in other words, it's a variable which determines how quickly information is conducted away from a system during the learning process (or a knowledge acquisition rate). 
 
 Similarly to Newton's cooling law, this equation can be reformulated in terms of an exponential function that shows the amount of information learned over time:
-
+<br>
 $$\text{Information learned at time t} = H(\text{Observations}_\tau) -  H(\text{Observations}_\tau) \cdot e^{-gt}$$
-
+<br>
 And expressed in terms of the amount left to learn:
-
+<br>
 $$\text{Information left to learn at time t} = H(\text{Observations}_\tau) \cdot e^{-gt}$$
-
+<br>
 Lastly, we should consider that the environment may generate information that is unobservable because the organism's sensors aren't equipped to detect it. This sets an upper bound on the amount of information that can be learned about any given environment. Adding in the unobservable information we get the following equation:
-
+<br>
 $$\text{Information left to learn at time t} = H(\text{Observations}_\tau) \cdot e^{-gt} + H(\text{Unobserved information})$$
-
-Which says, the amount of information learned about an environment depends on how much information is contained in observations and the learning rate $g$ (intelligence), with an upper bound determined by information that is produced by an environment but can't be learned because it's inaccessible. Equations of this form look like this:
+<br>
+Which says, the amount of information learned about an environment depends on how much information is contained in observations and the learning rate $$g$$ (intelligence), with an upper bound determined by information that is produced by an environment but can't be learned because it's inaccessible. Equations of this form look like this:
 
 <iframe src="https://www.desmos.com/calculator/cxjv8chywd" style="min-height:300px" width="100%"></iframe>`
 
@@ -170,17 +171,17 @@ Human learning curves have shapes much like these, with rapid initial learning b
 $$y=ae^{-bn}+c$$
 
 Which you can see in this example from OpenAI's GPT-4 paper.
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230509233639.png" width="700"></center>
 <center><i>Graph reproduced from <a href="https://arxiv.org/pdf/2303.08774.pdf">OpenAI (2023)</a></i></center>
-
+<br>
 This formalism is a way of thinking about intelligence as a measure of how effectively systems make use of useful information. More intelligent systems can extract more signal per observation, and take less time to learn the same models. More intelligent systems should also be able to learn effectively in noisy environments, while less intelligent agents may require high-signal environments to functionally extract signal (or many repetitions)[^64].
 
-Knowledge, in contrast to intelligence, seems more aptly to be a measure of how good one system's model is of another. There's a nice way to measure this using the [**Kullback-Leibler (KL) divergence**](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), a common way to evaluate the *closeness* of two distributions. It's a measure of distance[^65] where the units are information; it tells you how many bits of information are required to distort one distribution into another[^66]. Another way of interpreting it is the expected excess surprise from using one distribution ($P(x)$) as a model of another ($Q(x)$), or the information that you lose by using one distribution to approximate another.
-
+Knowledge, in contrast to intelligence, seems more aptly to be a measure of how good one system's model is of another. There's a nice way to measure this using the [**Kullback-Leibler (KL) divergence**](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), a common way to evaluate the *closeness* of two distributions. It's a measure of distance[^65] where the units are information; it tells you how many bits of information are required to distort one distribution into another[^66]. Another way of interpreting it is the expected excess surprise from using one distribution ($$P(x)$$) as a model of another ($$Q(x)$$), or the information that you lose by using one distribution to approximate another.
+<br>
 $$D_{KL}\left(P(x)\ ||\ Q(x)\right) = \sum_{x\ \in\ X} P(x) \cdot \text{log}\left(\frac{P(x)}{Q(x)}\right)$$
-
-Yet another way of interpreting the KL divergence is as the number of extra bits per message required to encode information about events drawn from the true distribution using the model distribution[^67]. If you substitute $Q(x)$ for the real hidden environmental states and $P(x)$ for the organism's internal states (model), then by improving its model of the world the organism is indirectly minimizing the KL divergence[^73]. This ties into a bioenergetic reason for why brains would like to minimize the KL divergence; better models reduce the amount of information required to model the true state of the world because organisms are not wasting energy to encode and transmit redundant or useless non-predictive information. 
+<br>
+Yet another way of interpreting the KL divergence is as the number of extra bits per message required to encode information about events drawn from the true distribution using the model distribution[^67]. If you substitute $$Q(x)$$ for the real hidden environmental states and $$P(x)$$ for the organism's internal states (model), then by improving its model of the world the organism is indirectly minimizing the KL divergence[^73]. This ties into a bioenergetic reason for why brains would like to minimize the KL divergence; better models reduce the amount of information required to model the true state of the world because organisms are not wasting energy to encode and transmit redundant or useless non-predictive information. 
 
 Organisms naturally compress reality by modelling it, which seems to be a defining behaviour of all living systems. If an organism is fed a constant stream of sensory data and it tries to build a model that efficiently predicts future data, it is necessarily performing a compression. Just like there is a fundamental link between intelligence and prediction, there is a fundamental link between those concepts and compression too. Since compression entails representing the causes of sensory data in terms of more fundamental hidden states it is analogous to understanding the causes of those states, because fundamental patterns have to be recognized in order to be able to compress them. 
 
@@ -196,9 +197,9 @@ It still takes a huge amount of samples and compute for transformers to learn th
 Learning systems are mirrors of their environment, and systems cannot bootstrap themselves to learn about anything without connection to an external environment, no matter how intelligent they are. There needs to be *something* to learn and predict; what any system can possibly learn is limited by the information it is fed. The type of inputs fed to a given system define its representation space and learning capacity, which for us includesthe basic sense data we perceive as colour, smell, taste, sounds, and so on. For an AI system, these fundamental representation units will be the format of the training and input data, such as word tokens for a language model. Everything that is learned by any system is represented eventually in terms of these fundamental units - these are their bridges to the true structure of reality.
 
 As a neat example of how foundational the concepts of consciousness and sensory perception is to human understanding, if you go onto Wikipedia and traverse it by clicking on the first link of every page you will almost always pass through articles on consciousness, existence, object qualities, or philosophy[^50]. Similarly, if you recurse sufficiently many times through definitions in a dictionary you'll end up in the same set of fundamental irreducible concepts - here's an example from the Cambridge dictionary:
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230513224135.png" width="700"></center>
-
+<br>
 While we live in a sensory word, and so relate every concept we understand ultimately to sensations, ChatGPT lives in a text world, so it has to relate everything to text. For ChatGPT text is fundamental, but this means it's untethered from the real world. There's still enough latent information about the true states of our world in text for ChatGPT to learn a decent world model, but it's presumably missing out on a lot of information about the world that we take for granted. The composition of the environment imposes fundamental limits on knowledge, and our conscious experience can only be as rich as the environment we exist in. It's likely that the reason that LLMs are so good at coding relative to other tasks is because the domain of programming can be almost entirely represented in data that LLMs can access and take as input, while the domains of other tasks are largely offline. We probably won't think that AI can "understand" the world until it has a similar input space to ours, because how we understand the world is through the components of conscious experience.
 
 With that out of the way, on to hardware.
@@ -211,10 +212,10 @@ It turns out that if we construct many different plausible tests of intelligence
 The emergence of a *g* factor from test data suggests that there is some unitary ability that enables people to perform well on all types of cognitive tests. This lines up with our common notion of intelligence as a broad cognitive capability, so *g* is often taken as a proxy for general intelligence[^40], and I will also use intelligence, *g*, and intelligence test performance interchangeably. There are of course other things beyond *g* that matter for test taking: practice, domain knowledge, language familiarity, concentration, motivation, socioeconomic status, and so on, yet *g* can always be found to explain some portion of test performance. Different cognitive tasks may draw on different abilities, but they all draw on *g*.
 
 The positive manifold doesn't seem to be unique to humans either. Evidence of a general factor of intelligence has also been observed in non-human animals, such as primates, dogs, and mice - although the evidence is only weakly positive[^41]. Large language models also seem to exhibit a positive manifold; the below graph from OpenAI shows that newer versions of GPT models exhibit positive performance correlations across distinct evaluation tasks[^52].
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230421114234.png" width="600"></center>
 <center><i>Graph reproduced from <a href="https://arxiv.org/pdf/2303.08774.pdf">OpenAI (2023)</a></i></center>
-
+<br>
 Despite *g*'s apparent simplicity as a statistical construct, the underlying determinants of human intelligence are multifaceted and difficult to pin down. Intelligence is partly heritable, implying that it is to some extent determined by inborn structural, genetic, and/or neurochemical factors. The precise degree of hereditability is controversial. Twin and family studies have historically suggested that genetics accounts for ~50% of the variation in performance on intelligence tests in typical environments (20-30% in children and up to 70% in adults)[^15]. Other methods in the [genome-wide complex trait analysis (GCTA)](https://www.cell.com/ajhg/fulltext/S0002-9297(10)00598-7) family that assess correlations between intelligence and genotype in unrelated individuals tend to produce lower hereditability estimates of 20-30%[^15]. Despite this purported high heritability, the polygenicity of intelligence makes it challenging to identify "intelligence genes"[^15]; any individual gene variant is likely to have a miniscule effect on someone's overall intelligence, and it seems likely that intelligence is influenced by the aggregate contributions of tens of thousands of gene variants. Polygenic tests are poor predictors of individual intelligence today - only able to account for 1-5% of the variation in intelligence[^23][^24] - presumably because we have yet to identify and incorporate the long tail of genetic variants with tiny effect sizes. It may also be the case that studies on the heritability of intelligence (especially twin and family studies) are overestimating the genetic contribution due to methodological flaws, contributions of shared environment, and/or assortative mating[^19]. 
 
 At the level of individual genes, we know from [genome-wide association studies (GWAS)](https://en.wikipedia.org/wiki/Genome-wide_association_study) that genetic variants associated with intelligence test scores tend to be related to neurogenesis and the cell cycle, the synapse, neurite growth and the cytoskeleton, calcium signalling, and the NMDA-receptor[^15]. GWAS doesn't necessarily identify the most important genes for a given trait as those are likely to be under heavy selection pressure and therefore intolerant of variance, but it does give some insight into the types of genes that contribute to a trait at the margins. To give a sense of the broad range of functions of genes involved in intelligence I have reproduced ten of the top corroborated hits from a large 2018 GWAS study on intelligence in the table below[^18].
@@ -233,34 +234,34 @@ NICN1 | Nicolin 1 | Unclear
 STAU1 | Double-stranded RNA-binding protein Staufen homolog 1 | Involved in transporting mRNA to the site of translation along cytoskeletal networks, as well as mRNA degradation[^34]
 
 Other intelligence GWAS have also implicated the [plexin](https://en.wikipedia.org/wiki/Plexin)[^17] and [netrin](https://en.wikipedia.org/wiki/Netrin) family of proteins, which are involved in guiding neurite [growth cones](https://en.wikipedia.org/wiki/Growth_cone) to form new synaptic connections. GWAS are too blunt of a tool to allow for definitive conclusions (and it's entirely possible that the results are dominated by spurious hits as many historical intelligence GWAS have failed to replicate), but they do seem to suggest that intelligence is affected by a diverse set of neuronal parameters: absolute number, efficiency, connections, integrity, and structure. Backing this up, the causes of intellectual disability are similarly heterogenous; as shown in the below graph, genes associated with intellectual disability span a large range of functions impacting metabolism, cytoskeleton, neurodevelopment, and synaptic function[^53][^54]. 
-
-<center><img src="https://atelfo.github.io/assets/Pasted image 20230511182802.png" width="700"></center>
+<br>
+<center><img src="https://atelfo.github.io/assets/Pasted image 20230511182802.png" width="800"></center>
 <center><i>Graph reproduced from <a href="https://pubmed.ncbi.nlm.nih.gov/34930158/">Maia (2021)</a></i></center>
-
+<br>
 If there's any one takeaway from genetic studies it's that there's no single simple tuneable parameter that determines intelligence - the functions of intelligence genes are global in nature. This seems consistent with high intelligence being a consequence of good global brain function downstream of favourable genetics and environment. Many little things need to go right for high intelligence, and one or two big problems can undo these small positive aggregate contributions.
 
 Zooming up to the macrostructure level, brain volume has reliably been found to correlate with intelligence test scores at around r=0.3[^16]. Both white and grey matter volume correlate with intelligence, although grey matter perhaps to a slightly greater degree[^55]. While the volume and/or thickness of specific subregions including the frontal, parietal, and temporal cortices and the hippocampus also correlate with intelligence, no specific structural element correlates much above r=0.3, and most are lower[^55]. Apart from volume, highly intelligent individuals tend to have more, better organized, neurons - as depicted in the image below.
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230415220317.png" width="600"></center>
 <center><i>Image reproduced from <a href="https://pubmed.ncbi.nlm.nih.gov/29765024/">Genç (2018)</a>. The differences between high and low-IQ individuals are exaggerated for the sake of visual clarity</i></center>
-
+<br>
 Intelligent brains are more efficient consumers of energetic resources[^20][^38], and are more sparingly organised[^21]. Energetic efficiency has close links to intelligence: learning disabilities and low IQ scores are common features of mitochondrial disorders, and brain activity seems to be elevated in people with Down's syndrome compared to healthy controls[^20]. Brain energy/glucose consumption is elevated when people learn new tasks and gradually decreases with practice. People with higher intelligence test scores tend to show larger decreases in task-specific brain activity with practice, i.e. they have greater efficiency gains[^20]. Connection efficiency and white matter integrity also plays a role in intelligence, particularly within and between the regions implicated in the [parieto-frontal integration theory (P-FIT)](https://en.wikipedia.org/wiki/Parieto-frontal_integration_theory), shown below[^55].
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230511221406.png" width="300"></center>
 <center><i>Image reproduced from <a href="https://pubmed.ncbi.nlm.nih.gov/20145623/">Deary (2010)</a></i></center>
-
+<br>
 An important caveat is that just because these correlations exist in large samples doesn't mean that they tell you much about someone's intelligence at an individual level. For example, men and women have equivalent average intelligence test scores[^60] even though men tend to have larger brains (controlling for larger body size)[^8]. The correlation of architectural or genetic factors with intelligence is low, and any one factor only explains a single digit percentage point of the variance in intelligence, or less. There appear to be multiple ways of constructing an intelligent brain, although ultimately they do seem to boil down to increasing neuron count and/or connection speed/efficiency.
 
 Looking beyond humans, many of the associations seen in human brains between scale, efficiency, and intelligence seem to hold broadly across the animal kingdom. We know human brains are nothing special architecturally, they are linearly scaled up primate brains[^1][^2]. Take an average primate brain, scale it up to human size, and you get a brain that's roughly comparable to the human one in terms of mass and number of neurons, as shown in the below table.
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230416220208.png" width="700"></center>
 <center><i>Table reproduced from <a href="https://pubmed.ncbi.nlm.nih.gov/19915731/">Herculano-Houzel (2009)</a></i></center>
-
+<br>
 Yet brain mass - whether absolute or relative to body size - is a flawed metric, as what really seems to matter is the number of neurons in the [pallium](https://en.wikipedia.org/wiki/Pallium_(neuroanatomy)) (essentially the cerebral cortex).  Our subjective impression of what animals are intelligent correlates well with the number of pallial neurons[^5].
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230416222431.png" width="600"></center>
 <center><i>Table reproduced from <a href="https://pubmed.ncbi.nlm.nih.gov/27298365/">Olkowicz (2016)</a></i></center>
-
+<br>
 On this metric, birds perform quite well despite their small brains. Just as a human brain is a scaled up generic primate brain, so is a corvid's brain a scaled-up songbird brain[^3]. Birds have a somewhat different brain architecture to mammals, with greater neuron packing and a relatively higher number of neurons in the pallium which compensates for their smaller absolute size[^3]. As with other animals, birds' cognitive task performance does seem to scale with cortical (pallium) neurons[^4]. 
 
 The same traits that influence the variation in intelligence among humans also seem to influence the variation in intelligence among animals, as one paper concludes:
@@ -268,9 +269,9 @@ The same traits that influence the variation in intelligence among humans also s
 > *"The best fit between brain traits and degrees of intelligence among mammals is reached by a combination of the number of cortical neurons, neuron packing density, interneuronal distance and axonal conduction velocity—factors that determine general information processing capacity (IPC), as reflected by general intelligence."[^6]*
 
 This echoes what I said above about the human brain, with intelligence mostly determined by a two factor model of cortical neuron number and connection efficiency. The more neurons, the more concepts a brain can encode. The more efficient, the faster a brain can retrieve and encode new concepts, and integrate across functional regions. There are multiple paths to high intelligence, and space constraints may force some animals down route of optimising for efficiency[^554].
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230516205017.png" width="500"></center>
-
+<br>
 I've focused on brains in this section, but I don't want to imply that brains are the only architecture capable of exhibiting intelligence. Biology may have settled on brains and neurons as the preferred substrate to enable within-lifetime learning, but across-lifetime learning using DNA as a substrate is perhaps more important. Computation is done by the body too, and evolution is the mechanism by which bodies come to better model their expected environment. We should expect some trade-off between an organism's environmental complexity or variability, lifespan, and their investment in brains. Fecund organisms with short lifespans and high mutation rates don't necessarily need to invest in brains as their rapid cycling through generations allows their genetics adapt quickly to environmental change. Static organisms, like plants, can do without brains entirely since they are rooted in place and have no need to range around variable environments.
 
 The patterns seen in biological intelligence have parallels in machine intelligence as well. The [bitter lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) of AI research has been that methods leveraging increased computation have had the most success. Increasing computation and scale improves performance, with no as of yet upper bound[^57]. Large parameter deep learning models perform better on evaluation metrics and learn faster than smaller models with the same architecture[^57]. That being said, there is a trade-off; large models are expensive to train, and for a fixed amount of compute it is often better to train a smaller model for longer[^56][^58].
@@ -278,16 +279,16 @@ The patterns seen in biological intelligence have parallels in machine intellige
 Bigger deep learning models can also abruptly develop entirely new capabilities that the smaller ones lack - this is commonly referred to as **emergence**.
 
 Eight examples of emergence in the few-shot prompting setting are shown in the below graphs. These examples show that various language models perform randomly until a certain scale, after which performance suddenly increases to well-above random. We see discontinuous jumps in the abilities of large language models. Jason Wei has documented more than 100 further examples of emergence on his blog [here](https://www.jasonwei.net/blog/emergence). We may be surprised by the emergent capabilities of language models, but perhaps we shouldn't be: after all, language was a sudden emergent ability in humans that seems to have more to do with scale than an architectural innovation.
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230415221347.png" width="600"></center>
 <center><i>Image reproduced from <a href="https://openreview.net/pdf?id=yzkSU5zdwD">Wei (2022)</a></i></center>
-
+<br>
 Emergence has been criticised as an illusion that results from the choice of binary true/false evaluation metrics that don't award partial credit, when in reality the model smoothly improves with scale under more granular metrics[^59]. Jason Wei addresses this and some of the other common criticisms of emergence [here](https://www.jasonwei.net/blog/common-arguments-regarding-emergent-abilities)if you're interested. Even though the sharpness of transitions is a matter of debate, what is trivially true is that larger deep learning models are more capable than smaller ones , which is related to the concept of phase transitions.  
 
 Phase transitions are when the properties of a system change without the actual composition changing, such as when water freezes[^70]. When you change the organisation of a system, new and different behaviours can emerge. Large systems are more likely to exhibit emergent properties because there are combinatorically many more ways of arranging systems with more components[^62]. In intelligent systems this might manifest in the fracture of big general models into more refined submodels that better fit sections of the data[^22]. This fracturing plus some connection length penalty seems likely to be related to why brains have ended up being organised into distinct functional regions[^69].
-
+<br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20230516130817.png" width="600"></center>
-
+<br>
 In some cases learning curves are not well behaved and follow a U-shape in which error rates worsen before eventually improving. [This blog post](https://chris-said.io/2023/04/21/double-descent-in-human-learning/) has some good examples of these behaviours in machines and humans. U-shaped learning and "Grokking"[^72] - when neural networks overfit and perform poorly for a long time before generalizing - seems to have a close relationship with phase changes[^71]. In complex or noisy domains learning systems are likely to be fooled by randomness for a time leading them to create models that overparameterize the observational data, essentially memorizing it, before eventually developing a deeper and more general understanding.
 
 ### In conclusion
