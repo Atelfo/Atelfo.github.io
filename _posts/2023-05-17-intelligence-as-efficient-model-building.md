@@ -82,9 +82,9 @@ $$P(\text{Internal states}|\text{Observations}) = \frac{P(\text{Observations}|\t
 
 <br>
 Breaking down the equation into its constituent parts, we have:
-- The **posterior**, $$P(\text{Internal states}|\text{Observations})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states, given the data from sensory observations. How good is the organism's model of its environment?
+- The **posterior**, $$P(\text{Internal states} \vert \text{Observations})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states, given the data from sensory observations. How good is the organism's model of its environment?
 - The **prior**, $$P(\text{Internal states})$$: The probability that a particular configuration of internal states are correct representations of the true hidden environmental states in isolation. This is the prior plausibility of the model before making any new observations
-- The **likelihood**, $$P(\text{Observations}|\text{Internal states})$$: The probability of observing the sensory data, under the assumption that a particular configuration of internal states correctly represent the true hidden environmental states
+- The **likelihood**, $$P(\text{Observations} \vert \text{Internal states})$$: The probability of observing the sensory data, under the assumption that a particular configuration of internal states correctly represent the true hidden environmental states
 - The **evidence**, $$P(\text{Observations})$$: The probability of observing the sensory data marginalized over every possible configuration of internal states. Essentially the weighted average of the predictions of every possible configuration of internal states. By dividing this out, the probability of the internal states independently of the probability of the sensory data can be calculated
 
 Each of these constituents should be thought of as probability *distributions*, rather than single probabilities (although they can be both and the math still works out).
@@ -109,7 +109,7 @@ Computing the joint probability requires organism to answer two questions:[^61]
 1. How likely are these sensory observations given my internal states?
 2. How likely (i.e. plausible) are my internal states in general?
 
-The first question is straightforward. If we think of internal states as a mathematical function that computes the probability distribution of sensory observations, plugging in the values of the internal states directly outputs the distribution $$P(\text{Observations}|\text{Internal states})$$. By comparing the predictions of the model to the observed sensory data the organism can evaluate its performance, and the degree of error indicates the magnitude of updating that's required. If the current model assigns a low probability to the true sensory observations it probably isn't a very good model. 
+The first question is straightforward. If we think of internal states as a mathematical function that computes the probability distribution of sensory observations, plugging in the values of the internal states directly outputs the distribution $$P(\text{Observations} \vert \text{Internal states})$$. By comparing the predictions of the model to the observed sensory data the organism can evaluate its performance, and the degree of error indicates the magnitude of updating that's required. If the current model assigns a low probability to the true sensory observations it probably isn't a very good model. 
 
 The second question requires a more nuanced treatment. The surface level answer is that the most probable value of $$P(\text{Internal States})$$ is the one that best explains historical observations (i.e. the results of prior training), but this doesn't help determine how organisms should select the early values of the prior before much (or any) data has been observed.
 
@@ -147,7 +147,7 @@ $$\text{Useful information} = \text{Observed information} - \text{Known informat
 
 <br>
 A potential way to express this mathematically using concepts from information theory could be:
-- $$\text{Observed information}$$ is simply the [**information entropy**](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of sensory observations. However, because this is meant to represent the real observations rather than the distribution of all possible observations, I've added a little $$\tau$$ symbol to indicate that these are the probability distribution of observations conditioned on the true hidden environmental states: $$P(\text{Observations}_\tau) = P(\text{Observations}|\text{True hidden environmental states})$$
+- $$\text{Observed information}$$ is simply the [**information entropy**](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of sensory observations. However, because this is meant to represent the real observations rather than the distribution of all possible observations, I've added a little $$\tau$$ symbol to indicate that these are the probability distribution of observations conditioned on the true hidden environmental states: $$P(\text{Observations}_\tau) = P(\text{Observations} \vert \text{True hidden environmental states})$$
 - $$\text{Known information}$$ can be derived from the entropy of the predicted observations given the current internal states. If the observations are predicted perfectly (i.e. the predicted distribution equals the true distribution), they are essentially already known and so the information content would be the same as the unconditioned observations
 
 In terms of information entropy ($$H$$), which has the formula:
