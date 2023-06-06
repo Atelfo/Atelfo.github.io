@@ -32,6 +32,7 @@ Twitter is without a doubt the best source for real-time news, debate and discus
 - [@BioStocks](https://twitter.com/BioStocks): Posts short summaries of company press releases and news updates
 - [@Prof_Oak_](https://twitter.com/Prof_Oak_): Intelligent commentary on genetic medicine and synthetic biology
 - [@paras_biotech](https://twitter.com/paras_biotech): Regularly shares interesting snippets from biopharma analyst reports
+- [@BertrandBio](https://twitter.com/BertrandBio): Prolific Tweeter of biopharma company press releases and presentations with a European slant
 - [@AndyBiotech](https://twitter.com/AndyBiotech): Hasn't been active lately, but excellent signal-to-noise ratio when he does post
 
 If you're not careful with who you follow, Twitter will likely be a huge waste of time. For tips on how to best use Twitter to optimize the signal-to-noise ratio, I suggest [this post](https://lee-phillips.org/howtotwitter/) by Lee Phillips
@@ -42,6 +43,7 @@ If you're not careful with who you follow, Twitter will likely be a huge waste o
 - [CureFFI](http://www.cureffi.org/): Deep and personal insight into the journey to develop antisense oligonucleotide drugs for rare prion diseases
 - [Drug truths](https://www.forbes.com/sites/johnlamattina/?sh=58525ff2b0d2): Blog of former Pfizer executive John LaMattina ([@John_LaMattina](https://twitter.com/John_LaMattina) on twitter), focusing on US drug pricing and costs
 - [Science-based medicine](https://sciencebasedmedicine.org/): Dedicated to debunking medical myths and misinformation
+- [BioByte](https://www.decodingbio.com/): Weekly summaries of interesting biotech papers and articles
 - [Nintil](https://nintil.com/): Not a biopharma blog per se, but Jose Luis Ricón Fernández de la Puente does regularly post interesting links and takes on adjacent topics such longevity research and effective allocation of R&D funding
 
 ### Podcasts
