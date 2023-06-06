@@ -3,6 +3,10 @@ layout: post
 title:  "The best ways to follow biopharma news and learn about the industry (in my opinion)"
 ---
 
+<meta property="og:image" content="https://atelfo.github.io/assets/Dallebrainbiotech.png" />
+<meta name="twitter:image" content="https://atelfo.github.io/assets/Dallebrainbiotech.png" />
+<meta name="twitter:description" content="Recommended biotech books, blogs, news sites, Twitter accounts, etc.">
+
 I was asked at work what sources I use to follow biopharma/medical news and learn about the industry, so I wrote up this post - hopefully it's useful for others as well! I don't intend this to be an exhaustive list, but rather a summary of the sources I find the most consistently valuable, having tried many through the years. In addition, at the bottom of this post I made some specific recommendations on where to start if you're new to the industry.
 
 While writing this I came across [this popular post](https://nbhorwitz.medium.com/how-to-learn-biotech-c59c6ed7a812) by Nathaniel Brooks Horwitz with the same objective, which I recommend too. However, I still wanted to add my thoughts because while we mostly agree my focus differs from his (I'm a life sciences consultant focused on commercialization strategy and he's a VC), and so the sources we choose to emphasize differ too.
@@ -21,7 +25,7 @@ While writing this I came across [this popular post](https://nbhorwitz.medium.co
 ### Twitter
 Twitter is without a doubt the best source for real-time news, debate and discussion on biopharma. While many accounts are worth following (you can see everyone I follow [here](https://twitter.com/Atelfo/following)), these are who I consider to be the "must-follow" accounts:
 - [@bradloncar](https://twitter.com/bradloncar): Independent investor, mostly tweets about immuno-oncology and China. Posts nice daily/weekly summaries of the performance of key biotech stock indices
-- [@LifeSciVC](https://twitter.com/LifeSciVC): Account of VC Bruce Booth, follow for perspectives on early-stage biotech financing and the state of the industry
+- : Account of VC Bruce Booth, follow for perspectives on early-stage biotech financing and the state of the industry
 - [@JacobPlieth](https://twitter.com/JacobPlieth): Journalist at Evaluate Vantage and snarky commentator on oncology news
 - [@Sports_Bios](https://twitter.com/Sports_bios): Smart (often contrarian) takes on market trends, follows neuroscience and China closely
 - [@bio_clouseau](https://twitter.com/bio_clouseau): Frequently picks up biotech news that others miss
@@ -33,7 +37,8 @@ Twitter is without a doubt the best source for real-time news, debate and discus
 If you're not careful with who you follow, Twitter will likely be a huge waste of time. For tips on how to best use Twitter to optimize the signal-to-noise ratio, I suggest [this post](https://lee-phillips.org/howtotwitter/) by Lee Phillips
 
 ### Blogs
-- [In the Pipeline](https://www.science.org/blogs/pipeline): The essential industry blog, written by Derek Lowe ([@Dereklowe](https://twitter.com/Dereklowe) on twitter). His day job is a Novartis medicinal chemist, but he's much more well known in the industry for his regular commentary on drug discovery and the pharma industry
+- [In the Pipeline](https://www.science.org/blogs/pipeline): The essential industry blog, written by Derek Lowe. His day job is a Novartis medicinal chemist, but he's much more well known in the industry for his regular commentary on drug discovery and the pharma industry
+- [LifeSciVC](https://lifescivc.com/) the long-running blog of VC Bruce Booth ([@LifeSciVC](https://twitter.com/LifeSciVC) on Twitter). Read for insights on biotech venture capital, funding environment, and general industry trends
 - [CureFFI](http://www.cureffi.org/): Deep and personal insight into the journey to develop antisense oligonucleotide drugs for rare prion diseases
 - [Drug truths](https://www.forbes.com/sites/johnlamattina/?sh=58525ff2b0d2): Blog of former Pfizer executive John LaMattina ([@John_LaMattina](https://twitter.com/John_LaMattina) on twitter), focusing on US drug pricing and costs
 - [Science-based medicine](https://sciencebasedmedicine.org/): Dedicated to debunking medical myths and misinformation
@@ -56,6 +61,7 @@ For such a systemically important industry, there's not as many books written ab
 - [Forecasting for the Pharmaceutical Industry: Models for New Product and In-Market Forecasting and How to Use Them](https://www.goodreads.com/book/show/3065691-forecasting-for-the-pharmaceutical-industry): Getting a bit dated now (released in 2006), but still a useful overview of the common forecasting methodologies in the pharmaceutical industry. A great starting point for someone looking to learn how to forecast product revenue in biotech, and anyone looking for a brisk overview of the different methodologies available for pre and post-launch product forecasting (e.g., prevalence or incidence models, system dynamics, trend-based, etc.)
 - [The Pharmagellan Guide to Biotech Forecasting and Valuation](https://www.goodreads.com/book/show/33802675-the-pharmagellan-guide-to-biotech-forecasting-and-valuation): This slim volume has been an invaluable reference that I revisit almost every time I build a forecast model. While the content is US-centric and the coverage of some topics is overly high-level, the page-for-page density of useful information and benchmarks is very high
 - [Which Country Has the World's Best Health Care?](https://www.goodreads.com/en/book/show/50262535): A comparative primer on 11 healthcare systems (US, Australia, Canada, China, France, Germany, Netherlands, Norway, Switzerland, Taiwan, and the UK) including organisation, funding, and performance. Dry and repetitive at times, but dense with useful information
+- [New Product Planning Playbook](https://www.biopharma-newproductplanning.com/_files/ugd/e8049f_bf6ab0d978694d669d679a63d2f0ac79.pdf): Developed by a network of new product planning executives, this playbook is a comprehensive overview of what the commercial function in biopharma does to prepare for a new launch
 
 #### Corporate histories
 - [Genentech: The Beginnings of Biotech](https://www.goodreads.com/book/show/12703074-genentech): The story of how recombinant DNA technology was commercialized. 40 years or so later Genentech (now part of Roche) is still one of the giants in the industry, and everyone in the industry should be aware of their history
@@ -83,7 +89,8 @@ For such a systemically important industry, there's not as many books written ab
 For new biotech books, I like to check the [MIT press website](https://mitpress.mit.edu/search-result-list/?category=MED) from time to time; they seem to be the most consistent publisher of quality titles.
 
 ### Miscellaneous
-- Biotech Hangout on [Twitter spaces](https://twitter.com/BiotechCH): Essentially a live podcast that takes place (almost) every Friday at 9PM CET / 3PM ET and runs for about an hour, hosted by [Daphne Zohar](https://twitter.com/daphnezohar), [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian), and other prominent regular guests. The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
+- [Biotech Hangout](https://www.biotechhangout.com/) on [Twitter spaces](https://twitter.com/BiotechCH): Essentially a live podcast that takes place (almost) every Friday at 6PM CEST / 12PM EDT and runs for about an hour, hosted by [Daphne Zohar](https://twitter.com/daphnezohar), [Brad Loncar](https://twitter.com/bradloncar), [Chris Garabedian](https://twitter.com/cngarabedian), and other prominent regular guests. The format is usually a recap of weekly news, followed by discussion with a guest then audience Q&A. The guests and discussions are consistently high quality, and interesting people from the audience often drop in to ask questions or share their perspectives
+- [BiotechTV](https://www.biotechtv.com/): This is [Brad Loncar's](https://twitter.com/bradloncar) new venture that only just launched. Brad has been conducting brief yet informative video interviews with biotech executives, journalists, and scientists for a while now and recently decided to go full-time. A nice aspect of Brad's coverage is that he tends to interview people who have important roles in the biotech ecosystem yet rarely get airtime on the major generalist media outlets.
 
 ### Specialized databases and search engines
 #### Open-access
@@ -99,14 +106,14 @@ For new biotech books, I like to check the [MIT press website](https://mitpress.
 
 #### Paid resources:
 - [UpToDate](https://www.wolterskluwer.com/en/solutions/uptodate): Immensely useful disease overviews and summaries of the latest clinical practice
-- [GlobalData](https://www.globaldata.com/industries-we-cover/pharmaceutical/), [AdisInsight](https://adisinsight.springer.com/) and [EvaluatePharma](https://www.evaluate.com/products-services/pharma) (among others) are extremely helpful - albeit very expensive - pipeline and sales revenue databases
-- There are many paid and/or specialized country specific drug pricing databases (e.g., [RED BOOK](https://www.ibm.com/products/micromedex-red-book) for US prices) that I won't go into in detail on, but it's useful to know they exist
+- [GlobalData](https://www.globaldata.com/industries-we-cover/pharmaceutical/), [AdisInsight](https://adisinsight.springer.com/), [Pharmaprojects](https://pharmaintelligence.informa.com/products-and-services/clinical-planning/pharmaprojects), and [EvaluatePharma](https://www.evaluate.com/products-services/pharma) (among others) are extremely helpful - albeit very expensive - pipeline and sales revenue databases
+- There are many paid and/or specialized country specific drug pricing databases (e.g., [RED BOOK](https://www.ibm.com/products/micromedex-red-book) for US prices, [Navlin](https://data.navlin.com/alspc/)) that I won't go into in detail on, but it's useful to know they exist
 
 ---
 
 ### Where should I start if I'm brand new and don't know anything about the industry yet?
 It's hard to put myself in that situation again so my advice may not be optimal, but here's what I think I'd do now if I suddenly forgot everything and had to start again:
-1. If you need to brush up on your science, [iBiology](https://www.youtube.com/c/ibiology/videos) has some top-quality free lectures from leading experts talking about their research. Otherwise, there's always Wikipedia; [this article](https://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology) is probably as good a place as any to start
+1. If you need to brush up on your science, [iBiology](https://www.youtube.com/c/ibiology/videos) has some top-quality free lectures from leading experts talking about their research. [The Molecular Biology of the Cell](https://www.amazon.com/Molecular-Biology-Cell-Bruce-Alberts/dp/0393884821) is a classic textbook. Otherwise, there's always Wikipedia; [this article](https://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology) is probably as good a place as any to start
 2. Read [Genentech: The Beginnings of Biotech](https://www.goodreads.com/book/show/12703074-genentech)
 3. Check for relevant courses on the big MOOC platforms like [edX](https://www.edx.org/search) and [Coursera](https://www.coursera.org/). I haven't taken this one from MIT on the [The Science and Business of Biotechnology](https://learning.edx.org/course/course-v1:MITx+15.480x+3T2021/home) so I can't personally recommend it, but the syllabus looks good
 4. Read [The Entrepreneur’s Guide to a Biotech Startup](https://www.goodreads.com/book/show/58777063-the-entrepreneur-s-guide-to-a-biotech-startup?from_search=true&from_srp=true&qid=voEFlQkxiA&rank=1) (PDF available [here](https://www.ctsi.ucla.edu/researcher-resources/files/view/docs/EGBS4_Kolchinsky.pdf)) for an overview of the kinds of questions that are important for developing and commercializing a drug. While the book is somewhat old (2004) much of the content is still relevant
