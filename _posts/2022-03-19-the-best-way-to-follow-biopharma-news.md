@@ -2,12 +2,11 @@
 layout: post
 title:  "The best ways to follow biopharma news and learn about the industry (in my opinion)"
 ---
-
-_Last update: June 2023_
-
 <meta property="og:image" content="https://atelfo.github.io/assets/Dallebrainbiotech.png" />
 <meta name="twitter:image" content="https://atelfo.github.io/assets/Dallebrainbiotech.png" />
 <meta name="twitter:description" content="Recommended biotech books, blogs, news sites, Twitter accounts, etc.">
+
+_Last update: June 2023_
 
 I was asked at work what sources I use to follow biopharma/medical news and learn about the industry, so I wrote up this post - hopefully it's useful for others as well! I don't intend this to be an exhaustive list, but rather a summary of the sources I find the most consistently valuable, having tried many through the years. In addition, at the bottom of this post I made some specific recommendations on where to start if you're new to the industry.
 
