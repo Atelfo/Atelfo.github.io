@@ -3,6 +3,8 @@ layout: post
 title:  "The best ways to follow biopharma news and learn about the industry (in my opinion)"
 ---
 
+_Last update: June 2023_
+
 <meta property="og:image" content="https://atelfo.github.io/assets/Dallebrainbiotech.png" />
 <meta name="twitter:image" content="https://atelfo.github.io/assets/Dallebrainbiotech.png" />
 <meta name="twitter:description" content="Recommended biotech books, blogs, news sites, Twitter accounts, etc.">
