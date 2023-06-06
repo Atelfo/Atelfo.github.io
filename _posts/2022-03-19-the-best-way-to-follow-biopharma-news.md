@@ -18,7 +18,7 @@ While writing this I came across [this popular post](https://nbhorwitz.medium.co
 - [Nature Reviews Disease Primers](https://www.nature.com/nrdp/): Detailed summaries of the epidemiology, pathophysiology, management, unmet needs and outlook for many different diseases. When I'm brushing up on a new therapy area one of the first things I do is check if there's one of these primers available
 
 ### Industry news sites
-- [Endpoints news](https://endpts.com/): My favourite source for skimmable news and headlines (many articles required a paid subscription to view)
+- [Endpoints news](https://endpts.com/): Excellent source for skimmable news and headlines (many articles require a paid subscription to view)
 - [Evaluate Vantage](https://www.evaluate.com/vantage): High quality analysis that puts industry and pipeline news into context
 - [STAT news](https://www.statnews.com/): Excellent longform content, breaks a lot of big stories (paywalled but the free stuff is good, too)
 - [BioPharma Dive](https://www.biopharmadive.com/): In-depth news and articles
