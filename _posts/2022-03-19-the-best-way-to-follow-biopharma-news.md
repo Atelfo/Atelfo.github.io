@@ -10,7 +10,7 @@ _Last update: June 2023_
 
 I was asked at work what sources I use to follow biopharma/medical news and learn about the industry, so I wrote up this post - hopefully it's useful for others as well! I don't intend this to be an exhaustive list, but rather a summary of the sources I find the most consistently valuable, having tried many through the years. In addition, at the bottom of this post I made some specific recommendations on where to start if you're new to the industry.
 
-While writing this I came across [this popular post](https://nbhorwitz.medium.com/how-to-learn-biotech-c59c6ed7a812) by Nathaniel Brooks Horwitz with the same objective, which I recommend too. However, I still wanted to add my thoughts because while we mostly agree my focus differs from his (I'm a life sciences consultant focused on commercialization strategy and he's a VC), and so the sources we choose to emphasize differ too.
+While writing this I came across [this popular post](https://nbhorwitz.medium.com/how-to-learn-biotech-c59c6ed7a812) by Nathaniel Brooks Horwitz with the same objective. There's also [this compendium](https://founderledbio.com/ecosystem/) from the folks at Pillar and Petri. Both are good lists. However, I still wanted to add my thoughts because while we mostly agree my focus differs from theirs (I'm a life sciences consultant focused on commercialisation strategy and they are VC's), and so the sources we choose to emphasize differ too.
 
 ### Scientific literature
 - [PubMed](https://pubmed.ncbi.nlm.nih.gov/): The Google search of biotech (check out the trending papers [here](https://pubmed.ncbi.nlm.nih.gov/trending/))
