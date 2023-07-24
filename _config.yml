@@ -6,7 +6,7 @@ paginate: 12
 title: Alex's blog
 author:
   name: Alex Telford
-  email: atelford@crai.com
+  email: alextelford@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
   Personal site for posts about my interests: the biotech industry, medicine, molecular biology, neuroscience, biorisk, science, consciousness, AI, innovation, decision making, philosophy, games, sci-fi, probability, and forecasting (among other things). I write to learn, mostly about biotech.
 business_description: >
