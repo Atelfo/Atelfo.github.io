@@ -19,9 +19,6 @@ Daiichi Sankyo and AstraZeneca's Enhertu is a member of the antibody-drug conjug
 
 In the below graphic I have outlined the chain of discoveries and innovations that led eventually to Enhertu. Modern drugs like Enhertu are the result of many converging nonlinear lines of inquiry, and it's somewhat arbitrary where to start the mapping and what to include. For instance, although inventions like the polymerase chain reaction, agarose gel electrophoresis, and cell culture were crucial developments, I have mostly left out general purpose biological tools and techniques. 
 
-<div style="height: 2000px;">
-  {% include EnhertuPlot.html %}
-</div>
-
+{% include EnhertuPlot.html %}
 
 <center><i>Discoveries and innovations from academia (marked with circles), government (marked with triangles), and the private sector (marked with squares) all played a role in the discovery of Enhertu. Events related to the chemotherapy payload are displayed on the far left section in light green, those related to the ADC and linker are second from the left in teal, those related to the antibody are third from the left in blue, and target-related events are on the right in purple. Clicking on an event opens up a link to the source publication.<i></center>
