@@ -14,7 +14,7 @@ Daiichi Sankyo and AstraZeneca's Enhertu is a member of the antibody-drug conjug
 <br>
 <center><img src="https://atelfo.github.io/assets/ADCddt.png" width="600"></center>
 <br>
-<center><i>Image reproduced from <a href="[https://ourworldindata.org/brief-history-of-AI](https://pubmed.ncbi.nlm.nih.gov/24239727/)">Antibody–drug conjugates: current status and future directions</a></i></center>
+<center><i>Image reproduced from <a href="https://pubmed.ncbi.nlm.nih.gov/24239727/">Antibody–drug conjugates: current status and future directions</a></i></center>
 <br>
 
 In the below graphic I have outlined the chain of discoveries and innovations that led eventually to Enhertu. Modern drugs like Enhertu are the result of many converging nonlinear lines of inquiry, and it's somewhat arbitrary where to start the mapping and what to include. For instance, although inventions like the polymerase chain reaction, agarose gel electrophoresis, and cell culture were crucial developments, I have mostly left out general purpose biological tools and techniques. 
