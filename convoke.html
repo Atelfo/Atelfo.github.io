@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        background-color: #51882d;
+        image-rendering: pixelated;
+      }
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        image-rendering: pixelated;
+      }
+      #logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 360px;
+        z-index: 1;
+        image-rendering: pixelated;
+      }
+      #txt {
+        position: absolute;
+        top: 90%;
+        color: #ffffff;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Courier new";
+        image-rendering: pixelated;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas"></canvas>
+    <img id="logo" src="./Convokepixellogo-156x128.png">
+    <div id="txt">UNDER CONSTRUCTION</div>
+    <script>
+        let canvas = document.getElementById('myCanvas');
+        let ctx = canvas.getContext('2d');
+
+        // Step 1: Choose a fixed cell size in pixels
+        let cellWidth = 2;
+        let cellHeight = 2;
+
+        // Step 2: Calculate number of columns and rows that will fit into the canvas
+        let cols = Math.floor(window.innerWidth / cellWidth);
+        let rows = Math.floor(window.innerHeight / cellHeight);
+
+        let grid = new Array(rows).fill(null).map(() => new Array(cols).fill(0));
+      
+        // Initialize grid randomly
+        for (let i = 0; i < rows; i++) {
+          for (let j = 0; j < cols; j++) {
+            grid[i][j] = Math.random() > 0.5 ? 1 : 0;
+          }
+        }
+      
+        function draw() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        canvas.width = cellWidth * cols;
+        canvas.height = cellHeight * rows;
+          for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+              if (grid[i][j] === 1) {
+                ctx.fillStyle = '#70AD47';
+                ctx.fillRect(j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+              }
+            }
+          }
+        }
+      
+        function update() {
+          let newGrid = new Array(rows).fill(null).map(() => new Array(cols).fill(0));
+          for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+              let neighbors = 0;
+              for (let x = -1; x < 2; x++) {
+                for (let y = -1; y < 2; y++) {
+                  if (x === 0 && y === 0) continue;
+                  let newX = i + x;
+                  let newY = j + y;
+                  if (newX >= 0 && newY >= 0 && newX < rows && newY < cols) {
+                    neighbors += grid[newX][newY];
+                  }
+                }
+              }
+              if (grid[i][j] === 1) {
+                newGrid[i][j] = neighbors === 2 || neighbors === 3 ? 1 : 0;
+              } else {
+                newGrid[i][j] = neighbors === 3 ? 1 : 0;
+              }
+            }
+          }
+          grid = newGrid;
+        }
+      
+        function loop() {
+          draw();
+          update();
+        }
+
+        setInterval(loop, 100);
+      
+        loop();
+      </script>
+      
+  </body>
+</html>
