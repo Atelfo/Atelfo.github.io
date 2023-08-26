@@ -20,7 +20,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 360px;
+        width: 500px;
         z-index: 1;
         image-rendering: pixelated;
       }
@@ -47,8 +47,8 @@
         let ctx = canvas.getContext('2d');
 
         // Step 1: Choose a fixed cell size in pixels
-        let cellWidth = 2;
-        let cellHeight = 2;
+        let cellWidth = 3;
+        let cellHeight = 3;
 
         // Step 2: Calculate number of columns and rows that will fit into the canvas
         let cols = Math.floor(window.innerWidth / cellWidth);
