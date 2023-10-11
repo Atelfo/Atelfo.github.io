@@ -33,11 +33,9 @@ When we create categories we implicitly assume that meaningful boundaries can be
 This challenge of drawing thresholds exists within diseases too, even among diseases with relatively well-defined genetics. Mutations in the sodium channel protein [SCN1A](https://en.wikipedia.org/wiki/SCN1A) lead to a spectrum of epilepsies that range from relatively mild and self-resolving to the frequent, disabling seizures of [Dravet syndrome](https://en.wikipedia.org/wiki/Dravet_syndrome). Yet, the phenotype of Dravet syndrome is itself highly variable. There is no clean solution to divide up the SCN1A epilepsies; any subdivision contains flaws. Age, response to prior treatment, and seizure type variability further stymie classification. While seizure severity is correlated with the magnitude of structural mutations in SCN1A[^9], classification on the basis of genetics is no easy solution. Family members with the same genetic mutation can have widely differing expressions — one child may be disabled by daily seizures, while the other is spared[^10]. 
 
 Similar issues are seen in psychiatry too: there is substantial genetic overlap and shared risk factors among attention deficit hyperactivity disorder, bipolar disorder, major depressive disorder, and schizophrenia[^11]. What separates someone who suffers from one psychiatric disease from another, or determines whether someone is considered mentally healthy or unwell, might be a particular quirk of their environment or life trajectory — for example the season in which they were born, or whether they grew up in an urban environment[^12].
-
 <br>
-<center><img src="https://atelfo.github.io/assets/circles.png" width="600"></center>
+<center><img src="https://atelfo.github.io/assets/circles.png" width="480"></center>
 <br>
-
 We break diseases into categories to help us understand and treat them, but we must not forget that a category is not real — it's a label. Although categories, thresholds, and boundaries may be artificial, they have real-world consequences. Categories can be useful abstractions. But it’s worth asking: useful for whom?
 
 When you must allocate limited resources and decide who can and should visit the hospital, it makes sense to draw a distinction between healthy and sick. When you must route people to the appropriate specialty, prescribe drugs with a specific label, and assign an ICD code to bill them, it makes sense to argue over the terminology for their specific affliction.
@@ -49,11 +47,9 @@ Throwing away dimensions is a useful trick because it allows us to focus on the 
 One of the risks that comes with dimensionality reduction is loss of relevant information and distortions of the truth. Depending on how you collapse the dimensions, separate entities can look like the same thing: think of two shadow puppets, one obscured behind the other. Performing a dimensionality reduction means making trade-offs; some information must be discarded. When we created our taxonomy of disease we cast off some information to make room for human constructs and conveniences — like specialities — which necessarily leaves less space to better represent the underlying biology. Biology has been called *“the science of exceptions”*, but it only seems this way because nature likes to make shapes that don't fit neatly into low-dimensional boxes.
 
 The modern concept of [precision medicine](https://en.wikipedia.org/wiki/Personalized_medicine) — tailoring therapeutic interventions to an individual’s particular biology or characteristics — is an attempt to address the problem of over-broad disease categories by adding back missing dimensions. Even so, our current approach is trapped within the gravity well of pre-existing constructs. When you talk in terms like ‘a precision medicine based approach to psoriasis’, you are already operating within the existing framework. Enlightenment Paris casts a long shadow. 
-
 <br>
-<center><img src="https://atelfo.github.io/assets/cubes.png" width="600"></center>
+<center><img src="https://atelfo.github.io/assets/cubes.png" width="480"></center>
 <br>
-
 What if we were to build precision medicine from scratch? How might we unravel the fan of dimensionality as far as possible, and approximate nature as she really is?
 
 Imagine for a moment you were in some idealised world without computational or instrumental limits. First, you might map all the dimensions along which our biology could vary. Then, having done that, you could plot the values associated with good health on this multidimensional chart. 
@@ -67,11 +63,9 @@ People are not a collection of individual symptoms, diseases, or parts. We are d
 Dynamism is more natural when we think in continuums instead of rigid categories. Within such a framework, we can conceptualise a disease risk factor as a force pushing an organism’s state away from a healthy position — like a boat adrift on a calm sea being pushed out into stormy waters. Certain genetic mutations (like the [CFTR](https://en.wikipedia.org/wiki/Cystic_fibrosis_transmembrane_conductance_regulator) mutations that cause cystic fibrosis) would be particularly strong directional currents. This implies the current state of the system is not sufficient to describe its health, we also need the *rate and direction at which it changes*[^13]. It’s easy to forget about path-dependence when we see the world as static slices.
 
 To treat, or prevent, disease we would have to apply a countervailing force with similar magnitude to push the system back to a desirable position. The further from health, the harder it is to get back. The greater, or longer, the force that would need to be applied. Intervening in the system changes it, so we would have to continually measure and adjust the force and direction of intervention. Drugs are one way of applying this countervailing force, as is exercise, nutrition, and other interventions. 
-
 <br>
 <center><img src="https://atelfo.github.io/assets/landscape.png" width="600"></center>
 <br>
-
 We could even take a homeostatic perspective and think of health not as a region of the landscape, but as a measure of system responsiveness; the ability to resist forces that might push a system out of equilibrium. Some have made similar suggestions that [ageing is akin to a loss of system 'springiness'](https://caseyhandmer.wordpress.com/2022/02/16/numerical-convergence-as-a-model-for-senescence/). The net effect of living being the slow accumulation of drift.
 
 What I like about this view of disease is that it shows how much more room remains for biotech innovation. All the drugs the biopharmaceutical industry has produced until now account for only a tiny fraction of the ways we could perturb our biology; each a single transformation from point A to point B on an infinite landscape. 
@@ -98,4 +92,4 @@ Perhaps most of all, we’ll need to be open to new ways of reasoning about biol
 [^10]: [Miller IO, Sotero de Menezes MA. “SCN1A Seizure Disorders” GeneReviews (2007)](https://www.ncbi.nlm.nih.gov/books/NBK1318/)
 [^11]: [Brainstorm Consortium et al. “Analysis of shared heritability in common disorders of the brain.” Science (New York, N.Y.) vol. 360,6395 (2018)](https://pubmed.ncbi.nlm.nih.gov/29930110/)
 [^12]: [Robinson, Natassia, and Sarah E Bergen. “Environmental Risk Factors for Schizophrenia and Bipolar Disorder and Their Relationship to Genetic Risk: Current Knowledge and Future Directions.” _Frontiers in genetics_ vol. 12 686666. 28 Jun. 2021](https://pubmed.ncbi.nlm.nih.gov/34262598/)
-[^13]: Conceptually, a bit like the 1st derivative of the position on the health phase space
+[^13]: Conceptually, a bit like the first derivative of the position on the health phase space
