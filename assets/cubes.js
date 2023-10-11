@@ -1,4 +1,4 @@
-const canvas = document.getElementById('canvas');
+const canvas = document.getElementById('cubecanvas');
 const ctx = canvas.getContext('2d');
 let size = 1;
 let angle = 0;
