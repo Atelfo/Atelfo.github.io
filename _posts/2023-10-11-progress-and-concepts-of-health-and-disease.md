@@ -34,7 +34,7 @@ This challenge of drawing thresholds exists within diseases too, even among dise
 
 Similar issues are seen in psychiatry too: there is substantial genetic overlap and shared risk factors among attention deficit hyperactivity disorder, bipolar disorder, major depressive disorder, and schizophrenia[^11]. What separates someone who suffers from one psychiatric disease from another, or determines whether someone is considered mentally healthy or unwell, might be a particular quirk of their environment or life trajectory — for example the season in which they were born, or whether they grew up in an urban environment[^12].
 <br>
-<center><img src="https://atelfo.github.io/assets/circles.png" width="480"></center>
+<center><img src="https://atelfo.github.io/assets/circles.png" width="450"></center>
 <br>
 We break diseases into categories to help us understand and treat them, but we must not forget that a category is not real — it's a label. Although categories, thresholds, and boundaries may be artificial, they have real-world consequences. Categories can be useful abstractions. But it’s worth asking: useful for whom?
 
