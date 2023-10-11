@@ -1,4 +1,4 @@
-const canvas = document.getElementById('landscape');
+const canvas = document.getElementById('landscapecanvas');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
