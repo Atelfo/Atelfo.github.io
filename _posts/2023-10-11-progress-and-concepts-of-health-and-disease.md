@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Concepts of health and disease as a driver (or barrier) to progress"
+title: "Concepts of health and disease as a barrier to progress"
 ---
 
 We tend to think of health in discrete terms. Either you’re healthy, or you’re sick. Similarly, we put diseases into neat-seeming categories: cancer, arthritis, epilepsy, hypertension, psoriasis, and so on. Yet, our categorical frameworks and language — how we think and talk about disease — are mental shortcuts that may actually be holding us back.
@@ -56,7 +56,7 @@ The modern concept of [precision medicine](https://en.wikipedia.org/wiki/Persona
 
 What if we were to build precision medicine from scratch? How might we unravel the fan of dimensionality as far as possible, and approximate nature as she really is?
 
-Imagine for a moment you were in some idealised world without computational or instrumental limits. First, you might map all the dimensions along which our biology could vary. Then, having done that, you could plot the values associated with good health on this multidimensional landscape. 
+Imagine for a moment you were in some idealised world without computational or instrumental limits. First, you might map all the dimensions along which our biology could vary. Then, having done that, you could plot the values associated with good health on this multidimensional chart. 
 
 This is a way of thinking of diseases not as specific entities, but as mappings to regions in a continuous ‘health landscape’ or ‘[phase space](https://en.wikipedia.org/wiki/Phase_space)’. 
 
@@ -74,7 +74,7 @@ To treat, or prevent, disease we would have to apply a countervailing force with
 
 We could even take a homeostatic perspective and think of health not as a region of the landscape, but as a measure of system responsiveness; the ability to resist forces that might push a system out of equilibrium. Some have made similar suggestions that [ageing is akin to a loss of system 'springiness'](https://caseyhandmer.wordpress.com/2022/02/16/numerical-convergence-as-a-model-for-senescence/). The net effect of living being the slow accumulation of drift.
 
-Something I like about this view on disease is that it shows how much more room remains for biotech innovation. All the drugs the biopharmaceutical industry has produced until now account for only a tiny fraction of the ways we could perturb our biology; each a single transformation from point A to point B on an infinite landscape. 
+What I like about this view of disease is that it shows how much more room remains for biotech innovation. All the drugs the biopharmaceutical industry has produced until now account for only a tiny fraction of the ways we could perturb our biology; each a single transformation from point A to point B on an infinite landscape. 
 
 In the future, your annual (or more frequent) medical check-up might track thousands, or millions of parameters. Your doctor could estimate the rate and direction of drift from one check-up to the other, and prescribe a tailored mix of interventions (drugs, exercise, nutrition, etc.) to counteract the net forces pushing away from health — perhaps with the help of a predictive artificial intelligence (AI) model. We wouldn’t necessarily find it useful to assign disease labels in such a world, instead we might rely on exquisitely detailed models that represent our health states as mathematical objects.
 
