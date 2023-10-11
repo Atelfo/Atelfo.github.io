@@ -1,4 +1,4 @@
-const canvas = document.getElementById('canvas');
+const canvas = document.getElementById('circlecanvas');
 const ctx = canvas.getContext('2d');
 
 class Circle {
