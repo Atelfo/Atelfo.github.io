@@ -1,17 +1,17 @@
 const cubecanvas = document.getElementById('cubecanvas');
-const ctx = cubecanvas.getContext('2d');
+const cubectx = cubecanvas.getContext('2d');
 let size = 1;
 let angle = 0;
 const growthRate = 1.01; // tweaked for longer zoom duration
 
-ctx.lineWidth = 2;
+cubectx.lineWidth = 2;
 
 function drawCube(x, y, size, angle) {
     // let opacity = size / 20 ; // make dots emerge smoothly
-    // ctx.globalAlpha = opacity > 1 ? 1 : opacity;
+    // cubectx.globalAlpha = opacity > 1 ? 1 : opacity;
 
     if (size <= 1) {
-        ctx.fillRect(x, y, 1, 1);
+        cubectx.fillRect(x, y, 1, 1);
         return;
     }
 
@@ -41,35 +41,35 @@ function drawCube(x, y, size, angle) {
         p.y = y + tempX * sinA + tempY * cosA;
     }
 
-    ctx.beginPath();
-    ctx.moveTo(points[0].x, points[0].y);
-    ctx.lineTo(points[1].x, points[1].y);
-    ctx.lineTo(points[2].x, points[2].y);
-    ctx.lineTo(points[3].x, points[3].y);
-    ctx.closePath();
-    ctx.stroke();
+    cubectx.beginPath();
+    cubectx.moveTo(points[0].x, points[0].y);
+    cubectx.lineTo(points[1].x, points[1].y);
+    cubectx.lineTo(points[2].x, points[2].y);
+    cubectx.lineTo(points[3].x, points[3].y);
+    cubectx.closePath();
+    cubectx.stroke();
 
     if (size > 15) {
-        ctx.beginPath();
-        ctx.moveTo(points[4].x, points[4].y);
-        ctx.lineTo(points[5].x, points[5].y);
-        ctx.lineTo(points[6].x, points[6].y);
-        ctx.lineTo(points[7].x, points[7].y);
-        ctx.closePath();
-        ctx.stroke();
+        cubectx.beginPath();
+        cubectx.moveTo(points[4].x, points[4].y);
+        cubectx.lineTo(points[5].x, points[5].y);
+        cubectx.lineTo(points[6].x, points[6].y);
+        cubectx.lineTo(points[7].x, points[7].y);
+        cubectx.closePath();
+        cubectx.stroke();
 
-        ctx.beginPath();
+        cubectx.beginPath();
         for (let i = 0; i < 4; i++) {
-            ctx.moveTo(points[i].x, points[i].y);
-            ctx.lineTo(points[i + 4].x, points[i + 4].y);
+            cubectx.moveTo(points[i].x, points[i].y);
+            cubectx.lineTo(points[i + 4].x, points[i + 4].y);
         }
-        ctx.stroke();
+        cubectx.stroke();
     }
-    ctx.globalAlpha = 1; // reset opacity after drawing
+    cubectx.globalAlpha = 1; // reset opacity after drawing
 }
 
 function draw() {
-    ctx.clearRect(0, 0, cubecanvas.width, cubecanvas.height);
+    cubectx.clearRect(0, 0, cubecanvas.width, cubecanvas.height);
 
     size *= growthRate;
     angle += 0.005;
