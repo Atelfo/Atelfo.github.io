@@ -35,7 +35,7 @@ This challenge of drawing thresholds exists within diseases too, even among dise
 Similar issues are seen in psychiatry too: there is substantial genetic overlap and shared risk factors among attention deficit hyperactivity disorder, bipolar disorder, major depressive disorder, and schizophrenia[^11]. What separates someone who suffers from one psychiatric disease from another, or determines whether someone is considered mentally healthy or unwell, might be a particular quirk of their environment or life trajectory — for example the season in which they were born, or whether they grew up in an urban environment[^12].
 
 <br>
-<script src="/_includes/circles.js"></script>
+<script src="/assets/circles.js"></script>
 <br>
 
 We break diseases into categories to help us understand and treat them, but we must not forget that a category is not real — it's a label. Although categories, thresholds, and boundaries may be artificial, they have real-world consequences. Categories can be useful abstractions. But it’s worth asking: useful for whom?
@@ -51,7 +51,7 @@ One of the risks that comes with dimensionality reduction is loss of relevant in
 The modern concept of [precision medicine](https://en.wikipedia.org/wiki/Personalized_medicine) — tailoring therapeutic interventions to an individual’s particular biology or characteristics — is an attempt to address the problem of over-broad disease categories by adding back missing dimensions. Even so, our current approach is trapped within the gravity well of pre-existing constructs. When you talk in terms like ‘a precision medicine based approach to psoriasis’, you are already operating within the existing framework. Enlightenment Paris casts a long shadow. 
 
 <br>
-<script src="/_includes/cubes.js"></script>
+<script src="/assets/cubes.js"></script>
 <br>
 
 What if we were to build precision medicine from scratch? How might we unravel the fan of dimensionality as far as possible, and approximate nature as she really is?
@@ -69,7 +69,7 @@ Dynamism is more natural when we think in continuums instead of rigid categories
 To treat, or prevent, disease we would have to apply a countervailing force with similar magnitude to push the system back to a desirable position. The further from health, the harder it is to get back. The greater, or longer, the force that would need to be applied. Intervening in the system changes it, so we would have to continually measure and adjust the force and direction of intervention. Drugs are one way of applying this countervailing force, as is exercise, nutrition, and other interventions. 
 
 <br>
-<script src="/_includes/landscape.js"></script>
+<script src="/assets/landscape.js"></script>
 <br>
 
 We could even take a homeostatic perspective and think of health not as a region of the landscape, but as a measure of system responsiveness; the ability to resist forces that might push a system out of equilibrium. Some have made similar suggestions that [ageing is akin to a loss of system 'springiness'](https://caseyhandmer.wordpress.com/2022/02/16/numerical-convergence-as-a-model-for-senescence/). The net effect of living being the slow accumulation of drift.
