@@ -1,5 +1,5 @@
-const canvas = document.getElementById('cubecanvas');
-const ctx = canvas.getContext('2d');
+const cubecanvas = document.getElementById('cubecanvas');
+const ctx = cubecanvas.getContext('2d');
 let size = 1;
 let angle = 0;
 const growthRate = 1.01; // tweaked for longer zoom duration
@@ -69,17 +69,17 @@ function drawCube(x, y, size, angle) {
 }
 
 function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, cubecanvas.width, cubecanvas.height);
 
     size *= growthRate;
     angle += 0.005;
 
-    if (size > canvas.width * 8) { // adjust for proper cube entry
+    if (size > cubecanvas.width * 8) { // adjust for proper cube entry
         size = 1;
     }
 
-    for (let x = 0; x < canvas.width + size; x += (size + 2) * 2) {
-        for (let y = 0; y < canvas.height + size; y += (size + 2) * 2) {
+    for (let x = 0; x < cubecanvas.width + size; x += (size + 2) * 2) {
+        for (let y = 0; y < cubecanvas.height + size; y += (size + 2) * 2) {
             drawCube(x, y, size, angle);
         }
     }
