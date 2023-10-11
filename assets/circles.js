@@ -1,5 +1,5 @@
-const canvas = document.getElementById('circlecanvas');
-const ctx = canvas.getContext('2d');
+const circlecanvas = document.getElementById('circlecanvas');
+const ctx = circlecanvas.getContext('2d');
 
 class Circle {
     constructor(x, y, radius, dx, dy) {
@@ -24,10 +24,10 @@ class Circle {
     move() {
         this.x += this.dx;
         this.y += this.dy;
-        if (this.x - this.radius < 0 || this.x + this.radius > canvas.width) {
+        if (this.x - this.radius < 0 || this.x + this.radius > circlecanvas.width) {
             this.dx = -this.dx;
         }
-        if (this.y - this.radius < 0 || this.y + this.radius > canvas.height) {
+        if (this.y - this.radius < 0 || this.y + this.radius > circlecanvas.height) {
             this.dy = -this.dy;
         }
     }
@@ -37,15 +37,15 @@ const circles = [];
 
 for (let i = 0; i < 50; i++) {
     const radius = Math.random() * 40 + 10;  // bigger circles
-    const x = Math.random() * (canvas.width - 2 * radius) + radius;
-    const y = Math.random() * (canvas.height - 2 * radius) + radius;
+    const x = Math.random() * (circlecanvas.width - 2 * radius) + radius;
+    const y = Math.random() * (circlecanvas.height - 2 * radius) + radius;
     const dx = (Math.random() - 0.5) * 2;
     const dy = (Math.random() - 0.5) * 2;
     circles.push(new Circle(x, y, radius, dx, dy));
 }
 
 function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, circlecanvas.width, circlecanvas.height);
     for (let i = 0; i < circles.length; i++) {
         circles[i].move();
         circles[i].draw();
