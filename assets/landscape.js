@@ -1,7 +1,7 @@
-const canvas = document.getElementById('landscapecanvas');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+const landscapecanvas = document.getElementById('landscapecanvas');
+const ctx = landscapecanvas.getContext('2d');
+landscapecanvas.width = window.innerWidth;
+landscapecanvas.height = window.innerHeight;
 
 const blockSize = 40;
 
@@ -10,8 +10,8 @@ let time = 0;
 function createDiamondClipAndBorder() {
     ctx.save();  // Save the current context state
 
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
+    const centerX = landscapecanvas.width / 2;
+    const centerY = landscapecanvas.height / 2;
     const halfWidth = Math.min(centerX, centerY);  // Size of the diamond
 
     // Transformations for tilting and rotating the diamond
@@ -36,7 +36,7 @@ function createDiamondClipAndBorder() {
 
 function draw() {
     ctx.fillStyle = 'white';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillRect(0, 0, landscapecanvas.width, landscapecanvas.height);
     
     createDiamondClipAndBorder();
     
@@ -44,9 +44,9 @@ function draw() {
     ctx.lineWidth = 2;
 
     // Draw horizontal wavy lines
-    for (let y = 0; y < canvas.height; y += blockSize) {
+    for (let y = 0; y < landscapecanvas.height; y += blockSize) {
         ctx.beginPath();
-        for (let x = 0; x < canvas.width; x++) {
+        for (let x = 0; x < landscapecanvas.width; x++) {
             const wave = Math.sin((x + time) * 0.05) * 10;
             ctx.lineTo(x, y + wave);
         }
@@ -54,9 +54,9 @@ function draw() {
     }
 
     // Draw vertical wavy lines
-    for (let x = 0; x < canvas.width; x += blockSize) {
+    for (let x = 0; x < landscapecanvas.width; x += blockSize) {
         ctx.beginPath();
-        for (let y = 0; y < canvas.height; y++) {
+        for (let y = 0; y < landscapecanvas.height; y++) {
             const wave = Math.sin((y + time) * 0.05) * 10;
             ctx.lineTo(x + wave, y);
         }
@@ -100,8 +100,8 @@ function drawArrow(startX, startY, endX, endY) {
 }
 
 function draw3DArrows() {
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
+    const centerX = landscapecanvas.width / 2;
+    const centerY = landscapecanvas.height / 2;
     const length = 180;  // Arrow length
 
     // Y-axis arrow: Adjusted based on your code
