@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Concepts of health and disease as a driver (or barrier) to progress"
+---
+
 We tend to think of health in discrete terms. Either you’re healthy, or you’re sick. Similarly, we put diseases into neat-seeming categories: cancer, arthritis, epilepsy, hypertension, psoriasis, and so on. Yet, our categorical frameworks and language — how we think and talk about disease — are mental shortcuts that may actually be holding us back.
 
 We create categories because we find them useful for decision making. Minds, like metal dies, make sense of reality's raw extrudate by shaping it into definite forms. Yet this sensemaking process can distort the underlying truth. When it comes to our health, there is an arbitrariness to how we categorise disease that perhaps says more about the evolution of our medical systems and specialties than it does about our biology.
