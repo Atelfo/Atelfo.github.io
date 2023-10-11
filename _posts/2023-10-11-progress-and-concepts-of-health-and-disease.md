@@ -64,7 +64,15 @@ One of the risks that comes with dimensionality reduction is loss of relevant in
 The modern concept of [precision medicine](https://en.wikipedia.org/wiki/Personalized_medicine) — tailoring therapeutic interventions to an individual’s particular biology or characteristics — is an attempt to address the problem of over-broad disease categories by adding back missing dimensions. Even so, our current approach is trapped within the gravity well of pre-existing constructs. When you talk in terms like ‘a precision medicine based approach to psoriasis’, you are already operating within the existing framework. Enlightenment Paris casts a long shadow. 
 
 <br>
+<div class="canvas-container">
+    <canvas id="cubecanvas" width="480" height="480"></canvas>
+</div>
 <script src="/assets/cubes.js"></script>
+<style>
+#cubecanvas {
+    border: 5px solid black;
+}
+</style>
 <br>
 
 What if we were to build precision medicine from scratch? How might we unravel the fan of dimensionality as far as possible, and approximate nature as she really is?
@@ -82,7 +90,15 @@ Dynamism is more natural when we think in continuums instead of rigid categories
 To treat, or prevent, disease we would have to apply a countervailing force with similar magnitude to push the system back to a desirable position. The further from health, the harder it is to get back. The greater, or longer, the force that would need to be applied. Intervening in the system changes it, so we would have to continually measure and adjust the force and direction of intervention. Drugs are one way of applying this countervailing force, as is exercise, nutrition, and other interventions. 
 
 <br>
+<div class="canvas-container">
+    <canvas id="landscapecanvas" width="480" height="480"></canvas>
+</div>
 <script src="/assets/landscape.js"></script>
+<style>
+#landscapecanvas {
+    border: 5px solid black;
+}
+</style>
 <br>
 
 We could even take a homeostatic perspective and think of health not as a region of the landscape, but as a measure of system responsiveness; the ability to resist forces that might push a system out of equilibrium. Some have made similar suggestions that [ageing is akin to a loss of system 'springiness'](https://caseyhandmer.wordpress.com/2022/02/16/numerical-convergence-as-a-model-for-senescence/). The net effect of living being the slow accumulation of drift.
