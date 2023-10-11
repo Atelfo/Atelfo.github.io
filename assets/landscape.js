@@ -1,5 +1,5 @@
 const landscapecanvas = document.getElementById('landscapecanvas');
-const ctx = landscapecanvas.getContext('2d');
+const landscapectx = landscapecanvas.getContext('2d');
 landscapecanvas.width = window.innerWidth;
 landscapecanvas.height = window.innerHeight;
 
@@ -8,64 +8,64 @@ const blockSize = 40;
 let time = 0;
 
 function createDiamondClipAndBorder() {
-    ctx.save();  // Save the current context state
+    landscapectx.save();  // Save the current context state
 
     const centerX = landscapecanvas.width / 2;
     const centerY = landscapecanvas.height / 2;
     const halfWidth = Math.min(centerX, centerY);  // Size of the diamond
 
     // Transformations for tilting and rotating the diamond
-    ctx.translate(centerX, centerY);
-    ctx.rotate(-Math.PI / 6);  // Rotate 30 degrees to the left
-    ctx.scale(1, 0.866);  // Tilt 30 degrees away
-    ctx.translate(-centerX, -centerY);
+    landscapectx.translate(centerX, centerY);
+    landscapectx.rotate(-Math.PI / 6);  // Rotate 30 degrees to the left
+    landscapectx.scale(1, 0.866);  // Tilt 30 degrees away
+    landscapectx.translate(-centerX, -centerY);
 
-    ctx.beginPath();
-    ctx.moveTo(centerX, centerY - halfWidth);  // Top point
-    ctx.lineTo(centerX + halfWidth, centerY);  // Right point
-    ctx.lineTo(centerX, centerY + halfWidth);  // Bottom point
-    ctx.lineTo(centerX - halfWidth, centerY);  // Left point
-    ctx.closePath();
+    landscapectx.beginPath();
+    landscapectx.moveTo(centerX, centerY - halfWidth);  // Top point
+    landscapectx.lineTo(centerX + halfWidth, centerY);  // Right point
+    landscapectx.lineTo(centerX, centerY + halfWidth);  // Bottom point
+    landscapectx.lineTo(centerX - halfWidth, centerY);  // Left point
+    landscapectx.closePath();
     
-    ctx.lineWidth = 5;  // Border width
-    ctx.strokeStyle = 'black';
-    ctx.stroke();
+    landscapectx.lineWidth = 5;  // Border width
+    landscapectx.strokeStyle = 'black';
+    landscapectx.stroke();
 
-    ctx.clip();  // Use this shape as a clipping region
+    landscapectx.clip();  // Use this shape as a clipping region
 }
 
 function draw() {
-    ctx.fillStyle = 'white';
-    ctx.fillRect(0, 0, landscapecanvas.width, landscapecanvas.height);
+    landscapectx.fillStyle = 'white';
+    landscapectx.fillRect(0, 0, landscapecanvas.width, landscapecanvas.height);
     
     createDiamondClipAndBorder();
     
-    ctx.strokeStyle = 'black';
-    ctx.lineWidth = 2;
+    landscapectx.strokeStyle = 'black';
+    landscapectx.lineWidth = 2;
 
     // Draw horizontal wavy lines
     for (let y = 0; y < landscapecanvas.height; y += blockSize) {
-        ctx.beginPath();
+        landscapectx.beginPath();
         for (let x = 0; x < landscapecanvas.width; x++) {
             const wave = Math.sin((x + time) * 0.05) * 10;
-            ctx.lineTo(x, y + wave);
+            landscapectx.lineTo(x, y + wave);
         }
-        ctx.stroke();
+        landscapectx.stroke();
     }
 
     // Draw vertical wavy lines
     for (let x = 0; x < landscapecanvas.width; x += blockSize) {
-        ctx.beginPath();
+        landscapectx.beginPath();
         for (let y = 0; y < landscapecanvas.height; y++) {
             const wave = Math.sin((y + time) * 0.05) * 10;
-            ctx.lineTo(x + wave, y);
+            landscapectx.lineTo(x + wave, y);
         }
-        ctx.stroke();
+        landscapectx.stroke();
     }
 
     draw3DArrows();
 
-    ctx.restore();  // Restore the context to its state before clipping and transformations
+    landscapectx.restore();  // Restore the context to its state before clipping and transformations
     time += 2;
     requestAnimationFrame(draw);
 }
@@ -79,24 +79,24 @@ function drawArrow(startX, startY, endX, endY) {
     const newEndY = endY - arrowLength * 0.5 * Math.sin(angle);
     
     // Arrowhead
-    ctx.beginPath();
-    ctx.moveTo(endX, endY);
-    ctx.lineTo(endX - arrowLength * Math.cos(angle + narrowerAngle), 
+    landscapectx.beginPath();
+    landscapectx.moveTo(endX, endY);
+    landscapectx.lineTo(endX - arrowLength * Math.cos(angle + narrowerAngle), 
                endY - arrowLength * Math.sin(angle + narrowerAngle));
-    ctx.lineTo(endX - arrowLength * Math.cos(angle - narrowerAngle), 
+    landscapectx.lineTo(endX - arrowLength * Math.cos(angle - narrowerAngle), 
                endY - arrowLength * Math.sin(angle - narrowerAngle));
-    ctx.closePath();
+    landscapectx.closePath();
     
-    ctx.fillStyle = 'black';
-    ctx.fill();
+    landscapectx.fillStyle = 'black';
+    landscapectx.fill();
 
     // Shaft
-    ctx.beginPath();
-    ctx.moveTo(startX, startY);
-    ctx.lineTo(newEndX, newEndY);
-    ctx.lineWidth = 5;
-    ctx.strokeStyle = 'black';
-    ctx.stroke();
+    landscapectx.beginPath();
+    landscapectx.moveTo(startX, startY);
+    landscapectx.lineTo(newEndX, newEndY);
+    landscapectx.lineWidth = 5;
+    landscapectx.strokeStyle = 'black';
+    landscapectx.stroke();
 }
 
 function draw3DArrows() {
