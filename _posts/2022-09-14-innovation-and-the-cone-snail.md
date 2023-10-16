@@ -40,7 +40,7 @@ Even though the discovery of novel innovations is a stochastic and serendipitous
 
 >"Regions and ecosystems in which productivity is high, competition is intense, and adaptation is least constrained by energetic and material limitations, occur at low to middle latitudes - the tropics and subtropics, in other words - in most lowlands and the shallow waters of oceans near large, topographically complex land masses. These environments and the species living in them economically and evolutionarily subsidize less productive parts of the biosphere with raw nutrients, food organisms, and evolutionary lineages; they thus act as donor regions and dominant species on a geographic scale. Species invade from the tropics to the temperate zone, not in the opposite direction."
 
-So what determines the innovativeness of a particular economy, regardless of whether it is man-made or natural? Drawing from NaEH and other members of the innovation literature, I propose three core factors: *resource availability*, *generative capability*, and *performance pressure*.
+So what determines the innovativeness of a particular economy, regardless of whether it is man-made or natural? Drawing from NaEH and other members of the innovation literature, I propose three core factors: *resource availability*, *generative capacity*, and *performance pressure*.
 
 <br>
 <center><img src="/assets/DALL·E 2022-09-08 23.24.40 - A sea shell cornucopia. Stained glass window by Alphonse Mucha.png" width="800"/></center>
