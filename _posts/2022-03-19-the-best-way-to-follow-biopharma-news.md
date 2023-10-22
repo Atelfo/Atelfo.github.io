@@ -32,6 +32,7 @@ Twitter is without a doubt the best source for real-time news, debate and discus
 - [@BioStocks](https://twitter.com/BioStocks): Posts short summaries of company press releases and news updates
 - [@Prof_Oak_](https://twitter.com/Prof_Oak_): Intelligent commentary on genetic medicine and synthetic biology
 - [@paras_biotech](https://twitter.com/paras_biotech): Regularly shares interesting snippets from biopharma analyst reports
+- [@andrewpannu](https://twitter.com/andrewpannu): In-depth competitive landscape analysis
 - [@BertrandBio](https://twitter.com/BertrandBio): Prolific Tweeter of biopharma company press releases and presentations with a European slant
 - [@AndyBiotech](https://twitter.com/AndyBiotech): Hasn't been active lately, but excellent signal-to-noise ratio when he does post
 
