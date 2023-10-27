@@ -152,7 +152,7 @@ In terms of information entropy ($$\small H$$), which has the formula:
 <br>
 <br>
 
-$$\small H(x) = \sum_{x \in X}P(x) \cdot \frac{1}{P(x)}$$
+$$\small H(x) = \sum_{x \in X}P(x) \cdot \text{log}\frac{1}{P(x)}$$
 
 <br>
 We get the following construct:
