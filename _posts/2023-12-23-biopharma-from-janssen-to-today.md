@@ -4,7 +4,7 @@ title: "The pharma industry from Paul Janssen to today: Why drugs got harder to 
 ---
 <meta property="og:image" content="https://atelfo.github.io/assets/janssen.jpeg" />
 <meta name="twitter:image" content="https://atelfo.github.io/assets/janssen.jpeg" />
-<meta name="twitter:description" content="Drug development is expensive, inefficient, and prone to failure. It wasn’t always this way.">
+<meta name="twitter:description" content="Drug development is expensive, inefficient, and prone to failure. It wasn’t this way when Paul Janssen founded Janssen Pharmaceutica in 1952. What changed? And what can we do about it?">
 
 In 1953, aged 27, Paul Janssen set up the research laboratory on the third floor of his parents’ Belgian drug import firm from where he would grow his eponymous pharmaceutical company. In the years between the 50s and 90s when he was most active, Janssen and his team developed over 70 new medicines, many of which are still in use today. Such prolificacy is unlikely to be repeated any time soon; if current trends hold, a drug discovery scientist starting their career today is likely to retire without ever having worked on a single drug that makes it to market.
 
