@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The pharma industry from Paul Janssen to today: Why drugs got harder to develop and what we can do about it"
+title: "The pharma industry from Paul Janssen to today: why drugs got harder to develop and what we can do about it"
 ---
 <meta property="og:image" content="https://atelfo.github.io/assets/janssen.jpeg" />
 <meta name="twitter:image" content="https://atelfo.github.io/assets/janssen.jpeg" />
