@@ -7,6 +7,11 @@ This is a list of my personal favourite books and ones that stuck with me, shape
 
 I update this list each December with the best books that I read for the first time in that year, regardless of when they were originally released.
 
+### 2023 book recommendations
+- [Where Futures Converge: Kendall Square and the Making of a Global Innovation Hub](https://www.goodreads.com/book/show/58783380-where-futures-converge)
+- [For Blood and Money: Billionaires, Biotech, and the Quest for a Blockbuster Drug](https://www.goodreads.com/book/show/61089442-for-blood-and-money)
+- [Breakthrough: The Discovery of Modern Medicines at Janssen](https://www.goodreads.com/book/show/3484805-breakthrough)
+ 
 ### 2022 book recommendations
 - [The Dispossessed](https://www.goodreads.com/book/show/13651.The_Dispossessed)
 - [Turn the Ship Around!: A True Story of Turning Followers into Leaders](https://www.goodreads.com/book/show/16158601-turn-the-ship-around)
