@@ -138,7 +138,7 @@ What's the best drug that never got developed?
 In his book "The Success Equation", [Michael Mauboussin](https://en.wikipedia.org/wiki/Michael_J._Mauboussin) introduces the [luck:skill continuum](https://fs.blog/untangling-skill-and-luck/): the tendency for activities to fall on a spectrum from pure skill to pure luck. Something like chess is pure skill, and slot machines are pure luck. Football or baseball are somewhere in the middle.
 
 <center><img src="https://atelfo.github.io/assets/luckskill.png" width="600"></center>
-<center><i>[Garrett Rhyasen has a nice blog post](https://oncologydiscovery.com/2017/05/07/luck-and-skill-in-biopharma/) about the luck:skill concept as applied to drug discovery, where I stole this image from. In Garrett's view, drug discovery and development is about 75% luck.</i></center>
+<center><i><a href="https://oncologydiscovery.com/2017/05/07/luck-and-skill-in-biopharma/">Garrett Rhyasen has a nice blog post</a> about the luck:skill concept as applied to drug discovery, where I stole this image from. In Garrett's view, drug discovery and development is about 75% luck.</i></center>
 
 The performance of some drug hunters, like [Paul Janssen](https://atelfo.github.io/2023/12/23/biopharma-from-janssen-to-today.html), is too good to be explained by luck. But most of the examples of highly prolific drug hunters are from the mid 20th century, so it seems probable that the benefit of skill has been arbitraged out over time. This can likely be attributed to something Mauboussin calls the paradox of skill: as the level of skill increases and gets more consistent in any competitive pursuit, luck becomes more important and has a greater role in influencing outcomes than in an environment with high skill variance.
 
@@ -174,7 +174,7 @@ Are there analogous examples in drug development? What drugs seem like they shou
 Historically, it takes [upwards of 20 years](https://www.science.org/doi/10.1126/scitranslmed.aaq1787) for new drug target discoveries to lead to new medicines. Is that about as fast as we could do it?
 
 #### What are the approval kinetics for new drug modalities? <a name="question16"></a>
-[BioCentury](https://www.biocentury.com/article/644637) has a nice chart of how various types of new drugs have accrued FDA approvals over time.
+[BioCentury](https://www.biocentury.com/article/644637) has a neat chart of how various types of new drugs have accrued FDA approvals over time.
 
 <center><img src="https://atelfo.github.io/assets/modapproval.png" width="800"></center>
 
@@ -225,7 +225,7 @@ As a corollary to the above: How different would the biopharma industry be today
 Academia has long been an important feeder into the life sciences industry of both talent and ideas. But, there's an ongoing [exodus of talent](https://www.statnews.com/2022/11/10/tipping-point-is-coming-unprecedented-exodus-of-young-life-scientists-shaking-up-academia/) from academia and into industry. [Postdoc positions](https://www.science.org/content/article/fewer-u-s-scientists-are-pursuing-postdoc-positions-new-data-show), once competitive, are going unfilled.
 
 <center><img src="https://atelfo.github.io/assets/nsfphdpaths.png" width="600"></center>
-<center><i>Graph from [this blog post by Christopher Smith](https://www.christophertsmith.com/reflections/a-deep-dive-into-phd-employment-data-from-nsf)</i></center>
+<center><i>Graph from <a href="https://www.christophertsmith.com/reflections/a-deep-dive-into-phd-employment-data-from-nsf">this blog post by Christopher Smith</a></i></center>
 
 What does this mean for the biotech industry? Will we have a dearth of new good ideas for drugs in a few years? Will industry take on a greater share of basic research?
 
@@ -243,7 +243,7 @@ The immune system is meant to protect us from these threats, but it also goes wr
 
 It seems plausible that our bodies accumulate so much damage from infectious agents over time that it's easier to start fresh than clear it all away. Is damage accumulation and aging the consequence of multi-billion year arms race between pathogens and immune systems?
 
-<center><img src="https://atelfo.github.io/assets/immunememe.jpeg" width="600"></center>
+<center><img src="https://atelfo.github.io/assets/immunememe.jpg" width="600"></center>
 
 #### What is cognitive fatigue, and how can it be treated? <a name="question23"></a>
 Cognitive fatigue is one of the most pernicious symptoms of [multiple sclerosis](https://jnnp.bmj.com/content/90/6/642.long) (and other diseases), but what is it? Why do patients experience fatigue the way they do? Can we link brain states to the conscious perception of fatigue?
