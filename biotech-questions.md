@@ -9,35 +9,35 @@ title: "Biotech questions that I find interesting"
 This is a list of questions about biotech I find interesting, [inspired by other similar lists](https://patrickcollison.com/questions). One day, I might turn these into blog posts; if you want to collaborate on a post, chat about anything in this list, or send me relevant readings, please do get it touch!
 
 #### Table of contents
-- [What 'outcomes' are we getting per dollar of pharmaceutical industry R&D spend?](#What 'outcomes' are we getting per dollar of pharmaceutical industry R&D spend?)
-- [Why do large pharmaceutical companies tend to settle around $50 billion in annual revenues?](#Why do large pharmaceutical companies tend to settle around $50 billion in annual revenues?)
-- [Are foundations (or family ownership) the optimal governance structures for large pharmaceutical companies?](#Are foundations (or family ownership) the optimal governance structures for large pharmaceutical companies?)
-- [Was externalization good for innovation and the biopharma industry as a whole?](#Was externalization good for innovation, and the biopharma industry as a whole?)
-- [How much better can we get at pharmaceutical revenue forecasts?](#How much better can we get at pharmaceutical revenue forecasts?)
-- [What does the learning curve for biologics manufacturing look like?](#What does the learning curve for biologics manufacturing look like?)
-- [What proportion of drugs don't work how we think they work?](#What proportion of drugs don't work how we think they work?)
-- [Are we working on the right spatial scales in drug discovery?](#Are we working on the right spatial scales in drug discovery?)
-- [Are historical drug failure rates predictive of future clinical trial failure rates?](#Are historical drug failure rates predictive of future clinical trial failure rates?)
-- [How much of the variance in therapeutic area clinical trial success rates can be attributed to differences in preclinical model quality?](#How much of the variance in therapeutic area clinical trial success rates can be attributed to differences in preclinical model quality?)
-- [What is the false negative rate of preclinical testing?](#What is the false negative rate of preclinical testing?)
-- [Where does drug hunting fall on the luck:skill continuum?](#Where does drug hunting fall on the luck:skill continuum?)
-- [What are examples of drug programs that were 'smooth sailing' from start to finish?](#What are examples of drug programs that were 'smooth sailing' from start to finish?)
-- [Can a top-down innovation strategy work over the long-term?](#Can a top-down innovation strategy work over the long-term?)
-- [What drugs were developed much later than they could have been?](#What drugs were developed much later than they could have been?)
-- [What are the 'approval kinetics' for new drug modalities?](#What are the 'approval kinetics' for new drug modalities?)
-- What determines the rate at which new transformative drugs are developed?
-- Does investment in basic research in a given therapeutic area correlate with therapeutic progress in that area?
-- [Is the FDA good for industry?](#Is the FDA good for industry?)
-- [How is the changing nature of the academic job market impacting biopharma industry innovation?](#How is the changing nature of the academic job market impacting biopharma industry innovation?)
-- [Has nature already found most of the useful islands of small molecule structure?](#Has nature already found most of the useful islands of small molecule structure?)
-- [Are pathogens the reason we age?](#Are pathogens the reason we age?)
-- [What is cognitive fatigue, and how can it be treated?](#What is cognitive fatigue, and how can it be treated?)
-- [What's the smallest viable patient population for a new drug?](#What's the smallest viable patient population for a new drug?)
-- [What are the biggest 'stealth' patient populations?](#What are the biggest 'stealth' patient populations?)
-- [Why didn't Genentech bring an anti-TNF monoclonal antibody to market?](#Why didn't Genentech bring an anti-TNF monoclonal antibody to market?)
+- [What 'outcomes' are we getting per dollar of pharmaceutical industry R&D spend?](#question1)
+- [Why do large pharmaceutical companies tend to settle around $50 billion in annual revenues?](#question2)
+- [Are foundations (or family ownership) the optimal governance structures for large pharmaceutical companies?](#question3)
+- [Was externalization good for innovation and the biopharma industry as a whole?](#question4)
+- [How much better can we get at pharmaceutical revenue forecasts?](#question5)
+- [What does the learning curve for biologics manufacturing look like?](#question6)
+- [What proportion of drugs don't work how we think they work?](#question7)
+- [Are we working on the right spatial scales in drug discovery?](#question8)
+- [Are historical drug failure rates predictive of future clinical trial failure rates?](#question9)
+- [How much of the variance in therapeutic area clinical trial success rates can be attributed to differences in preclinical model quality?](#question10)
+- [What is the false negative rate of preclinical testing?](#question11)
+- [Where does drug hunting fall on the luck:skill continuum?](#question12)
+- [What are examples of drug programs that were 'smooth sailing' from start to finish?]((#question13)
+- [Can a top-down innovation strategy work over the long-term?](#question14)
+- [What drugs were developed much later than they could have been?](#question15)
+- [What are the 'approval kinetics' for new drug modalities?](#question16)
+- [What determines the rate at which new transformative drugs are developed?](#question17)
+- [Does investment in basic research in a given therapeutic area correlate with therapeutic progress in that area?](#question18)
+- [Is the FDA good for industry?](#question19)
+- [How is the changing nature of the academic job market impacting biopharma industry innovation?](#question20)
+- [Has nature already found most of the useful islands of small molecule structure?](#question21)
+- [Are pathogens the reason we age?](#question22)
+- [What is cognitive fatigue, and how can it be treated?](#question23)
+- [What's the smallest viable patient population for a new drug?](#question24)
+- [What are the biggest 'stealth' patient populations?](#question25)
+- [Why didn't Genentech bring an anti-TNF monoclonal antibody to market?](#question26)
 
 
-#### What 'outcomes' are we getting per dollar of pharmaceutical industry R&D spend?
+#### What 'outcomes' are we getting per dollar of pharmaceutical industry R&D spend? <a name="question1"></a>
 The most commonly used indicator of biopharmaceutical industry R&D efficiency is the number of FDA approved drugs per billion dollars of real R&D spend. On this metric, the trend in industry R&D efficiency looks pretty dismal (see [Eroom's law](https://www.nature.com/articles/nrd3681)).
 
 <center><img src="https://atelfo.github.io/assets/erooms.png" width="800"></center>
