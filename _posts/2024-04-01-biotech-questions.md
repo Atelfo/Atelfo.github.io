@@ -2,8 +2,8 @@
 layout: post
 title: "Biotech questions that I find interesting"
 ---
-<meta property="og:image" content="https://atelfo.github.io/assets/janssen.jpeg" />
-<meta name="twitter:image" content="https://atelfo.github.io/assets/janssen.jpeg" />
+<meta property="og:image" content="https://atelfo.github.io/assets/bioquestions.png" />
+<meta name="twitter:image" content="https://atelfo.github.io/assets/bioquestions.png" />
 <meta name="twitter:description" content="A list of questions about biotech and the biotech industry that I'd like to know the answer to someday.">
 
 This is a list of biotech-themed questions that I find interesting, [inspired by other similar lists](https://patrickcollison.com/questions). One day, I might turn these into blog posts; if you want to collaborate on a post, chat about anything in this list, or send me relevant readings, please do get it touch!
