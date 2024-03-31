@@ -138,7 +138,7 @@ What's the best drug that never got developed?
 In his book "The Success Equation", [Michael Mauboussin](https://en.wikipedia.org/wiki/Michael_J._Mauboussin) introduces the [luck:skill continuum](https://fs.blog/untangling-skill-and-luck/): the tendency for activities to fall on a spectrum from pure skill to pure luck. Something like chess is pure skill, and slot machines are pure luck. Football or baseball are somewhere in the middle.
 
 <center><img src="https://atelfo.github.io/assets/luckskill.png" width="600"></center>
-*[Garrett Rhyasen has a nice blog post](https://oncologydiscovery.com/2017/05/07/luck-and-skill-in-biopharma/) about the luck:skill concept as applied to drug discovery, where I stole this image from. In Garrett's view, drug discovery and development is about 75% luck.*
+<center><i>[Garrett Rhyasen has a nice blog post](https://oncologydiscovery.com/2017/05/07/luck-and-skill-in-biopharma/) about the luck:skill concept as applied to drug discovery, where I stole this image from. In Garrett's view, drug discovery and development is about 75% luck.</i></center>
 
 The performance of some drug hunters, like [Paul Janssen](https://atelfo.github.io/2023/12/23/biopharma-from-janssen-to-today.html), is too good to be explained by luck. But most of the examples of highly prolific drug hunters are from the mid 20th century, so it seems probable that the benefit of skill has been arbitraged out over time. This can likely be attributed to something Mauboussin calls the paradox of skill: as the level of skill increases and gets more consistent in any competitive pursuit, luck becomes more important and has a greater role in influencing outcomes than in an environment with high skill variance.
 
@@ -180,7 +180,7 @@ Historically, it takes [upwards of 20 years](https://www.science.org/doi/10.1126
 
 There's usually one or two approvals early on, followed by a gap, then a later wave of approvals. This trend is more pronounced in the [history of monoclonal antibodies (mAbs)](https://jbiomedsci.biomedcentral.com/articles/10.1186/s12929-019-0592-z), shown in the chart below. The first FDA-approved mAb came in 1986, but it took another decade for approvals to begin to accrue with some pace.
 
-<center><img src="https://atelfo.github.io/assets/mabhistory.png" width="800"></center>
+<center><img src="https://atelfo.github.io/assets/mabhistory.jpeg" width="800"></center>
 
 Do approvals of new modalities follow a predictable pattern? What are the determinants of these approval kinetics?
 
