@@ -245,7 +245,7 @@ It seems plausible that our bodies accumulate so much damage from infectious age
 <br>
 <center><img src="https://atelfo.github.io/assets/immunememe.jpg" width="600"></center>
 <br>
-#### What is cognitive fatigue, and how can it be treated? <a name="question23"></a>
+#### **What is cognitive fatigue, and how can it be treated?** <a name="question23"></a>
 Cognitive fatigue is one of the most pernicious symptoms of [multiple sclerosis](https://jnnp.bmj.com/content/90/6/642.long) (and other diseases), but what is it? Why do patients experience fatigue the way they do? Can we link brain states to the conscious perception of fatigue?
 
 Most disease modifying treatment for MS don't have much affect on fatigue. Why is this? What would it take to treat fatigue effectively?
@@ -273,7 +273,7 @@ Who should take the reigns here? Focused research organisations (FROs) seem like
 #### **Why didn't Genentech bring an anti-TNF monoclonal antibody to market?** <a name="question27"></a>
 [Anti-TNF](https://en.wikipedia.org/wiki/TNF_inhibitor) monoclonal antibodies (mAbs) are one of the biggest drug classes ever by revenue. Humira alone did about $20 billion in annual revenue at its peak. It seems like every big pharmaceutical company except for Roche/Genentech had an anti-TNF mAb on the market at one point.
 
-Genentech were *the* pioneers of therapeutic mAbs, so it seems strange that they missed out. [Genentech had an anti-TNF mAb in house](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4279876/) early on, but it seems as though it wasn't developed for autoimmune conditions. They did test an [anti-TNF mAb in cancer](https://pink.citeline.com/PS008996/Genentech-PhaseTNF-studies), but it failed. Perhaps that [dissuaded them](https://www.nature.com/articles/548S28a) from further development of the target.
+Genentech were *the* pioneers of therapeutic mAbs, so it seems strange that they missed out. [Genentech had an anti-TNF mAb in house](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4279876/) early on, but it seems as though it wasn't developed for autoimmune conditions. They did test an [anti-TNF mAb in cancer](https://pink.citeline.com/PS008996/Genentech-PhaseTNF-studies), but it failed. Perhaps that [dissuaded them](https://www.nature.com/articles/548S28a) from further development against the target.
 
 ---
 
