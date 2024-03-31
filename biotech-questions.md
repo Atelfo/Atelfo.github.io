@@ -1,6 +1,14 @@
+---
+layout: post
+title: "Biotech questions that I find interesting"
+---
+<meta property="og:image" content="https://atelfo.github.io/assets/janssen.jpeg" />
+<meta name="twitter:image" content="https://atelfo.github.io/assets/janssen.jpeg" />
+<meta name="twitter:description" content="A list of questions about biotech and the biotech industry that I'd like to know the answer to someday.">
+
 This is a list of questions about biotech I find interesting, [inspired by other similar lists](https://patrickcollison.com/questions). One day, I might turn these into blog posts; if you want to collaborate on a post, chat about anything in this list, or send me relevant readings, please do get it touch!
 
-Table of contents
+#### Table of contents
 - [What 'outcomes' are we getting per dollar of pharmaceutical industry R&D spend?](#What 'outcomes' are we getting per dollar of pharmaceutical industry R&D spend?)
 - [Why do large pharmaceutical companies tend to settle around $50 billion in annual revenues?](#Why do large pharmaceutical companies tend to settle around $50 billion in annual revenues?)
 - [Are foundations (or family ownership) the optimal governance structures for large pharmaceutical companies?](#Are foundations (or family ownership) the optimal governance structures for large pharmaceutical companies?)
@@ -17,6 +25,8 @@ Table of contents
 - [Can a top-down innovation strategy work over the long-term?](#Can a top-down innovation strategy work over the long-term?)
 - [What drugs were developed much later than they could have been?](#What drugs were developed much later than they could have been?)
 - [What are the 'approval kinetics' for new drug modalities?](#What are the 'approval kinetics' for new drug modalities?)
+- What determines the rate at which new transformative drugs are developed?
+- Does investment in basic research in a given therapeutic area correlate with therapeutic progress in that area?
 - [Is the FDA good for industry?](#Is the FDA good for industry?)
 - [How is the changing nature of the academic job market impacting biopharma industry innovation?](#How is the changing nature of the academic job market impacting biopharma industry innovation?)
 - [Has nature already found most of the useful islands of small molecule structure?](#Has nature already found most of the useful islands of small molecule structure?)
@@ -30,26 +40,25 @@ Table of contents
 #### What 'outcomes' are we getting per dollar of pharmaceutical industry R&D spend?
 The most commonly used indicator of biopharmaceutical industry R&D efficiency is the number of FDA approved drugs per billion dollars of real R&D spend. On this metric, the trend in industry R&D efficiency looks pretty dismal (see [Eroom's law](https://www.nature.com/articles/nrd3681)).
 
-![[erooms.png]]
-_The number of FDA approved drugs per billion dollars of real R&D spend has followed a long term declining trajectory. Data up to 2018 courtesy of Jack Scannell, who coined the term "Eroom's law". Data from 2019 onwards (in grey) calculated by the author using data from the FDA and industry R&D spend estimates from EvaluatePharma's world preview 2023 (inflation-adjusted)_
-
+<center><img src="https://atelfo.github.io/assets/erooms.png" width="800"></center>
+<center><i>The number of FDA approved drugs per billion dollars of real R&D spend has followed a long term declining trajectory. Data up to 2018 courtesy of Jack Scannell, who coined the term "Eroom's law". Data from 2019 onwards (in grey) calculated by the author using data from the FDA and industry R&D spend estimates from EvaluatePharma's world preview 2023 (inflation-adjusted)</i></center>
+<br>
 While a useful indicator, Eroom’s law is flawed in some important ways. First, it doesn’t capture an important output of research, which are indication expansions of already approved drugs. Many of today’s leading drugs are approved for multiple indications. For instance, Humira, a top-selling autoimmune disease drug, is FDA approved for 9 separate indications. Second, Eroom’s law mixes the effects of fewer successes with rising costs without giving a clear picture of which factor is driving the trend.
 
 The number of drug approvals is anyway a proxy for the more important question: how much improvement in quality and length of life are we getting for our money? But as far as I know that analysis hasn't been done. If we plotted R&D spend against some measure of health outcomes instead, would industry productivity look better or worse than it does in the Eroom's law plot? Is the number of new drug approvals even a good proxy of health outcomes at all?
 
 #### Why do large pharmaceutical companies tend to settle around $50 billion in annual revenues?
-
 Below are the [revenues](https://companiesmarketcap.com/pharmaceuticals/largest-pharmaceutical-companies-by-revenue/) of some of the world's largest pharmaceutical companies. The portfolio mix and cultures of these companies are quite different, yet the 'big pharma' peer group tends to cluster around $50bn revenue / $200bn market cap.
-![[Pasted image 20240328111118.png]]
+
+<center><img src="https://atelfo.github.io/assets/pharmarev.png" width="800"></center>
 
 Individual companies sometimes escape those anchors (e.g. Lilly is now worth about $700bn), but they usually settle back down in line with their peers eventually. Pfizer briefly got to $100bn in annual revenues off their mRNA vaccine and Paxlovid, but they've [since fallen back down again](https://roic.ai/quote/PFE:US/financials).
 
-![[Pasted image 20240330214530.png]]
+<center><img src="https://atelfo.github.io/assets/pfizerrev.png" width="800"></center>
 
 Is this the downstream effect of some sort of iron law of the kinetics of innovation? Different pharmaceutical companies seem to have [similar long-run productivity](https://www.nature.com/articles/nrd2961/figures/2) (measured by the cumulative number of new launches, see below). What does this say about the importance of corporate strategy?
 
 ![[41573_2009_Article_BFnrd2961_Fig2_HTML.webp]]
-
 
 #### Are foundations (or family ownership) the optimal governance structures for large pharmaceutical companies?
 Novo Nordisk is [owned by a foundation](https://www.novonordisk.com/investors/stock-information/share-and-ownership-structure.html) with two objectives:
@@ -59,6 +68,7 @@ Novo Nordisk is [owned by a foundation](https://www.novonordisk.com/investors/st
 Novo Nordisk has also [been doing well as of late](https://www.acquired.fm/episodes/novo-nordisk-ozempic). Is this a coincidence? It's plausible to me that a foundation is an effective way to prevent companies from succumbing to short-termism, which seems like a useful thing to avoid when drug development programs are measured in decades.
 
 Family ownership (ala [Roche](https://www.reuters.com/business/healthcare-pharmaceuticals/roche-family-shareholders-will-maintain-stability-vice-chairman-2021-10-17/)) might be another effective mechanism to create this long-term alignment.
+
 #### Was externalization good for innovation and the biopharma industry as a whole?
 It used to be the case that pharmaceutical companies would discover, develop, manufacture, and market their drugs all inhouse. But, increasingly, these functions have been unbundled and taken up by specialist firms. Small biotech companies now [originate most new drugs](https://www.nature.com/articles/d41573-023-00102-z), which large pharmaceutical companies acquire or license from them. [Contract research organizations (CRO)](https://en.wikipedia.org/wiki/Contract_research_organization) do much of the drug discovery work and run clinical trials. [Contract development and manufacturing organizations (CDMO)](https://en.wikipedia.org/wiki/Contract_manufacturing_organization) make the drugs. Pharma company employees now spend much of their time managing an army of vendors.
 
@@ -91,27 +101,32 @@ In a [2019 study](https://pubmed.ncbi.nlm.nih.gov/31511426/), researchers found 
 In the past, mischaracterised drugs have chilled interest in further development of follow-on compounds against an otherwise promising target (e.g. [inaparib](https://pubmed.ncbi.nlm.nih.gov/31511426/), the 'pseudo' PARP inhibitor)
 
 This type of mischaracterization also contributes to a 'noisy' scientific literature, which complicates the lofty ambition of 'training AI on all of the literature and having it solve science.' For example, [dapansutrile](https://en.wikipedia.org/wiki/Dapansutrile) is widely claimed to be an NLRP3 inhibitor in the scientific literature, but [it's probably not](https://twitter.com/XenoVidaScience/status/1761779326226239545).
+
 #### Are we working on the right spatial scales in drug discovery?
 Biological systems operate over huge scales of time and space. I like how Luca Naef and Michael Bronstein state this problem in [their post on AI in drug discovery](https://towardsdatascience.com/the-road-to-biology-2-0-will-pass-through-black-box-data-bbd00fabf959):
 
-![[Pasted image 20240331231837.png]]
+<center><img src="https://atelfo.github.io/assets/spatialscales.png" width="800"></center>
+
 Most drug discovery work focuses on the smaller end of this scale: drug targets are most often proteins. But lots of interesting biology happens at the level of networks, tissues, and whole organisms.
 
 Have we spent too much time looking at the smallest scales? [Is target-based discovery a waste of time?](https://www.science.org/content/blog-post/target-based-drug-discovery-waste-time)
 
-What should we make of relatively large-scale effects that seem to have some function e.g. [ephaptic coupling](https://en.wikipedia.org/wiki/Ephaptic_coupling)? Are they druggable? Should we be paying more attention to effects at hierarchies above the level of the target or cell?#
-#### Are historical drug failure rates predictive of future clinical trial failure rates?
-Based on historical data, the overall probability of a drug making it from phase 1 to approval is about 10%. However, these success rates differ greatly between therapeutic areas. According to [BIO's data (table below)](https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf)), a hematology drug is almost 7 times more likely to make it from phase 1 to approval than a drug for a urological condition.
+What should we make of relatively large-scale effects that seem to have some function e.g. [ephaptic coupling](https://en.wikipedia.org/wiki/Ephaptic_coupling)? Are they druggable? Should we be paying more attention to effects at hierarchies above the level of the target or cell?
 
-![[Pasted image 20240328171649.png]]
+#### Are historical drug failure rates predictive of future clinical trial failure rates?
+Based on historical data, the overall probability of a drug making it from phase 1 to approval is about 10%. However, these success rates differ greatly between therapeutic areas. According to [BIO's data in the table below](https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf)), a hematology drug is almost 7 times more likely to make it from phase 1 to approval than a drug for a urological condition.
+
+<center><img src="https://atelfo.github.io/assets/biotable.png" width="800"></center>
 
 The industry uses this sort of success rate data to help pick projects to invest in, but since success rates are backwards looking, is this a good idea? What's the correlation of historical success rates with future ones?
+
 #### How much of the variance in therapeutic area clinical trial success rates can be attributed to differences in preclinical model quality?
 The [quality of preclinical models](https://www.nature.com/articles/s41573-022-00552-x) can have a large effect on our ability to surface good new drugs. For example, new models of hepatitis C viral replication spurred the discovery of curative treatments like [Sovaldi](https://en.wikipedia.org/wiki/Sofosbuvir). 
 
 As noted above, clinical development success rates differ substantially between therapeutic areas. How much of this difference is down to differences in the quality of preclinical models? How much is down to other factors?
 
 How strong is the causal relationship by which better models lead to better drugs? If it's very high, then we should be investing much more in better preclinical models than we are today.
+
 #### What is the false negative rate of preclinical testing?
 Almost all investigational drugs go through some form of animal testing before they're tested in humans. Yet, 90% of drugs fail in clinical trials anyway. This false positive problem is well-recognized and highly visible; there are many examples of drugs that cured mouse models but failed to work or were toxic in humans.
 
@@ -121,8 +136,6 @@ What's the best drug that never got developed?
 
 #### Where does drug hunting fall on the luck:skill continuum?
 In his book "The Success Equation", [Michael Mauboussin](https://en.wikipedia.org/wiki/Michael_J._Mauboussin) introduces the [luck:skill continuum](https://fs.blog/untangling-skill-and-luck/): the tendency for activities to fall on a spectrum from pure skill to pure luck. Something like chess is pure skill, and slot machines are pure luck. Football or baseball are somewhere in the middle.
-
-
 
 ![[luck-skill-continuum_2.webp]]
 *[Garrett Rhyasen has a nice blog post](https://oncologydiscovery.com/2017/05/07/luck-and-skill-in-biopharma/) about the luck:skill concept as applied to drug discovery, where I stole this image from. In Garrett's view, drug discovery and development is about 75% luck.*
@@ -135,13 +148,13 @@ So how much does skill matter now?
 
 As a corollary to the above: where does biopharma business development (BD) fall on the luck:skill continuum? Who are the best BD teams, and what can other companies learn from them (if anything[^1])?
 
-
 #### What are examples of drug programs that were 'smooth sailing' from start to finish?
 I've previously [collected examples](https://atelfo.github.io/2021/10/01/unplanned-success-in-drug-development.html) of how the fates of even the most successful drugs were swayed by chance events, and how often the programs that went on to define a company were underappreciated for long periods of time. Similarly, many ultimately successful biotechs [needed to pivot](https://twitter.com/Atelfo/status/1645168987058106369) along the way.
 
 Are there examples of drug development programs that we got right from the start, with everything proceeding as planned from start to finish? That both scientists and management agreed would be a good idea?
 
 Where are the triumphs of rational planning?
+
 #### Can a top-down innovation strategy work over the long-term?
 By top-down innovation I mean the process of choosing markets or unmet needs, then developing drugs against those positions. By bottom-up I mean doing basic fundamental research and following the science where it leads.
 
@@ -159,30 +172,36 @@ In his post ["Why did we wait so long for the bicycle?"](https://rootsofprogress
 Are there analogous examples in drug development? What drugs seem like they should have been developed earlier than they were?
 
 Historically, it takes [upwards of 20 years](https://www.science.org/doi/10.1126/scitranslmed.aaq1787) for new drug target discoveries to lead to new medicines. Is that about as fast as we could do it?
+
 #### What are the approval kinetics for new drug modalities?
 [BioCentury](https://www.biocentury.com/article/644637) has a nice chart of how various types of new drugs have accrued FDA approvals over time.
 
-![[Pasted image 20240328123652.png]]
+<center><img src="https://atelfo.github.io/assets/modapproval.png" width="800"></center>
 
 There's usually one or two approvals early on, followed by a gap, then a later wave of approvals. This trend is more pronounced in the [history of monoclonal antibodies (mAbs)](https://jbiomedsci.biomedcentral.com/articles/10.1186/s12929-019-0592-z), shown in the chart below. The first FDA-approved mAb came in 1986, but it took another decade for approvals to begin to accrue with some pace.
 
-
-![[F0yhjHEWIAASgS1.jpeg]]
+<center><img src="https://atelfo.github.io/assets/mabhistory.png" width="800"></center>
 
 Do approvals of new modalities follow a predictable pattern? What are the determinants of these approval kinetics?
+
+#### What determines the rate at which new transformative drugs are developed?
+
+#### Does investment in basic research in a given therapeutic area correlate with therapeutic progress in that area?
+	- Alzheimers
+	- The amount of capital flowing into a measure is a good predictor of returns, more capital -> worse returns due to competition
 
 #### Is the FDA good for industry?
 There's lots of [handwringing about how the FDA is holding back progress](https://www.maximum-progress.com/p/contra-scott-on-abolishing-the-fda?utm_source=profile&utm_medium=reader2), but is it plausible that the presence of a regulator spurs progress?[^2] How would we know?
 
 Post the 1962 FDA amendments, many drugs were taken off the market, but the rate of [annual new drug introductions increased](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7245331/pdf/nihms-1543484.pdf) after the amendments. Would this have happened anyway?
 
-![[Pasted image 20240328120200.png]]
+<center><img src="https://atelfo.github.io/assets/newdruglongterm.png" width="800"></center>
 
 Why are drugs the only biotechnology / synthetic biology product that seem to have long-term sustainable business models associated with them? Does it have anything to do with the regulatory pathway? Did it force maturation?
 
 The book ["Where Futures Converge"](https://mitpress.mit.edu/9780262046510/where-futures-converge/) claims that the early adoption of regulations ("the ordinance") governing the use of recombinant DNA in Cambridge helped establish Kendall Square as a centre of biotech innovation:
 
-![[Pasted image 20240331220025.png]]
+<center><img src="https://atelfo.github.io/assets/kendallord.png" width="800"></center>
 
 Patents are also well-established to be pro-innovation in the biopharma industry. Could this also be true of the drug regulators?
 
@@ -195,12 +214,14 @@ Academia has long been an important feeder into the life sciences industry of bo
 *Graph from [this blog post by Christopher Smith](https://www.christophertsmith.com/reflections/a-deep-dive-into-phd-employment-data-from-nsf)*
 
 What does this mean for the biotech industry? Will we have a dearth of new good ideas for drugs in a few years? Will industry take on a greater share of basic research?
+
 #### Has nature already found most of the useful islands of small molecule structure?
 It’s reasonable to ask how it’s even possible to find useful drug molecules at all given the vastness of chemical space (over 10^60 possible drug molecules). One possible answer is that nature, through evolution, has chanced upon many bioactive molecules, and we are mostly building off that inheritance. In support of this are data showing that the screening libraries that we use as the starting point for new drugs are [biassed towards drug molecules with natural origins](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2783405/).
 
 But how much of these useful molecules has nature already found? Think of the structure-function space as a landscape with peaks of useful functional structures scattered around in an otherwise flat landscape: how many of these peaks has nature already found, and how many are left to be discovered? Our strategy to explore this structure-function space (e.g. using AI) seems like it should depend a lot on our assumptions about how good nature is at sampling the landscape.
 
 As a corollary to the above: What's the expected productivity of new natural product screening programs? What's the likelihood there are undiscovered wonder drugs somewhere deep in the Amazon rainforest?
+
 #### Are pathogens the reason we age?
 Our genomes are polluted with the fragments of ancient viruses (e.g. transposons like [LINE-1](https://www.lesswrong.com/posts/ui6mDLdqXkaXiDMJ5/core-pathways-of-aging)). We seem to keep discovering new causal links between viral infections and diseases, like [EBV and multiple sclerosis](https://www.nature.com/articles/s41579-022-00770-5). [Endemic pathogens like *Toxoplasma*](https://www.hardtowrite.com/pathogens/) affect our psyche.
 
@@ -209,10 +230,12 @@ The immune system is meant to protect us from these threats, but it also goes wr
 It seems plausible that our bodies accumulate so much damage from infectious agents over time that it's easier to start fresh than clear it all away. Is damage accumulation and aging the consequence of multi-billion year arms race between pathogens and immune systems?
 
 ![[8l18gy 1.jpg]]
+
 #### What is cognitive fatigue, and how can it be treated?
 Cognitive fatigue is one of the most pernicious symptoms of [multiple sclerosis](https://jnnp.bmj.com/content/90/6/642.long) (and other diseases), but what is it? Why do patients experience fatigue the way they do? Can we link brain states to the conscious perception of fatigue?
 
-Most disease modifying treatment for MS don't have much affect on fatigue. Why is this? What would it take to treat fatigue? 
+Most disease modifying treatment for MS don't have much affect on fatigue. Why is this? What would it take to treat fatigue effectively?
+
 #### What's the smallest viable patient population for a new drug?
 Lenmeldy was recently approved by the FDA for [metachromatic leukodystrophy (MLD)](https://en.wikipedia.org/wiki/Metachromatic_leukodystrophy) with a list price of [$4.25 million](https://www.bloomberg.com/news/articles/2024-03-20/world-s-most-expensive-drug-is-now-4-25-million-gene-therapy), the highest list price yet for a drug. However, MLD is ultra-rare, with a prevalence of something like 1 in 75,000 births (this corresponds to ~50 patients per year in the us). Lenmeldy might make a couple hundred million in annual revenue, considered a relatively small sum in the pharmaceutical industry.
 
@@ -227,24 +250,6 @@ New drug launches can increase the prevalence of a condition in two main ways:
 It's not uncommon for the prevalence of a condition to be underestimated when there's no effective treatment for that condition. Because these markets seem small initially, companies are often reluctant to invest — only to lose out when someone else is bold enough to make a bet.
 
 What other conditions aren't getting the attention they should be getting because people (wrongly) think the prevalence is too small for profitable development?
-
-
-- What's the base rate frequently are transformative drugs/technologies developed?
-
-
-
-
-- how damaging is underfunding of biotechs
-- are cost overruns or monopolies necessary for innovation
-- Do good biotechs keep doing good?
-	- momentum, matthew effect
-
-
-
-
-- Does investment in basic research in a therapeutic area correlated with  of results?
-	- Alzheimers
-	- The amount of capital flowing into a measure is a good predictor of returns, more capital -> worse returns due to competition
 
 #### What's the best way to incentivize new models or surrogate endpoints?
 New disease models and surrogate endpoints help us discover better drugs and develop them faster, but individual companies aren't necessarily strongly incentivised to invest in this kind of R&D when they could instead invest in a drug program. However, government funders like the NIH are also likely to see this type of work as being too applied for their tastes.
