@@ -60,7 +60,7 @@ Is this the downstream effect of some sort of iron law of the kinetics of innova
 <br>
 <center><img src="https://atelfo.github.io/assets/nrddnmes.png" width="600"></center>
 <br>
-#### Are foundations (or family ownership) the optimal governance structures for large pharmaceutical companies? <a name="question3"></a>
+#### **Are foundations (or family ownership) the optimal governance structures for large pharmaceutical companies?** <a name="question3"></a>
 Novo Nordisk is [owned by a foundation](https://www.novonordisk.com/investors/stock-information/share-and-ownership-structure.html) with two objectives:
 
 > "To provide a stable basis for the commercial and research activities conducted by the companies within the Novo Group (of which Novo Nordisk is the largest), and to support scientific and humanitarian purposes."
