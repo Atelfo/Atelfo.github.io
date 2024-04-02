@@ -248,7 +248,7 @@ It seems plausible that our bodies accumulate so much damage from infectious age
 #### **What is cognitive fatigue, and how can it be treated?** <a name="question23"></a>
 Cognitive fatigue is one of the most pernicious symptoms of [multiple sclerosis](https://jnnp.bmj.com/content/90/6/642.long) (and other diseases), but what is it? Why do patients experience fatigue the way they do? Can we link brain states to the conscious perception of fatigue?
 
-Most disease modifying treatment for MS don't have much affect on fatigue. Why is this? What would it take to treat fatigue effectively?
+Most disease modifying treatment for MS don't have much effect on fatigue. Why is this? What would it take to treat fatigue effectively?
 
 #### **What's the smallest viable patient population for a new drug?** <a name="question24"></a>
 Lenmeldy was recently approved by the FDA for [metachromatic leukodystrophy (MLD)](https://en.wikipedia.org/wiki/Metachromatic_leukodystrophy) with a list price of [$4.25 million](https://www.bloomberg.com/news/articles/2024-03-20/world-s-most-expensive-drug-is-now-4-25-million-gene-therapy), the highest list price yet for a drug. However, MLD is ultra-rare, with a prevalence of something like 1 in 75,000 births (this corresponds to ~50 patients per year in the us). Lenmeldy might make a couple hundred million in annual revenue, considered a relatively small sum in the pharmaceutical industry.
