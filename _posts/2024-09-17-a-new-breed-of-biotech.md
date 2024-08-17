@@ -52,7 +52,7 @@ I think we're starting to see investment in this in practice; many of the Class 
  
 <br>
 <center><img src="https://atelfo.github.io/assets/recursionvertical.png" width="700"></center>
-<center><i> A slide from <a href=”https://ir.recursion.com/static-files/0f025afe-fcd3-4b0d-be4a-c4cf5886b42e”>Recursion’s 2024 ‘Download day’</a> highlighting their ambition to be a fully vertically integrated AI company</i></center>
+<center><i> A slide from <a href="https://ir.recursion.com/static-files/0f025afe-fcd3-4b0d-be4a-c4cf5886b42e">Recursion’s 2024 'Download day'</a> highlighting their ambition to be a fully vertically integrated AI biotech</i></center>
 <br>
 
 
