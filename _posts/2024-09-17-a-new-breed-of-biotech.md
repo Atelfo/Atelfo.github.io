@@ -3,7 +3,7 @@ layout: post
 title: "A new breed of biotech"
 ---
 <meta property="og:image" content="https://atelfo.github.io/assets/spacex.jpeg" />
-<meta name="twitter:image" content=" https://atelfo.github.io/assets/spacex.jpeg" />
+<meta name="twitter:image" content="https://atelfo.github.io/assets/spacex.jpeg" />
 <meta name="twitter:description" content="Reflections on the differing philosophies of company building between biotechs with and without a core computational discovery platform">
 
 Lately I've been talking to a lot of biotech and pharma companies about their AI and data strategies. Enough that I've started to notice an emerging schism, or bifurcation, of companies into two broad philosophical camps.
