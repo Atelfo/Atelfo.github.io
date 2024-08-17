@@ -79,7 +79,7 @@ This is not to say that the established players are all sleeping on this. Some, 
 
 The question, then, is who will benefit most from the AI boom? The motivated and well-resourced incumbent? Or the software-native upstart without years of cultural and technical debt to overcome?
 
-Perhaps none of this really matters, and the old truths will remain true: drug discovery is hard, the industry is built on top of painstaking (expensive) trial and error, and deep biological insights are ultimately what moves the needle.
+Perhaps none of this really matters, and the old truths will remain true: drug discovery is hard, the industry is built on top of painstaking (expensive) trial and error, and deep biological insights are ultimately what moves the needle. These new "techBio" companies have to yet to bring a drug to market, after all.
 
 Or, perhaps, the barbarians are already at the gates.
 
