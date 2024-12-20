@@ -93,7 +93,7 @@ A reason to think that China's rise might not last is the recent fall-off in ven
 
 At this point it seems almost inevitable that China will become the numerical leader in new drug origination within a decade. If this happens, the big losers are unlikely to be the big Western pharmas (after all, they're getting good molecules for cheap), but rather the innovator ecosystem of Western startups and clinical-stage biotechs that have traditionally fed the pipelines of the pharma giants. Licensing deals are a major source of revenue that biotechs use to fund operations and research, revenue that is now being redirected to China. The European biotech scene, already fading in relevance (partly due to a weak local market following aggressive pricing constraints), might drop off entirely.
 
-Drug discovery could just be the latest area where China is growing to dominance in a way that echoes the past offshoring of manufacturing. First manufacturing, then automakers, now new drugs. The Western biotechs of today may look increasingly like the Western machine shops of the 1980s.
+Drug discovery could just be the latest area where China is growing to dominance in a way that echoes the past offshoring of manufacturing. First manufacturing, then automakers, now new drugs. The Western discovery biotechs of today may look increasingly like the Western machine shops of the 1980s.
 
 <br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20241206235744.png" width="700"></center>
