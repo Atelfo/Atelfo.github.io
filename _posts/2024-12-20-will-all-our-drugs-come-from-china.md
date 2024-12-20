@@ -87,6 +87,7 @@ A reason to think that China's rise might not last is the recent fall-off in ven
 
 <br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20241220120529.png" width="700"></center>
+<br>
 <center><i> Graph from PharmaDJ's <a href="https://www.pharmadj.com/en/bioPharmaTracker/1864863303421964290">November BioPharma tracker</a></i></center>
 <br>
 
