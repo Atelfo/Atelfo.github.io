@@ -63,6 +63,7 @@ But probably the most important change was slashing clinical trial start-up time
 
 <br>
 <center><img src="https://atelfo.github.io/assets/Pasted image 20241207125334.png" width="700"></center>
+<br>
 <center><i> The impact of reforms on various clinical trial indicators, from  <a href="https://www.nature.com/articles/d41573-022-00077-3">this article</a> in Nature Reviews Drug Discovery</i></center>
 <br>
 
