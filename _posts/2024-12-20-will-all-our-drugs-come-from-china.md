@@ -111,7 +111,7 @@ Policy responses aside, I can conceive of two potential paths for Western innova
 
 The first is to focus on the kind of novel frontier research where Western scientists and universities still have an edge (for now). This probably looks like a combination of partnerships with top university departments, licensing unique patient datasets, and building edge-science (almost fringe) platforms — going after moonshots with the potential for step-change improvements in efficacy or safety, in other words. For any me-too opportunity or validated target accessible to standard drug modalities there are likely to be 10 or more Chinese companies pursuing it more quickly and cost-effectively than a Western biotech can, so it's almost pointless to try and compete with a weakly differentiated asset.
 
-The second is to embrace technology and automation as a means to hyperscale lean teams: cloud labs, automated lab-in-the loop machine learning, AI researchers, language model document generation, etc. China scales better with labor costs; the way to compete against teams that are 75% cheaper is to make each of your employees at least 4x as effective.
+The second is to embrace technology and automation as a means to hyperscale lean teams: cloud labs, automated lab-in-the loop machine learning, AI researchers, language model document generation, etc. Chinese biotechs scale better with labor costs; the way to compete against teams that are 75% cheaper is to make each of your employees at least 4x as effective.
 
 Of the two possible future worlds, one where policymakers respond by locking down Western-Chinese collaboration and one where Western discovery biotechs stay relevant by becoming much more capable, I hope it's the latter future that comes to pass.
 
