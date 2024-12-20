@@ -103,7 +103,9 @@ I'd be disappointed if the policy response was to enact wasteful subsidies or bl
 
 Returning briefly to the auto industry again, we can see one possible future for our industy in how Western governments are responding to the threat Chinese EVs pose to domestic automakers.
 
-Following concerns over Chinese EV subsidies and industrial policy, the Biden administration placed 100% tariffs on Chinese EVs that [came into effect](https://www.utilitydive.com/news/joe-biden-china-tariff-hikes-ev-battery-semiconductor-final/727014/) in September this year. Europe [responded similarly](https://www.euronews.com/business/2024/10/30/european-tariffs-on-chinese-electric-vehicles-all-you-need-to-know) in October, implementing tariffs of up to 45%. As justification for their decision to implement tariffs, the European Commission cited the increase in Chinese EV market share from 3.9% in 2020 to 25% in September 2023. Speaking about the tariffs, Biden said *"I'm determined that the future of electric vehicles will be made in America, by union workers. Period."*
+Following concerns over Chinese EV subsidies and industrial policy, the Biden administration placed 100% tariffs on Chinese EVs that [came into effect](https://www.utilitydive.com/news/joe-biden-china-tariff-hikes-ev-battery-semiconductor-final/727014/) in September this year. Europe [responded similarly](https://www.euronews.com/business/2024/10/30/european-tariffs-on-chinese-electric-vehicles-all-you-need-to-know) in October, implementing tariffs of up to 45%. As justification for their decision to implement tariffs, the European Commission cited the increase in Chinese EV market share from 3.9% in 2020 to 25% in September 2023. Speaking about the tariffs, Biden said:
+
+> "I'm determined that the future of electric vehicles will be made in America, by union workers. Period."
 
 Policy responses aside, I can conceive of two potential paths for Western innovator discovery biotechs to remain competive in the face of ascendent Chinese competition. 
 
