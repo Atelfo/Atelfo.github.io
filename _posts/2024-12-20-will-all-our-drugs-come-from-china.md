@@ -111,10 +111,12 @@ The second is to embrace technology and automation as a means to hyperscale lean
 
 Of the two possible future worlds, one where policymakers respond by locking down Western-Chinese collaboration and one where Western discovery biotechs stay relevant by becoming much more capable, I hope it's the latter future that comes to pass.
 
-[^1] If you want to read an in-depth historical treatment on I recommend [this Endpoints article from 2021](https://endpts.com/how-china-turned-the-table-on-biopharmas-global-dealmaking/) titled "How China turned the tables on biopharma's global dealmaking".
-[^2] The Chinese version of the FDA
-[^3] I thought my cofounder Vikas's comment on this was interesting and worth including, at least as a footnote: "EVs have been a core catalyst for Chinese automotive companies to leap ahead of the Europe-Japan-US hegemony in many respects (cost efficiency, in vehicle experience, autonomous driving features). German automakers built beautiful engines, Japanese automakers were reliable, Americans built power but all of those advantages are irrelevant with the move from ICE to electric engines. I’m curious if there’s any interesting analogy in pharma."
-[^4] Although it's [stalled for now](https://www.fiercepharma.com/pharma/biosecure-act-mia-us-defense-bill-key-win-china-biotech-service-providers), that the BIOSECURE act came close to becoming law suggests there is plenty of legislator appetite to curtail US-China biotech relations
+---
+
+[^1]: If you want to read an in-depth historical treatment on I recommend [this Endpoints article from 2021](https://endpts.com/how-china-turned-the-table-on-biopharmas-global-dealmaking/) titled "How China turned the tables on biopharma's global dealmaking".
+[^2]: The Chinese version of the FDA
+[^3]: I thought my cofounder Vikas's comment on this was interesting and worth including, at least as a footnote: "EVs have been a core catalyst for Chinese automotive companies to leap ahead of the Europe-Japan-US hegemony in many respects (cost efficiency, in vehicle experience, autonomous driving features). German automakers built beautiful engines, Japanese automakers were reliable, Americans built power but all of those advantages are irrelevant with the move from ICE to electric engines. I’m curious if there’s any interesting analogy in pharma."
+[^4]: Although it's [stalled for now](https://www.fiercepharma.com/pharma/biosecure-act-mia-us-defense-bill-key-win-china-biotech-service-providers), that the BIOSECURE act came close to becoming law suggests there is plenty of legislator appetite to curtail US-China biotech relations
 
 
 
