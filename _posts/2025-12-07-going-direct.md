@@ -10,17 +10,16 @@ A few weeks ago, Eli Lilly CEO Dave Ricks appeared on Stripe’s ["Cheeky Pint" 
 
 Pharma's deliberate distance[^10] has come at a cost: the industry has mostly failed to establish positive relationships with consumers. Tech, by contrast, consistently ranks as one of the most liked industries; pharma is one of the [most disliked](https://news.gallup.com/poll/12748/business-industry-sector-ratings.aspx). Tech CEOs are household names, yet hardly anyone outside the industry can name a pharma CEO.
 
-The hot trend in the tech industry is for founder/CEOs to [_"go direct"_](https://x.com/lulumeservey/status/1770111243174527264) with their communications — this follows the realization that if you don't tell your story, someone else will (and you might not like what they say). Ricks' appearance on Cheeky Pint, then, suggests that Lilly's CEO is starting to act more like a tech founder than a traditional pharma exec.
+The hot trend in the tech industry is for founder/CEOs to ["go direct"](https://x.com/lulumeservey/status/1770111243174527264) with their communications — this follows the realization that if you don't tell your story, someone else will (and you might not like what they say). Ricks' appearance on Cheeky Pint, then, suggests that Lilly's CEO is starting to act more like a tech founder than a traditional pharma exec.
 
 What makes this interview particularly interesting is that it reveals an ambition to build a new and different kind of machine than the ones being built by Lilly's competitors. Ricks is adopting the communication style of Silicon Valley because Lilly is starting to adopt its business model.
 
-The episode opens with John Collison asking about Lilly's recent NVIDIA partnership to build [_"the industry's most powerful AI supercomputer"_](https://investor.lilly.com/news-releases/news-release-details/lilly-partners-nvidia-build-industrys-most-powerful-ai). This isn't a coincidence; Lilly wants to position itself as a technology company.  Stripe as a brand has a great deal of cachet within the start-up, venture capital, and tech community, so it's a good podcast to go on if you're a 150-year-old pharma giant that wants to recast itself as part of the tech 'in-crowd.'
+The episode opens with John Collison asking about Lilly's recent NVIDIA partnership to build ["the industry's most powerful AI supercomputer"](https://investor.lilly.com/news-releases/news-release-details/lilly-partners-nvidia-build-industrys-most-powerful-ai). This isn't a coincidence; Lilly wants to position itself as a technology company.  Stripe as a brand has a great deal of cachet within the start-up, venture capital, and tech community, so it's a good podcast to go on if you're a 150-year-old pharma giant that wants to recast itself as part of the tech 'in-crowd.'
 
 So far, Lilly is doing a good job of achieving tech-like valuations; on November 21st, Lilly became the first pharma company to [hit a trillion dollar valuation](https://www.biopharmadive.com/news/eli-lilly-1-trillion-pharmaceutical-market-value-obesity/721819/).
 
 <br>
-<center><img src="https://atelfo.github.io/assets/lillymc.png" width="700"></center>
-<center><i>Graph from Ned Pagliarulo at <a href="https://www.biopharmadive.com/news/eli-lilly-1-trillion-pharmaceutical-market-value-obesity/721819/">BioPharma Dive</a></i></center>
+<center><img src="https://atelfo.github.io/assets/lillymc.png" width="900"></center>
 <br>
 
 Lilly’s dislocation from its peers is driven partly by massive growth expectations for GLP-1 drugs (with Novo Nordisk, the previous market darling, now presumed beaten). The other factor is a narrative of business model evolution — but we'll get to that.
@@ -39,8 +38,8 @@ In the interview, Ricks implies that the industry may have gone astray, and actu
 
 It's as if the industry has been digging ever more precisely engineered mineshafts with ever more precision engineered tools to reach smaller and rarer ore deposits, and Lilly rocks up and says: hey, what if we just blow up the whole mountain and collect all the ore at once?
 
-Ricks introduces this thesis by referring to obesity the _"master switch"_ to many diseases. His argument has this structure:
-1. The default biological set point for caloric intake (_"food craving"_) is too high
+Ricks introduces this thesis by referring to obesity the "master switch" to many diseases. His argument has this structure:
+1. The default biological set point for caloric intake ("food craving") is too high
 2. Because food is abundant in modern life, people tend to overeat
 3. Excess calories from overeating leads to obesity
 4. Obesity leads to all manner of problematic pre-disease states: inflammation, cardiovascular comorbidities, and mechanical stress. These eventually develop into full-blown disease
@@ -54,7 +53,7 @@ Ricks then broadens the discussion to inflammatory diseases that aren't commonly
 
 > "...the signature one is a skin disease called hidradenitis suppurativa. A terrible name, but people get basically boils and it's almost completely correlated with excess body weight. **And we have very expensive inflammatory drugs that have fancy targets and are monoclonal antibodies to inject and they cost $4,000 a month, or you can just lose weight**."
 
-Here Ricks is suggesting that caloric intake is perhaps a more fundamental, upstream driver of disease than the pathways hit by modern targeted therapies. It's implied throughout the episode that GLP-1s (and the adjacent mechanisms like GIP and amylin) will have a scale of impact beyond any other modern medicine (Ricks calls Lilly a GLP-1 company with a _"sidecar"_ of other bets at one point). Like a Google or a Facebook, weight control[^6] peptides are a scalable consumer product for (almost) anyone:
+Here Ricks is suggesting that caloric intake is perhaps a more fundamental, upstream driver of disease than the pathways hit by modern targeted therapies. It's implied throughout the episode that GLP-1s (and the adjacent mechanisms like GIP and amylin) will have a scale of impact beyond any other modern medicine (Ricks calls Lilly a GLP-1 company with a "sidecar" of other bets at one point). Like a Google or a Facebook, weight control[^6] peptides are a scalable consumer product for (almost) anyone:
 
 > "Patrick: What fraction of the population, let's say the population over 35 will be on a GLP-1 in 15 years?
 > 
@@ -64,7 +63,7 @@ The thing that distinguishes tech from non-tech companies is that they can serve
 
 Pharma, meanwhile, cannot rest and compound; they need to continually develop, launch, market, and manufacture an ever-growing crop of products just to maintain their position. The core problem is that drugs have a shelf life. Genericization is a gravitational well no company has been able to escape: there is a limited window of exclusivity to recoup your investment before patents expire and generic drugs commoditize your product. This dynamic has historically capped pharma valuations at around $200bn. It also makes these businesses difficult to value because pharma companies are a complex conglomerate of discrete scientific, regulatory, and market risks.
 
-Investors like simple narratives and quantitative relationships they can deploy capital against. Consider [AI scaling laws](https://en.wikipedia.org/wiki/Neural_scaling_law); it is highly [_"legible to capital"_](https://x.com/WillManidis/status/1991498313896485155) to have a mathematical relationship between capital inputs and value/performance as an output. Lilly has been the beneficiary of exactly this sort of simplifying narrative; you can now model their value creation and capture as a function of total excess caloric intake eliminated:
+Investors like simple narratives and quantitative relationships they can deploy capital against. Consider [AI scaling laws](https://en.wikipedia.org/wiki/Neural_scaling_law); it is highly ["legible to capital"](https://x.com/WillManidis/status/1991498313896485155) to have a mathematical relationship between capital inputs and value/performance as an output. Lilly has been the beneficiary of exactly this sort of simplifying narrative; you can now model their value creation and capture as a function of total excess caloric intake eliminated:
 
 > "John: What would you guess the average caloric consumption per day in America is?
 > 
@@ -100,7 +99,7 @@ The GLP-1 market is the first instance where neither applies. Demand is ubiquito
 
 The current healthcare infrastructure has proven to be unwilling to pay for prevention at the scale Ricks envisions. Preventative medicines have historically been difficult to monetize because they don't fit well into existing care delivery and reimbursement models (which were built for acute interventions).
 
-The business model that Ricks describes is much closer to a consumer subscription model than the established model, and so Wall Street is beginning to value Lilly not as a drug company but as a subscription business with high retention and a massive TAM (one wonders how long until Lilly starts reporting its monthly active users). Ricks explicitly mentions the goal of creating _"franchise value"_ which preserves revenue even when generic competitors arrive[^8]
+The business model that Ricks describes is much closer to a consumer subscription model than the established model, and so Wall Street is beginning to value Lilly not as a drug company but as a subscription business with high retention and a massive TAM (one wonders how long until Lilly starts reporting its monthly active users). Ricks explicitly mentions the goal of creating _"franchise value"_ which preserves revenue even when generic competitors arrive:[^8]
 
 > "I think Wall Street also believes that our R&D productivity has been higher... And I think the other thing that's out there is this belief that perhaps... this cycle could be different, this cycle starting with GLP-1s, but that you could create back to the route to market and the consumer much more of a self-pay branded business that has **staying power beyond the patent cycle, a franchise value.** And I think so far the evidence is pointing that way. Have we fully evolved to a mature version of that? No. Have we created an ecosystem around ourselves like Apple has done? No. Those are all opportunities for us, but you can kind of see them."
 
@@ -118,7 +117,7 @@ Ricks describes a 'rich get richer' scenario where the success of the current fr
 
 > "I think we do three things better than others. One we talked about already, which is **cycle time**. It's a basic concept, but if you can make software faster than someone else, you're going to win. And the same in the drug business.... Often we do serial clinical trials and by the end of the product lifestyle you get the final indication. **We're trying to stack them all into the beginning, so that's expensive, but we're in a position to do that. It's not risky actually.**"
 
-Of all the pharma companies, Lilly is the best positioned to find the next business model evolution that allows them to escape competition, at least for now.
+Of all the pharma companies, Lilly is the best positioned to find the next business model evolution that allows them to escape competition (for now, at least).
 
 So, why did Ricks go on a tech podcast? Because he's not running a traditional pharmaceutical company anymore. Or at least, he doesn't want you to think of it that way.
 
