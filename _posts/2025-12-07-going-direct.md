@@ -4,7 +4,7 @@ title: "Going direct: notes on Eli Lilly at a trillion"
 ---
 <meta property="og:image" content="https://atelfo.github.io/assets/goingdirect.png" />
 <meta name="twitter:image" content="https://atelfo.github.io/assets/goingdirect.png" />
-<meta name="twitter:description" content="Reflections on Dave Rick's recent interview on the Stripe podcast, and what it suggests about the next potential evolution of the pharma business model">
+<meta name="twitter:description" content="Reflections on Dave Ricks' recent interview on the Stripe podcast, and what it suggests about the next potential evolution of the pharma business model">
 
 A few weeks ago, Eli Lilly CEO Dave Ricks appeared on Stripe’s ["Cheeky Pint" podcast](https://www.youtube.com/watch?v=-FmVCDx_kFw&list=PLcoWp8pBTM3ATMYLP-hFIhJORSw-nFOiY). It's rare[^2] for pharma executives to make unscripted media appearances (the industry is risk averse by nature), so seeing one sit down with the Collison brothers — on a tech podcast, no less — is notable.
 
@@ -93,7 +93,7 @@ Because previously, the economics required intermediaries to bundle the market.
 
 First, pharma needed doctors to bundle demand. Illnesses were specific and hard to identify; the doctor was the necessary aggregator who matched patients to products. Later, as drugs became complex and expensive (specialty oncology, etc.), the system needed to bundle price. Few patients can pay $50,000 per year out of pocket for a drug, so the market relies on insurance pools to spread costs.
 
-The GLP-1 market is the first instance where neither applies. Demand is ubiquitous (dockets aren't needed to find it), and the price — while high — is within the stretch capability of the middle-class consumer. With high enough volume of demand for a drug, prices can be pushed down, and much of the system becomes redundant. In Rick's words:
+The GLP-1 market is the first instance where neither applies. Demand is ubiquitous (dockets aren't needed to find it), and the price — while high — is within the stretch capability of the middle-class consumer. With high enough volume of demand for a drug, prices can be pushed down, and much of the system becomes redundant. In Ricks' words:
 
 > "I can charge less and get it to more people at scale and **I actually don't really need a healthcare system**...You certainly know if you are overweight or obese, you don't need a doctor to tell you that. And platforms like our direct platform have really taken off because it's self-paid, but people skip all this other morass and getting a 'this is not a bill' piece of paper. They're just like, 'Here's my Visa card number. Yeah, charge me 500 bucks. But my problem's getting solved.' **I think for prevention, that's an intriguing future, direct-to-consumer.**"
 
@@ -113,7 +113,7 @@ We can state the flywheel strategy as follows:
 4. Distribute those medicines through the self-pay franchise, and compound franchise value
 5. Repeat
 
-Ricks describes a 'rich get richer' scenario where the success of the current franchise funds bets that are too expensive or risky for peers. One type of bet are _"moonshots"_ (Rick's mentions a potential preventative Alzheimer's therapy). The other way to leverage their capital advantage is by parallelizing clinical trials — running all necessary studies at once rather than sequentially:
+Ricks describes a 'rich get richer' scenario where the success of the current franchise funds bets that are too expensive or risky for peers. One type of bet are _"moonshots"_ (Ricks mentions a potential preventative Alzheimer's therapy). The other way to leverage their capital advantage is by parallelizing clinical trials — running all necessary studies at once rather than sequentially:
 
 > "I think we do three things better than others. One we talked about already, which is **cycle time**. It's a basic concept, but if you can make software faster than someone else, you're going to win. And the same in the drug business.... Often we do serial clinical trials and by the end of the product lifestyle you get the final indication. **We're trying to stack them all into the beginning, so that's expensive, but we're in a position to do that. It's not risky actually.**"
 
