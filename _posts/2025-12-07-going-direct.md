@@ -93,7 +93,7 @@ Because previously, the economics required intermediaries to bundle the market.
 
 First, pharma needed doctors to bundle demand. Illnesses were specific and hard to identify; the doctor was the necessary aggregator who matched patients to products. Later, as drugs became complex and expensive (specialty oncology, etc.), the system needed to bundle price. Few patients can pay $50,000 per year out of pocket for a drug, so the market relies on insurance pools to spread costs.
 
-The GLP-1 market is the first instance where neither applies. Demand is ubiquitous (dockets aren't needed to find it), and the price — while high — is within the stretch capability of the middle-class consumer. With high enough volume of demand for a drug, prices can be pushed down, and much of the system becomes redundant. In Ricks' words:
+The GLP-1 market is the first instance where neither applies. Demand is ubiquitous (doctors aren't needed to find it), and the price — while high — is within the stretch capability of the middle-class consumer. With high enough volume of demand for a drug, prices can be pushed down, and much of the system becomes redundant. In Ricks' words:
 
 > "I can charge less and get it to more people at scale and **I actually don't really need a healthcare system**...You certainly know if you are overweight or obese, you don't need a doctor to tell you that. And platforms like our direct platform have really taken off because it's self-paid, but people skip all this other morass and getting a 'this is not a bill' piece of paper. They're just like, 'Here's my Visa card number. Yeah, charge me 500 bucks. But my problem's getting solved.' **I think for prevention, that's an intriguing future, direct-to-consumer.**"
 
